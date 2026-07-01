@@ -1,144 +1,105 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NaFunny — Crypto Donate</title>
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      background:
-        radial-gradient(circle at top, rgba(160, 55, 255, .35), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(160, 55, 255, .25), transparent 35%),
-        #050509;
-      display: flex;
-      justify-content: center;
-      padding: 40px 16px;
+line-height: 1.6;
+      font-size: 15px;
     }
 
-    .wrap {
-      width: 100%;
-      max-width: 760px;
+    .warning {
+      margin-top: 16px;
       text-align: center;
+      color: #9f8bb8;
+      font-size: 12px;
+      line-height: 1.5;
     }
 
-    h1 {
-      font-size: 52px;
-      margin: 0;
-      letter-spacing: 4px;
-      text-shadow: 0 0 25px #9b4dff;
-    }
+    @media (max-width: 720px) {
+      .donate-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
 
-    .subtitle {
-      color: #c99cff;
-      margin: 12px 0 34px;
-      font-size: 18px;
-      letter-spacing: 2px;
-    }
+      .icon {
+        margin: 0 auto;
+      }
 
-    .card {
-      background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
-      border: 1px solid rgba(180, 90, 255, .55);
-      border-radius: 22px;
-      padding: 22px;
-      margin-bottom: 18px;
-      box-shadow: 0 0 25px rgba(145, 65, 255, .25);
-      backdrop-filter: blur(10px);
-    }
+      .copy {
+        width: 100%;
+      }
 
-    .coin {
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-
-    .network {
-      color: #b878ff;
-      font-size: 14px;
-      margin-bottom: 14px;
-    }
-
-    .address {
-      word-break: break-all;
-      color: #ddd;
-      background: rgba(0,0,0,.35);
-      padding: 12px;
-      border-radius: 12px;
-      font-size: 14px;
-      margin-bottom: 14px;
-    }
-
-    button {
-      border: 0;
-      cursor: pointer;
-      color: #fff;
-      font-weight: 700;
-      padding: 12px 22px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #7b2cff, #c14cff);
-      box-shadow: 0 0 18px rgba(175, 75, 255, .55);
-    }
-
-    button:hover {
-      transform: scale(1.03);
-    }
-
-    .thanks {
-      margin-top: 30px;
-      color: #c99cff;
-      font-size: 16px;
+      .subtitle {
+        letter-spacing: 3px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <main class="wrap">
-    <h1>NaFunny</h1>
-    <div class="subtitle">CRYPTO DONATIONS</div>
+  <main class="page">
+    <section class="hero">
+      <div class="logo">NaFunny</div>
+      <div class="subtitle">Crypto Donations</div>
+    </section>
 
-    <div class="card">
-      <div class="coin">USDT</div>
-      <div class="network">TRC-20 / Tron Network</div>
-      <div class="address" id="usdt">ВСТАВЬ_СЮДА_USDT_TRC20_АДРЕС</div>
-      <button onclick="copyText('usdt')">Copy Address</button>
+    <section class="panel">
+      <div class="donate-card">
+        <div class="icon">₮</div>
+        <div>
+          <div class="coin-title">USDT</div>
+          <div class="network">TRC-20 / Tron Network</div>
+          <div class="address" id="usdt-trc20">TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj</div>
+        </div>
+        <button class="copy" onclick="copyAddress('usdt-trc20')">COPY</button>
+      </div>
+
+      <div class="donate-card">
+        <div class="icon">TON</div>
+        <div>
+          <div class="coin-title">USDT TON</div>
+          <div class="network">TON Network</div>
+          <div class="address" id="usdt-ton">UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv</div>
+        </div>
+        <button class="copy" onclick="copyAddress('usdt-ton')">COPY</button>
+      </div>
+
+      <div class="donate-card">
+        <div class="icon">₿</div>
+        <div>
+          <div class="coin-title">BTC</div>
+          <div class="network">Bitcoin Network</div>
+          <div class="address" id="btc">bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm</div>
+        </div>
+        <button class="copy" onclick="copyAddress('btc')">COPY</button>
+      </div>
+
+      <div class="donate-card">
+        <div class="icon">Ξ</div>
+        <div>
+          <div class="coin-title">ETH</div>
+          <div class="network">Ethereum / ERC-20</div>
+          <div class="address" id="eth">0x41308db05CDc21cc159319A8315AC1BDC3F15169</div>
+        </div>
+        <button class="copy" onclick="copyAddress('eth')">COPY</button>
+      </div>
+    </section>
+
+    <div class="note">
+      Спасибо за поддержку стрима 💜<br />
+      Your support keeps NaFunny alive.
     </div>
 
-    <div class="card">
-      <div class="coin">TON</div>
-      <div class="network">TON Network</div>
-      <div class="address" id="ton">ВСТАВЬ_СЮДА_TON_АДРЕС</div>
-      <button onclick="copyText('ton')">Copy Address</button>
-    </div>
-
-    <div class="card">
-      <div class="coin">BTC</div>
-      <div class="network">Bitcoin Network</div>
-      <div class="address" id="btc">ВСТАВЬ_СЮДА_BTC_АДРЕС</div>
-      <button onclick="copyText('btc')">Copy Address</button>
-    </div>
-
-    <div class="card">
-      <div class="coin">ETH</div>
-      <div class="network">Ethereum / ERC-20</div>
-      <div class="address" id="eth">ВСТАВЬ_СЮДА_ETH_АДРЕС</div>
-      <button onclick="copyText('eth')">Copy Address</button>
-    </div>
-
-    <div class="thanks">
-      Спасибо за поддержку стрима 💜
+    <div class="warning">
+      Перед отправкой обязательно проверь сеть перевода.  
+      Ошибка сети может привести к потере средств.
     </div>
   </main>
 
   <script>
-    function copyText(id) {
+    function copyAddress(id) {
       const text = document.getElementById(id).innerText;
-      navigator.clipboard.writeText(text);
-      alert("Адрес скопирован ✅");
+
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Адрес скопирован ✅");
+      }).catch(() => {
+        alert("Не удалось скопировать. Выдели адрес вручную.");
+      });
     }
   </script>
 </body>
