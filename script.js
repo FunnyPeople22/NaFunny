@@ -7,7 +7,15 @@ document.querySelectorAll("[data-copy]").forEach((button) => {
 
     try {
       await navigator.clipboard.writeText(address);
+      button.classList.add("copied");
+      const oldText = button.textContent;
+      button.textContent = "COPIED";
       showToast("Адрес скопирован ✅");
+
+      setTimeout(() => {
+        button.classList.remove("copied");
+        button.textContent = oldText;
+      }, 1300);
     } catch (error) {
       showToast("Не удалось скопировать. Выдели адрес вручную.");
     }
