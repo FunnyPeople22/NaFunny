@@ -1,15 +1,5 @@
-# NaFunny HUB V6 Electric
+# NaFunny HUB 1.0
 
-Upload all files to the repository root. No folders required.
+Electric gaming hub for GitHub Pages.
 
-Files:
-- index.html
-- style.css
-- script.js
-- logo.webp
-- logo.png
-- favicon.png
-- qr-trc20.png
-- qr-ton.png
-- qr-btc.png
-- qr-eth.png
+Upload all files from this folder to the root of your GitHub repository.
