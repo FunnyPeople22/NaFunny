@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaFunny — Crypto Donations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <main class="page">
+    <section class="hero">
+      <div class="badge">STREAM SUPPORT</div>
+      <h1>NaFunny</h1>
+      <p>Crypto Donations</p>
+    </section>
+
+    <section class="panel">
+      <article class="card">
+        <div class="icon">₮</div>
+        <div class="info">
+          <h2>USDT</h2>
+          <span>TRC-20 / Tron Network</span>
+          <code id="usdt-trc20">TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj</code>
+        </div>
+        <button data-copy="usdt-trc20">COPY</button>
+      </article>
+
+      <article class="card">
+        <div class="icon ton">TON</div>
+        <div class="info">
+          <h2>USDT TON</h2>
+          <span>TON Network</span>
+          <code id="usdt-ton">UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv</code>
+        </div>
+        <button data-copy="usdt-ton">COPY</button>
+      </article>
+
+      <article class="card">
+        <div class="icon btc">₿</div>
+        <div class="info">
+          <h2>BTC</h2>
+          <span>Bitcoin Network</span>
+          <code id="btc">bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm</code>
+        </div>
+        <button data-copy="btc">COPY</button>
+      </article>
+
+      <article class="card">
+        <div class="icon eth">Ξ</div>
+        <div class="info">
+          <h2>ETH</h2>
+          <span>Ethereum / ERC-20</span>
+          <code id="eth">0x41308db05CDc21cc159319A8315AC1BDC3F15169</code>
+        </div>
+        <button data-copy="eth">COPY</button>
+      </article>
+    </section>
+
+    <footer>
+      <p>Спасибо за поддержку стрима 💜</p>
+      <small>Перед отправкой обязательно проверь сеть перевода. Ошибка сети может привести к потере средств.</small>
+    </footer>
+  </main>
+
+  <div id="toast">Адрес скопирован ✅</div>
+  <script src="script.js"></script>
+</body>
+</html>
