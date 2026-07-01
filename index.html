@@ -4,25 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#020817" />
-  <title>NaFunny HUB 1.0</title>
+  <title>NaFunny HUB 1.1</title>
   <meta name="description" content="NaFunny HUB — Dota 2, streams, community, socials, donate and crypto wallets." />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-theme="electric">
   <canvas id="spaceCanvas" aria-hidden="true"></canvas>
+  <canvas id="rainCanvas" aria-hidden="true"></canvas>
   <canvas id="lightningCanvas" aria-hidden="true"></canvas>
 
+  <div class="clouds" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="preloader" id="preloader" aria-hidden="true">
     <div class="preloader-card">
       <img src="logo.webp" alt="" />
       <strong>NaFunny HUB</strong>
-      <span>Electric Mode Loading</span>
+      <span>Storm Update Loading</span>
     </div>
   </div>
 
   <div class="flash" id="flash" aria-hidden="true"></div>
   <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <aside class="top-tools" aria-label="Site controls">
+    <details class="theme-menu" id="themeMenu">
+      <summary>🎨 Theme</summary>
+      <button type="button" data-theme-choice="electric">⚡ Electric Blue</button>
+      <button type="button" data-theme-choice="purple">💜 Cyber Purple</button>
+      <button type="button" data-theme-choice="storm">🌩 Night Storm</button>
+    </details>
+    <button class="ambient-toggle" id="ambientToggle" type="button" aria-pressed="false">♪ Ambient OFF</button>
+  </aside>
+
+  <div class="storm-widget" id="stormWidget" aria-hidden="true">
+    <strong>⚡ ELECTRIC MODE</strong>
+    <span id="stormTimer">15s</span>
+    <small>Rain • Clouds • Lightning</small>
+  </div>
 
   <main class="site" id="home">
     <section class="hero hub-card" data-depth="1.25">
@@ -53,6 +71,7 @@
       <div class="social-grid">
         <a class="social red" href="https://youtube.com/@nafunny22?si=a0QX2qrGCs_TIsA6" target="_blank" rel="noopener noreferrer"><i>▶</i><strong>YouTube</strong><small>Videos & Highlights</small><em>→</em></a>
         <a class="social blue" href="https://t.me/NaFunny" target="_blank" rel="noopener noreferrer"><i>✈</i><strong>Telegram</strong><small>News & Updates</small><em>→</em></a>
+        <a class="social twitch" href="https://www.twitch.tv/nafunny2" target="_blank" rel="noopener noreferrer"><i>♜</i><strong>Twitch</strong><small>Live Streams</small><em>→</em></a>
         <a class="social violet" href="https://discord.gg/SkMuqVseE" target="_blank" rel="noopener noreferrer"><i>🎮</i><strong>Discord</strong><small>Community Server</small><em>→</em></a>
         <a class="social pink" href="https://www.instagram.com/nafunny22?igsh=MTJhdjRnbTE0em52aQ==" target="_blank" rel="noopener noreferrer"><i>◎</i><strong>Instagram</strong><small>Photos & Stories</small><em>→</em></a>
         <a class="social cyan" href="https://www.tiktok.com/@nafunny22?_r=1&_t=ZS-97fcdm76nPs" target="_blank" rel="noopener noreferrer"><i>♪</i><strong>TikTok</strong><small>Shorts & Clips</small><em>→</em></a>
@@ -73,26 +92,10 @@
         <div class="small-title">⚡ CRYPTO SUPPORT</div>
         <h2>USDT / Crypto Wallets</h2>
         <div class="wallet-list">
-          <article class="wallet" data-address="TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj">
-            <strong>USDT TRC20</strong>
-            <code title="TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj">TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj</code>
-            <div class="wallet-actions"><button class="copy" type="button">Copy</button><button class="qr" type="button" data-qr="qr-trc20.png">QR</button></div>
-          </article>
-          <article class="wallet" data-address="UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv">
-            <strong>USDT TON</strong>
-            <code title="UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv">UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv</code>
-            <div class="wallet-actions"><button class="copy" type="button">Copy</button><button class="qr" type="button" data-qr="qr-ton.png">QR</button></div>
-          </article>
-          <article class="wallet" data-address="bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm">
-            <strong>USDT BTC</strong>
-            <code title="bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm">bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm</code>
-            <div class="wallet-actions"><button class="copy" type="button">Copy</button><button class="qr" type="button" data-qr="qr-btc.png">QR</button></div>
-          </article>
-          <article class="wallet" data-address="0x41308db05CDc21cc159319A8315AC1BDC3F15169">
-            <strong>USDT ETH</strong>
-            <code title="0x41308db05CDc21cc159319A8315AC1BDC3F15169">0x41308db05CDc21cc159319A8315AC1BDC3F15169</code>
-            <div class="wallet-actions"><button class="copy" type="button">Copy</button><button class="qr" type="button" data-qr="qr-eth.png">QR</button></div>
-          </article>
+          <article class="wallet" data-address="TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj"><strong>USDT TRC20</strong><code title="TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj">TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj</code><div class="wallet-actions"><button class="copy" type="button">Copy</button><button class="qr" type="button" data-qr="qr-trc20.png">QR</button></div></article>
+          <article class="wallet" data-address="UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv"><strong>USDT TON</strong><code title="UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv">UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv</code><div class="wallet-actions"><button class="copy" type="button">Copy</button><button class="qr" type="button" data-qr="qr-ton.png">QR</button></div></article>
+          <article class="wallet" data-address="bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm"><strong>USDT BTC</strong><code title="bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm">bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm</code><div class="wallet-actions"><button class="copy" type="button">Copy</button><button class="qr" type="button" data-qr="qr-btc.png">QR</button></div></article>
+          <article class="wallet" data-address="0x41308db05CDc21cc159319A8315AC1BDC3F15169"><strong>USDT ETH</strong><code title="0x41308db05CDc21cc159319A8315AC1BDC3F15169">0x41308db05CDc21cc159319A8315AC1BDC3F15169</code><div class="wallet-actions"><button class="copy" type="button">Copy</button><button class="qr" type="button" data-qr="qr-eth.png">QR</button></div></article>
         </div>
       </div>
     </section>
@@ -116,7 +119,7 @@
   </nav>
 
   <div class="toast" id="toast">Copied</div>
-  <div class="easter" id="easter">⚡ Electric Mode Activated ⚡</div>
+  <div class="easter" id="easter">⚡ The Storm obeys NaFunny ⚡</div>
 
   <div class="qr-modal" id="qrModal" aria-hidden="true">
     <div class="qr-box">
