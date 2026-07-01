@@ -2,7 +2,8 @@ const toast = document.getElementById('toast');
 function showToast(text) {
   toast.textContent = text;
   toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 1400);
+  clearTimeout(window.__toastTimer);
+  window.__toastTimer = setTimeout(() => toast.classList.remove('show'), 1400);
 }
 
 document.querySelectorAll('[data-copy]').forEach((button) => {
@@ -10,9 +11,9 @@ document.querySelectorAll('[data-copy]').forEach((button) => {
     const value = button.getAttribute('data-copy');
     try {
       await navigator.clipboard.writeText(value);
-      button.textContent = 'Copied';
       showToast('Address copied');
-      setTimeout(() => (button.textContent = 'Copy'), 1200);
+      button.textContent = 'Copied';
+      setTimeout(() => button.textContent = 'Copy', 1000);
     } catch (error) {
       const area = document.createElement('textarea');
       area.value = value;

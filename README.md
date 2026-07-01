@@ -1,11 +1,11 @@
-# NaFunny v2 Site
+# NaFunny Final V2 Site
 
-Готовый сайт для GitHub Pages.
+Финальная версия сайта для GitHub Pages.
 
-## Файлы
-- `index.html` — главная страница сайта
-- `style.css` — оформление
-- `script.js` — кнопки Copy для крипто-адресов
+Залей в корень репозитория все файлы:
+- index.html
+- style.css
+- script.js
+- assets/nafunny-logo.svg
 
-## Как залить
-Залей эти файлы в корень репозитория `NaFunny` и включи GitHub Pages: `main` / `/root`.
+GitHub Pages: Settings → Pages → Branch: main → Folder: /root
