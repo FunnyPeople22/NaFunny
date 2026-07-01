@@ -27,3 +27,55 @@ body.electric-mode:after{content:"";position:fixed;inset:0;z-index:-2;pointer-ev
 @media (max-width:520px){body{padding-bottom:118px}.hero{border-radius:28px;padding-top:32px;margin-top:20px}.brand-logo{width:min(300px,95%)}.hero h1{font-size:44px;letter-spacing:-.045em}.hero p{font-size:18px}.kicker,.small-title{font-size:12px;letter-spacing:.34em}.tag-row b{font-size:17px}.btn{width:100%;padding:18px}.title-line{gap:10px}.title-line h2,.wallets h2{font-size:34px;letter-spacing:.22em}.social-grid{gap:12px}.social{min-height:158px;padding:16px}.social i{font-size:38px}.social strong{font-size:18px}.social small{font-size:12px}.support,.wallets,.about{padding:24px 18px}.support h2{font-size:31px}.heart{font-size:74px}.wallet{padding:16px;overflow:hidden;min-width:0}.wallet code{font-size:14px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.wallet button{min-height:50px}.about p{font-size:20px}.bottom-nav{bottom:14px;width:calc(100% - 28px);padding-bottom:max(12px,env(safe-area-inset-bottom))}.bottom-nav a{font-size:13px}.bottom-nav span{font-size:21px}}
 .wallet button.pulse,.btn:active,.donate-btn:active{animation:electricPulse .45s ease}@keyframes electricPulse{0%{box-shadow:0 0 0 rgba(41,233,255,0)}50%{box-shadow:0 0 38px rgba(41,233,255,.8),inset 0 0 18px rgba(255,255,255,.25);transform:scale(1.02)}100%{box-shadow:0 0 0 rgba(41,233,255,0)}}
 @media (prefers-reduced-motion: reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important;transition:none!important}#spaceCanvas,#rainCanvas,#lightningCanvas{display:none}}
+
+/* HUB 1.1 Patch 2 — deeper themes, secret storm, icons */
+body[data-theme="electric"]{
+  --cyan:#29e9ff;--blue:#238dff;--purple:#9544ff;--pink:#ff2fc7;--line:rgba(45,183,255,.62);--glass:rgba(4,14,35,.74);
+  background:radial-gradient(circle at calc(18% + var(--mx)) calc(12% + var(--my)),rgba(37,160,255,.56),transparent 24%),radial-gradient(circle at calc(85% - var(--mx)) 18%,rgba(160,54,255,.32),transparent 28%),radial-gradient(circle at 72% 88%,rgba(73,22,255,.42),transparent 25%),linear-gradient(180deg,#061d40 0%,#020817 46%,#07001e 100%);
+}
+body[data-theme="purple"]{
+  --cyan:#d178ff;--blue:#7b4dff;--purple:#ff3dda;--pink:#ff2fc7;--line:rgba(211,96,255,.72);--glass:rgba(18,5,33,.78);
+  background:radial-gradient(circle at calc(18% + var(--mx)) calc(10% + var(--my)),rgba(177,42,255,.72),transparent 25%),radial-gradient(circle at calc(88% - var(--mx)) 18%,rgba(255,45,207,.38),transparent 29%),radial-gradient(circle at 68% 82%,rgba(92,22,255,.55),transparent 28%),linear-gradient(180deg,#12051f 0%,#05000e 48%,#18002d 100%);
+}
+body[data-theme="storm"]{
+  --cyan:#c5d4e8;--blue:#425777;--purple:#7689ff;--pink:#96a4c7;--line:rgba(172,196,229,.46);--glass:rgba(2,6,14,.84);
+  background:radial-gradient(circle at calc(18% + var(--mx)) calc(10% + var(--my)),rgba(111,143,187,.34),transparent 24%),radial-gradient(circle at calc(82% - var(--mx)) 15%,rgba(66,73,113,.48),transparent 28%),radial-gradient(circle at 72% 88%,rgba(28,31,58,.5),transparent 30%),linear-gradient(180deg,#070c15 0%,#01040a 50%,#080710 100%);
+}
+body[data-theme="purple"] .hub-card{background:linear-gradient(145deg,rgba(49,9,82,.76),rgba(5,3,22,.82));box-shadow:0 0 54px rgba(190,62,255,.28),0 24px 84px rgba(0,0,0,.58)}
+body[data-theme="purple"] .hero h1{color:#fff3ff;text-shadow:0 0 24px rgba(255,255,255,.36),0 0 56px rgba(211,72,255,.68)}
+body[data-theme="purple"] .blue{background:linear-gradient(135deg,#5e2bff,#cc3dff);box-shadow:0 0 30px rgba(213,73,255,.34)}
+body[data-theme="purple"] .purple{background:linear-gradient(135deg,#1f4cff,#f33cff);box-shadow:0 0 34px rgba(235,62,255,.38)}
+body[data-theme="purple"] .title-line h2,body[data-theme="purple"] .wallets h2{color:#c45cff;text-shadow:0 0 24px rgba(196,92,255,.62)}
+body[data-theme="purple"] .brand-logo{filter:drop-shadow(0 0 28px rgba(207,91,255,.9)) drop-shadow(0 0 88px rgba(255,61,218,.56));}
+body[data-theme="purple"] .eye{background:rgba(212,99,255,.5);box-shadow:0 0 28px #d178ff}
+body[data-theme="purple"] .ambient-toggle.on{color:#e283ff;box-shadow:0 0 28px rgba(226,131,255,.34)}
+body[data-theme="storm"] .hub-card{background:linear-gradient(145deg,rgba(19,29,43,.82),rgba(0,3,10,.9));box-shadow:0 0 40px rgba(161,190,229,.12),0 24px 84px rgba(0,0,0,.68)}
+body[data-theme="storm"] .hero h1{color:#e8f0ff;text-shadow:0 0 18px rgba(255,255,255,.28),0 0 38px rgba(154,188,229,.32)}
+body[data-theme="storm"] .blue,body[data-theme="storm"] .purple{background:linear-gradient(135deg,#1a2538,#4a5f86);box-shadow:0 0 24px rgba(196,216,244,.16)}
+body[data-theme="storm"] .title-line h2,body[data-theme="storm"] .wallets h2{color:#aebed7;text-shadow:0 0 18px rgba(174,190,215,.34)}
+body[data-theme="storm"] .brand-logo{filter:drop-shadow(0 0 18px rgba(190,214,245,.58)) drop-shadow(0 0 66px rgba(94,111,149,.38));}
+body[data-theme="storm"] .eye{background:rgba(190,214,245,.35);box-shadow:0 0 22px #bed6f5}
+body[data-theme="storm"] .social,.wallet{background:rgba(1,4,12,.78)}
+body[data-theme="storm"] .donate-btn{background:linear-gradient(135deg,#34394a,#6a718e)}
+.storm-dimmer{position:fixed;inset:0;z-index:7;pointer-events:none;background:radial-gradient(circle at 45% 18%,rgba(35,82,125,.16),transparent 28%),rgba(0,0,0,.72);opacity:0;transition:opacity .75s ease;backdrop-filter:brightness(.7) contrast(1.08)}
+body.electric-mode .storm-dimmer{opacity:.82;animation:stormDark 10s ease both}@keyframes stormDark{0%{opacity:0}12%,88%{opacity:.86}100%{opacity:0}}
+body.electric-mode:after{z-index:6;background:radial-gradient(circle at 50% 20%,rgba(75,210,255,.18),transparent 22%),linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.78));animation:stormPulse 1s ease-in-out infinite}
+.clouds{z-index:9;opacity:.08;filter:blur(8px) saturate(1.25);mix-blend-mode:screen;transition:opacity .9s ease, filter .9s ease}
+body.electric-mode .clouds{opacity:.9;filter:blur(4px) saturate(1.5)}
+.clouds i{width:70vw;height:28vh;background:radial-gradient(ellipse at 35% 45%,rgba(220,238,255,.38),rgba(95,140,210,.24) 34%,rgba(25,35,75,.18) 58%,transparent 76%);animation:cloudDrift2 14s linear infinite}
+.clouds i:nth-child(1){left:-16%;top:0;animation-duration:15s}.clouds i:nth-child(2){left:8%;top:9%;animation-duration:22s;animation-direction:reverse}.clouds i:nth-child(3){left:42%;top:2%;animation-duration:18s}.clouds i:nth-child(4){left:-22%;top:28%;animation-duration:26s;opacity:.85}.clouds i:nth-child(5){left:36%;top:30%;animation-duration:20s;animation-direction:reverse}.clouds i:nth-child(6){left:68%;top:13%;animation-duration:28s;opacity:.72}
+body[data-theme="purple"] .clouds i{background:radial-gradient(ellipse at 35% 45%,rgba(248,212,255,.34),rgba(173,79,255,.26) 34%,rgba(55,20,96,.22) 58%,transparent 76%)}
+body[data-theme="storm"] .clouds i{background:radial-gradient(ellipse at 35% 45%,rgba(235,241,249,.28),rgba(128,143,165,.2) 34%,rgba(15,18,28,.28) 58%,transparent 76%)}
+@keyframes cloudDrift2{from{transform:translateX(-36vw) translateY(0) scale(1)}50%{transform:translateX(4vw) translateY(3vh) scale(1.08)}to{transform:translateX(42vw) translateY(-1vh) scale(1.16)}}
+#rainCanvas{z-index:11}#lightningCanvas{z-index:22}.flash{z-index:48}.bottom-nav{z-index:40}.top-tools,.storm-widget{z-index:55}.easter,.toast{z-index:65}.qr-modal{z-index:75}
+.brand-icon{width:54px;height:54px;fill:currentColor;filter:drop-shadow(0 0 16px currentColor);transition:transform .22s, filter .22s}.social:hover .brand-icon{transform:scale(1.09);filter:drop-shadow(0 0 22px currentColor) drop-shadow(0 0 42px currentColor)}
+.brand-youtube{color:#ff2448;border-color:#ff2448}.brand-telegram{color:#31a9ff;border-color:#31a9ff}.brand-twitch{color:#a970ff;border-color:#a970ff}.brand-discord{color:#8b9dff;border-color:#8b9dff}.brand-instagram{color:#ff43c8;border-color:#ff43c8}.brand-tiktok{color:#22f1ff;border-color:#22f1ff}.brand-vk{color:#168cff;border-color:#168cff}
+body[data-theme="purple"] .brand-telegram,body[data-theme="purple"] .brand-tiktok,body[data-theme="purple"] .brand-vk{color:#b57cff;border-color:#b57cff}body[data-theme="purple"] .brand-youtube{color:#ff3f91;border-color:#ff3f91}body[data-theme="purple"] .brand-discord,body[data-theme="purple"] .brand-twitch{color:#d37bff;border-color:#d37bff}
+body[data-theme="storm"] .social{color:#cbd8e8;border-color:rgba(186,204,230,.48)}
+.crypto-badge{grid-area:coin;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:1000;color:white;box-shadow:0 0 18px currentColor;font-family:Arial,sans-serif}.crypto-badge.tether{background:#26a17b;color:#61ffd3}.crypto-badge.ton{background:#0098ea;color:#8de8ff}.crypto-badge.btc{background:#f7931a;color:#ffd08a}.crypto-badge.eth{background:#627eea;color:#c8d4ff}
+.wallet{grid-template-columns:42px 126px minmax(0,1fr) auto;grid-template-areas:"coin title addr actions"}.wallet strong{align-self:center}.wallet code{font-size:14px}.wallet-actions{align-self:center}.section-icon{letter-spacing:0;margin-right:8px}.mini-icon{color:var(--cyan)}
+.storm-widget.hint{opacity:.72;transform:scale(.92)}.storm-widget.hint.show{opacity:1}.storm-widget:not(.show){opacity:.68;transform:scale(.92)}.storm-widget small{max-width:95px;line-height:1.15}.storm-widget span{color:var(--cyan)}
+body.electric-mode .storm-widget{opacity:1;transform:scale(1.04);animation:stormWidgetPulse .8s ease-in-out infinite alternate}@keyframes stormWidgetPulse{from{box-shadow:0 0 32px rgba(141,68,255,.55),inset 0 0 22px rgba(41,233,255,.14)}to{box-shadow:0 0 62px rgba(141,68,255,.95),0 0 90px rgba(41,233,255,.32),inset 0 0 32px rgba(255,255,255,.18)}}
+footer{letter-spacing:.015em}.theme-menu button span{font-size:12px;margin-right:8px}.theme-menu button[data-theme-choice="electric"] span{color:#29e9ff}.theme-menu button[data-theme-choice="purple"] span{color:#d178ff}.theme-menu button[data-theme-choice="storm"] span{color:#c5d4e8}
+@media (max-width:900px){.wallet{grid-template-columns:42px 1fr;grid-template-areas:"coin title" "addr addr" "actions actions"}.crypto-badge{width:34px;height:34px}.wallet code{font-size:15px}.clouds{filter:blur(6px)}body.electric-mode .clouds{opacity:.78}.storm-widget{display:none}.storm-dimmer{background:rgba(0,0,0,.78)}}
+@media (max-width:520px){.brand-icon{width:42px;height:42px}.wallet{grid-template-columns:36px 1fr;gap:10px 12px}.wallet code{font-size:14px;letter-spacing:.02em}.wallet-actions{gap:10px}.crypto-badge{width:32px;height:32px}.social{min-height:166px}.storm-dimmer{background:rgba(0,0,0,.82)}body.electric-mode .clouds{opacity:.72}.clouds i{width:110vw;height:24vh}.top-tools{display:none!important}}

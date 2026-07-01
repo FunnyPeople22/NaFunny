@@ -1,25 +1,16 @@
-# NaFunny HUB 1.1 — Storm Update
+# NaFunny HUB 1.1 Patch 2
 
-Готовая версия сайта для GitHub Pages.
+Storm Update patch for GitHub Pages.
 
-## Файлы
-Загрузить в корень репозитория:
-- index.html
-- style.css
-- script.js
-- logo.png
-- logo.webp
-- favicon.png
-- qr-trc20.png
-- qr-ton.png
-- qr-btc.png
-- qr-eth.png
-- README.md
+## Что изменено
+- Electric Mode теперь активируется только как пасхалка: 5 быстрых кликов по коту.
+- Длительность Electric Mode уменьшена до 10 секунд.
+- Усилены дождь, затемнение, молнии и облака.
+- Cyber Purple и Night Storm переработаны по всей странице.
+- Ambient работает через WebAudio, без отдельного аудиофайла.
+- Соцсети заменены на SVG-иконки.
+- Крипто-блок получил иконки USDT / TON / BTC / ETH.
+- Footer: Made with ☕, electricity and countless ideas.
 
-## Что нового
-- Electric Mode 15 секунд по клику на кота.
-- Дождь, облака и молнии во время Electric Mode.
-- Пасхалка: 5 быстрых кликов по коту.
-- Переключатель темы: Electric Blue / Cyber Purple / Night Storm.
-- Ambient ON/OFF без внешних аудиофайлов.
-- Крипто-адреса на телефоне сокращаются через троеточие, но копируются полностью.
+## Upload
+Upload all files from this archive to repository root.
