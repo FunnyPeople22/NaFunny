@@ -17,3 +17,16 @@ body:before{content:"";position:fixed;inset:0;background-image:radial-gradient(r
 .hero h1{max-width:100%;padding-right:.04em;}
 @media (min-width:901px){.main-logo{width:min(455px,96%)}.hero-content{min-width:0}.hero h1{font-size:clamp(60px,8.2vw,108px);letter-spacing:-.035em}}
 @media (max-width:520px){.wallet{overflow:hidden}.wallet code{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.wallet{padding:16px}.wallet button{min-height:48px}.hero-actions{margin-bottom:4px}.bottom-nav{padding-bottom:max(12px,env(safe-area-inset-bottom))}}
+
+/* V5.2 desktop title fix: give NaFunny more breathing room */
+@media (min-width:901px){
+  .hero{grid-template-columns:minmax(390px,.9fr) minmax(540px,1.1fr);gap:36px;padding-left:50px;padding-right:50px;}
+  .hero-content{min-width:0;max-width:640px;justify-self:start;}
+  .hero h1{font-size:clamp(58px,7vw,96px);line-height:.94;letter-spacing:-.045em;white-space:nowrap;padding-right:.22em;overflow:visible;}
+  .lead{max-width:650px;}
+  .tags{gap:16px;}
+}
+@media (min-width:901px) and (max-width:1180px){
+  .hero{grid-template-columns:minmax(330px,.86fr) minmax(500px,1.14fr);gap:28px;padding-left:34px;padding-right:34px;}
+  .hero h1{font-size:clamp(56px,7vw,90px);}
+}
