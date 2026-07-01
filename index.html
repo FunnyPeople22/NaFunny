@@ -1,60 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NaFunny Links</title>
-
-  <!-- Font Awesome Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
-
-  <link rel="stylesheet" href="styles.css" />
+  <title>NaFunny — Official Hub</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="fx fx-blue"></div><div class="fx fx-purple"></div><div class="grid-noise"></div>
   <main class="page">
-    <section class="profile-card">
-      <div class="logo-wrap">
-        <div class="logo-text">NF</div>
-      </div>
-
-      <h1>NaFunny</h1>
-      <p class="subtitle">Dota 2 • Streams • Community</p>
-
-      <section class="links-section" aria-label="NaFunny social links">
-        <a class="social-button" href="https://youtube.com/@nafunny22?si=a0QX2qrGCs_TIsA6" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-          <span>YouTube</span>
-        </a>
-
-        <a class="social-button" href="https://discord.gg/SkMuqVseE" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-discord" aria-hidden="true"></i>
-          <span>Discord</span>
-        </a>
-
-        <a class="social-button" href="https://www.instagram.com/nafunny22?igsh=MTJhdjRnbTE0em52aQ==" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-          <span>Instagram</span>
-        </a>
-
-        <a class="social-button" href="https://www.tiktok.com/@nafunny22?_r=1&_t=ZS-97fcdm76nPs" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-          <span>TikTok</span>
-        </a>
-
-        <a class="social-button" href="https://vk.ru/club237993267" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-vk" aria-hidden="true"></i>
-          <span>VK Group</span>
-        </a>
-
-        <a class="social-button support-button" href="https://www.donationalerts.com/r/nafunny2" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-heart" aria-hidden="true"></i>
-          <span>Support Me</span>
-        </a>
-      </section>
+    <header class="hero" id="home">
+      <div class="logo-ring"><img src="assets/nafunny-logo.png" alt="NaFunny logo" /></div>
+      <div class="eyebrow">DOTA 2 • STREAMING • CRYPTO</div>
+      <h1>NaFunny</h1><p>Official stream hub</p>
+      <nav class="nav"><a href="#donate">💎 Donate</a><a href="#links">🌐 Links</a><a href="#about">⚡ About</a></nav>
+    </header>
+    <section id="donate" class="section">
+      <div class="section-title"><span>Crypto Donations</span><small>Поддержать стрим криптой</small></div>
+      <div class="donate-grid">
+        <article class="card"><div class="coin">₮</div><h2>USDT</h2><p>TRC-20 / Tron Network</p><code id="usdt-trc20">TU3rmCofvLkqfH6vbWH83xJB1HtUQNrHkj</code><img class="qr" src="assets/qr-usdt-trc20.png" alt="USDT TRC-20 QR"><button data-copy="usdt-trc20">COPY ADDRESS</button></article>
+        <article class="card"><div class="coin ton">TON</div><h2>USDT TON</h2><p>TON Network</p><code id="usdt-ton">UQBBxO-6hnHviiQoiGBK3W1iWDGpOMfBz5C-vpvGSZJafljv</code><img class="qr" src="assets/qr-usdt-ton.png" alt="USDT TON QR"><button data-copy="usdt-ton">COPY ADDRESS</button></article>
+        <article class="card"><div class="coin">₿</div><h2>BTC</h2><p>Bitcoin Network</p><code id="btc">bc1q2u23skk5h5utz06ju2v6afe9gj92z04s2hrpdm</code><img class="qr" src="assets/qr-btc.png" alt="BTC QR"><button data-copy="btc">COPY ADDRESS</button></article>
+        <article class="card"><div class="coin">Ξ</div><h2>ETH</h2><p>Ethereum / ERC-20</p><code id="eth">0x41308db05CDc21cc159319A8315AC1BDC3F15169</code><img class="qr" src="assets/qr-eth.png" alt="ETH QR"><button data-copy="eth">COPY ADDRESS</button></article>
+      </div><p class="warning">Перед отправкой обязательно проверь сеть перевода. Ошибка сети может привести к потере средств.</p>
     </section>
-  </main>
-</body>
-</html>
+    <section id="links" class="section"><div class="section-title"><span>My Links</span><small>Все площадки NaFunny</small></div><div class="links">
+      <a class="link-card" href="https://t.me/NaFunny" target="_blank" rel="noopener"><b>Telegram</b><span>Новости и общение</span></a>
+      <a class="link-card" href="https://twitch.tv/NaFunny2" target="_blank" rel="noopener"><b>Twitch</b><span>Стримы NaFunny</span></a>
+      <a class="link-card" href="https://youtube.com/@nafunny22?si=a0QX2qrGCs_TIsA6" target="_blank" rel="noopener"><b>YouTube</b><span>Мой YouTube канал</span></a>
+      <a class="link-card" href="https://discord.gg/SkMuqVseE" target="_blank" rel="noopener"><b>Discord</b><span>Наше сообщество</span></a>
+      <a class="link-card" href="https://www.instagram.com/nafunny22?igsh=MTJhdjRnbTE0em52aQ==" target="_blank" rel="noopener"><b>Instagram</b><span>Мой Instagram</span></a>
+      <a class="link-card" href="https://www.tiktok.com/@nafunny22?_r=1&_t=ZS-97fcdm76nPs" target="_blank" rel="noopener"><b>TikTok</b><span>Мои TikTok клипы</span></a>
+      <a class="link-card" href="https://vk.ru/club237993267" target="_blank" rel="noopener"><b>VK Group</b><span>Группа ВКонтакте</span></a>
+    </div></section>
+    <section id="about" class="section about"><div class="section-title"><span>About</span><small>NaFunny universe</small></div><div class="about-box"><img src="assets/nafunny-logo.png" alt="NaFunny logo"><div><h3>NaFunny</h3><p>Dota 2 streaming, crypto vibes, Telegram community and cyber-cat energy.</p><p class="thanks">Спасибо за поддержку стрима 💙💜</p></div></div></section>
+    <footer>Powered by NaFunny • Made with electric blue energy</footer>
+  </main><div id="toast">Copied ✅</div><script src="script.js"></script>
+</body></html>
