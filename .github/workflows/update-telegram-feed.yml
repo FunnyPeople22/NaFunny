@@ -1,0 +1,35 @@
+name: Update Telegram Feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Update Telegram feed
+        env:
+          TELEGRAM_CHANNEL: NaFunny
+          TELEGRAM_LIMIT: 6
+          TELEGRAM_FEED_OUT: feed/telegram-feed.json
+        run: node scripts/update-telegram-feed.mjs
+
+      - name: Commit feed update
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Update Telegram feed'
+          file_pattern: feed/telegram-feed.json
