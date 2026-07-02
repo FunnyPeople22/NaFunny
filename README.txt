@@ -1,18 +1,22 @@
-NaFunny HUB 1.2.1 Logo Animation Fix
+NaFunny HUB 1.2.1 Logo Fix
 
-Что исправляет:
-1) Логотип NaFunny больше не откатывается в дефолтный цвет во время анимации.
-2) Purple / Blue / Storm сохраняют свой цвет лого стабильно.
-3) На ПК добавлен фикс для обрезки хвостика буквы y.
-4) Анимация теперь не трогает background/color, а работает через opacity/transform/text-shadow.
+What it fixes:
+- NaFunny logo color jumps during theme switching
+- visible rectangular gradient during animation
+- missing / uncolored tail of the letter y
+- desktop clipping and Safari/iPhone animation flicker
 
-Как применить:
-1) Открой файл style.css / styles.css / main.css в репозитории.
-2) Найди стили логотипа NaFunny: .brand-title, .hero-title, .logo-title, .nafunny-logo или похожий класс.
-3) Вставь блок из logo-fix.css в самый низ CSS-файла.
-4) Открой script.js / app.js / main.js.
-5) Вставь блок из logo-fix.js в самый низ JS-файла.
-6) Загрузи изменения на GitHub с заменой файлов.
-7) Обнови сайт через Ctrl+F5 или очистку кэша.
+Install:
+1. Copy nafunny-logo-fix.css into the END of your main CSS file.
+2. Find the NaFunny logo text in index.html.
+3. Change it to:
 
-Если название класса логотипа отличается, добавь этот класс в список селекторов внутри CSS и JS.
+<h1 class="nafunny-logo-fixed" data-text="NaFunny">NaFunny</h1>
+
+If the old element already has classes, keep them if needed, but add nafunny-logo-fixed.
+Example:
+<h1 class="hero-title nafunny-logo-fixed" data-text="NaFunny">NaFunny</h1>
+
+Important:
+Remove/disable old logo animation rules that animate background-position or background-size on the logo text.
+The new fix keeps the logo gradient static and animates only a separate shine layer.

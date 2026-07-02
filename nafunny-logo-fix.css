@@ -1,0 +1,160 @@
+/* =========================================================
+   NaFunny HUB 1.2.1 Logo Fix
+   Fixes: jumping logo colors, visible gradient rectangle,
+   missing/unstyled tail of the letter "y", desktop clipping.
+
+   HOW TO USE:
+   1) Add class="nafunny-logo-fixed" to the NaFunny logo text.
+      Example: <h1 class="nafunny-logo-fixed">NaFunny</h1>
+   2) Paste this file at the END of your CSS file.
+   3) Disable/remove old animation on the previous logo class.
+   ========================================================= */
+
+.nafunny-logo-fixed,
+.nafunny-logo-fixed * {
+  box-sizing: border-box;
+}
+
+.nafunny-logo-fixed {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+
+  /* extra space fixes the clipped y tail on desktop/mobile */
+  padding: 0.05em 0.18em 0.16em 0.08em;
+  margin: -0.05em -0.18em -0.16em -0.08em;
+
+  overflow: visible !important;
+  contain: none !important;
+
+  font-family: inherit;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+
+  /* fixed brand gradient: does NOT change between themes */
+  color: transparent !important;
+  background-image: linear-gradient(180deg,
+    #ffffff 0%,
+    #eaf7ff 23%,
+    #9feaff 50%,
+    #52dfff 74%,
+    #24b9ff 100%
+  ) !important;
+  background-size: 100% 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+
+  /* stable glow, theme can change only shadow through variables */
+  --logo-glow-a: rgba(48, 224, 255, 0.65);
+  --logo-glow-b: rgba(80, 140, 255, 0.35);
+  filter:
+    drop-shadow(0 0 10px var(--logo-glow-a))
+    drop-shadow(0 0 28px var(--logo-glow-b));
+
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+/* Separate highlight layer: no moving background on text itself */
+.nafunny-logo-fixed::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  padding: inherit;
+  pointer-events: none;
+  z-index: 2;
+
+  color: transparent;
+  background-image: linear-gradient(110deg,
+    transparent 0%,
+    transparent 36%,
+    rgba(255,255,255,0.00) 43%,
+    rgba(255,255,255,0.92) 49%,
+    rgba(255,255,255,0.28) 54%,
+    transparent 62%,
+    transparent 100%
+  );
+  background-size: 260% 100%;
+  background-position: -160% 0;
+  background-repeat: no-repeat;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: nafunny-logo-shine 4.8s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+@keyframes nafunny-logo-shine {
+  0%, 14% { background-position: -160% 0; opacity: 0; }
+  24% { opacity: 0.9; }
+  42% { background-position: 160% 0; opacity: 0; }
+  100% { background-position: 160% 0; opacity: 0; }
+}
+
+/* Theme only changes glow, not the logo color */
+body[data-theme="blue"] .nafunny-logo-fixed,
+.theme-blue .nafunny-logo-fixed,
+[data-theme="blue"] .nafunny-logo-fixed {
+  --logo-glow-a: rgba(37, 224, 255, 0.72);
+  --logo-glow-b: rgba(42, 130, 255, 0.45);
+}
+
+body[data-theme="purple"] .nafunny-logo-fixed,
+.theme-purple .nafunny-logo-fixed,
+[data-theme="purple"] .nafunny-logo-fixed {
+  --logo-glow-a: rgba(180, 88, 255, 0.72);
+  --logo-glow-b: rgba(255, 70, 220, 0.42);
+}
+
+body[data-theme="storm"] .nafunny-logo-fixed,
+.theme-storm .nafunny-logo-fixed,
+[data-theme="storm"] .nafunny-logo-fixed {
+  --logo-glow-a: rgba(210, 232, 255, 0.58);
+  --logo-glow-b: rgba(88, 160, 255, 0.32);
+}
+
+/* Kill old buggy moving-gradient animations if they remain on same element */
+.nafunny-logo-fixed.logo-animated,
+.nafunny-logo-fixed.animated,
+.nafunny-logo-fixed.gradient-animate,
+.nafunny-logo-fixed.shimmer {
+  animation: none !important;
+}
+
+/* Mobile tuning */
+@media (max-width: 768px) {
+  .nafunny-logo-fixed {
+    padding-right: 0.22em;
+    padding-bottom: 0.18em;
+    letter-spacing: -0.06em;
+  }
+
+  .nafunny-logo-fixed::after {
+    animation-duration: 5.4s;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .nafunny-logo-fixed::after {
+    animation: none !important;
+    opacity: 0;
+  }
+}
+
+/* Emergency Safari fallback: readable logo even if text clipping glitches */
+@supports (-webkit-touch-callout: none) {
+  .nafunny-logo-fixed {
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+  }
+}
