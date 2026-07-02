@@ -41,6 +41,49 @@
     </label>
   </aside>
 
+  <div class="desktop-hub" id="desktopHub">
+    <button class="hub-trigger" id="hubTrigger" type="button" aria-expanded="false" aria-controls="hubPanel">
+      <span>⚙</span> HUB
+    </button>
+    <div class="hub-panel" id="hubPanel" aria-hidden="true">
+      <div class="hub-head">
+        <strong>NaFunny HUB</strong>
+        <small>Quick access & controls</small>
+      </div>
+      <nav class="hub-links" aria-label="Desktop HUB navigation">
+        <a href="#home"><span>⌂</span> Home</a>
+        <a href="#socials"><span>●</span> Socials</a>
+        <a href="#crypto"><span>▣</span> Crypto</a>
+        <a href="#donate"><span>♡</span> Donate</a>
+        <a href="#about"><span>◌</span> About</a>
+        <button type="button" data-hub-soon="Events"><span>✦</span> Events <em>Soon</em></button>
+        <button type="button" data-hub-soon="Telegram Feed"><span>▤</span> Telegram Feed <em>Soon</em></button>
+        <button type="button" data-hub-soon="Partners"><span>◇</span> Partners <em>Soon</em></button>
+      </nav>
+      <div class="hub-control-block">
+        <b>Theme</b>
+        <div class="hub-theme-row">
+          <button type="button" data-theme-choice="electric">Electric</button>
+          <button type="button" data-theme-choice="purple">Purple</button>
+          <button type="button" data-theme-choice="storm">Storm</button>
+        </div>
+      </div>
+      <div class="hub-control-block">
+        <b>Atmosphere</b>
+        <button class="hub-ambient" id="hubAmbient" type="button">Ambient OFF</button>
+        <label class="hub-volume">
+          <span>Volume</span>
+          <input id="hubVolume" type="range" min="0" max="100" value="85" />
+        </label>
+      </div>
+      <div class="hub-status">
+        <span>Electric Mode</span>
+        <b>5× cat clicks</b>
+      </div>
+    </div>
+  </div>
+  <div class="hub-tip" id="hubTip">💡 Click HUB for quick navigation & settings</div>
+
   <div class="storm-widget hint" id="stormWidget" aria-hidden="true">
     <strong>⚡ ELECTRIC MODE</strong>
     <span id="stormTimer">5×</span>

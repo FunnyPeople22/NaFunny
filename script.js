@@ -256,3 +256,46 @@ logoBtn.addEventListener('click', () => {
 
 window.addEventListener('resize', resize);
 resize(); drawParticles(); drawRain(); drawLightning();
+
+// HUB 1.1 Patch 6: Desktop HUB Menu
+const desktopHub = $('#desktopHub');
+const hubTrigger = $('#hubTrigger');
+const hubPanel = $('#hubPanel');
+const hubTip = $('#hubTip');
+const hubAmbient = $('#hubAmbient');
+const hubVolume = $('#hubVolume');
+
+function setHubOpen(open){
+  if(!desktopHub || !hubTrigger || !hubPanel) return;
+  desktopHub.classList.toggle('open', open);
+  hubTrigger.setAttribute('aria-expanded', String(open));
+  hubPanel.setAttribute('aria-hidden', String(!open));
+  if(open) localStorage.setItem('nafunny-hub-tip-seen','1');
+}
+hubTrigger?.addEventListener('click', (e) => { e.stopPropagation(); setHubOpen(!desktopHub.classList.contains('open')); });
+document.addEventListener('click', (e) => { if(desktopHub && !desktopHub.contains(e.target)) setHubOpen(false); });
+document.addEventListener('keydown', (e) => { if(e.key === 'Escape') setHubOpen(false); });
+$$('.hub-links a').forEach(a => a.addEventListener('click', () => setHubOpen(false)));
+$$('[data-hub-soon]').forEach(btn => btn.addEventListener('click', () => showToast(`${btn.dataset.hubSoon} coming in HUB 1.2`)));
+
+function syncHubAmbient(){
+  if(!hubAmbient || !ambientToggle) return;
+  const on = ambientToggle.classList.contains('on');
+  hubAmbient.textContent = on ? 'Ambient ON' : 'Ambient OFF';
+  hubAmbient.classList.toggle('on', on);
+}
+hubAmbient?.addEventListener('click', () => { ambientToggle?.click(); setTimeout(syncHubAmbient, 120); });
+if(hubVolume && ambientVolume){
+  hubVolume.value = ambientVolume.value;
+  hubVolume.addEventListener('input', () => {
+    ambientVolume.value = hubVolume.value;
+    ambientVolume.dispatchEvent(new Event('input', {bubbles:true}));
+  });
+  ambientVolume.addEventListener('input', () => { hubVolume.value = ambientVolume.value; });
+}
+if(ambientToggle){ new MutationObserver(syncHubAmbient).observe(ambientToggle, {attributes:true, attributeFilter:['class','aria-pressed']}); syncHubAmbient(); }
+
+if(hubTip && !localStorage.getItem('nafunny-hub-tip-seen') && matchMedia('(min-width:1051px)').matches){
+  setTimeout(()=>hubTip.classList.add('show'), 1800);
+  setTimeout(()=>hubTip.classList.remove('show'), 7200);
+}
