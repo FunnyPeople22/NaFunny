@@ -302,90 +302,102 @@ if(hubTip && !localStorage.getItem('nafunny-hub-tip-seen') && matchMedia('(min-w
 }
 
 
-/* ===== NaFunny HUB 1.2 FINAL Hotfix — Telegram Feed Loader ===== */
-(function(){
-  const fallbackFeed = [
-    {channel:'@NaFunny', title:'Стримы и анонсы', text:'Новости проекта, расписание стримов, клипы и важные обновления комьюнити.', url:'https://t.me/NaFunny'},
-    {channel:'@NaFunny', title:'Community updates', text:'Dota 2, турики, моменты со стримов и всё, что стоит сохранить для своих.', url:'https://t.me/NaFunny'},
-    {channel:'@TonNewbie', title:'TON / GRAM watch', text:'Крипто-новости, наблюдения по рынку TON/GRAM и честные заметки по экосистеме.', url:'https://t.me/TonNewbie'},
-    {channel:'@TonNewbie', title:'Crypto safety & insights', text:'Разборы, предупреждения, полезная информация и опыт из TON / Web3 мира.', url:'https://t.me/TonNewbie'}
+// Telegram Feed v1 — tries to load latest public posts and falls back to styled static cards.
+const tgFeedGrid = document.getElementById('telegramFeedGrid');
+const tgFeedStatus = document.getElementById('feedStatus');
+const feedFallback = [
+  {channel:'NaFunny', label:'@NaFunny', title:'Стримы и анонсы', text:'Новости проекта, расписание стримов, клипы и важные обновления комьюнити.', url:'https://t.me/NaFunny'},
+  {channel:'NaFunny', label:'@NaFunny', title:'Community updates', text:'Dota 2, турики, моменты со стримов и всё, что стоит сохранить для своих.', url:'https://t.me/NaFunny'},
+  {channel:'TonNewbie', label:'@TonNewbie', title:'TON / GRAM watch', text:'Крипто-новости, наблюдения по рынку TON/GRAM и честные заметки по экосистеме.', url:'https://t.me/TonNewbie'},
+  {channel:'TonNewbie', label:'@TonNewbie', title:'Crypto safety & insights', text:'Разборы, предупреждения, полезная информация и опыт из TON / Web3 мира.', url:'https://t.me/TonNewbie'}
+];
+function cleanTelegramText(text){
+  return (text || '')
+    .replace(/\s+/g,' ')
+    .replace(/Open in Telegram|VIEW IN TELEGRAM|Please open Telegram to view this post/gi,'')
+    .trim();
+}
+function cutTitle(text, fallback){
+  const t = cleanTelegramText(text);
+  if(!t) return fallback;
+  const first = t.split(/[.!?。\n]/)[0].trim();
+  return (first.length > 72 ? first.slice(0,69)+'...' : first) || fallback;
+}
+function formatDate(dt){
+  if(!dt) return 'Latest';
+  try{
+    const d = new Date(dt);
+    if(Number.isNaN(+d)) return 'Latest';
+    return d.toLocaleDateString('ru-RU',{day:'2-digit',month:'short'});
+  }catch{return 'Latest'}
+}
+function renderFeed(posts, live=false){
+  if(!tgFeedGrid) return;
+  tgFeedGrid.innerHTML = posts.map((p,idx)=>`
+    <article class="feed-card hub-card-lite ${live?'feed-live':''}">
+      <small>${p.label}</small>
+      ${p.image ? `<img class="feed-media" src="${p.image}" alt="" loading="lazy">` : ''}
+      <b>${p.title}</b>
+      <div class="feed-meta"><span>${formatDate(p.date)}</span><span>${live?'Live feed':'Channel'}</span></div>
+      <p class="feed-text">${p.text}</p>
+      <a href="${p.url}" target="_blank" rel="noopener noreferrer">Read post ↗</a>
+    </article>`).join('');
+}
+function renderFallback(){
+  renderFeed(feedFallback,false);
+  if(tgFeedStatus){ tgFeedStatus.textContent = 'Telegram feed fallback • open channels for latest posts'; tgFeedStatus.className = 'feed-status warn'; }
+}
+async function fetchTelegramChannel(channel, limit=2){
+  const target = `https://t.me/s/${channel}`;
+  const proxies = [
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(target)}`,
+    `https://r.jina.ai/http://r.jina.ai/http://https://t.me/s/${channel}`
   ];
-  function cleanText(text){
-    return (text||'').replace(/\s+/g,' ').replace(/Open in Telegram|VIEW IN TELEGRAM/gi,'').trim();
-  }
-  function titleFrom(text, channel){
-    const t = cleanText(text);
-    if(!t) return channel === '@NaFunny' ? 'NaFunny update' : 'TonNewbie update';
-    const first = t.split(/[.!?\n]/).find(Boolean) || t;
-    return first.length > 62 ? first.slice(0,59).trim() + '…' : first;
-  }
-  function excerptFrom(text){
-    const t = cleanText(text);
-    if(!t) return 'Открой канал, чтобы посмотреть последний пост.';
-    return t.length > 180 ? t.slice(0,177).trim() + '…' : t;
-  }
-  async function fetchViaProxy(channel){
-    const source = `https://t.me/s/${channel}`;
-    const proxy = `https://api.allorigins.win/raw?url=${encodeURIComponent(source)}`;
-    const res = await fetch(proxy, {cache:'no-store'});
-    if(!res.ok) throw new Error('Telegram proxy failed');
-    const html = await res.text();
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const nodes = Array.from(doc.querySelectorAll('.tgme_widget_message_wrap, .tgme_widget_message'));
-    const items = [];
-    for(const node of nodes){
-      const textEl = node.querySelector('.tgme_widget_message_text');
-      const dateEl = node.querySelector('time');
-      const linkEl = node.querySelector('.tgme_widget_message_date');
-      const text = cleanText(textEl ? textEl.innerText : '');
-      const href = linkEl && linkEl.href ? linkEl.href : `https://t.me/${channel}`;
-      if(text && !items.some(x => x.text === text)){
-        items.push({
-          channel:'@'+channel,
-          title:titleFrom(text, '@'+channel),
-          text:excerptFrom(text),
-          date: dateEl ? (dateEl.getAttribute('datetime') || dateEl.textContent || '') : '',
-          url: href
-        });
-      }
-    }
-    return items.slice(-2).reverse();
-  }
-  function render(items, live){
-    const grid = document.querySelector('.feed-grid-gold');
-    const section = document.querySelector('#feed');
-    if(!grid || !section) return;
-    let status = section.querySelector('.feed-live-status');
-    if(!status){
-      status = document.createElement('div');
-      status.className = 'feed-live-status';
-      const title = section.querySelector('.section-title');
-      if(title) title.insertAdjacentElement('afterend', status);
-    }
-    status.classList.toggle('is-live', !!live);
-    status.classList.toggle('is-fallback', !live);
-    status.textContent = live ? 'Live Telegram feed loaded' : 'Telegram feed fallback • open channels for latest posts';
-    grid.innerHTML = items.map(item => `
-      <article class="feed-card hub-card-lite">
-        <small>${item.channel}</small>
-        <b>${item.title}</b>
-        ${item.date ? `<time>${new Date(item.date).toLocaleDateString('ru-RU', {day:'2-digit', month:'short'})}</time>` : ''}
-        <p>${item.text}</p>
-        <a href="${item.url}" target="_blank" rel="noopener noreferrer">Read post ↗</a>
-      </article>
-    `).join('');
-  }
-  async function initTelegramFeed(){
-    const grid = document.querySelector('.feed-grid-gold');
-    if(!grid) return;
+  let html = '';
+  for(const url of proxies){
     try{
-      const [na, ton] = await Promise.all([fetchViaProxy('NaFunny'), fetchViaProxy('TonNewbie')]);
-      const items = [...na, ...ton].slice(0,4);
-      if(items.length >= 2) render(items, true); else render(fallbackFeed, false);
-    }catch(e){
-      render(fallbackFeed, false);
-    }
+      const res = await fetch(url, {cache:'no-store'});
+      if(res.ok){ html = await res.text(); if(html && html.length > 1000) break; }
+    }catch(e){}
   }
-  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initTelegramFeed);
-  else initTelegramFeed();
-})();
+  if(!html) throw new Error('Telegram feed unavailable');
+  const doc = new DOMParser().parseFromString(html,'text/html');
+  const nodes = [...doc.querySelectorAll('.tgme_widget_message_wrap, .tgme_widget_message')];
+  const posts = [];
+  for(const node of nodes.reverse()){
+    const textEl = node.querySelector('.tgme_widget_message_text');
+    const raw = cleanTelegramText(textEl?.innerText || textEl?.textContent || '');
+    if(!raw || raw.length < 8) continue;
+    const link = node.querySelector('.tgme_widget_message_date a')?.href || `https://t.me/${channel}`;
+    const time = node.querySelector('time')?.getAttribute('datetime') || '';
+    const img = node.querySelector('.tgme_widget_message_photo_wrap')?.style?.backgroundImage?.match(/url\(['"]?(.*?)['"]?\)/)?.[1] || '';
+    posts.push({
+      channel,
+      label:`@${channel}`,
+      title:cutTitle(raw, channel === 'NaFunny' ? 'NaFunny update' : 'TonNewbie update'),
+      text:raw.length > 240 ? raw.slice(0,237)+'...' : raw,
+      url:link,
+      date:time,
+      image:img
+    });
+    if(posts.length >= limit) break;
+  }
+  return posts;
+}
+async function loadTelegramFeed(){
+  if(!tgFeedGrid) return;
+  try{
+    if(tgFeedStatus){ tgFeedStatus.textContent = 'Syncing latest Telegram posts...'; tgFeedStatus.className = 'feed-status'; }
+    const [nafunny, tonnewbie] = await Promise.all([
+      fetchTelegramChannel('NaFunny',2),
+      fetchTelegramChannel('TonNewbie',2)
+    ]);
+    const posts = [...nafunny, ...tonnewbie];
+    if(posts.length < 2) throw new Error('Not enough posts');
+    renderFeed(posts.slice(0,4), true);
+    if(tgFeedStatus){ tgFeedStatus.textContent = 'Latest Telegram posts synced'; tgFeedStatus.className = 'feed-status ok'; }
+  }catch(e){
+    renderFallback();
+  }
+}
+window.addEventListener('load', () => setTimeout(loadTelegramFeed, 900));
