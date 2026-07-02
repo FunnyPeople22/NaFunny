@@ -23,70 +23,95 @@ $$('[data-theme-choice]').forEach(btn => {
   });
 });
 
-// Ambient sound via WebAudio — soft rain, no separate audio file required
-let audioCtx, rainSource, rainGain, windSource, windGain, ambientOn = false;
+// Ambient sound — real soft rain file + subtle distant thunder
+let ambientAudio = null;
+let audioCtx = null;
+let thunderMaster = null;
+let ambientOn = false;
 const ambientToggle = $('#ambientToggle');
-function createSoftRainBuffer(ctx, seconds = 4){
-  const buffer = ctx.createBuffer(1, seconds * ctx.sampleRate, ctx.sampleRate);
-  const data = buffer.getChannelData(0);
-  let last = 0;
-  for(let i=0;i<data.length;i++){
-    const white = Math.random()*2-1;
-    last = (last * 0.92) + (white * 0.08); // soft pink/brown noise, not radio hiss
-    const fine = (Math.random()*2-1) * 0.045;
-    data[i] = Math.max(-1, Math.min(1, last * 0.72 + fine));
-  }
-  return buffer;
+
+function ensureAmbientAudio(){
+  if(ambientAudio) return ambientAudio;
+  ambientAudio = new Audio('rain.mp3');
+  ambientAudio.loop = true;
+  ambientAudio.preload = 'auto';
+  ambientAudio.volume = 0.46; // audible, but still soft
+  return ambientAudio;
 }
-function startAmbient(){
+
+function ensureAudioContext(){
   audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
   if(audioCtx.state === 'suspended') audioCtx.resume();
-  stopAmbientNodes();
-
-  rainSource = audioCtx.createBufferSource();
-  rainSource.buffer = createSoftRainBuffer(audioCtx, 5);
-  rainSource.loop = true;
-  const rainLow = audioCtx.createBiquadFilter();
-  rainLow.type = 'lowpass'; rainLow.frequency.value = 1650; rainLow.Q.value = .45;
-  const rainHigh = audioCtx.createBiquadFilter();
-  rainHigh.type = 'highpass'; rainHigh.frequency.value = 140; rainHigh.Q.value = .55;
-  rainGain = audioCtx.createGain(); rainGain.gain.value = 0.022;
-  rainSource.connect(rainLow).connect(rainHigh).connect(rainGain).connect(audioCtx.destination);
-
-  windSource = audioCtx.createBufferSource();
-  windSource.buffer = createSoftRainBuffer(audioCtx, 6);
-  windSource.loop = true;
-  const windFilter = audioCtx.createBiquadFilter();
-  windFilter.type = 'lowpass'; windFilter.frequency.value = 360; windFilter.Q.value = .35;
-  windGain = audioCtx.createGain(); windGain.gain.value = 0.008;
-  windSource.connect(windFilter).connect(windGain).connect(audioCtx.destination);
-
-  rainSource.start(); windSource.start(); ambientOn = true;
-  ambientToggle.textContent = '♪ Ambient ON'; ambientToggle.classList.add('on'); ambientToggle.setAttribute('aria-pressed','true');
-  showToast('Soft rain ON');
+  if(!thunderMaster){
+    thunderMaster = audioCtx.createGain();
+    thunderMaster.gain.value = 0.23;
+    thunderMaster.connect(audioCtx.destination);
+  }
 }
-function stopAmbientNodes(){
-  try{ rainSource?.stop(); }catch{}
-  try{ windSource?.stop(); }catch{}
+
+async function startAmbient(){
+  const audio = ensureAmbientAudio();
+  ensureAudioContext();
+  try{
+    await audio.play();
+    ambientOn = true;
+    ambientToggle.textContent = '♪ Ambient ON';
+    ambientToggle.classList.add('on');
+    ambientToggle.setAttribute('aria-pressed','true');
+    showToast('Soft rain ON');
+  }catch(err){
+    showToast('Tap again to enable sound');
+  }
 }
+
 function stopAmbient(){
-  stopAmbientNodes();
-  ambientOn = false; ambientToggle.textContent = '♪ Ambient OFF'; ambientToggle.classList.remove('on'); ambientToggle.setAttribute('aria-pressed','false');
+  if(ambientAudio){ ambientAudio.pause(); }
+  ambientOn = false;
+  ambientToggle.textContent = '♪ Ambient OFF';
+  ambientToggle.classList.remove('on');
+  ambientToggle.setAttribute('aria-pressed','false');
   showToast('Ambient OFF');
 }
+
 function thunder(level = 1){
-  if(!ambientOn || !audioCtx) return;
+  if(!ambientOn || !audioCtx || !thunderMaster) return;
+  const now = audioCtx.currentTime;
+
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
   const filter = audioCtx.createBiquadFilter();
-  osc.type = 'sine'; osc.frequency.value = 28 + Math.random()*14;
-  filter.type = 'lowpass'; filter.frequency.value = 90;
-  gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
-  gain.gain.exponentialRampToValueAtTime(0.018 * level, audioCtx.currentTime + 0.08);
-  gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1.35);
-  osc.connect(filter).connect(gain).connect(audioCtx.destination);
-  osc.start(); osc.stop(audioCtx.currentTime + 1.45);
+  const noiseBuffer = audioCtx.createBuffer(1, audioCtx.sampleRate * 2.4, audioCtx.sampleRate);
+  const data = noiseBuffer.getChannelData(0);
+  let last = 0;
+  for(let i=0;i<data.length;i++){
+    const white = Math.random()*2-1;
+    last = last*.94 + white*.06;
+    data[i] = last * 0.35;
+  }
+  const noise = audioCtx.createBufferSource();
+  noise.buffer = noiseBuffer;
+  const noiseFilter = audioCtx.createBiquadFilter();
+  const noiseGain = audioCtx.createGain();
+
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(30 + Math.random()*14, now);
+  osc.frequency.exponentialRampToValueAtTime(18 + Math.random()*8, now + 1.6);
+  filter.type = 'lowpass'; filter.frequency.value = 115; filter.Q.value = .25;
+  noiseFilter.type = 'lowpass'; noiseFilter.frequency.value = 170; noiseFilter.Q.value = .18;
+
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.08 * level, now + 0.12);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 2.1);
+  noiseGain.gain.setValueAtTime(0.0001, now);
+  noiseGain.gain.exponentialRampToValueAtTime(0.035 * level, now + 0.2);
+  noiseGain.gain.exponentialRampToValueAtTime(0.0001, now + 2.35);
+
+  osc.connect(filter).connect(gain).connect(thunderMaster);
+  noise.connect(noiseFilter).connect(noiseGain).connect(thunderMaster);
+  osc.start(now); noise.start(now);
+  osc.stop(now + 2.2); noise.stop(now + 2.45);
 }
+
 ambientToggle?.addEventListener('click', () => ambientOn ? stopAmbient() : startAmbient());
 
 // Active nav

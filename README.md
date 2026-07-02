@@ -10,3 +10,6 @@
 - Обновлён блок About Me.
 
 Загрузка: залить все файлы из архива в корень репозитория с заменой.
+
+
+Patch 4: Ambient audio uses rain.mp3 for a softer, more natural rain sound. Upload rain.mp3 together with all files.
