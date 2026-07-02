@@ -617,145 +617,165 @@ body[data-theme="storm"] h1.electric-title::after{
   }
 }
 
-/* ===== NaFunny HUB 1.2.5 — SAFE LOGO LIGHTNING FX =====
-   Adds visible lightning/sparks on top of the stable logo.
-   Important: no background-clip, no text masks, no rectangle plates.
-*/
+
+/* =========================================================
+   NaFunny HUB 1.2.6 — Visible Logo Electric FX
+   Safe method: real text stays plain/stable. FX are separate
+   transparent overlay strokes, so no rectangle/plate can appear.
+   ========================================================= */
 .hero h1.electric-title,
 .hero-copy h1.electric-title,
 h1.electric-title{
-  --nf-bolt: #ffffff;
-  --nf-bolt-2: #42f2ff;
-  --nf-bolt-glow: rgba(41,233,255,.88);
-}
-body[data-theme="purple"] .hero h1.electric-title,
-body[data-theme="purple"] .hero-copy h1.electric-title,
-body[data-theme="purple"] h1.electric-title{
-  --nf-bolt: #ffffff;
-  --nf-bolt-2: #f0a8ff;
-  --nf-bolt-glow: rgba(211,120,255,.9);
-}
-body[data-theme="storm"] .hero h1.electric-title,
-body[data-theme="storm"] .hero-copy h1.electric-title,
-body[data-theme="storm"] h1.electric-title{
-  --nf-bolt: #ffffff;
-  --nf-bolt-2: #dcecff;
-  --nf-bolt-glow: rgba(220,236,255,.76);
+  overflow:visible !important;
+  isolation:isolate !important;
 }
 
-.hero h1.electric-title .title-bolt,
-.hero-copy h1.electric-title .title-bolt,
-h1.electric-title .title-bolt,
-.hero h1.electric-title .title-spark,
-.hero-copy h1.electric-title .title-spark,
-h1.electric-title .title-spark{
+/* Old pseudo bolt was too subtle. Disable it to avoid conflicts. */
+.hero h1.electric-title::after,
+.hero-copy h1.electric-title::after,
+h1.electric-title::after{
+  display:none !important;
+  content:none !important;
+}
+
+.logo-fx,
+.logo-spark{
   position:absolute !important;
   display:block !important;
   pointer-events:none !important;
-  z-index:4 !important;
+  z-index:5 !important;
+  opacity:0;
   background:none !important;
-  -webkit-background-clip:border-box !important;
-  background-clip:border-box !important;
   -webkit-text-fill-color:initial !important;
+  mix-blend-mode:screen;
 }
 
-/* Main thin zig-zag strike across the letters */
-.hero h1.electric-title .title-bolt-main,
-.hero-copy h1.electric-title .title-bolt-main,
-h1.electric-title .title-bolt-main{
-  left:.05em !important;
-  right:.34em !important;
-  top:.53em !important;
-  height:.12em !important;
-  opacity:0;
-  background:linear-gradient(90deg,transparent 0%,var(--nf-bolt) 35%,var(--nf-bolt-2) 55%,transparent 100%) !important;
-  clip-path:polygon(0 58%,10% 58%,14% 8%,21% 86%,28% 43%,37% 43%,42% 6%,50% 88%,58% 38%,66% 38%,71% 86%,78% 50%,88% 50%,93% 20%,100% 58%,100% 76%,0 76%) !important;
-  filter:drop-shadow(0 0 8px var(--nf-bolt)) drop-shadow(0 0 22px var(--nf-bolt-glow)) !important;
-  mix-blend-mode:screen !important;
-  transform:translateX(-9%) rotate(-2deg) translateZ(0);
-  animation:nfLogoBoltMain 5.8s ease-in-out infinite !important;
+.logo-fx{
+  left:.02em;
+  right:.30em;
+  height:.16em;
+  border-radius:999px;
+  transform-origin:center;
+  filter:
+    drop-shadow(0 0 5px rgba(255,255,255,.95))
+    drop-shadow(0 0 12px rgba(55,238,255,.9))
+    drop-shadow(0 0 22px rgba(55,238,255,.5));
+  background:
+    linear-gradient(90deg,
+      transparent 0%,
+      transparent 8%,
+      rgba(255,255,255,.95) 12%,
+      rgba(74,244,255,.98) 15%,
+      transparent 19%,
+      transparent 34%,
+      rgba(255,255,255,.9) 38%,
+      rgba(74,244,255,.95) 42%,
+      transparent 48%,
+      transparent 64%,
+      rgba(255,255,255,.9) 70%,
+      rgba(74,244,255,.95) 74%,
+      transparent 82%,
+      transparent 100%) !important;
+  clip-path:polygon(0 50%,9% 50%,13% 8%,18% 88%,25% 42%,34% 42%,40% 12%,46% 84%,53% 42%,63% 42%,69% 12%,75% 88%,82% 48%,93% 48%,100% 28%,100% 72%,88% 72%,82% 95%,75% 52%,68% 92%,61% 58%,50% 58%,45% 96%,38% 54%,31% 88%,23% 58%,16% 96%,10% 68%,0 68%);
 }
 
-/* Small diagonal hits near N and y */
-.hero h1.electric-title .title-bolt-mini,
-.hero-copy h1.electric-title .title-bolt-mini,
-h1.electric-title .title-bolt-mini{
-  width:.42em !important;
-  height:.105em !important;
-  opacity:0;
-  background:linear-gradient(90deg,transparent 0%,var(--nf-bolt) 32%,var(--nf-bolt-2) 70%,transparent 100%) !important;
-  clip-path:polygon(0 45%,34% 45%,44% 0,56% 100%,66% 48%,100% 48%,100% 68%,0 68%) !important;
-  filter:drop-shadow(0 0 7px var(--nf-bolt)) drop-shadow(0 0 16px var(--nf-bolt-glow)) !important;
-  mix-blend-mode:screen !important;
+.logo-fx-1{
+  top:.45em;
+  animation:nafunnyVisibleBoltA 4.8s ease-in-out infinite !important;
 }
-.hero h1.electric-title .title-bolt-mini.one,
-.hero-copy h1.electric-title .title-bolt-mini.one,
-h1.electric-title .title-bolt-mini.one{
-  left:.18em !important;
-  top:.20em !important;
-  transform:rotate(-34deg) translateZ(0);
-  animation:nfLogoMiniBolt 5.8s ease-in-out infinite !important;
-}
-.hero h1.electric-title .title-bolt-mini.two,
-.hero-copy h1.electric-title .title-bolt-mini.two,
-h1.electric-title .title-bolt-mini.two{
-  right:.18em !important;
-  bottom:.13em !important;
-  transform:rotate(-18deg) translateZ(0);
-  animation:nfLogoMiniBolt 5.8s ease-in-out infinite .42s !important;
+.logo-fx-2{
+  top:.18em;
+  height:.11em;
+  left:.10em;
+  right:.42em;
+  transform:rotate(-9deg);
+  animation:nafunnyVisibleBoltB 6.1s ease-in-out infinite !important;
 }
 
-/* Tiny sparks */
-.hero h1.electric-title .title-spark,
-.hero-copy h1.electric-title .title-spark,
-h1.electric-title .title-spark{
-  width:.09em !important;
-  height:.09em !important;
-  border-radius:50% !important;
-  opacity:0;
-  background:radial-gradient(circle,var(--nf-bolt) 0 20%,var(--nf-bolt-2) 35%,transparent 72%) !important;
-  filter:drop-shadow(0 0 7px var(--nf-bolt)) drop-shadow(0 0 14px var(--nf-bolt-glow)) !important;
-  mix-blend-mode:screen !important;
-  animation:nfLogoSpark 5.8s ease-in-out infinite !important;
+.logo-spark{
+  width:.13em;
+  height:.13em;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(84,245,255,.95) 36%, transparent 72%) !important;
+  box-shadow:
+    0 0 8px rgba(255,255,255,.95),
+    0 0 18px rgba(55,238,255,.75),
+    0 0 34px rgba(55,238,255,.38);
 }
-.hero h1.electric-title .title-spark.s1,
-.hero-copy h1.electric-title .title-spark.s1,
-h1.electric-title .title-spark.s1{left:.08em;top:.16em;animation-delay:.10s!important;}
-.hero h1.electric-title .title-spark.s2,
-.hero-copy h1.electric-title .title-spark.s2,
-h1.electric-title .title-spark.s2{left:1.55em;top:.05em;animation-delay:.30s!important;}
-.hero h1.electric-title .title-spark.s3,
-.hero-copy h1.electric-title .title-spark.s3,
-h1.electric-title .title-spark.s3{right:.22em;bottom:.09em;animation-delay:.54s!important;}
+.logo-spark-1{ left:.03em; top:.20em; animation:nafunnySparkOne 4.8s linear infinite !important; }
+.logo-spark-2{ left:2.52em; top:.72em; animation:nafunnySparkTwo 5.7s linear infinite !important; }
+.logo-spark-3{ right:.31em; top:.72em; animation:nafunnySparkThree 6.1s linear infinite !important; }
 
-@keyframes nfLogoBoltMain{
-  0%,24%,31%,100%{opacity:0;transform:translateX(-9%) rotate(-2deg) translateZ(0);}
-  25%{opacity:.25;}
-  26%{opacity:1;transform:translateX(0) rotate(-2deg) translateZ(0);}
-  27%{opacity:.18;}
-  28%{opacity:.95;transform:translateX(4%) rotate(-2deg) translateZ(0);}
-  29%{opacity:0;}
+body[data-theme="purple"] .logo-fx{
+  filter:
+    drop-shadow(0 0 5px rgba(255,255,255,.95))
+    drop-shadow(0 0 12px rgba(235,128,255,.9))
+    drop-shadow(0 0 22px rgba(184,74,255,.55));
+  background:linear-gradient(90deg,
+      transparent 0%,transparent 8%,rgba(255,255,255,.95) 12%,rgba(245,150,255,.98) 15%,transparent 19%,
+      transparent 34%,rgba(255,255,255,.9) 38%,rgba(245,150,255,.95) 42%,transparent 48%,
+      transparent 64%,rgba(255,255,255,.9) 70%,rgba(245,150,255,.95) 74%,transparent 82%,transparent 100%) !important;
 }
-@keyframes nfLogoMiniBolt{
-  0%,21%,34%,100%{opacity:0;}
-  23%{opacity:.9;}
-  24%{opacity:.1;}
-  27%{opacity:1;}
-  30%{opacity:0;}
+body[data-theme="purple"] .logo-spark{
+  background:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,150,255,.95) 36%, transparent 72%) !important;
+  box-shadow:0 0 8px rgba(255,255,255,.95),0 0 18px rgba(245,150,255,.75),0 0 34px rgba(184,74,255,.42);
 }
-@keyframes nfLogoSpark{
-  0%,22%,34%,100%{opacity:0;transform:scale(.4) translateZ(0);}
-  24%{opacity:1;transform:scale(1.25) translateZ(0);}
-  26%{opacity:.35;transform:scale(.75) translateZ(0);}
-  28%{opacity:1;transform:scale(1) translateZ(0);}
-  31%{opacity:0;transform:scale(.35) translateZ(0);}
+body[data-theme="storm"] .logo-fx{
+  filter:
+    drop-shadow(0 0 5px rgba(255,255,255,.95))
+    drop-shadow(0 0 12px rgba(220,238,255,.82))
+    drop-shadow(0 0 22px rgba(158,190,230,.45));
+  background:linear-gradient(90deg,
+      transparent 0%,transparent 8%,rgba(255,255,255,.95) 12%,rgba(220,238,255,.9) 15%,transparent 19%,
+      transparent 34%,rgba(255,255,255,.88) 38%,rgba(220,238,255,.82) 42%,transparent 48%,
+      transparent 64%,rgba(255,255,255,.88) 70%,rgba(220,238,255,.82) 74%,transparent 82%,transparent 100%) !important;
+}
+body[data-theme="storm"] .logo-spark{
+  background:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(220,238,255,.88) 36%, transparent 72%) !important;
+  box-shadow:0 0 8px rgba(255,255,255,.9),0 0 18px rgba(220,238,255,.65),0 0 34px rgba(158,190,230,.34);
 }
 
-@media (max-width:520px){
-  .hero h1.electric-title .title-bolt-main,
-  .hero-copy h1.electric-title .title-bolt-main,
-  h1.electric-title .title-bolt-main{right:.30em!important;height:.105em!important;}
-  .hero h1.electric-title .title-bolt-mini,
-  .hero-copy h1.electric-title .title-bolt-mini,
-  h1.electric-title .title-bolt-mini{width:.36em!important;height:.095em!important;}
+@keyframes nafunnyVisibleBoltA{
+  0%,18%,100%{opacity:0; transform:translateX(-11%) rotate(-3deg) scaleX(.92);}
+  19%{opacity:.18;}
+  20%{opacity:.95; transform:translateX(-4%) rotate(-3deg) scaleX(1.02);}
+  21%{opacity:.18;}
+  22%{opacity:1; transform:translateX(3%) rotate(-3deg) scaleX(1);}
+  24%{opacity:0; transform:translateX(8%) rotate(-3deg) scaleX(.98);}
+  61%{opacity:0; transform:translateX(-7%) rotate(2deg) scaleX(.9);}
+  62%{opacity:.8; transform:translateX(0) rotate(2deg) scaleX(1);}
+  63%{opacity:0; transform:translateX(4%) rotate(2deg) scaleX(.96);}
+}
+@keyframes nafunnyVisibleBoltB{
+  0%,42%,100%{opacity:0; transform:translateX(-8%) rotate(-9deg) scaleX(.85);}
+  43%{opacity:.72; transform:translateX(-2%) rotate(-9deg) scaleX(1);}
+  44%{opacity:.1;}
+  45%{opacity:.82; transform:translateX(4%) rotate(-9deg) scaleX(1.05);}
+  47%{opacity:0; transform:translateX(9%) rotate(-9deg) scaleX(.9);}
+}
+@keyframes nafunnySparkOne{
+  0%,17%,25%,100%{opacity:0; transform:translate(0,0) scale(.4);}
+  20%{opacity:1; transform:translate(.42em,.04em) scale(1);}
+  22%{opacity:.35; transform:translate(.76em,-.02em) scale(.65);}
+}
+@keyframes nafunnySparkTwo{
+  0%,59%,65%,100%{opacity:0; transform:translate(0,0) scale(.4);}
+  62%{opacity:1; transform:translate(.12em,-.18em) scale(1);}
+  64%{opacity:.25; transform:translate(.42em,-.28em) scale(.6);}
+}
+@keyframes nafunnySparkThree{
+  0%,41%,48%,100%{opacity:0; transform:translate(0,0) scale(.4);}
+  44%{opacity:1; transform:translate(-.28em,-.12em) scale(1);}
+  46%{opacity:.28; transform:translate(-.62em,-.25em) scale(.6);}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .logo-fx,.logo-spark{animation:none !important; opacity:0 !important;}
+}
+
+@media (max-width:900px){
+  .logo-fx{left:.04em;right:.22em;}
+  .logo-fx-1{top:.48em;}
+  .logo-fx-2{top:.20em;right:.34em;}
+  .logo-spark{width:.11em;height:.11em;}
 }
