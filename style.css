@@ -414,331 +414,137 @@ body[data-theme="purple"] .telegram-feed-final .feed-card small{color:#d378ff}bo
 @media (max-width:760px){.feed-grid-gold{grid-template-columns:1fr!important}.telegram-feed-final .feed-card{min-height:190px}.hero h1.electric-title{padding-right:.32em!important}.hero h1.electric-title .brand-y .energy-tail{right:-.08em;bottom:.05em;width:.28em;height:.22em}.gold-footer{margin-bottom:6px}.version-card{min-width:0;width:min(280px,100%)}}
 
 
-/* ===== NaFunny HUB 1.2 FINAL — desktop parity + live Telegram feed ===== */
-.hero-copy::after{display:none!important;content:none!important;visibility:hidden!important}
-
-@media (min-width:901px){
-  .hero h1.electric-title,
-  .hero-copy h1.electric-title,
-  h1.electric-title{
-    position:relative!important;
-    display:inline-block!important;
-    width:max-content!important;
-    max-width:min(780px,100%)!important;
-    padding:.02em .44em .08em .02em!important;
-    font-size:clamp(66px,5.6vw,96px)!important;
-    line-height:.92!important;
-    letter-spacing:-.048em!important;
-    font-weight:1000!important;
-    font-style:italic!important;
-    color:transparent!important;
-    -webkit-text-fill-color:transparent!important;
-    background:
-      radial-gradient(circle at 2% 48%,rgba(255,255,255,.98) 0 5%,rgba(88,233,255,.82) 12%,transparent 24%),
-      linear-gradient(105deg,#f8ffff 0%,#dff8ff 16%,#4be5ff 38%,#f4ffff 52%,#8ff4ff 72%,#2fe8ff 96%,#aefbff 100%)!important;
-    background-size:180% 100%,260% 100%!important;
-    background-position:0 0,0 0!important;
-    -webkit-background-clip:text!important;
-    background-clip:text!important;
-    text-shadow:none!important;
-    filter:drop-shadow(0 0 18px rgba(41,233,255,.48)) drop-shadow(0 0 42px rgba(41,233,255,.28))!important;
-    animation:titleCharge 7.8s ease-in-out infinite!important;
-    overflow:visible!important;
-    isolation:isolate!important;
-  }
-  .hero h1.electric-title::before,
-  .hero-copy h1.electric-title::before,
-  h1.electric-title::before{
-    content:attr(data-text)!important;
-    position:absolute!important;
-    inset:0!important;
-    padding:inherit!important;
-    color:transparent!important;
-    -webkit-text-fill-color:transparent!important;
-    -webkit-text-stroke:1px rgba(132,238,255,.32)!important;
-    text-shadow:0 0 22px rgba(41,233,255,.34),0 0 58px rgba(41,233,255,.2)!important;
-    z-index:-1!important;
-  }
-  .hero h1.electric-title::after,
-  .hero-copy h1.electric-title::after,
-  h1.electric-title::after{
-    content:""!important;
-    display:block!important;
-    position:absolute!important;
-    left:.08em!important;
-    right:.28em!important;
-    top:52%!important;
-    height:.12em!important;
-    background:linear-gradient(90deg,transparent,rgba(41,233,255,.08),rgba(255,255,255,.92),rgba(41,233,255,.82),transparent)!important;
-    clip-path:polygon(0 58%,12% 58%,16% 14%,23% 86%,31% 45%,39% 45%,44% 8%,50% 88%,58% 36%,66% 36%,70% 86%,79% 50%,88% 50%,93% 22%,100% 58%,100% 75%,0 75%)!important;
-    opacity:0!important;
-    filter:drop-shadow(0 0 10px #29e9ff) drop-shadow(0 0 24px #29e9ff)!important;
-    transform:translateX(-7%) rotate(-2deg)!important;
-    mix-blend-mode:screen!important;
-    pointer-events:none!important;
-    animation:titleLightning 10s ease-in-out infinite!important;
-  }
-  .hero h1.electric-title .brand-n,
-  .hero h1.electric-title .brand-y{
-    background:inherit!important;
-    background-size:inherit!important;
-    -webkit-background-clip:text!important;
-    background-clip:text!important;
-    color:transparent!important;
-    -webkit-text-fill-color:transparent!important;
-  }
-  .hero h1.electric-title .brand-n{
-    filter:drop-shadow(0 0 16px rgba(255,255,255,.68)) drop-shadow(0 0 32px rgba(41,233,255,.7))!important;
-  }
-  .hero h1.electric-title .brand-y{
-    padding-right:.16em!important;
-    filter:drop-shadow(0 0 15px rgba(41,233,255,.66))!important;
-  }
-  .hero h1.electric-title .brand-y .energy-tail{
-    right:-.1em!important;
-    bottom:.025em!important;
-    opacity:.78!important;
-  }
-}
-
-.feed-status{
-  margin:-10px auto 18px;
-  width:max-content;
-  max-width:100%;
-  color:rgba(205,238,255,.72);
-  font-size:13px;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  font-weight:900;
-  padding:8px 14px;
-  border:1px solid rgba(41,233,255,.18);
-  border-radius:999px;
-  background:rgba(2,8,23,.34);
-  box-shadow:0 0 20px rgba(41,233,255,.06);
-}
-.feed-status.ok{color:var(--cyan);border-color:rgba(41,233,255,.34)}
-.feed-status.warn{color:rgba(255,226,143,.86);border-color:rgba(255,226,143,.28)}
-.telegram-feed-final .feed-card .feed-meta{display:flex;gap:10px;align-items:center;color:rgba(205,230,245,.62);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-top:-2px}
-.telegram-feed-final .feed-card .feed-text{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
-.telegram-feed-final .feed-card .feed-media{width:100%;height:110px;border-radius:18px;object-fit:cover;border:1px solid rgba(41,233,255,.18);box-shadow:0 0 22px rgba(41,233,255,.08)}
-.telegram-feed-final .feed-card.feed-live b::before{content:"● ";color:var(--cyan);text-shadow:0 0 12px var(--cyan)}
-@media (max-width:760px){
-  .feed-status{font-size:11px;margin:0 auto 16px;padding:7px 12px;letter-spacing:.08em}
-  .telegram-feed-final .feed-card .feed-text{-webkit-line-clamp:4}
-}
-
-/* ===== NaFunny HUB 1.2 STABLE — Hero Logo Engine Fix ===== */
-:root{
-  --nf-title-1:#ffffff;
-  --nf-title-2:#dffaff;
-  --nf-title-3:#4ce8ff;
-  --nf-title-4:#ffffff;
-  --nf-title-5:#7af0ff;
-  --nf-tail:#58ecff;
-  --nf-glow:rgba(41,233,255,.48);
-  --nf-glow-soft:rgba(41,233,255,.24);
-  --nf-stroke:rgba(132,238,255,.30);
-}
-body[data-theme="electric"]{
-  --nf-title-1:#ffffff;
-  --nf-title-2:#dffaff;
-  --nf-title-3:#4ce8ff;
-  --nf-title-4:#ffffff;
-  --nf-title-5:#7af0ff;
-  --nf-tail:#58ecff;
-  --nf-glow:rgba(41,233,255,.48);
-  --nf-glow-soft:rgba(41,233,255,.24);
-  --nf-stroke:rgba(132,238,255,.30);
-}
-body[data-theme="purple"]{
-  --nf-title-1:#ffffff;
-  --nf-title-2:#f3e5ff;
-  --nf-title-3:#d47aff;
-  --nf-title-4:#fff4ff;
-  --nf-title-5:#b982ff;
-  --nf-tail:#df68ff;
-  --nf-glow:rgba(211,120,255,.52);
-  --nf-glow-soft:rgba(157,63,255,.26);
-  --nf-stroke:rgba(211,120,255,.34);
-}
-body[data-theme="storm"]{
-  --nf-title-1:#ffffff;
-  --nf-title-2:#edf5ff;
-  --nf-title-3:#c4d8ef;
-  --nf-title-4:#ffffff;
-  --nf-title-5:#91b7e4;
-  --nf-tail:#dcecff;
-  --nf-glow:rgba(220,236,255,.38);
-  --nf-glow-soft:rgba(129,178,239,.18);
-  --nf-stroke:rgba(220,236,255,.24);
-}
-.hero-copy::after{display:none!important;content:none!important;visibility:hidden!important}
+/* ===== NaFunny HUB 1.2 Stable — logo color lock and theme-safe fix =====
+   This final block intentionally overrides older Gold/Complete logo patches.
+   The NaFunny wordmark keeps one brand gradient in all themes; only the glow changes.
+*/
 .hero h1.electric-title,
 .hero-copy h1.electric-title,
 h1.electric-title{
-  position:relative!important;
-  display:inline-block!important;
-  width:max-content!important;
-  max-width:min(780px,100%)!important;
-  padding:.02em .5em .08em .02em!important;
-  line-height:.92!important;
-  color:transparent!important;
-  -webkit-text-fill-color:transparent!important;
-  background:
-    linear-gradient(108deg,var(--nf-title-1) 0%,var(--nf-title-2) 18%,var(--nf-title-3) 39%,var(--nf-title-4) 52%,var(--nf-title-5) 74%,var(--nf-tail) 100%)!important;
-  background-size:270% 100%!important;
-  background-position:0% 50%!important;
-  -webkit-background-clip:text!important;
-  background-clip:text!important;
-  filter:drop-shadow(0 0 17px var(--nf-glow)) drop-shadow(0 0 40px var(--nf-glow-soft))!important;
-  text-shadow:none!important;
-  animation:nfTitleFlowStable 10s ease-in-out infinite!important;
-  transform:skewX(-6deg) translateZ(0)!important;
-  overflow:visible!important;
-  isolation:isolate!important;
-  will-change:background-position, filter!important;
+  position:relative !important;
+  display:inline-block !important;
+  width:max-content !important;
+  max-width:100% !important;
+  isolation:isolate !important;
+  overflow:visible !important;
+  padding:.02em .34em .08em .04em !important;
+  color:transparent !important;
+  -webkit-text-fill-color:transparent !important;
+  background:linear-gradient(112deg,#ffffff 0%,#eaf8ff 15%,#37e7ff 34%,#ffffff 48%,#8df0ff 63%,#ffffff 78%,#42ddff 100%) !important;
+  background-size:260% 100% !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  text-shadow:none !important;
+  filter:drop-shadow(0 0 18px rgba(47,232,255,.56)) drop-shadow(0 0 48px rgba(47,232,255,.28)) !important;
+  transform:skewX(-6deg) translateZ(0) !important;
+  animation:stableTitleCharge 7.2s ease-in-out infinite !important;
 }
+
 .hero h1.electric-title::before,
 .hero-copy h1.electric-title::before,
 h1.electric-title::before{
-  content:attr(data-text)!important;
-  position:absolute!important;
-  inset:0!important;
-  padding:inherit!important;
-  color:transparent!important;
-  -webkit-text-fill-color:transparent!important;
-  -webkit-text-stroke:1px var(--nf-stroke)!important;
-  text-shadow:0 0 18px var(--nf-glow),0 0 46px var(--nf-glow-soft)!important;
-  z-index:-1!important;
-  pointer-events:none!important;
+  content:attr(data-text) !important;
+  position:absolute !important;
+  inset:0 !important;
+  padding:inherit !important;
+  color:transparent !important;
+  -webkit-text-fill-color:transparent !important;
+  -webkit-text-stroke:1.1px rgba(132,238,255,.42) !important;
+  text-shadow:0 0 20px rgba(39,226,255,.42),0 0 54px rgba(39,226,255,.2) !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
 }
+
 .hero h1.electric-title::after,
 .hero-copy h1.electric-title::after,
 h1.electric-title::after{
-  content:""!important;
-  display:block!important;
-  position:absolute!important;
-  left:.1em!important;
-  right:.34em!important;
-  top:52%!important;
-  height:.105em!important;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.76),var(--nf-tail),transparent)!important;
-  clip-path:polygon(0 58%,12% 58%,16% 18%,23% 82%,31% 48%,39% 48%,44% 14%,50% 84%,58% 38%,66% 38%,70% 82%,79% 52%,88% 52%,93% 28%,100% 58%,100% 74%,0 74%)!important;
-  opacity:0!important;
-  filter:drop-shadow(0 0 9px var(--nf-tail)) drop-shadow(0 0 18px var(--nf-glow))!important;
-  transform:translateX(-6%) rotate(-2deg)!important;
-  mix-blend-mode:screen!important;
-  pointer-events:none!important;
-  animation:nfTitleArcStable 12s ease-in-out infinite!important;
+  content:"" !important;
+  position:absolute !important;
+  left:.08em !important;
+  right:.18em !important;
+  top:51% !important;
+  height:.13em !important;
+  background:linear-gradient(90deg,transparent,rgba(41,233,255,.08),rgba(255,255,255,.76),rgba(41,233,255,.72),transparent) !important;
+  clip-path:polygon(0 60%,11% 60%,15% 12%,22% 88%,29% 46%,38% 46%,43% 8%,50% 88%,58% 36%,66% 36%,70% 86%,78% 50%,88% 50%,92% 22%,100% 58%,100% 78%,0 78%) !important;
+  opacity:0 !important;
+  filter:drop-shadow(0 0 10px #35e6ff) drop-shadow(0 0 24px rgba(53,230,255,.72)) !important;
+  mix-blend-mode:screen !important;
+  pointer-events:none !important;
+  animation:stableTitleLightning 9s ease-in-out infinite !important;
 }
+
 .hero h1.electric-title .brand-n,
 .hero h1.electric-title .brand-y,
-.hero-copy h1.electric-title .brand-n,
-.hero-copy h1.electric-title .brand-y,
-h1.electric-title .brand-n,
-h1.electric-title .brand-y{
-  position:relative!important;
-  display:inline-block!important;
-  color:transparent!important;
-  -webkit-text-fill-color:transparent!important;
-  -webkit-background-clip:text!important;
-  background-clip:text!important;
-  transform:translateZ(0)!important;
-}
-.hero h1.electric-title .brand-n,
-.hero-copy h1.electric-title .brand-n,
-h1.electric-title .brand-n{
-  background:linear-gradient(105deg,#ffffff 0%,var(--nf-title-2) 35%,var(--nf-title-3) 70%,#ffffff 100%)!important;
-  background-size:170% 100%!important;
-  -webkit-background-clip:text!important;
-  background-clip:text!important;
-  filter:drop-shadow(0 0 8px rgba(255,255,255,.34)) drop-shadow(0 0 16px var(--nf-glow))!important;
-  text-shadow:none!important;
+.hero h1.electric-title .energy-tail{
+  display:contents !important;
+  background:none !important;
+  filter:none !important;
+  text-shadow:none !important;
+  padding:0 !important;
 }
 .hero h1.electric-title .brand-n::after,
-.hero-copy h1.electric-title .brand-n::after,
-h1.electric-title .brand-n::after{
-  content:""!important;
-  position:absolute!important;
-  left:-.035em!important;
-  top:.14em!important;
-  width:.21em!important;
-  height:.58em!important;
-  border-radius:999px!important;
-  background:linear-gradient(180deg,transparent,var(--nf-tail),transparent)!important;
-  filter:blur(10px)!important;
-  opacity:.34!important;
-  z-index:-1!important;
-  animation:nfCoreStable 8s ease-in-out infinite!important;
-}
-.hero h1.electric-title .brand-y,
-.hero-copy h1.electric-title .brand-y,
-h1.electric-title .brand-y{
-  padding-right:.2em!important;
-  background:linear-gradient(104deg,var(--nf-title-1) 0%,var(--nf-title-3) 38%,var(--nf-tail) 72%,#ffffff 100%)!important;
-  background-size:150% 100%!important;
-  background-position:100% 50%!important;
-  -webkit-background-clip:text!important;
-  background-clip:text!important;
-  filter:drop-shadow(0 0 13px var(--nf-glow))!important;
-}
-.hero h1.electric-title .brand-y .energy-tail,
-.hero-copy h1.electric-title .brand-y .energy-tail,
-h1.electric-title .brand-y .energy-tail{
-  position:absolute!important;
-  right:-.075em!important;
-  bottom:.03em!important;
-  width:.31em!important;
-  height:.25em!important;
-  pointer-events:none!important;
-  background:radial-gradient(circle,rgba(255,255,255,.96) 0 10%,var(--nf-tail) 18% 36%,color-mix(in srgb,var(--nf-tail) 42%,transparent) 46%,transparent 72%)!important;
-  filter:drop-shadow(0 0 9px var(--nf-tail)) drop-shadow(0 0 19px var(--nf-glow))!important;
-  opacity:.74!important;
-  transform:rotate(-18deg)!important;
-  animation:nfTailStable 8.5s ease-in-out infinite!important;
-}
 .hero h1.electric-title .brand-y::after,
-.hero-copy h1.electric-title .brand-y::after,
-h1.electric-title .brand-y::after{
-  content:""!important;
-  position:absolute!important;
-  right:.035em!important;
-  bottom:.1em!important;
-  width:.14em!important;
-  height:.14em!important;
-  border-radius:50%!important;
-  background:rgba(255,255,255,.92)!important;
-  box-shadow:0 0 9px var(--nf-tail),0 0 18px var(--nf-glow)!important;
-  opacity:0!important;
-  animation:nfMicroStable 8.5s ease-in-out infinite!important;
+.hero h1.electric-title .energy-tail::after{
+  content:none !important;
+  display:none !important;
 }
-@keyframes nfTitleFlowStable{
-  0%,100%{background-position:0% 50%}
-  44%{background-position:100% 50%}
-  50%{background-position:84% 50%}
+
+body[data-theme="purple"] .hero h1.electric-title,
+body[data-theme="purple"] .hero-copy h1.electric-title,
+body[data-theme="purple"] h1.electric-title{
+  background:linear-gradient(112deg,#ffffff 0%,#eaf8ff 15%,#37e7ff 34%,#ffffff 48%,#8df0ff 63%,#ffffff 78%,#42ddff 100%) !important;
+  filter:drop-shadow(0 0 18px rgba(211,120,255,.52)) drop-shadow(0 0 48px rgba(157,63,255,.3)) !important;
 }
-@keyframes nfTitleArcStable{
-  0%,42%,48%,100%{opacity:0;transform:translateX(-7%) rotate(-2deg)}
-  43%{opacity:.14}
-  44%{opacity:.68;transform:translateX(0%) rotate(-2deg)}
-  45%{opacity:.18}
-  46%{opacity:.58;transform:translateX(4%) rotate(-2deg)}
-  47%{opacity:0}
+body[data-theme="purple"] .hero h1.electric-title::before,
+body[data-theme="purple"] h1.electric-title::before{
+  -webkit-text-stroke:1.1px rgba(211,120,255,.38) !important;
+  text-shadow:0 0 20px rgba(211,120,255,.34),0 0 54px rgba(157,63,255,.2) !important;
 }
-@keyframes nfCoreStable{0%,100%{opacity:.24;transform:scaleY(.88)}46%,56%{opacity:.46;transform:scaleY(1.04)}}
-@keyframes nfTailStable{0%,62%,100%{opacity:.52;transform:rotate(-18deg) scale(.9)}66%{opacity:.95;transform:rotate(-18deg) scale(1.08)}69%{opacity:.62;transform:rotate(-18deg) scale(.96)}}
-@keyframes nfMicroStable{0%,63%,72%,100%{opacity:0;transform:translate(0,0) scale(.55)}66%{opacity:.92;transform:translate(.04em,.02em) scale(.96)}68%{opacity:.42;transform:translate(.08em,.05em) scale(.72)}}
-@media (min-width:901px){
-  .hero h1.electric-title,.hero-copy h1.electric-title,h1.electric-title{
-    font-size:clamp(66px,5.55vw,96px)!important;
-    padding-right:.54em!important;
-    letter-spacing:-.047em!important;
-  }
+body[data-theme="purple"] .hero h1.electric-title::after,
+body[data-theme="purple"] h1.electric-title::after{
+  filter:drop-shadow(0 0 10px #d378ff) drop-shadow(0 0 24px rgba(157,63,255,.68)) !important;
 }
+
+body[data-theme="storm"] .hero h1.electric-title,
+body[data-theme="storm"] .hero-copy h1.electric-title,
+body[data-theme="storm"] h1.electric-title{
+  background:linear-gradient(112deg,#ffffff 0%,#eaf8ff 15%,#37e7ff 34%,#ffffff 48%,#8df0ff 63%,#ffffff 78%,#42ddff 100%) !important;
+  filter:drop-shadow(0 0 14px rgba(220,236,255,.42)) drop-shadow(0 0 36px rgba(129,178,239,.18)) !important;
+}
+body[data-theme="storm"] .hero h1.electric-title::before,
+body[data-theme="storm"] h1.electric-title::before{
+  -webkit-text-stroke:1px rgba(220,236,255,.28) !important;
+  text-shadow:0 0 16px rgba(220,236,255,.24),0 0 42px rgba(129,178,239,.14) !important;
+}
+body[data-theme="storm"] .hero h1.electric-title::after,
+body[data-theme="storm"] h1.electric-title::after{
+  opacity:0 !important;
+  background:linear-gradient(90deg,transparent,rgba(215,233,255,.06),rgba(255,255,255,.52),rgba(190,215,255,.48),transparent) !important;
+  filter:drop-shadow(0 0 8px #dcecff) drop-shadow(0 0 18px rgba(159,199,255,.42)) !important;
+}
+
+@keyframes stableTitleCharge{
+  0%,100%{background-position:0% 50%;}
+  45%{background-position:100% 50%;}
+  48%{background-position:92% 50%;}
+  52%{background-position:100% 50%;}
+}
+@keyframes stableTitleLightning{
+  0%,37%,44%,100%{opacity:0;transform:translateX(-8%) rotate(-2deg)}
+  38%{opacity:.12}
+  39%{opacity:.74;transform:translateX(0) rotate(-2deg)}
+  40%{opacity:.18}
+  41%{opacity:.68;transform:translateX(4%) rotate(-2deg)}
+  42%{opacity:0}
+}
+
 @media (max-width:760px){
-  .hero h1.electric-title,.hero-copy h1.electric-title,h1.electric-title{
-    padding-right:.34em!important;
+  .hero h1.electric-title,
+  .hero-copy h1.electric-title,
+  h1.electric-title{
+    font-size:44px !important;
+    letter-spacing:-.035em !important;
+    padding-right:.38em !important;
+    padding-bottom:.09em !important;
   }
-  .hero h1.electric-title .brand-y,.hero-copy h1.electric-title .brand-y,h1.electric-title .brand-y{padding-right:.14em!important}
-  .hero h1.electric-title .brand-y .energy-tail,.hero-copy h1.electric-title .brand-y .energy-tail,h1.electric-title .brand-y .energy-tail{right:-.055em!important;bottom:.055em!important;width:.25em!important;height:.2em!important}
 }

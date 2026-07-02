@@ -1,14 +1,9 @@
-# NaFunny HUB 1.2 Final
+# NaFunny HUB 1.2 Stable
 
-Финальная foundation-версия NaFunny HUB.
+Stable release based on NaFunny HUB 1.2 Gold Edition.
 
-Внутри:
-- единый Electric Flow логотип для ПК и телефона;
-- автоматическая попытка подтянуть Telegram Feed из @NaFunny и @TonNewbie;
-- fallback-карточки, если Telegram/proxy недоступны;
-- рабочий Ambient с rain.mp3;
-- Desktop + Mobile HUB;
-- Sponsors/Collaboration;
-- Crypto wallets + QR.
-
-Загружай все файлы в корень GitHub Pages репозитория с заменой.
+Fixes:
+- locked NaFunny wordmark gradient across Blue / Purple / Storm themes;
+- fixed the unfinished/grey tail on the letter y;
+- reduced Storm theme overexposure;
+- updated version labels from Gold to Stable.
