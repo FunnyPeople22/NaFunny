@@ -1,0 +1,143 @@
+/* =========================================================
+   NaFunny HUB 1.2.1 Logo Animation Fix
+   Fix: logo theme color rollback + desktop y-tail clipping
+   ========================================================= */
+
+:root {
+  --nafunny-logo-gradient: linear-gradient(90deg, #7eeaff 0%, #16cfff 45%, #aaf7ff 100%);
+  --nafunny-logo-glow: rgba(20, 210, 255, 0.72);
+  --nafunny-logo-shadow: rgba(115, 235, 255, 0.38);
+}
+
+body.theme-blue,
+html.theme-blue,
+[data-theme="blue"] {
+  --nafunny-logo-gradient: linear-gradient(90deg, #7eeaff 0%, #10c8ff 48%, #d8fbff 100%);
+  --nafunny-logo-glow: rgba(20, 210, 255, 0.72);
+  --nafunny-logo-shadow: rgba(115, 235, 255, 0.38);
+}
+
+body.theme-purple,
+html.theme-purple,
+[data-theme="purple"] {
+  --nafunny-logo-gradient: linear-gradient(90deg, #ffd6ff 0%, #e777ff 42%, #b867ff 72%, #fff1ff 100%);
+  --nafunny-logo-glow: rgba(218, 103, 255, 0.78);
+  --nafunny-logo-shadow: rgba(255, 152, 255, 0.42);
+}
+
+body.theme-storm,
+html.theme-storm,
+[data-theme="storm"] {
+  --nafunny-logo-gradient: linear-gradient(90deg, #f3fbff 0%, #c9d8e8 46%, #ffffff 100%);
+  --nafunny-logo-glow: rgba(210, 232, 255, 0.62);
+  --nafunny-logo-shadow: rgba(165, 205, 255, 0.32);
+}
+
+/* Add your actual logo class here if it has a different name */
+.nafunny-logo,
+.logo-nafunny,
+.hero-logo-text,
+.hero-title,
+.brand-title,
+.main-logo,
+.logo-text {
+  display: inline-block;
+  position: relative;
+  box-sizing: content-box;
+
+  /* Important: room for italic letters and the y tail */
+  padding-right: 0.18em;
+  padding-bottom: 0.12em;
+  margin-right: -0.04em;
+
+  overflow: visible !important;
+  white-space: nowrap;
+  line-height: 1.08;
+
+  color: transparent !important;
+  background: var(--nafunny-logo-gradient) !important;
+  background-image: var(--nafunny-logo-gradient) !important;
+  background-size: 100% 100% !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+
+  filter: drop-shadow(0 0 12px var(--nafunny-logo-glow));
+  text-shadow: 0 0 22px var(--nafunny-logo-shadow);
+
+  will-change: transform, opacity, filter;
+  transform: translateZ(0);
+  contain: paint;
+}
+
+/* Prevent parent containers from cutting the y tail */
+.hero,
+.hero-content,
+.hero-text,
+.logo-wrap,
+.title-wrap,
+.brand-wrap {
+  overflow: visible !important;
+}
+
+/* Safe animation: no color/background changes inside keyframes */
+.nafunny-logo.logo-animating,
+.logo-nafunny.logo-animating,
+.hero-logo-text.logo-animating,
+.hero-title.logo-animating,
+.brand-title.logo-animating,
+.main-logo.logo-animating,
+.logo-text.logo-animating {
+  animation: nafunnyLogoPulseSafe 2.8s ease-in-out infinite !important;
+}
+
+@keyframes nafunnyLogoPulseSafe {
+  0%, 100% {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+    filter: drop-shadow(0 0 12px var(--nafunny-logo-glow));
+    text-shadow: 0 0 22px var(--nafunny-logo-shadow);
+  }
+
+  50% {
+    opacity: 0.96;
+    transform: translateZ(0) scale(1.012);
+    filter: drop-shadow(0 0 18px var(--nafunny-logo-glow));
+    text-shadow: 0 0 30px var(--nafunny-logo-shadow);
+  }
+}
+
+/* Kill old animations that may animate gradient/color/background */
+.nafunny-logo::before,
+.logo-nafunny::before,
+.hero-logo-text::before,
+.hero-title::before,
+.brand-title::before,
+.main-logo::before,
+.logo-text::before,
+.nafunny-logo::after,
+.logo-nafunny::after,
+.hero-logo-text::after,
+.hero-title::after,
+.brand-title::after,
+.main-logo::after,
+.logo-text::after {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .nafunny-logo,
+  .logo-nafunny,
+  .hero-logo-text,
+  .hero-title,
+  .brand-title,
+  .main-logo,
+  .logo-text {
+    padding-right: 0.22em;
+    padding-bottom: 0.16em;
+    background-size: 100% 100% !important;
+  }
+}
