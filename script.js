@@ -5,7 +5,7 @@ const flash = $('#flash');
 function screenFlash(){ flash.classList.remove('show'); void flash.offsetWidth; flash.classList.add('show'); }
 
 window.addEventListener('load', () => {
-  setTimeout(() => $('#preloader')?.classList.add('hide'), 1450);
+  setTimeout(() => $('#preloader')?.classList.add('hide'), 700);
 });
 
 // Theme switcher — now changes the whole page, not only accents
@@ -35,7 +35,7 @@ function ensureAmbientAudio(){
   ambientAudio = new Audio('rain.mp3');
   ambientAudio.loop = true;
   ambientAudio.preload = 'auto';
-  ambientAudio.volume = 0.46; // audible, but still soft
+  ambientAudio.volume = 0.62; // soft but clearly audible
   return ambientAudio;
 }
 
@@ -44,7 +44,7 @@ function ensureAudioContext(){
   if(audioCtx.state === 'suspended') audioCtx.resume();
   if(!thunderMaster){
     thunderMaster = audioCtx.createGain();
-    thunderMaster.gain.value = 0.23;
+    thunderMaster.gain.value = 0.28;
     thunderMaster.connect(audioCtx.destination);
   }
 }
@@ -223,3 +223,87 @@ logoBtn.addEventListener('click', () => {
 
 window.addEventListener('resize', resize);
 resize(); drawParticles(); drawRain(); drawLightning();
+
+
+// HUB 1.2 — Cinematic intro, mobile settings and audio unlock prompt
+const cinematicIntro = $('#cinematicIntro');
+const replayIntroBtn = $('#replayIntro');
+function playCinematicIntro(force=false){
+  if(!cinematicIntro) return;
+  if(!force && localStorage.getItem('nafunny-intro-seen-v12') === 'yes') return;
+  cinematicIntro.classList.remove('hide');
+  cinematicIntro.classList.add('show');
+  setTimeout(() => {
+    cinematicIntro.classList.add('hide');
+    cinematicIntro.classList.remove('show');
+    localStorage.setItem('nafunny-intro-seen-v12','yes');
+  }, 5000);
+}
+window.addEventListener('load', () => setTimeout(() => playCinematicIntro(false), 150));
+replayIntroBtn?.addEventListener('click', () => { closeHubSettings(); playCinematicIntro(true); });
+
+// Mobile HUB settings
+const mobileHubToggle = $('#mobileHubToggle');
+const hubSettings = $('#hubSettings');
+const hubSettingsClose = $('#hubSettingsClose');
+function openHubSettings(){ hubSettings?.classList.add('open'); hubSettings?.setAttribute('aria-hidden','false'); }
+function closeHubSettings(){ hubSettings?.classList.remove('open'); hubSettings?.setAttribute('aria-hidden','true'); }
+mobileHubToggle?.addEventListener('click', openHubSettings);
+hubSettingsClose?.addEventListener('click', closeHubSettings);
+hubSettings?.addEventListener('click', e => { if(e.target === hubSettings) closeHubSettings(); });
+
+function syncThemeButtons(){
+  const theme = document.body.dataset.theme;
+  $$('[data-theme-choice]').forEach(b => b.classList.toggle('active', b.dataset.themeChoice === theme));
+}
+$$('[data-theme-choice]').forEach(b => b.addEventListener('click', () => setTimeout(syncThemeButtons, 0)));
+syncThemeButtons();
+
+// Atmosphere unlock prompt for iPhone / Telegram WebView
+const atmospherePrompt = $('#atmospherePrompt');
+const atmosphereClose = $('#atmosphereClose');
+const enableAtmosphere = $('#enableAtmosphere');
+const ambientToggleMobile = $('#ambientToggleMobile');
+const ambientVolume = $('#ambientVolume');
+let atmosphereUnlocked = false;
+function openAtmospherePrompt(){ atmospherePrompt?.classList.add('open'); atmospherePrompt?.setAttribute('aria-hidden','false'); }
+function closeAtmospherePrompt(){ atmospherePrompt?.classList.remove('open'); atmospherePrompt?.setAttribute('aria-hidden','true'); }
+atmosphereClose?.addEventListener('click', closeAtmospherePrompt);
+atmospherePrompt?.addEventListener('click', e => { if(e.target === atmospherePrompt) closeAtmospherePrompt(); });
+function syncAmbientButtons(){
+  [ambientToggle, ambientToggleMobile].forEach(btn => {
+    if(!btn) return;
+    btn.textContent = ambientOn ? '♪ Ambient ON' : '♪ Ambient OFF';
+    btn.classList.toggle('on', ambientOn);
+    btn.setAttribute('aria-pressed', ambientOn ? 'true' : 'false');
+  });
+}
+async function requestAmbient(){
+  try{
+    await startAmbient();
+    atmosphereUnlocked = true;
+    closeAtmospherePrompt();
+    syncAmbientButtons();
+  }catch(e){
+    openAtmospherePrompt();
+  }
+  setTimeout(syncAmbientButtons, 100);
+}
+ambientToggleMobile?.addEventListener('click', () => ambientOn ? (stopAmbient(), syncAmbientButtons()) : openAtmospherePrompt());
+enableAtmosphere?.addEventListener('click', requestAmbient);
+ambientToggle?.addEventListener('click', () => {
+  setTimeout(() => {
+    syncAmbientButtons();
+    if(!ambientOn && !atmosphereUnlocked) openAtmospherePrompt();
+  }, 180);
+});
+ambientVolume?.addEventListener('input', () => {
+  const v = Number(ambientVolume.value) / 100;
+  if(ambientAudio) ambientAudio.volume = Math.max(.05, Math.min(.95, v));
+  if(thunderMaster) thunderMaster.gain.value = .08 + v * .32;
+});
+
+// If a user taps anywhere after prompt is open, keep sound locked behind Enable button only.
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') { closeHubSettings(); closeAtmospherePrompt(); }
+});

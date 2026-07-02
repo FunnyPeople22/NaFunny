@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#020817" />
-  <title>NaFunny HUB 1.1 Storm Update</title>
+  <title>NaFunny HUB 1.2 Cinematic Update</title>
   <meta name="description" content="NaFunny HUB — Dota 2, streams, community, socials, donate and crypto wallets." />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
@@ -14,13 +14,26 @@
   <canvas id="rainCanvas" aria-hidden="true"></canvas>
   <canvas id="lightningCanvas" aria-hidden="true"></canvas>
 
+
+  <div class="cinematic-intro" id="cinematicIntro" aria-hidden="true">
+    <div class="intro-rain" aria-hidden="true"></div>
+    <div class="intro-clouds" aria-hidden="true"></div>
+    <div class="intro-flash" aria-hidden="true"></div>
+    <div class="intro-card">
+      <img src="logo.webp" alt="NaFunny logo" />
+      <h2>NaFunny HUB</h2>
+      <p>Powered by Community</p>
+      <small>Made with ☕, electricity and countless ideas.</small>
+    </div>
+  </div>
+
   <div class="storm-dimmer" aria-hidden="true"></div>
   <div class="clouds" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="preloader" id="preloader" aria-hidden="true">
     <div class="preloader-card">
       <img src="logo.webp" alt="" />
       <strong>NaFunny HUB</strong>
-      <span>Storm Update Loading</span>
+      <span>Cinematic Update Loading</span>
     </div>
   </div>
 
@@ -36,6 +49,44 @@
     </details>
     <button class="ambient-toggle" id="ambientToggle" type="button" aria-pressed="false">♪ Ambient OFF</button>
   </aside>
+
+  <button class="mobile-hub-toggle" id="mobileHubToggle" type="button" aria-label="Open HUB Settings">⚙️ HUB</button>
+
+  <div class="hub-settings" id="hubSettings" aria-hidden="true">
+    <div class="hub-settings-panel">
+      <button class="hub-settings-close" id="hubSettingsClose" type="button" aria-label="Close">×</button>
+      <h3>HUB Settings</h3>
+      <div class="setting-group">
+        <strong>Theme</strong>
+        <button type="button" data-theme-choice="electric"><span>●</span> Electric Blue</button>
+        <button type="button" data-theme-choice="purple"><span>●</span> Cyber Purple</button>
+        <button type="button" data-theme-choice="storm"><span>●</span> Night Storm</button>
+      </div>
+      <div class="setting-group">
+        <strong>Atmosphere</strong>
+        <button class="ambient-toggle mobile" id="ambientToggleMobile" type="button" aria-pressed="false">♪ Ambient OFF</button>
+        <label class="volume-row">Volume <input id="ambientVolume" type="range" min="0" max="100" value="72" /></label>
+      </div>
+      <div class="setting-group">
+        <strong>Electric Mode</strong>
+        <p>Secret: 5 quick taps on cat. Storm lasts 10 seconds.</p>
+      </div>
+      <div class="setting-group">
+        <strong>Cinematic Intro</strong>
+        <button id="replayIntro" type="button">Replay 5s Intro</button>
+      </div>
+      <small>NaFunny HUB 1.2</small>
+    </div>
+  </div>
+
+  <div class="atmosphere-prompt" id="atmospherePrompt" aria-hidden="true">
+    <div class="atmosphere-box">
+      <button class="atmosphere-close" id="atmosphereClose" type="button" aria-label="Close">×</button>
+      <h3>🔊 Enable Atmosphere?</h3>
+      <p>Soft rain & distant thunder. Works after one direct tap.</p>
+      <button id="enableAtmosphere" type="button">Enable</button>
+    </div>
+  </div>
 
   <div class="storm-widget hint" id="stormWidget" aria-hidden="true">
     <strong>⚡ ELECTRIC MODE</strong>

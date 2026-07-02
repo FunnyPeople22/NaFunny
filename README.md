@@ -1,15 +1,3 @@
-# NaFunny HUB 1.1 — Patch 3
+# NaFunny HUB 1.2 Cinematic Update
 
-Исправления:
-- Electric Mode только как пасхалка: 5 быстрых кликов по коту.
-- Длительность шторма: 10 секунд.
-- Меньше молний и мягче затемнение.
-- Более заметные облака, но без перегруза.
-- Ambient стал мягче: лёгкий дождь без ощущения шипящей рации.
-- Cyber Purple и Night Storm сильнее перекрашивают весь сайт, включая лого через CSS-фильтры.
-- Обновлён блок About Me.
-
-Загрузка: залить все файлы из архива в корень репозитория с заменой.
-
-
-Patch 4: Ambient audio uses rain.mp3 for a softer, more natural rain sound. Upload rain.mp3 together with all files.
+GitHub Pages files for NaFunny HUB. Upload all files into the repository root.
