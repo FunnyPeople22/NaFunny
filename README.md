@@ -1,12 +1,14 @@
-# NaFunny HUB 1.1 Patch 6 Fixed
+# NaFunny HUB 1.2 — Content Update
 
-Исправленный патч Desktop HUB Menu.
+Upload all files to the root of the GitHub repository.
 
-Что сохранено и исправлено:
-- вернул рабочий rain.mp3 и Ambient из Patch 5;
-- добавил Desktop HUB Menu с HTML + CSS + JS;
-- сохранил мобильную нижнюю навигацию;
-- поправил центровку лого на телефоне;
-- Theme / Ambient / Volume доступны и из верхних контролов, и из Desktop HUB.
+Included:
+- index.html
+- style.css
+- script.js
+- logo.png / logo.webp
+- favicon.png
+- rain.mp3
+- QR images
 
-Загружать все файлы из архива в корень репозитория с заменой.
+HUB 1.2 adds Content blocks, Telegram Feed placeholder, Partners/Sponsors block, desktop and mobile HUB access, and keeps the custom ambient rain audio.
