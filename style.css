@@ -616,3 +616,146 @@ body[data-theme="storm"] h1.electric-title::after{
     height:.095em !important;
   }
 }
+
+/* ===== NaFunny HUB 1.2.5 — SAFE LOGO LIGHTNING FX =====
+   Adds visible lightning/sparks on top of the stable logo.
+   Important: no background-clip, no text masks, no rectangle plates.
+*/
+.hero h1.electric-title,
+.hero-copy h1.electric-title,
+h1.electric-title{
+  --nf-bolt: #ffffff;
+  --nf-bolt-2: #42f2ff;
+  --nf-bolt-glow: rgba(41,233,255,.88);
+}
+body[data-theme="purple"] .hero h1.electric-title,
+body[data-theme="purple"] .hero-copy h1.electric-title,
+body[data-theme="purple"] h1.electric-title{
+  --nf-bolt: #ffffff;
+  --nf-bolt-2: #f0a8ff;
+  --nf-bolt-glow: rgba(211,120,255,.9);
+}
+body[data-theme="storm"] .hero h1.electric-title,
+body[data-theme="storm"] .hero-copy h1.electric-title,
+body[data-theme="storm"] h1.electric-title{
+  --nf-bolt: #ffffff;
+  --nf-bolt-2: #dcecff;
+  --nf-bolt-glow: rgba(220,236,255,.76);
+}
+
+.hero h1.electric-title .title-bolt,
+.hero-copy h1.electric-title .title-bolt,
+h1.electric-title .title-bolt,
+.hero h1.electric-title .title-spark,
+.hero-copy h1.electric-title .title-spark,
+h1.electric-title .title-spark{
+  position:absolute !important;
+  display:block !important;
+  pointer-events:none !important;
+  z-index:4 !important;
+  background:none !important;
+  -webkit-background-clip:border-box !important;
+  background-clip:border-box !important;
+  -webkit-text-fill-color:initial !important;
+}
+
+/* Main thin zig-zag strike across the letters */
+.hero h1.electric-title .title-bolt-main,
+.hero-copy h1.electric-title .title-bolt-main,
+h1.electric-title .title-bolt-main{
+  left:.05em !important;
+  right:.34em !important;
+  top:.53em !important;
+  height:.12em !important;
+  opacity:0;
+  background:linear-gradient(90deg,transparent 0%,var(--nf-bolt) 35%,var(--nf-bolt-2) 55%,transparent 100%) !important;
+  clip-path:polygon(0 58%,10% 58%,14% 8%,21% 86%,28% 43%,37% 43%,42% 6%,50% 88%,58% 38%,66% 38%,71% 86%,78% 50%,88% 50%,93% 20%,100% 58%,100% 76%,0 76%) !important;
+  filter:drop-shadow(0 0 8px var(--nf-bolt)) drop-shadow(0 0 22px var(--nf-bolt-glow)) !important;
+  mix-blend-mode:screen !important;
+  transform:translateX(-9%) rotate(-2deg) translateZ(0);
+  animation:nfLogoBoltMain 5.8s ease-in-out infinite !important;
+}
+
+/* Small diagonal hits near N and y */
+.hero h1.electric-title .title-bolt-mini,
+.hero-copy h1.electric-title .title-bolt-mini,
+h1.electric-title .title-bolt-mini{
+  width:.42em !important;
+  height:.105em !important;
+  opacity:0;
+  background:linear-gradient(90deg,transparent 0%,var(--nf-bolt) 32%,var(--nf-bolt-2) 70%,transparent 100%) !important;
+  clip-path:polygon(0 45%,34% 45%,44% 0,56% 100%,66% 48%,100% 48%,100% 68%,0 68%) !important;
+  filter:drop-shadow(0 0 7px var(--nf-bolt)) drop-shadow(0 0 16px var(--nf-bolt-glow)) !important;
+  mix-blend-mode:screen !important;
+}
+.hero h1.electric-title .title-bolt-mini.one,
+.hero-copy h1.electric-title .title-bolt-mini.one,
+h1.electric-title .title-bolt-mini.one{
+  left:.18em !important;
+  top:.20em !important;
+  transform:rotate(-34deg) translateZ(0);
+  animation:nfLogoMiniBolt 5.8s ease-in-out infinite !important;
+}
+.hero h1.electric-title .title-bolt-mini.two,
+.hero-copy h1.electric-title .title-bolt-mini.two,
+h1.electric-title .title-bolt-mini.two{
+  right:.18em !important;
+  bottom:.13em !important;
+  transform:rotate(-18deg) translateZ(0);
+  animation:nfLogoMiniBolt 5.8s ease-in-out infinite .42s !important;
+}
+
+/* Tiny sparks */
+.hero h1.electric-title .title-spark,
+.hero-copy h1.electric-title .title-spark,
+h1.electric-title .title-spark{
+  width:.09em !important;
+  height:.09em !important;
+  border-radius:50% !important;
+  opacity:0;
+  background:radial-gradient(circle,var(--nf-bolt) 0 20%,var(--nf-bolt-2) 35%,transparent 72%) !important;
+  filter:drop-shadow(0 0 7px var(--nf-bolt)) drop-shadow(0 0 14px var(--nf-bolt-glow)) !important;
+  mix-blend-mode:screen !important;
+  animation:nfLogoSpark 5.8s ease-in-out infinite !important;
+}
+.hero h1.electric-title .title-spark.s1,
+.hero-copy h1.electric-title .title-spark.s1,
+h1.electric-title .title-spark.s1{left:.08em;top:.16em;animation-delay:.10s!important;}
+.hero h1.electric-title .title-spark.s2,
+.hero-copy h1.electric-title .title-spark.s2,
+h1.electric-title .title-spark.s2{left:1.55em;top:.05em;animation-delay:.30s!important;}
+.hero h1.electric-title .title-spark.s3,
+.hero-copy h1.electric-title .title-spark.s3,
+h1.electric-title .title-spark.s3{right:.22em;bottom:.09em;animation-delay:.54s!important;}
+
+@keyframes nfLogoBoltMain{
+  0%,24%,31%,100%{opacity:0;transform:translateX(-9%) rotate(-2deg) translateZ(0);}
+  25%{opacity:.25;}
+  26%{opacity:1;transform:translateX(0) rotate(-2deg) translateZ(0);}
+  27%{opacity:.18;}
+  28%{opacity:.95;transform:translateX(4%) rotate(-2deg) translateZ(0);}
+  29%{opacity:0;}
+}
+@keyframes nfLogoMiniBolt{
+  0%,21%,34%,100%{opacity:0;}
+  23%{opacity:.9;}
+  24%{opacity:.1;}
+  27%{opacity:1;}
+  30%{opacity:0;}
+}
+@keyframes nfLogoSpark{
+  0%,22%,34%,100%{opacity:0;transform:scale(.4) translateZ(0);}
+  24%{opacity:1;transform:scale(1.25) translateZ(0);}
+  26%{opacity:.35;transform:scale(.75) translateZ(0);}
+  28%{opacity:1;transform:scale(1) translateZ(0);}
+  31%{opacity:0;transform:scale(.35) translateZ(0);}
+}
+
+@media (max-width:520px){
+  .hero h1.electric-title .title-bolt-main,
+  .hero-copy h1.electric-title .title-bolt-main,
+  h1.electric-title .title-bolt-main{right:.30em!important;height:.105em!important;}
+  .hero h1.electric-title .title-bolt-mini,
+  .hero-copy h1.electric-title .title-bolt-mini,
+  h1.electric-title .title-bolt-mini{width:.36em!important;height:.095em!important;}
+}
