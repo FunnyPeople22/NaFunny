@@ -23,19 +23,21 @@ $$('[data-theme-choice]').forEach(btn => {
   });
 });
 
-// Ambient sound — real soft rain file + subtle distant thunder
+// Ambient Engine 2.0 — user's real rain MP3 + fade + saved state
 let ambientAudio = null;
 let audioCtx = null;
 let thunderMaster = null;
 let ambientOn = false;
+let ambientFadeTimer = null;
 const ambientToggle = $('#ambientToggle');
+const DEFAULT_AMBIENT_VOLUME = Number(localStorage.getItem('nafunny-ambient-volume') || 42) / 100;
 
 function ensureAmbientAudio(){
   if(ambientAudio) return ambientAudio;
   ambientAudio = new Audio('rain.mp3');
   ambientAudio.loop = true;
   ambientAudio.preload = 'auto';
-  ambientAudio.volume = 0.62; // soft but clearly audible
+  ambientAudio.volume = 0;
   return ambientAudio;
 }
 
@@ -44,9 +46,22 @@ function ensureAudioContext(){
   if(audioCtx.state === 'suspended') audioCtx.resume();
   if(!thunderMaster){
     thunderMaster = audioCtx.createGain();
-    thunderMaster.gain.value = 0.28;
+    thunderMaster.gain.value = 0.16;
     thunderMaster.connect(audioCtx.destination);
   }
+}
+
+function fadeAudio(target, duration = 1800){
+  const audio = ensureAmbientAudio();
+  clearInterval(ambientFadeTimer);
+  const startVol = audio.volume;
+  const started = performance.now();
+  ambientFadeTimer = setInterval(() => {
+    const t = Math.min(1, (performance.now() - started) / duration);
+    const eased = 1 - Math.pow(1 - t, 3);
+    audio.volume = startVol + (target - startVol) * eased;
+    if(t >= 1){ clearInterval(ambientFadeTimer); audio.volume = target; }
+  }, 40);
 }
 
 async function startAmbient(){
@@ -55,64 +70,44 @@ async function startAmbient(){
   try{
     await audio.play();
     ambientOn = true;
-    ambientToggle.textContent = '♪ Ambient ON';
-    ambientToggle.classList.add('on');
-    ambientToggle.setAttribute('aria-pressed','true');
-    showToast('Soft rain ON');
+    localStorage.setItem('nafunny-ambient-enabled','yes');
+    fadeAudio(DEFAULT_AMBIENT_VOLUME, 1600);
+    syncAmbientButtons?.();
+    showToast('Atmosphere ON');
   }catch(err){
-    showToast('Tap again to enable sound');
+    localStorage.setItem('nafunny-ambient-enabled','no');
+    showToast('Tap Enable Atmosphere');
+    throw err;
   }
 }
 
 function stopAmbient(){
-  if(ambientAudio){ ambientAudio.pause(); }
+  if(ambientAudio){
+    fadeAudio(0, 1100);
+    setTimeout(() => { if(!ambientOn && ambientAudio) ambientAudio.pause(); }, 1200);
+  }
   ambientOn = false;
-  ambientToggle.textContent = '♪ Ambient OFF';
-  ambientToggle.classList.remove('on');
-  ambientToggle.setAttribute('aria-pressed','false');
+  localStorage.setItem('nafunny-ambient-enabled','no');
+  syncAmbientButtons?.();
   showToast('Ambient OFF');
 }
 
 function thunder(level = 1){
   if(!ambientOn || !audioCtx || !thunderMaster) return;
   const now = audioCtx.currentTime;
-
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
   const filter = audioCtx.createBiquadFilter();
-  const noiseBuffer = audioCtx.createBuffer(1, audioCtx.sampleRate * 2.4, audioCtx.sampleRate);
-  const data = noiseBuffer.getChannelData(0);
-  let last = 0;
-  for(let i=0;i<data.length;i++){
-    const white = Math.random()*2-1;
-    last = last*.94 + white*.06;
-    data[i] = last * 0.35;
-  }
-  const noise = audioCtx.createBufferSource();
-  noise.buffer = noiseBuffer;
-  const noiseFilter = audioCtx.createBiquadFilter();
-  const noiseGain = audioCtx.createGain();
-
   osc.type = 'sine';
-  osc.frequency.setValueAtTime(30 + Math.random()*14, now);
-  osc.frequency.exponentialRampToValueAtTime(18 + Math.random()*8, now + 1.6);
-  filter.type = 'lowpass'; filter.frequency.value = 115; filter.Q.value = .25;
-  noiseFilter.type = 'lowpass'; noiseFilter.frequency.value = 170; noiseFilter.Q.value = .18;
-
+  osc.frequency.setValueAtTime(32 + Math.random()*10, now);
+  osc.frequency.exponentialRampToValueAtTime(18 + Math.random()*5, now + 1.7);
+  filter.type = 'lowpass'; filter.frequency.value = 95; filter.Q.value = .2;
   gain.gain.setValueAtTime(0.0001, now);
-  gain.gain.exponentialRampToValueAtTime(0.08 * level, now + 0.12);
-  gain.gain.exponentialRampToValueAtTime(0.0001, now + 2.1);
-  noiseGain.gain.setValueAtTime(0.0001, now);
-  noiseGain.gain.exponentialRampToValueAtTime(0.035 * level, now + 0.2);
-  noiseGain.gain.exponentialRampToValueAtTime(0.0001, now + 2.35);
-
+  gain.gain.exponentialRampToValueAtTime(0.045 * level, now + 0.18);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 2.3);
   osc.connect(filter).connect(gain).connect(thunderMaster);
-  noise.connect(noiseFilter).connect(noiseGain).connect(thunderMaster);
-  osc.start(now); noise.start(now);
-  osc.stop(now + 2.2); noise.stop(now + 2.45);
+  osc.start(now); osc.stop(now + 2.45);
 }
-
-ambientToggle?.addEventListener('click', () => ambientOn ? stopAmbient() : startAmbient());
 
 // Active nav
 const navLinks = $$('.bottom-nav a');
@@ -230,13 +225,13 @@ const cinematicIntro = $('#cinematicIntro');
 const replayIntroBtn = $('#replayIntro');
 function playCinematicIntro(force=false){
   if(!cinematicIntro) return;
-  if(!force && localStorage.getItem('nafunny-intro-seen-v12') === 'yes') return;
+  if(!force && localStorage.getItem('nafunny-intro-seen-v121') === 'yes') return;
   cinematicIntro.classList.remove('hide');
   cinematicIntro.classList.add('show');
   setTimeout(() => {
     cinematicIntro.classList.add('hide');
     cinematicIntro.classList.remove('show');
-    localStorage.setItem('nafunny-intro-seen-v12','yes');
+    localStorage.setItem('nafunny-intro-seen-v121','yes');
   }, 5000);
 }
 window.addEventListener('load', () => setTimeout(() => playCinematicIntro(false), 150));
@@ -265,6 +260,7 @@ const atmosphereClose = $('#atmosphereClose');
 const enableAtmosphere = $('#enableAtmosphere');
 const ambientToggleMobile = $('#ambientToggleMobile');
 const ambientVolume = $('#ambientVolume');
+if(ambientVolume) ambientVolume.value = Math.round(DEFAULT_AMBIENT_VOLUME * 100);
 let atmosphereUnlocked = false;
 function openAtmospherePrompt(){ atmospherePrompt?.classList.add('open'); atmospherePrompt?.setAttribute('aria-hidden','false'); }
 function closeAtmospherePrompt(){ atmospherePrompt?.classList.remove('open'); atmospherePrompt?.setAttribute('aria-hidden','true'); }
@@ -291,19 +287,70 @@ async function requestAmbient(){
 }
 ambientToggleMobile?.addEventListener('click', () => ambientOn ? (stopAmbient(), syncAmbientButtons()) : openAtmospherePrompt());
 enableAtmosphere?.addEventListener('click', requestAmbient);
-ambientToggle?.addEventListener('click', () => {
-  setTimeout(() => {
-    syncAmbientButtons();
-    if(!ambientOn && !atmosphereUnlocked) openAtmospherePrompt();
-  }, 180);
-});
+ambientToggle?.addEventListener('click', () => ambientOn ? (stopAmbient(), syncAmbientButtons()) : openAtmospherePrompt());
 ambientVolume?.addEventListener('input', () => {
-  const v = Number(ambientVolume.value) / 100;
-  if(ambientAudio) ambientAudio.volume = Math.max(.05, Math.min(.95, v));
-  if(thunderMaster) thunderMaster.gain.value = .08 + v * .32;
+  const v = Math.max(.05, Math.min(.95, Number(ambientVolume.value) / 100));
+  localStorage.setItem('nafunny-ambient-volume', String(Math.round(v*100)));
+  if(ambientAudio && ambientOn) ambientAudio.volume = v;
+  if(thunderMaster) thunderMaster.gain.value = .06 + v * .22;
 });
 
 // If a user taps anywhere after prompt is open, keep sound locked behind Enable button only.
 document.addEventListener('keydown', e => {
   if(e.key === 'Escape') { closeHubSettings(); closeAtmospherePrompt(); }
+});
+
+
+// HUB 1.2.1 — Telegram feed, footer easter egg and saved atmosphere hint
+function escapeHtml(str){ return String(str || '').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
+function timeAgo(dateStr){
+  const d = dateStr ? new Date(dateStr) : null;
+  if(!d || Number.isNaN(+d)) return 'Latest post';
+  const sec = Math.floor((Date.now() - d.getTime())/1000);
+  if(sec < 3600) return Math.max(1,Math.floor(sec/60)) + ' min ago';
+  if(sec < 86400) return Math.floor(sec/3600) + 'h ago';
+  return Math.floor(sec/86400) + 'd ago';
+}
+function fallbackTelegramFeed(){
+  const feed = $('#telegramFeed');
+  if(!feed) return;
+  feed.innerHTML = [1,2,3].map((n) => `
+    <a class="feed-item" href="https://t.me/NaFunny" target="_blank" rel="noopener noreferrer">
+      <strong>@NaFunny — latest post ${n}</strong>
+      <p>Telegram feed could not be loaded inside this browser. Open the channel to view the latest posts.</p>
+      <small>Open in Telegram →</small>
+    </a>`).join('');
+}
+async function loadTelegramFeed(){
+  const feed = $('#telegramFeed');
+  if(!feed) return;
+  const url = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://t.me/s/NaFunny');
+  try{
+    const res = await fetch(url, {cache:'no-store'});
+    if(!res.ok) throw new Error('feed failed');
+    const html = await res.text();
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const messages = [...doc.querySelectorAll('.tgme_widget_message')].slice(-3).reverse();
+    if(!messages.length) throw new Error('empty feed');
+    feed.innerHTML = messages.map((m) => {
+      const text = (m.querySelector('.tgme_widget_message_text')?.textContent || 'Media post from @NaFunny').trim().replace(/\s+/g,' ');
+      const link = m.querySelector('.tgme_widget_message_date')?.href || 'https://t.me/NaFunny';
+      const dt = m.querySelector('time')?.getAttribute('datetime');
+      return `<a class="feed-item" href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer"><strong>@NaFunny</strong><p>${escapeHtml(text)}</p><small>${escapeHtml(timeAgo(dt))} • Read →</small></a>`;
+    }).join('');
+  }catch(e){ fallbackTelegramFeed(); }
+}
+loadTelegramFeed();
+
+const footerSecret = $('#footerSecret');
+const versionModal = $('#versionModal');
+const versionClose = $('#versionClose');
+footerSecret?.addEventListener('click', () => { versionModal?.classList.add('open'); versionModal?.setAttribute('aria-hidden','false'); });
+versionClose?.addEventListener('click', () => { versionModal?.classList.remove('open'); versionModal?.setAttribute('aria-hidden','true'); });
+versionModal?.addEventListener('click', e => { if(e.target === versionModal){ versionModal.classList.remove('open'); versionModal.setAttribute('aria-hidden','true'); }});
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    if(localStorage.getItem('nafunny-ambient-enabled') === 'yes') openAtmospherePrompt();
+  }, 900);
 });

@@ -1,3 +1,5 @@
-# NaFunny HUB 1.2 Cinematic Update
+# NaFunny HUB 1.2.1 — Community Update
 
-GitHub Pages files for NaFunny HUB. Upload all files into the repository root.
+Upload all files to the root of the GitHub Pages repository.
+
+Includes: Ambient Engine 2.0, Telegram Feed, Sponsors / Partners, Events, mobile polish and footer easter egg.
