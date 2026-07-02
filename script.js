@@ -257,6 +257,7 @@ logoBtn.addEventListener('click', () => {
 window.addEventListener('resize', resize);
 resize(); drawParticles(); drawRain(); drawLightning();
 
+
 // HUB 1.1 Patch 6: Desktop HUB Menu
 const desktopHub = $('#desktopHub');
 const hubTrigger = $('#hubTrigger');
