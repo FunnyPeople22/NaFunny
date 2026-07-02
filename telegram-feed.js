@@ -1,49 +1,166 @@
-async function loadTelegramFeed() {
-  const root = document.querySelector("#telegram-feed-list");
-  if (!root) return;
+/*
+  NaFunny HUB 1.3 Stable Telegram Feed
+  Shows 2 posts from @NaFunny + 2 posts from @TonNewbie from feed/telegram-feed.json
+*/
 
-  try {
-    const response = await fetch("feed/telegram-feed.json?ts=" + Date.now());
-    const data = await response.json();
-    const posts = Array.isArray(data.posts) ? data.posts : [];
+(function () {
+  const FEED_URL = "feed/telegram-feed.json";
+  const CHANNEL_ORDER = ["NaFunny", "TonNewbie"];
+  const MAX_PER_CHANNEL = 2;
 
-    root.innerHTML = posts.map(post => {
-      const date = post.date ? new Date(post.date).toLocaleString("ru-RU", {
-        day: "2-digit",
-        month: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit"
-      }) : "";
+  document.addEventListener("DOMContentLoaded", loadTelegramFeed);
 
-      const image = post.image
-        ? `<img class="telegram-post-image" src="${post.image}" alt="">`
-        : "";
+  async function loadTelegramFeed() {
+    const root = document.querySelector("#telegram-feed-list");
+    if (!root) return;
 
-      return `
-        <article class="telegram-post-card">
-          <div class="telegram-post-channel">📢 @${post.channelTitle || post.channel}</div>
-          ${image}
-          <div class="telegram-post-text">${escapeHtml(post.text || "")}</div>
-          <div class="telegram-post-footer">
-            <span class="telegram-post-date">${date}</span>
-            <a class="telegram-post-link" href="${post.url}" target="_blank" rel="noopener">Open in Telegram</a>
+    root.innerHTML = `
+      <div class="telegram-feed-loading">
+        <span></span>
+        Loading Telegram Feed...
+      </div>
+    `;
+
+    try {
+      const response = await fetch(`${FEED_URL}?v=${Date.now()}`, { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+      const data = await response.json();
+      const posts = normalizePosts(data.posts || []);
+      const grouped = groupPosts(posts);
+
+      root.innerHTML = CHANNEL_ORDER.map(channel => renderChannelBlock(channel, grouped[channel] || [])).join("");
+
+      if (!posts.length) {
+        root.innerHTML = `
+          <div class="telegram-feed-empty">
+            Telegram Feed пока пуст. Запусти GitHub Actions → Update Telegram Feed.
           </div>
-        </article>
+        `;
+      }
+    } catch (error) {
+      console.error("Telegram Feed error:", error);
+      root.innerHTML = `
+        <div class="telegram-feed-empty">
+          Не удалось загрузить Telegram Feed. Проверь файл feed/telegram-feed.json.
+        </div>
       `;
-    }).join("");
-  } catch (error) {
-    root.innerHTML = `<div class="telegram-post-card">Не удалось загрузить Telegram Feed.</div>`;
-    console.error(error);
+    }
   }
-}
 
-function escapeHtml(value) {
-  return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
+  function normalizePosts(posts) {
+    return posts
+      .filter(Boolean)
+      .map(post => ({
+        channel: cleanChannel(post.channel || post.channelTitle || ""),
+        channelTitle: post.channelTitle || cleanChannel(post.channel || ""),
+        text: String(post.text || "").trim(),
+        date: post.date || "",
+        url: post.url || "#",
+        image: post.image || "",
+        views: post.views || "",
+        error: Boolean(post.error)
+      }))
+      .filter(post => post.text || post.image);
+  }
 
-document.addEventListener("DOMContentLoaded", loadTelegramFeed);
+  function cleanChannel(value) {
+    return String(value).replace(/^@/, "").trim();
+  }
+
+  function groupPosts(posts) {
+    const grouped = {};
+
+    for (const channel of CHANNEL_ORDER) grouped[channel] = [];
+
+    for (const post of posts) {
+      const channel = CHANNEL_ORDER.find(name => name.toLowerCase() === post.channel.toLowerCase()) || post.channel;
+      if (!grouped[channel]) grouped[channel] = [];
+      if (grouped[channel].length < MAX_PER_CHANNEL) grouped[channel].push(post);
+    }
+
+    return grouped;
+  }
+
+  function renderChannelBlock(channel, posts) {
+    const icon = channel === "TonNewbie" ? "💎" : "🎮";
+    const title = channel === "TonNewbie" ? "TonNewbie" : "NaFunny";
+
+    const cards = posts.length
+      ? posts.map(renderPostCard).join("")
+      : `<article class="telegram-post-card telegram-post-placeholder">
+           <div class="telegram-post-text">Посты @${title} пока не загрузились.</div>
+         </article>`;
+
+    return `
+      <div class="telegram-channel-block telegram-channel-${escapeAttr(channel.toLowerCase())}">
+        <div class="telegram-channel-head">
+          <span class="telegram-channel-icon">${icon}</span>
+          <div>
+            <strong>@${title}</strong>
+            <small>Latest 2 posts</small>
+          </div>
+        </div>
+        <div class="telegram-channel-posts">
+          ${cards}
+        </div>
+      </div>
+    `;
+  }
+
+  function renderPostCard(post) {
+    const date = formatDate(post.date);
+    const image = post.image
+      ? `<a href="${escapeAttr(post.url)}" target="_blank" rel="noopener noreferrer">
+           <img class="telegram-post-image" src="${escapeAttr(post.image)}" alt="">
+         </a>`
+      : "";
+
+    const text = trimText(post.text, 520);
+
+    return `
+      <article class="telegram-post-card${post.error ? " telegram-post-error" : ""}">
+        ${image}
+        <div class="telegram-post-text">${escapeHtml(text)}</div>
+        <div class="telegram-post-footer">
+          <span class="telegram-post-date">${escapeHtml(date)}</span>
+          <a class="telegram-post-link" href="${escapeAttr(post.url)}" target="_blank" rel="noopener noreferrer">
+            Open in Telegram
+          </a>
+        </div>
+      </article>
+    `;
+  }
+
+  function formatDate(value) {
+    if (!value) return "";
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+
+    return date.toLocaleString("ru-RU", {
+      day: "2-digit",
+      month: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+  }
+
+  function trimText(value, max) {
+    const text = String(value || "").replace(/\n{3,}/g, "\n\n").trim();
+    if (text.length <= max) return text;
+    return text.slice(0, max).trim() + "…";
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function escapeAttr(value) {
+    return escapeHtml(value).replaceAll("`", "&#096;");
+  }
+})();
