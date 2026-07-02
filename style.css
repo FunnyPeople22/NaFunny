@@ -412,3 +412,207 @@ body[data-theme="purple"] .telegram-feed-final .feed-card small{color:#d378ff}bo
 }
 @media (max-width:1180px) and (min-width:901px){.feed-grid-gold{grid-template-columns:repeat(2,minmax(0,1fr))!important}.telegram-feed-final .feed-card{min-height:230px}}
 @media (max-width:760px){.feed-grid-gold{grid-template-columns:1fr!important}.telegram-feed-final .feed-card{min-height:190px}.hero h1.electric-title{padding-right:.32em!important}.hero h1.electric-title .brand-y .energy-tail{right:-.08em;bottom:.05em;width:.28em;height:.22em}.gold-footer{margin-bottom:6px}.version-card{min-width:0;width:min(280px,100%)}}
+
+/* ===== NaFunny HUB 1.2.4 — FINAL STABLE LOGO PATCH =====
+   Purpose: kill all broken gradient-mask rectangles on PC/mobile,
+   keep readable NaFunny text, keep motion + lightning, fix N/y clipping.
+*/
+.hero h1.electric-title,
+.hero-copy h1.electric-title,
+h1.electric-title,
+body[data-theme="electric"] .hero h1.electric-title,
+body[data-theme="purple"] .hero h1.electric-title,
+body[data-theme="storm"] .hero h1.electric-title,
+body[data-theme="electric"] .hero-copy h1.electric-title,
+body[data-theme="purple"] .hero-copy h1.electric-title,
+body[data-theme="storm"] .hero-copy h1.electric-title{
+  position:relative !important;
+  display:inline-block !important;
+  width:auto !important;
+  max-width:100% !important;
+  overflow:visible !important;
+  isolation:isolate !important;
+  box-sizing:content-box !important;
+  padding:.02em .42em .12em .04em !important;
+  margin:0 !important;
+  line-height:.98 !important;
+  font-style:italic !important;
+  font-weight:1000 !important;
+  letter-spacing:-.045em !important;
+
+  /* Important: no background mask on the real text. This removes the white/cyan/purple rectangle bug. */
+  background:none !important;
+  background-image:none !important;
+  background-size:auto !important;
+  background-position:initial !important;
+  -webkit-background-clip:border-box !important;
+  background-clip:border-box !important;
+  color:#73edff !important;
+  -webkit-text-fill-color:#73edff !important;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,.42),
+    0 0 22px rgba(41,233,255,.62),
+    0 0 52px rgba(41,233,255,.34) !important;
+  filter:drop-shadow(0 0 14px rgba(41,233,255,.46)) drop-shadow(0 0 38px rgba(41,233,255,.22)) !important;
+  transform:skewX(-6deg) translateZ(0) !important;
+  animation:nafunnyStableMotion 6.8s ease-in-out infinite !important;
+}
+
+/* Disable the old per-letter background clipping that caused the N/y color loss. */
+.hero h1.electric-title .brand-n,
+.hero h1.electric-title .brand-y,
+.hero-copy h1.electric-title .brand-n,
+.hero-copy h1.electric-title .brand-y,
+h1.electric-title .brand-n,
+h1.electric-title .brand-y{
+  position:relative !important;
+  display:inline !important;
+  background:none !important;
+  background-image:none !important;
+  -webkit-background-clip:border-box !important;
+  background-clip:border-box !important;
+  color:inherit !important;
+  -webkit-text-fill-color:inherit !important;
+  filter:none !important;
+  text-shadow:inherit !important;
+  padding:0 !important;
+  overflow:visible !important;
+}
+
+/* Remove old glow blobs/tails that were being clipped or miscolored. */
+.hero h1.electric-title .brand-n::after,
+.hero h1.electric-title .brand-y::after,
+.hero h1.electric-title .brand-y .energy-tail,
+.hero-copy h1.electric-title .brand-n::after,
+.hero-copy h1.electric-title .brand-y::after,
+.hero-copy h1.electric-title .brand-y .energy-tail,
+h1.electric-title .brand-n::after,
+h1.electric-title .brand-y::after,
+h1.electric-title .brand-y .energy-tail{
+  display:none !important;
+  content:none !important;
+}
+
+/* Keep the nice ghost outline, but never allow it to become a filled rectangle. */
+.hero h1.electric-title::before,
+.hero-copy h1.electric-title::before,
+h1.electric-title::before,
+body[data-theme="purple"] .hero h1.electric-title::before,
+body[data-theme="storm"] .hero h1.electric-title::before{
+  content:attr(data-text) !important;
+  position:absolute !important;
+  inset:.02em .42em .12em .04em !important;
+  padding:0 !important;
+  background:none !important;
+  background-image:none !important;
+  color:transparent !important;
+  -webkit-text-fill-color:transparent !important;
+  -webkit-text-stroke:1px rgba(206,250,255,.42) !important;
+  text-shadow:0 0 22px rgba(41,233,255,.34),0 0 54px rgba(41,233,255,.18) !important;
+  filter:none !important;
+  transform:none !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+}
+
+/* Keep lightning movement. It is a thin bolt only, not a background plate. */
+.hero h1.electric-title::after,
+.hero-copy h1.electric-title::after,
+h1.electric-title::after,
+body[data-theme="purple"] .hero h1.electric-title::after,
+body[data-theme="storm"] .hero h1.electric-title::after{
+  content:"" !important;
+  position:absolute !important;
+  left:.04em !important;
+  right:.32em !important;
+  top:53% !important;
+  height:.105em !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.0) 10%,rgba(255,255,255,.95) 47%,rgba(41,233,255,.88) 55%,transparent 100%) !important;
+  clip-path:polygon(0 58%,11% 58%,15% 10%,22% 88%,29% 45%,38% 45%,43% 8%,50% 88%,58% 36%,66% 36%,70% 86%,78% 50%,88% 50%,92% 22%,100% 58%,100% 74%,0 74%) !important;
+  opacity:0 !important;
+  box-shadow:none !important;
+  filter:drop-shadow(0 0 9px rgba(255,255,255,.95)) drop-shadow(0 0 18px rgba(41,233,255,.85)) !important;
+  mix-blend-mode:screen !important;
+  transform:translateX(-8%) rotate(-2deg) translateZ(0) !important;
+  pointer-events:none !important;
+  z-index:2 !important;
+  animation:nafunnyStableLightning 8.2s ease-in-out infinite !important;
+}
+
+/* Themes may tint glow, but they cannot change the real logo text into a mask/plate anymore. */
+body[data-theme="purple"] .hero h1.electric-title,
+body[data-theme="purple"] .hero-copy h1.electric-title,
+body[data-theme="purple"] h1.electric-title{
+  color:#f0c5ff !important;
+  -webkit-text-fill-color:#f0c5ff !important;
+  text-shadow:
+    0 0 10px rgba(255,255,255,.42),
+    0 0 22px rgba(211,120,255,.62),
+    0 0 52px rgba(157,63,255,.34) !important;
+  filter:drop-shadow(0 0 14px rgba(211,120,255,.48)) drop-shadow(0 0 38px rgba(157,63,255,.24)) !important;
+}
+body[data-theme="purple"] .hero h1.electric-title::after,
+body[data-theme="purple"] .hero-copy h1.electric-title::after,
+body[data-theme="purple"] h1.electric-title::after{
+  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.0) 10%,rgba(255,255,255,.95) 47%,rgba(211,120,255,.9) 55%,transparent 100%) !important;
+  filter:drop-shadow(0 0 9px rgba(255,255,255,.9)) drop-shadow(0 0 18px rgba(211,120,255,.8)) !important;
+}
+
+body[data-theme="storm"] .hero h1.electric-title,
+body[data-theme="storm"] .hero-copy h1.electric-title,
+body[data-theme="storm"] h1.electric-title{
+  color:#eaf4ff !important;
+  -webkit-text-fill-color:#eaf4ff !important;
+  text-shadow:
+    0 0 10px rgba(255,255,255,.38),
+    0 0 22px rgba(220,236,255,.46),
+    0 0 46px rgba(129,178,239,.22) !important;
+  filter:drop-shadow(0 0 12px rgba(220,236,255,.36)) drop-shadow(0 0 30px rgba(129,178,239,.18)) !important;
+}
+body[data-theme="storm"] .hero h1.electric-title::after,
+body[data-theme="storm"] .hero-copy h1.electric-title::after,
+body[data-theme="storm"] h1.electric-title::after{
+  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.0) 10%,rgba(255,255,255,.92) 47%,rgba(190,220,255,.78) 55%,transparent 100%) !important;
+  filter:drop-shadow(0 0 9px rgba(255,255,255,.85)) drop-shadow(0 0 17px rgba(190,220,255,.62)) !important;
+}
+
+@keyframes nafunnyStableMotion{
+  0%,100%{transform:skewX(-6deg) translateX(0) translateZ(0);}
+  42%{transform:skewX(-6deg) translateX(0) translateZ(0);}
+  46%{transform:skewX(-8deg) translateX(1.5px) translateZ(0);}
+  49%{transform:skewX(-5deg) translateX(-1px) translateZ(0);}
+  53%{transform:skewX(-6deg) translateX(0) translateZ(0);}
+}
+@keyframes nafunnyStableLightning{
+  0%,33%,41%,100%{opacity:0;transform:translateX(-8%) rotate(-2deg) translateZ(0);}
+  34%{opacity:.18;}
+  35%{opacity:.9;transform:translateX(0) rotate(-2deg) translateZ(0);}
+  36%{opacity:.22;}
+  37%{opacity:1;transform:translateX(5%) rotate(-2deg) translateZ(0);}
+  38%{opacity:0;}
+}
+
+@media (max-width:900px){
+  .hero h1.electric-title,
+  .hero-copy h1.electric-title,
+  h1.electric-title{
+    padding:.02em .36em .12em .04em !important;
+    letter-spacing:-.04em !important;
+    line-height:1 !important;
+  }
+  .hero h1.electric-title::before,
+  .hero-copy h1.electric-title::before,
+  h1.electric-title::before{
+    inset:.02em .36em .12em .04em !important;
+  }
+  .hero h1.electric-title::after,
+  .hero-copy h1.electric-title::after,
+  h1.electric-title::after{
+    right:.26em !important;
+    height:.095em !important;
+  }
+}
