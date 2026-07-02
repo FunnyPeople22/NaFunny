@@ -300,18 +300,3 @@ if(hubTip && !localStorage.getItem('nafunny-hub-tip-seen') && matchMedia('(min-w
   setTimeout(()=>hubTip.classList.add('show'), 1800);
   setTimeout(()=>hubTip.classList.remove('show'), 7200);
 }
-
-
-// Patch 1: desktop dock active state
-const dockLinks = $$('.desktop-dock .dock-link');
-const dockSections = ['home','socials','events','feed','crypto','donate','partners'].map(id => document.getElementById(id)).filter(Boolean);
-if(dockLinks.length && dockSections.length){
-  const dockObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        dockLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
-      }
-    });
-  }, {threshold: .32, rootMargin: '-18% 0px -55% 0px'});
-  dockSections.forEach(sec => dockObserver.observe(sec));
-}

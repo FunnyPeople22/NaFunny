@@ -1,11 +1,6 @@
-# NaFunny HUB 1.2 Patch 1 — UI Polish
+# NaFunny HUB 1.2.1 — Desktop Sync Patch
 
-- Twitch SVG in Watch Streams button
-- Telegram SVG in Join Telegram button
-- New NaFunny brand title styling
-- Premium desktop HUB dock menu
-- Twitch / YouTube icons in Hub Live
-- Hover/glow polish
-- User rain.mp3 preserved
+Патч синхронизирует ПК-версию с мобильной: улучшенный desktop layout, исправленное HUB Menu, скрыт мобильный нижний dock на ПК, сохранён рабочий Ambient и rain.mp3.
 
-Upload all files to repository root.
+## Upload
+Залей все файлы из архива в корень GitHub Pages репозитория с заменой.
