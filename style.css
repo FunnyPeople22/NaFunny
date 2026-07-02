@@ -412,3 +412,117 @@ body[data-theme="purple"] .telegram-feed-final .feed-card small{color:#d378ff}bo
 }
 @media (max-width:1180px) and (min-width:901px){.feed-grid-gold{grid-template-columns:repeat(2,minmax(0,1fr))!important}.telegram-feed-final .feed-card{min-height:230px}}
 @media (max-width:760px){.feed-grid-gold{grid-template-columns:1fr!important}.telegram-feed-final .feed-card{min-height:190px}.hero h1.electric-title{padding-right:.32em!important}.hero h1.electric-title .brand-y .energy-tail{right:-.08em;bottom:.05em;width:.28em;height:.22em}.gold-footer{margin-bottom:6px}.version-card{min-width:0;width:min(280px,100%)}}
+
+
+/* ===== NaFunny HUB 1.2 FINAL — desktop parity + live Telegram feed ===== */
+.hero-copy::after{display:none!important;content:none!important;visibility:hidden!important}
+
+@media (min-width:901px){
+  .hero h1.electric-title,
+  .hero-copy h1.electric-title,
+  h1.electric-title{
+    position:relative!important;
+    display:inline-block!important;
+    width:max-content!important;
+    max-width:min(780px,100%)!important;
+    padding:.02em .44em .08em .02em!important;
+    font-size:clamp(66px,5.6vw,96px)!important;
+    line-height:.92!important;
+    letter-spacing:-.048em!important;
+    font-weight:1000!important;
+    font-style:italic!important;
+    color:transparent!important;
+    -webkit-text-fill-color:transparent!important;
+    background:
+      radial-gradient(circle at 2% 48%,rgba(255,255,255,.98) 0 5%,rgba(88,233,255,.82) 12%,transparent 24%),
+      linear-gradient(105deg,#f8ffff 0%,#dff8ff 16%,#4be5ff 38%,#f4ffff 52%,#8ff4ff 72%,#2fe8ff 96%,#aefbff 100%)!important;
+    background-size:180% 100%,260% 100%!important;
+    background-position:0 0,0 0!important;
+    -webkit-background-clip:text!important;
+    background-clip:text!important;
+    text-shadow:none!important;
+    filter:drop-shadow(0 0 18px rgba(41,233,255,.48)) drop-shadow(0 0 42px rgba(41,233,255,.28))!important;
+    animation:titleCharge 7.8s ease-in-out infinite!important;
+    overflow:visible!important;
+    isolation:isolate!important;
+  }
+  .hero h1.electric-title::before,
+  .hero-copy h1.electric-title::before,
+  h1.electric-title::before{
+    content:attr(data-text)!important;
+    position:absolute!important;
+    inset:0!important;
+    padding:inherit!important;
+    color:transparent!important;
+    -webkit-text-fill-color:transparent!important;
+    -webkit-text-stroke:1px rgba(132,238,255,.32)!important;
+    text-shadow:0 0 22px rgba(41,233,255,.34),0 0 58px rgba(41,233,255,.2)!important;
+    z-index:-1!important;
+  }
+  .hero h1.electric-title::after,
+  .hero-copy h1.electric-title::after,
+  h1.electric-title::after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    left:.08em!important;
+    right:.28em!important;
+    top:52%!important;
+    height:.12em!important;
+    background:linear-gradient(90deg,transparent,rgba(41,233,255,.08),rgba(255,255,255,.92),rgba(41,233,255,.82),transparent)!important;
+    clip-path:polygon(0 58%,12% 58%,16% 14%,23% 86%,31% 45%,39% 45%,44% 8%,50% 88%,58% 36%,66% 36%,70% 86%,79% 50%,88% 50%,93% 22%,100% 58%,100% 75%,0 75%)!important;
+    opacity:0!important;
+    filter:drop-shadow(0 0 10px #29e9ff) drop-shadow(0 0 24px #29e9ff)!important;
+    transform:translateX(-7%) rotate(-2deg)!important;
+    mix-blend-mode:screen!important;
+    pointer-events:none!important;
+    animation:titleLightning 10s ease-in-out infinite!important;
+  }
+  .hero h1.electric-title .brand-n,
+  .hero h1.electric-title .brand-y{
+    background:inherit!important;
+    background-size:inherit!important;
+    -webkit-background-clip:text!important;
+    background-clip:text!important;
+    color:transparent!important;
+    -webkit-text-fill-color:transparent!important;
+  }
+  .hero h1.electric-title .brand-n{
+    filter:drop-shadow(0 0 16px rgba(255,255,255,.68)) drop-shadow(0 0 32px rgba(41,233,255,.7))!important;
+  }
+  .hero h1.electric-title .brand-y{
+    padding-right:.16em!important;
+    filter:drop-shadow(0 0 15px rgba(41,233,255,.66))!important;
+  }
+  .hero h1.electric-title .brand-y .energy-tail{
+    right:-.1em!important;
+    bottom:.025em!important;
+    opacity:.78!important;
+  }
+}
+
+.feed-status{
+  margin:-10px auto 18px;
+  width:max-content;
+  max-width:100%;
+  color:rgba(205,238,255,.72);
+  font-size:13px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  font-weight:900;
+  padding:8px 14px;
+  border:1px solid rgba(41,233,255,.18);
+  border-radius:999px;
+  background:rgba(2,8,23,.34);
+  box-shadow:0 0 20px rgba(41,233,255,.06);
+}
+.feed-status.ok{color:var(--cyan);border-color:rgba(41,233,255,.34)}
+.feed-status.warn{color:rgba(255,226,143,.86);border-color:rgba(255,226,143,.28)}
+.telegram-feed-final .feed-card .feed-meta{display:flex;gap:10px;align-items:center;color:rgba(205,230,245,.62);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-top:-2px}
+.telegram-feed-final .feed-card .feed-text{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.telegram-feed-final .feed-card .feed-media{width:100%;height:110px;border-radius:18px;object-fit:cover;border:1px solid rgba(41,233,255,.18);box-shadow:0 0 22px rgba(41,233,255,.08)}
+.telegram-feed-final .feed-card.feed-live b::before{content:"● ";color:var(--cyan);text-shadow:0 0 12px var(--cyan)}
+@media (max-width:760px){
+  .feed-status{font-size:11px;margin:0 auto 16px;padding:7px 12px;letter-spacing:.08em}
+  .telegram-feed-final .feed-card .feed-text{-webkit-line-clamp:4}
+}
