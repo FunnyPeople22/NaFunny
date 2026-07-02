@@ -1,8 +1,10 @@
-# NaFunny HUB 1.2.2 — Electric Logo & Collaboration
+# NaFunny HUB 1.2 Gold Edition
 
-Что изменено:
-- Добавлен электрический эффект для текста NaFunny.
-- Добавлены редкие молнии/заряд в заголовке.
-- Обновлён блок Collaboration.
-- Оставлена одна кнопка Contact Me с mailto:NaFunnyPromo@gmail.com.
-- Все функции HUB 1.2.1 сохранены.
+Финальная полировка HUB 1.2:
+- Electric Flow logo: N as energy source, y tail spark
+- removed extra decorative bolt near title
+- Telegram Feed 2.0 cards
+- Gold footer/version card
+- stable Ambient rain.mp3 and existing HUB controls
+
+Upload all files to the root of the GitHub repository.
