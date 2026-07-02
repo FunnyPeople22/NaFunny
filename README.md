@@ -1,9 +1,10 @@
-# NaFunny HUB 1.2 Stable
+# NaFunny HUB 1.2 Gold Edition
 
-Stable release based on NaFunny HUB 1.2 Gold Edition.
+Финальная полировка HUB 1.2:
+- Electric Flow logo: N as energy source, y tail spark
+- removed extra decorative bolt near title
+- Telegram Feed 2.0 cards
+- Gold footer/version card
+- stable Ambient rain.mp3 and existing HUB controls
 
-Fixes:
-- locked NaFunny wordmark gradient across Blue / Purple / Storm themes;
-- fixed the unfinished/grey tail on the letter y;
-- reduced Storm theme overexposure;
-- updated version labels from Gold to Stable.
+Upload all files to the root of the GitHub repository.
