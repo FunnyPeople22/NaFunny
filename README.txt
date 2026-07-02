@@ -1,19 +1,29 @@
-NaFunny HUB 1.2.2 SAFE Logo Fix
+NaFunny HUB 1.2.5 Logo Lightning FX
 
-Что это исправляет:
-- убирает прямоугольную плашку за NaFunny;
-- убирает скачки цвета при смене Blue / Purple / Storm;
-- отключает старые псевдо-слои ::before / ::after;
-- фиксит обрезание хвостика y;
-- делает лого стабильным на ПК, iPhone Safari, Telegram Browser.
+Что делает:
+- оставляет стабильный текст NaFunny из 1.2.4;
+- возвращает электрический блик и молнию отдельным overlay-слоем;
+- НЕ использует background-clip для текста;
+- НЕ возвращает плашку;
+- НЕ трогает цвет букв напрямую.
 
-Как ставить:
-1. Открой основной CSS-файл сайта.
-2. Вставь содержимое nafunny-safe-logo-fix.css В САМЫЙ НИЗ файла.
-3. Убедись, что у текста NaFunny есть один из классов:
-   nafunny-logo-fixed / nafunny-logo / hero-logo / hero-title-logo
-4. Если у тебя подключён старый nafunny-logo-fix.css из 1.2.1 — лучше удалить его или заменить на этот.
-5. На GitHub: Commit changes -> подожди 1-3 минуты -> обнови сайт с очисткой кэша.
+Как подключить:
+1. Залей файлы:
+   nafunny-logo-lightning.css
+   nafunny-logo-lightning.js
 
-Это SAFE-версия: без background-clip и без gradient animation.
-Главная цель — чтобы лого больше не ломалось.
+2. В index.html перед </head> добавь:
+   <link rel="stylesheet" href="nafunny-logo-lightning.css">
+
+3. Перед </body> добавь:
+   <script src="nafunny-logo-lightning.js"></script>
+
+Важно:
+- CSS должен идти ПОСЛЕ основного style.css.
+- JS должен идти ПОСЛЕ основного script.js.
+- Старый 1.2.4 оставь как базу, этот патч ставится сверху.
+
+Проверка:
+- Blue/Purple/Storm должны оставаться читаемыми.
+- Плашка не должна появляться.
+- NaFunny должен иметь мягкое свечение + периодический электрический пробег.
