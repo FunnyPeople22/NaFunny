@@ -23,13 +23,19 @@ $$('[data-theme-choice]').forEach(btn => {
   });
 });
 
-// Ambient sound via WebAudio — no audio file required
-let audioCtx, rainSource, rainGain, windOsc, windGain, ambientOn = false;
+// Ambient sound via WebAudio — soft rain, no separate audio file required
+let audioCtx, rainSource, rainGain, windSource, windGain, ambientOn = false;
 const ambientToggle = $('#ambientToggle');
-function createNoiseBuffer(ctx, seconds = 2){
+function createSoftRainBuffer(ctx, seconds = 4){
   const buffer = ctx.createBuffer(1, seconds * ctx.sampleRate, ctx.sampleRate);
   const data = buffer.getChannelData(0);
-  for(let i=0;i<data.length;i++) data[i] = (Math.random()*2-1);
+  let last = 0;
+  for(let i=0;i<data.length;i++){
+    const white = Math.random()*2-1;
+    last = (last * 0.92) + (white * 0.08); // soft pink/brown noise, not radio hiss
+    const fine = (Math.random()*2-1) * 0.045;
+    data[i] = Math.max(-1, Math.min(1, last * 0.72 + fine));
+  }
   return buffer;
 }
 function startAmbient(){
@@ -38,25 +44,30 @@ function startAmbient(){
   stopAmbientNodes();
 
   rainSource = audioCtx.createBufferSource();
-  rainSource.buffer = createNoiseBuffer(audioCtx, 3);
+  rainSource.buffer = createSoftRainBuffer(audioCtx, 5);
   rainSource.loop = true;
-  const rainFilter = audioCtx.createBiquadFilter();
-  rainFilter.type = 'bandpass'; rainFilter.frequency.value = 1350; rainFilter.Q.value = .72;
-  rainGain = audioCtx.createGain(); rainGain.gain.value = 0.075;
-  rainSource.connect(rainFilter).connect(rainGain).connect(audioCtx.destination);
+  const rainLow = audioCtx.createBiquadFilter();
+  rainLow.type = 'lowpass'; rainLow.frequency.value = 1650; rainLow.Q.value = .45;
+  const rainHigh = audioCtx.createBiquadFilter();
+  rainHigh.type = 'highpass'; rainHigh.frequency.value = 140; rainHigh.Q.value = .55;
+  rainGain = audioCtx.createGain(); rainGain.gain.value = 0.022;
+  rainSource.connect(rainLow).connect(rainHigh).connect(rainGain).connect(audioCtx.destination);
 
-  windOsc = audioCtx.createOscillator();
-  windOsc.type = 'sine'; windOsc.frequency.value = 46;
-  windGain = audioCtx.createGain(); windGain.gain.value = 0.028;
-  windOsc.connect(windGain).connect(audioCtx.destination);
+  windSource = audioCtx.createBufferSource();
+  windSource.buffer = createSoftRainBuffer(audioCtx, 6);
+  windSource.loop = true;
+  const windFilter = audioCtx.createBiquadFilter();
+  windFilter.type = 'lowpass'; windFilter.frequency.value = 360; windFilter.Q.value = .35;
+  windGain = audioCtx.createGain(); windGain.gain.value = 0.008;
+  windSource.connect(windFilter).connect(windGain).connect(audioCtx.destination);
 
-  rainSource.start(); windOsc.start(); ambientOn = true;
+  rainSource.start(); windSource.start(); ambientOn = true;
   ambientToggle.textContent = '♪ Ambient ON'; ambientToggle.classList.add('on'); ambientToggle.setAttribute('aria-pressed','true');
-  showToast('Ambient ON');
+  showToast('Soft rain ON');
 }
 function stopAmbientNodes(){
   try{ rainSource?.stop(); }catch{}
-  try{ windOsc?.stop(); }catch{}
+  try{ windSource?.stop(); }catch{}
 }
 function stopAmbient(){
   stopAmbientNodes();
@@ -68,13 +79,13 @@ function thunder(level = 1){
   const osc = audioCtx.createOscillator();
   const gain = audioCtx.createGain();
   const filter = audioCtx.createBiquadFilter();
-  osc.type = 'sawtooth'; osc.frequency.value = 35 + Math.random()*18;
-  filter.type = 'lowpass'; filter.frequency.value = 110;
+  osc.type = 'sine'; osc.frequency.value = 28 + Math.random()*14;
+  filter.type = 'lowpass'; filter.frequency.value = 90;
   gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
-  gain.gain.exponentialRampToValueAtTime(0.08 * level, audioCtx.currentTime + 0.03);
-  gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1.15);
+  gain.gain.exponentialRampToValueAtTime(0.018 * level, audioCtx.currentTime + 0.08);
+  gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1.35);
   osc.connect(filter).connect(gain).connect(audioCtx.destination);
-  osc.start(); osc.stop(audioCtx.currentTime + 1.2);
+  osc.start(); osc.stop(audioCtx.currentTime + 1.45);
 }
 ambientToggle?.addEventListener('click', () => ambientOn ? stopAmbient() : startAmbient());
 
@@ -140,16 +151,16 @@ function drawParticles(){ ctx.clearRect(0,0,innerWidth,innerHeight); const storm
 // Rain canvas
 const rainCanvas = $('#rainCanvas'); const rctx = rainCanvas.getContext('2d');
 let rain=[];
-function setupRain(){ const n = Math.min(420, Math.floor(innerWidth/2.2)); rain = Array.from({length:n}, () => ({x:Math.random()*innerWidth,y:Math.random()*innerHeight,l:Math.random()*44+18,s:Math.random()*15+16,o:Math.random()*.52+.24,w:Math.random()*1.15+.45})); }
-function drawRain(){ rctx.clearRect(0,0,innerWidth,innerHeight); if(document.body.classList.contains('electric-mode')){ rctx.save(); const t = document.body.dataset.theme; rctx.strokeStyle = t === 'purple' ? 'rgba(224,133,255,.72)' : t === 'storm' ? 'rgba(210,225,246,.56)' : 'rgba(122,218,255,.72)'; rctx.shadowColor = t === 'purple' ? '#d178ff' : t === 'storm' ? '#d7e6ff' : '#29e9ff'; rctx.shadowBlur=10; for(const d of rain){ d.x += 2.4; d.y += d.s; if(d.y>innerHeight+60){d.y=-60; d.x=Math.random()*innerWidth;} if(d.x>innerWidth+60)d.x=-60; rctx.globalAlpha=d.o; rctx.lineWidth=d.w; rctx.beginPath(); rctx.moveTo(d.x,d.y); rctx.lineTo(d.x-10,d.y+d.l); rctx.stroke(); } rctx.restore(); } requestAnimationFrame(drawRain); }
+function setupRain(){ const n = Math.min(300, Math.floor(innerWidth/3.1)); rain = Array.from({length:n}, () => ({x:Math.random()*innerWidth,y:Math.random()*innerHeight,l:Math.random()*34+16,s:Math.random()*12+14,o:Math.random()*.32+.12,w:Math.random()*.55+.28})); }
+function drawRain(){ rctx.clearRect(0,0,innerWidth,innerHeight); if(document.body.classList.contains('electric-mode')){ rctx.save(); const t = document.body.dataset.theme; rctx.strokeStyle = t === 'purple' ? 'rgba(224,133,255,.46)' : t === 'storm' ? 'rgba(210,225,246,.34)' : 'rgba(122,218,255,.44)'; rctx.shadowColor = t === 'purple' ? '#d178ff' : t === 'storm' ? '#d7e6ff' : '#29e9ff'; rctx.shadowBlur=4; for(const d of rain){ d.x += 2.4; d.y += d.s; if(d.y>innerHeight+60){d.y=-60; d.x=Math.random()*innerWidth;} if(d.x>innerWidth+60)d.x=-60; rctx.globalAlpha=d.o; rctx.lineWidth=d.w; rctx.beginPath(); rctx.moveTo(d.x,d.y); rctx.lineTo(d.x-10,d.y+d.l); rctx.stroke(); } rctx.restore(); } requestAnimationFrame(drawRain); }
 
 // Lightning canvas
 const lcan = $('#lightningCanvas'); const lctx = lcan.getContext('2d'); let bolts=[];
 function resizeCanvas(c, cctx){ c.width = innerWidth * devicePixelRatio; c.height = innerHeight * devicePixelRatio; c.style.width = innerWidth+'px'; c.style.height = innerHeight+'px'; cctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0); }
 function resize(){ resizeCanvas(canvas, ctx); resizeCanvas(rainCanvas, rctx); resizeCanvas(lcan, lctx); setupParticles(); setupRain(); }
-function makeBolt(fromX, fromY, toX, toY, intensity=1){ const pts=[]; const steps=16; for(let i=0;i<=steps;i++){ const t=i/steps; const x=fromX+(toX-fromX)*t+(Math.random()-.5)*58*intensity; const y=fromY+(toY-fromY)*t+(Math.random()-.5)*58*intensity; pts.push({x,y}); } bolts.push({pts,life:1,intensity}); }
-function autoBolt(){ const storm = document.body.classList.contains('electric-mode'); const y = Math.random()*innerHeight*.72+20; makeBolt(-50,y,innerWidth+50,y+Math.random()*240-120, storm?1.65:1); if(storm || Math.random()>.55){ screenFlash(); thunder(storm?1.2:.65); } }
-function drawLightning(){ lctx.clearRect(0,0,innerWidth,innerHeight); bolts = bolts.filter(b => b.life > 0); const t = document.body.dataset.theme; const glow = t === 'purple' ? '#d178ff' : t === 'storm' ? '#d7e6ff' : '#29e9ff'; const soft = t === 'purple' ? 'rgba(209,120,255,.28)' : t === 'storm' ? 'rgba(215,230,255,.2)' : 'rgba(41,233,255,.25)'; for(const b of bolts){ lctx.save(); lctx.globalAlpha=b.life; lctx.lineWidth=3*b.intensity; lctx.shadowBlur=34*b.intensity; lctx.shadowColor=glow; lctx.strokeStyle='rgba(255,255,255,.98)'; lctx.beginPath(); b.pts.forEach((p,i)=> i?lctx.lineTo(p.x,p.y):lctx.moveTo(p.x,p.y)); lctx.stroke(); lctx.lineWidth=11*b.intensity; lctx.strokeStyle=soft; lctx.stroke(); lctx.restore(); b.life-=.035; } requestAnimationFrame(drawLightning); }
+function makeBolt(fromX, fromY, toX, toY, intensity=1){ const pts=[]; const steps=14; for(let i=0;i<=steps;i++){ const t=i/steps; const x=fromX+(toX-fromX)*t+(Math.random()-.5)*42*intensity; const y=fromY+(toY-fromY)*t+(Math.random()-.5)*42*intensity; pts.push({x,y}); } bolts.push({pts,life:.85,intensity}); }
+function autoBolt(){ const storm = document.body.classList.contains('electric-mode'); const y = Math.random()*innerHeight*.66+20; makeBolt(-50,y,innerWidth+50,y+Math.random()*180-90, storm?1.05:.75); if(storm ? Math.random() < .46 : Math.random() > .72){ screenFlash(); thunder(storm?.55:.35); } }
+function drawLightning(){ lctx.clearRect(0,0,innerWidth,innerHeight); bolts = bolts.filter(b => b.life > 0); const t = document.body.dataset.theme; const glow = t === 'purple' ? '#d178ff' : t === 'storm' ? '#d7e6ff' : '#29e9ff'; const soft = t === 'purple' ? 'rgba(209,120,255,.28)' : t === 'storm' ? 'rgba(215,230,255,.2)' : 'rgba(41,233,255,.25)'; for(const b of bolts){ lctx.save(); lctx.globalAlpha=b.life; lctx.lineWidth=2.2*b.intensity; lctx.shadowBlur=22*b.intensity; lctx.shadowColor=glow; lctx.strokeStyle='rgba(255,255,255,.98)'; lctx.beginPath(); b.pts.forEach((p,i)=> i?lctx.lineTo(p.x,p.y):lctx.moveTo(p.x,p.y)); lctx.stroke(); lctx.lineWidth=7*b.intensity; lctx.strokeStyle=soft; lctx.stroke(); lctx.restore(); b.life-=.055; } requestAnimationFrame(drawLightning); }
 let autoLightningTimer = setInterval(autoBolt, 9500);
 function setLightningRate(ms){ clearInterval(autoLightningTimer); autoLightningTimer = setInterval(autoBolt, ms); }
 
@@ -160,9 +171,9 @@ function activateElectricMode(){
   clearTimeout(stormTimeout); clearInterval(stormInterval);
   stormSeconds = 10;
   document.body.classList.add('electric-mode'); stormWidget.classList.add('show'); stormWidget.classList.remove('hint'); stormTimer.textContent = `${stormSeconds}s`;
-  setLightningRate(560);
+  setLightningRate(2600);
   easter.classList.add('show'); setTimeout(()=>easter.classList.remove('show'),2200);
-  for(let i=0;i<8;i++) setTimeout(autoBolt, i*180);
+  for(let i=0;i<3;i++) setTimeout(autoBolt, i*620);
   if(navigator.vibrate) navigator.vibrate([50,35,85,35,120]);
   stormInterval = setInterval(()=>{ stormSeconds--; stormTimer.textContent = `${stormSeconds}s`; if(stormSeconds<=0) deactivateElectricMode(); },1000);
   stormTimeout = setTimeout(deactivateElectricMode, 10200);
@@ -179,7 +190,7 @@ function clickProgress(){
 logoBtn.addEventListener('click', () => {
   logoBtn.classList.remove('clicked'); void logoBtn.offsetWidth; logoBtn.classList.add('clicked');
   const r = logoBtn.getBoundingClientRect();
-  makeBolt(r.left+r.width*.18, r.top+r.height*.38, r.right-r.width*.18, r.bottom-r.height*.38, .82);
+  makeBolt(r.left+r.width*.2, r.top+r.height*.38, r.right-r.width*.2, r.bottom-r.height*.38, .45);
   taps++; clickProgress();
   clearTimeout(tapTimer); tapTimer = setTimeout(()=>{ taps=0; if(!document.body.classList.contains('electric-mode')){ stormTimer.textContent='5×'; stormWidget.classList.remove('show'); } }, 1800);
   if(taps >= 5){ taps=0; clearTimeout(tapTimer); activateElectricMode(); }

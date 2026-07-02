@@ -79,3 +79,36 @@ body.electric-mode .storm-widget{opacity:1;transform:scale(1.04);animation:storm
 footer{letter-spacing:.015em}.theme-menu button span{font-size:12px;margin-right:8px}.theme-menu button[data-theme-choice="electric"] span{color:#29e9ff}.theme-menu button[data-theme-choice="purple"] span{color:#d178ff}.theme-menu button[data-theme-choice="storm"] span{color:#c5d4e8}
 @media (max-width:900px){.wallet{grid-template-columns:42px 1fr;grid-template-areas:"coin title" "addr addr" "actions actions"}.crypto-badge{width:34px;height:34px}.wallet code{font-size:15px}.clouds{filter:blur(6px)}body.electric-mode .clouds{opacity:.78}.storm-widget{display:none}.storm-dimmer{background:rgba(0,0,0,.78)}}
 @media (max-width:520px){.brand-icon{width:42px;height:42px}.wallet{grid-template-columns:36px 1fr;gap:10px 12px}.wallet code{font-size:14px;letter-spacing:.02em}.wallet-actions{gap:10px}.crypto-badge{width:32px;height:32px}.social{min-height:166px}.storm-dimmer{background:rgba(0,0,0,.82)}body.electric-mode .clouds{opacity:.72}.clouds i{width:110vw;height:24vh}.top-tools{display:none!important}}
+
+
+/* HUB 1.1 Patch 3 — calmer storm, deeper themes, softer ambience */
+body.electric-mode .storm-dimmer{opacity:.48;animation:stormDarkSoft 10s ease both}
+@keyframes stormDarkSoft{0%{opacity:0}14%,86%{opacity:.48}100%{opacity:0}}
+body.electric-mode:after{background:radial-gradient(circle at 50% 20%,rgba(75,210,255,.12),transparent 24%),linear-gradient(180deg,rgba(0,0,0,.16),rgba(0,0,0,.34));animation:stormPulseSoft 1.8s ease-in-out infinite}
+@keyframes stormPulseSoft{50%{filter:brightness(1.12);opacity:.72}}
+body.electric-mode #rainCanvas{opacity:.44}
+.flash.show{animation:flashScreenSoft .5s ease}@keyframes flashScreenSoft{0%,100%{opacity:0}24%{opacity:.32}58%{opacity:.1}}
+body.electric-mode .clouds{opacity:.76;filter:blur(3px) saturate(1.35) contrast(1.15)}
+.clouds i{height:32vh;opacity:.94;background:radial-gradient(ellipse at 35% 45%,rgba(235,245,255,.32),rgba(105,154,224,.24) 32%,rgba(20,28,72,.24) 58%,transparent 78%)}
+.clouds i:nth-child(1){top:-3%;height:34vh}.clouds i:nth-child(2){top:9%;height:30vh}.clouds i:nth-child(3){top:19%;height:34vh}.clouds i:nth-child(4){top:36%;height:28vh}.clouds i:nth-child(5){top:42%;height:30vh}.clouds i:nth-child(6){top:4%;height:36vh}
+
+/* Full-theme recolor, including logo */
+body[data-theme="purple"] .brand-logo{filter:hue-rotate(82deg) saturate(1.75) brightness(1.06) contrast(1.08) drop-shadow(0 0 30px rgba(207,91,255,.96)) drop-shadow(0 0 98px rgba(255,61,218,.62))}
+body[data-theme="purple"] .logo-ring{border-color:rgba(211,120,255,.52);box-shadow:0 0 65px rgba(211,120,255,.52), inset 0 0 22px rgba(255,61,218,.18)}
+body[data-theme="purple"] .preloader img{filter:hue-rotate(82deg) saturate(1.65) brightness(1.06) drop-shadow(0 0 36px #d178ff) drop-shadow(0 0 92px #ff3dda)}
+body[data-theme="purple"] .bottom-nav{border-color:rgba(211,120,255,.68);background:rgba(14,4,28,.84);box-shadow:0 0 42px rgba(211,120,255,.26)}
+body[data-theme="purple"] .bottom-nav a.active,body[data-theme="purple"] .bottom-nav a:hover{color:#e284ff;background:rgba(185,91,255,.18);text-shadow:0 0 16px rgba(226,132,255,.8)}
+body[data-theme="purple"] .support,body[data-theme="purple"] .wallets,body[data-theme="purple"] .about{border-color:rgba(211,120,255,.72)}
+body[data-theme="purple"] footer{color:#aa90c8}.theme-menu button[data-theme-choice="purple"].active{background:rgba(180,87,255,.16)}
+
+body[data-theme="storm"] .brand-logo{filter:grayscale(.45) saturate(.78) brightness(.78) contrast(1.15) drop-shadow(0 0 20px rgba(198,220,246,.55)) drop-shadow(0 0 76px rgba(98,118,160,.35))}
+body[data-theme="storm"] .logo-ring{border-color:rgba(198,220,246,.28);box-shadow:0 0 48px rgba(198,220,246,.22), inset 0 0 24px rgba(255,255,255,.06)}
+body[data-theme="storm"] .preloader img{filter:grayscale(.5) saturate(.72) brightness(.8) drop-shadow(0 0 24px #c5d4e8) drop-shadow(0 0 66px #425777)}
+body[data-theme="storm"] .bottom-nav{border-color:rgba(172,196,229,.42);background:rgba(0,3,9,.88);box-shadow:0 0 36px rgba(161,190,229,.12)}
+body[data-theme="storm"] .bottom-nav a.active,body[data-theme="storm"] .bottom-nav a:hover{color:#d6e5ff;background:rgba(161,190,229,.12);text-shadow:0 0 14px rgba(214,229,255,.48)}
+body[data-theme="storm"] .support,body[data-theme="storm"] .wallets,body[data-theme="storm"] .about{border-color:rgba(172,196,229,.42)}
+body[data-theme="storm"] footer{color:#75839a}.theme-menu button[data-theme-choice="storm"].active{background:rgba(186,204,230,.1)}
+
+.about p{margin:.55em 0}.about p:first-of-type{font-weight:700;color:#f1f7ff}.about p:nth-of-type(2){max-width:820px}
+@media (max-width:900px){body.electric-mode .storm-dimmer{opacity:.44}.storm-dimmer{background:rgba(0,0,0,.42)}body.electric-mode #rainCanvas{opacity:.38}body.electric-mode .clouds{opacity:.62}.clouds i{height:26vh}.about p{font-size:19px}}
+@media (max-width:520px){body.electric-mode .storm-dimmer{opacity:.42}.storm-dimmer{background:rgba(0,0,0,.4)}body.electric-mode .clouds{opacity:.56}.about p{font-size:18px;line-height:1.42}}
