@@ -1,6 +1,8 @@
-# NaFunny HUB 1.2.1 — Desktop Sync Patch
+# NaFunny HUB 1.2.2 — Electric Logo & Collaboration
 
-Патч синхронизирует ПК-версию с мобильной: улучшенный desktop layout, исправленное HUB Menu, скрыт мобильный нижний dock на ПК, сохранён рабочий Ambient и rain.mp3.
-
-## Upload
-Залей все файлы из архива в корень GitHub Pages репозитория с заменой.
+Что изменено:
+- Добавлен электрический эффект для текста NaFunny.
+- Добавлены редкие молнии/заряд в заголовке.
+- Обновлён блок Collaboration.
+- Оставлена одна кнопка Contact Me с mailto:NaFunnyPromo@gmail.com.
+- Все функции HUB 1.2.1 сохранены.
