@@ -1,155 +1,226 @@
+/*
+  NaFunny HUB 1.4 Ultimate Feed
+  Fetches latest public posts from t.me/s/<channel> without tokens.
+  Output: feed/telegram-feed.json
+*/
+
 import fs from "node:fs/promises";
 
-const channels = (process.env.TELEGRAM_CHANNELS || "NaFunny,TonNewbie")
+const CHANNELS = (process.env.TELEGRAM_CHANNELS || "NaFunny,TonNewbie")
   .split(",")
-  .map((value) => value.trim().replace(/^@/, ""))
+  .map(channel => channel.trim().replace(/^@/, ""))
   .filter(Boolean);
 
-const limitPerChannel = Number(process.env.TELEGRAM_LIMIT_PER_CHANNEL || 2);
-const outFile = process.env.TELEGRAM_FEED_OUT || "feed/telegram-feed.json";
+const LIMIT_PER_CHANNEL = Number(process.env.TELEGRAM_LIMIT_PER_CHANNEL || 2);
+const OUT_FILE = process.env.TELEGRAM_FEED_OUT || "feed/telegram-feed.json";
 
-const namedEntities = {
-  amp: "&",
-  quot: '"',
-  apos: "'",
-  lt: "<",
-  gt: ">",
-  nbsp: " ",
+const CHANNEL_META = {
+  NaFunny: {
+    title: "NaFunny",
+    icon: "🎮",
+    description: "Streams, community and creator updates"
+  },
+  TonNewbie: {
+    title: "TonNewbie",
+    icon: "💎",
+    description: "TON / GRAM, crypto news and market notes"
+  }
 };
 
 function decodeHtml(value = "") {
-  return String(value)
-    .replace(/&#(x?[0-9a-fA-F]+);/g, (_, code) => {
-      const base = code.toLowerCase().startsWith("x") ? 16 : 10;
-      const number = parseInt(code.replace(/^x/i, ""), base);
-      return Number.isFinite(number) ? String.fromCodePoint(number) : _;
-    })
-    .replace(/&([a-zA-Z]+);/g, (_, name) => namedEntities[name] ?? _);
+  return value
+    .replace(/&nbsp;/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/g, "'")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCharCode(parseInt(code, 16)));
 }
 
 function stripTags(html = "") {
-  return decodeHtml(html)
-    .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<\/p>/gi, "\n")
-    .replace(/<[^>]+>/g, "")
-    .replace(/\u00a0/g, " ")
-    .replace(/[ \t]+\n/g, "\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
+  return decodeHtml(
+    html
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<\/div>\s*<div/gi, "\n<div")
+      .replace(/<\/p>/gi, "\n")
+      .replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => {
+        const clean = stripTags(text);
+        return clean ? `${clean} (${href})` : href;
+      })
+      .replace(/<[^>]+>/g, "")
+      .replace(/[ \t]+\n/g, "\n")
+      .replace(/\n[ \t]+/g, "\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim()
+  );
 }
 
-function absoluteTelegramUrl(url = "") {
-  const clean = decodeHtml(url).trim();
-  if (!clean) return "";
-  if (clean.startsWith("//")) return `https:${clean}`;
-  if (clean.startsWith("/")) return `https://t.me${clean}`;
-  return clean;
+function absoluteUrl(url = "") {
+  if (!url) return "";
+  const cleaned = decodeHtml(url).replace(/\\/g, "");
+  if (cleaned.startsWith("//")) return "https:" + cleaned;
+  if (cleaned.startsWith("/")) return "https://t.me" + cleaned;
+  return cleaned;
 }
 
-function channelTitle(channel) {
-  return channel.toLowerCase() === "tonnewbie" ? "TonNewbie" : "NaFunny";
+function splitMessageBlocks(html) {
+  const blocks = [];
+  const marker = '<div class="tgme_widget_message ';
+  let index = 0;
+
+  while (true) {
+    const start = html.indexOf(marker, index);
+    if (start === -1) break;
+
+    const next = html.indexOf(marker, start + marker.length);
+    const end = next === -1 ? html.length : next;
+    blocks.push(html.slice(start, end));
+    index = end;
+  }
+
+  return blocks;
 }
 
-function extractMessages(html) {
-  const parts = html.split(/<div class="tgme_widget_message\b/).slice(1);
-  return parts.map((part) => `<div class="tgme_widget_message${part}`);
+function findMessageText(block) {
+  const match = block.match(/<div class="tgme_widget_message_text[^"]*"[^>]*>([\s\S]*?)<\/div>\s*(?:<div class="tgme_widget_message_footer|<div class="tgme_widget_message_bubble_tail|<\/div>)/);
+  if (match?.[1]) return stripTags(match[1]);
+
+  const alt = block.match(/<div class="tgme_widget_message_text[^"]*"[^>]*>([\s\S]*?)<\/div>/);
+  return stripTags(alt?.[1] || "");
 }
 
-function extractImage(block) {
-  const background = block.match(/background-image:url\(['"]?([^'"\)]+)['"]?\)/i);
-  if (background?.[1]) return absoluteTelegramUrl(background[1]);
+function findImage(block) {
+  const patterns = [
+    /background-image:url\('([^']+)'\)/i,
+    /background-image:url\(&quot;([^&]+)&quot;\)/i,
+    /background-image:\s*url\(([^)]+)\)/i,
+    /<img[^>]+src="([^"]+)"/i
+  ];
 
-  const img = block.match(/<img[^>]+src="([^"]+)"/i);
-  if (img?.[1]) return absoluteTelegramUrl(img[1]);
+  for (const pattern of patterns) {
+    const match = block.match(pattern);
+    if (match?.[1]) {
+      return absoluteUrl(match[1].replace(/^['"]|['"]$/g, ""));
+    }
+  }
 
   return "";
+}
+
+function findViews(block) {
+  const match = block.match(/<span class="tgme_widget_message_views">([\s\S]*?)<\/span>/);
+  return stripTags(match?.[1] || "");
+}
+
+function findDate(block) {
+  const match = block.match(/<time datetime="([^"]+)"/);
+  return match?.[1] || "";
+}
+
+function findPostId(block) {
+  const match = block.match(/data-post="([^"]+)"/);
+  return match?.[1] || "";
+}
+
+function normalizePosts(posts, channel) {
+  const seen = new Set();
+
+  return posts
+    .filter(post => post && (post.text || post.image))
+    .filter(post => {
+      const key = post.url || `${channel}:${post.text.slice(0, 80)}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, LIMIT_PER_CHANNEL);
 }
 
 async function fetchChannel(channel) {
   const url = `https://t.me/s/${channel}`;
   const response = await fetch(url, {
     headers: {
-      "user-agent": "Mozilla/5.0 NaFunnyHUB/1.3 Stable Final",
-      "accept-language": "ru,en;q=0.9",
-    },
+      "user-agent": "Mozilla/5.0 (compatible; NaFunnyHUB/1.4; +https://funnypeople22.github.io/NaFunny/)",
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    }
   });
 
   if (!response.ok) {
-    throw new Error(`Failed to fetch @${channel}: HTTP ${response.status}`);
+    throw new Error(`@${channel}: HTTP ${response.status}`);
   }
 
   const html = await response.text();
-  const blocks = extractMessages(html);
-  const posts = [];
+  const blocks = splitMessageBlocks(html);
 
-  for (const block of blocks) {
-    const postMatch = block.match(/data-post="([^"]+)"/);
-    if (!postMatch?.[1]) continue;
+  const posts = blocks
+    .map(block => {
+      const postId = findPostId(block);
+      const text = findMessageText(block);
+      const image = findImage(block);
+      const date = findDate(block);
+      const views = findViews(block);
+      const meta = CHANNEL_META[channel] || { title: channel, icon: "📢", description: "" };
 
-    const id = postMatch[1];
-    const postChannel = id.split("/")[0] || channel;
-    const textMatch = block.match(/<div class="tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/i);
-    const text = stripTags(textMatch?.[1] || "");
-    const dateMatch = block.match(/<time datetime="([^"]+)"/i);
-    const viewsMatch = block.match(/<span class="tgme_widget_message_views">([^<]+)<\/span>/i);
-    const image = extractImage(block);
+      return {
+        channel,
+        channelTitle: meta.title,
+        channelIcon: meta.icon,
+        channelDescription: meta.description,
+        text,
+        image,
+        date,
+        views,
+        url: postId ? `https://t.me/${postId}` : `https://t.me/${channel}`
+      };
+    })
+    .reverse();
 
-    if (!text && !image) continue;
-
-    posts.push({
-      id,
-      channel: postChannel,
-      channelTitle: channelTitle(postChannel),
-      text,
-      date: dateMatch?.[1] || "",
-      views: stripTags(viewsMatch?.[1] || ""),
-      url: `https://t.me/${id}`,
-      image,
-    });
-  }
-
-  // t.me/s usually returns the newest posts first. Keep the first N unique messages.
-  const unique = [];
-  const seen = new Set();
-  for (const post of posts) {
-    if (seen.has(post.id)) continue;
-    seen.add(post.id);
-    unique.push(post);
-    if (unique.length >= limitPerChannel) break;
-  }
-
-  return unique;
+  return normalizePosts(posts, channel);
 }
 
-const result = {
-  version: "1.3.0-stable-final",
+const output = {
+  version: "1.4",
   updatedAt: new Date().toISOString(),
-  channels,
-  limitPerChannel,
+  source: "t.me/s public channel pages",
+  limitPerChannel: LIMIT_PER_CHANNEL,
+  channels: CHANNELS,
   posts: [],
+  errors: []
 };
 
-for (const channel of channels) {
+for (const channel of CHANNELS) {
   try {
     const posts = await fetchChannel(channel);
-    result.posts.push(...posts);
+    output.posts.push(...posts);
+
+    if (!posts.length) {
+      output.errors.push({
+        channel,
+        message: `No public posts found for @${channel}. Check whether the channel is public and available at https://t.me/s/${channel}`
+      });
+    }
   } catch (error) {
-    console.error(error);
-    result.posts.push({
-      id: `${channel}/error`,
+    output.errors.push({
       channel,
-      channelTitle: channelTitle(channel),
-      text: `Не удалось обновить @${channel}: ${error.message}`,
-      date: new Date().toISOString(),
-      views: "",
-      url: `https://t.me/${channel}`,
-      image: "",
-      error: true,
+      message: error.message
     });
   }
 }
 
-await fs.mkdir(outFile.split("/").slice(0, -1).join("/") || ".", { recursive: true });
-await fs.writeFile(outFile, JSON.stringify(result, null, 2), "utf8");
+output.posts.sort((a, b) => {
+  const ai = CHANNELS.indexOf(a.channel);
+  const bi = CHANNELS.indexOf(b.channel);
+  if (ai !== bi) return ai - bi;
+  return new Date(b.date || 0) - new Date(a.date || 0);
+});
 
-console.log(`Saved ${result.posts.length} posts to ${outFile}`);
+await fs.mkdir(OUT_FILE.split("/").slice(0, -1).join("/") || ".", { recursive: true });
+await fs.writeFile(OUT_FILE, JSON.stringify(output, null, 2), "utf8");
+
+console.log(`Saved ${output.posts.length} posts to ${OUT_FILE}`);
+if (output.errors.length) {
+  console.log("Warnings:", JSON.stringify(output.errors, null, 2));
+}

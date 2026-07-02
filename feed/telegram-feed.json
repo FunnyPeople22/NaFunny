@@ -1,27 +1,17 @@
 {
-  "version": "1.3.0-stable-final",
-  "updatedAt": "2026-07-02T15:17:17.009Z",
+  "version": "1.4",
+  "updatedAt": "starter",
+  "source": "t.me/s public channel pages",
+  "limitPerChannel": 2,
   "channels": [
     "NaFunny",
     "TonNewbie"
   ],
-  "limitPerChannel": 2,
-  "posts": [
+  "posts": [],
+  "errors": [
     {
-      "id": "NaFunny/1163",
-      "channel": "NaFunny",
-      "text": "Привет дорогие мои&#33;\n\n🎮Нашёл имба расширение для пополнения Steam, без всяких там костылей и комиссий:\n\nЗаходим https://steambalance.cc/booster и устанавливаем расширение\n1-2й скрин: так будет выглядеть доп кнопка в вашем Steam\n3-5й скрин: процедура пополнения баланса\n\n‼️Открытый код на github, проверено на virustotal.com, всё безопасно.\n\nСкажем пока сервисам пополнения с комиссией&#33;\nНе забудьте прожать лайк и поделиться со своим бро ;)",
-      "date": "2026-07-02T09:06:49+00:00",
-      "views": "18",
-      "url": "https://t.me/NaFunny/1163"
-    },
-    {
-      "id": "NaFunny/1162",
-      "channel": "NaFunny",
-      "text": "🏆Список всех команд на TI\n\n13-23 Августа",
-      "date": "2026-06-28T19:56:21+00:00",
-      "views": "40",
-      "url": "https://t.me/NaFunny/1162"
+      "channel": "system",
+      "message": "Run GitHub Actions → Update Telegram Feed to load real posts."
     }
   ]
 }
