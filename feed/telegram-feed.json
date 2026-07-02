@@ -1,16 +1,26 @@
 {
-  "version": "1.3.0",
-  "source": "https://t.me/s/NaFunny",
-  "channel": "NaFunny",
-  "updatedAt": "manual-starter",
+  "updatedAt": "starter",
+  "channels": [
+    "NaFunny",
+    "TonNewbie"
+  ],
+  "limitPerChannel": 2,
   "posts": [
     {
-      "id": "starter",
       "channel": "NaFunny",
-      "text": "Telegram Feed is initializing. Run GitHub Actions to load the latest posts.",
+      "channelTitle": "NaFunny",
+      "text": "Telegram Feed готовится к запуску.",
       "date": "",
-      "views": "",
-      "url": "https://t.me/NaFunny"
+      "url": "https://t.me/NaFunny",
+      "image": ""
+    },
+    {
+      "channel": "TonNewbie",
+      "channelTitle": "TonNewbie",
+      "text": "Telegram Feed готовится к запуску.",
+      "date": "",
+      "url": "https://t.me/TonNewbie",
+      "image": ""
     }
   ]
 }

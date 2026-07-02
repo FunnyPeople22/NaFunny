@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#020817" />
-  <title>NaFunny HUB 1.2.6 Logo Electric FX</title>
+  <title>NaFunny HUB 1.3 Dual Telegram Feed</title>
   <meta name="description" content="NaFunny HUB — Dota 2, streams, community, socials, donate and crypto wallets." />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="telegram-feed.css" />
 </head>
 <body data-theme="electric">
   <canvas id="spaceCanvas" aria-hidden="true"></canvas>
@@ -179,14 +180,9 @@
       </div>
     </section>
 
-    <section id="feed" class="section hub-content telegram-feed-final">
+    <section id="feed" class="section telegram-feed-section">
       <div class="title-line"><span></span><h2>Telegram Feed</h2><span></span></div>
-      <div class="feed-grid feed-grid-gold">
-        <article class="feed-card hub-card-lite"><small>@NaFunny</small><b>Стримы и анонсы</b><p>Новости проекта, расписание стримов, клипы и важные обновления комьюнити.</p><a href="https://t.me/NaFunny" target="_blank" rel="noopener noreferrer">Open @NaFunny ↗</a></article>
-        <article class="feed-card hub-card-lite"><small>@NaFunny</small><b>Community updates</b><p>Dota 2, турики, моменты со стримов и всё, что стоит сохранить для своих.</p><a href="https://t.me/NaFunny" target="_blank" rel="noopener noreferrer">Join Community ↗</a></article>
-        <article class="feed-card hub-card-lite"><small>@TonNewbie</small><b>TON / GRAM watch</b><p>Крипто-новости, наблюдения по рынку TON/GRAM и честные заметки по экосистеме.</p><a href="https://t.me/TonNewbie" target="_blank" rel="noopener noreferrer">Open @TonNewbie ↗</a></article>
-        <article class="feed-card hub-card-lite"><small>@TonNewbie</small><b>Crypto safety & insights</b><p>Разборы, предупреждения, полезная информация и опыт из TON / Web3 мира.</p><a href="https://t.me/TonNewbie" target="_blank" rel="noopener noreferrer">Read Channel ↗</a></article>
-      </div>
+      <div id="telegram-feed-list" class="telegram-feed-grid"></div>
     </section>
 
     <section id="partners" class="section hub-content">
@@ -236,7 +232,7 @@
     </section>
 
     <footer class="gold-footer">
-    <div class="version-card"><b>NaFunny HUB</b><span>Version 1.2.6 Logo Electric FX</span><small>Stable logo + visible lightning FX</small></div>
+    <div class="version-card"><b>NaFunny HUB</b><span>Version 1.3 Dual Telegram Feed</span><small>2 posts from @NaFunny + 2 posts from @TonNewbie</small></div>
     <p>© NaFunny • Made with ☕, electricity and countless ideas.</p>
     <small>Crafted by NaFunny &amp; Tom</small>
   </footer>
@@ -262,5 +258,6 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="telegram-feed.js"></script>
 </body>
 </html>

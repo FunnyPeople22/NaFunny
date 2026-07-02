@@ -1,0 +1,106 @@
+.telegram-feed-section {
+  margin: 80px auto;
+  max-width: 1120px;
+  padding: 0 22px;
+}
+
+.telegram-feed-title {
+  text-align: center;
+  letter-spacing: .35em;
+  text-transform: uppercase;
+  font-size: clamp(28px, 5vw, 58px);
+  margin-bottom: 34px;
+  color: var(--accent, #35e9ff);
+  text-shadow: 0 0 24px rgba(53, 233, 255, .55);
+}
+
+.telegram-feed-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.telegram-post-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  padding: 22px;
+  background: rgba(8, 15, 34, .72);
+  border: 1px solid rgba(120, 220, 255, .24);
+  box-shadow: 0 0 28px rgba(45, 210, 255, .16);
+  backdrop-filter: blur(14px);
+}
+
+.telegram-post-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(53, 233, 255, .18), transparent 42%);
+  pointer-events: none;
+}
+
+.telegram-post-channel {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #aef7ff;
+}
+
+.telegram-post-text {
+  position: relative;
+  z-index: 1;
+  color: rgba(244, 249, 255, .92);
+  font-size: 16px;
+  line-height: 1.55;
+  white-space: pre-line;
+  margin-bottom: 18px;
+}
+
+.telegram-post-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: 18px;
+  margin: 4px 0 16px;
+  display: block;
+}
+
+.telegram-post-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.telegram-post-date {
+  color: rgba(220, 235, 255, .62);
+  font-size: 13px;
+}
+
+.telegram-post-link {
+  color: #05121d;
+  background: linear-gradient(135deg, #6ff4ff, #19c8ff);
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 0 18px rgba(25, 200, 255, .38);
+}
+
+@media (max-width: 780px) {
+  .telegram-feed-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .telegram-feed-section {
+    margin: 56px auto;
+  }
+}
