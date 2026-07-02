@@ -1,14 +1,10 @@
-# NaFunny HUB 1.2 Final
+# NaFunny HUB 1.2 Gold Edition
 
-Финальная foundation-версия NaFunny HUB.
+Финальная полировка HUB 1.2:
+- Electric Flow logo: N as energy source, y tail spark
+- removed extra decorative bolt near title
+- Telegram Feed 2.0 cards
+- Gold footer/version card
+- stable Ambient rain.mp3 and existing HUB controls
 
-Внутри:
-- единый Electric Flow логотип для ПК и телефона;
-- автоматическая попытка подтянуть Telegram Feed из @NaFunny и @TonNewbie;
-- fallback-карточки, если Telegram/proxy недоступны;
-- рабочий Ambient с rain.mp3;
-- Desktop + Mobile HUB;
-- Sponsors/Collaboration;
-- Crypto wallets + QR.
-
-Загружай все файлы в корень GitHub Pages репозитория с заменой.
+Upload all files to the root of the GitHub repository.
