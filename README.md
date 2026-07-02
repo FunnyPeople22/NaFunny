@@ -1,14 +1,11 @@
-# NaFunny HUB 1.2 — Content Update
+# NaFunny HUB 1.2 Patch 1 — UI Polish
 
-Upload all files to the root of the GitHub repository.
+- Twitch SVG in Watch Streams button
+- Telegram SVG in Join Telegram button
+- New NaFunny brand title styling
+- Premium desktop HUB dock menu
+- Twitch / YouTube icons in Hub Live
+- Hover/glow polish
+- User rain.mp3 preserved
 
-Included:
-- index.html
-- style.css
-- script.js
-- logo.png / logo.webp
-- favicon.png
-- rain.mp3
-- QR images
-
-HUB 1.2 adds Content blocks, Telegram Feed placeholder, Partners/Sponsors block, desktop and mobile HUB access, and keeps the custom ambient rain audio.
+Upload all files to repository root.
