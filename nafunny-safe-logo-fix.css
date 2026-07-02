@@ -1,0 +1,128 @@
+/* =========================================================
+   NaFunny HUB 1.2.2 SAFE Logo Fix
+   Purpose: kill broken gradient rectangle / color jumps on PC & mobile.
+
+   IMPORTANT:
+   Paste this at the VERY END of your main CSS file.
+   It intentionally removes CSS gradient-clip animation from NaFunny logo.
+   Result: stable readable logo everywhere.
+   ========================================================= */
+
+/* Main safe logo class. Keep it on the NaFunny text element. */
+.nafunny-logo-fixed,
+.nafunny-logo,
+.hero-logo,
+.hero-title-logo {
+  position: relative !important;
+  display: inline-block !important;
+  overflow: visible !important;
+  contain: none !important;
+
+  padding: 0.04em 0.16em 0.14em 0.06em !important;
+  margin: -0.04em -0.16em -0.14em -0.06em !important;
+
+  font-family: inherit !important;
+  font-weight: 900 !important;
+  font-style: italic !important;
+  line-height: 1 !important;
+  letter-spacing: -0.055em !important;
+
+  /* HARD RESET: no gradient rectangle, no background mask, no clip bugs */
+  background: none !important;
+  background-image: none !important;
+  background-size: auto !important;
+  background-position: initial !important;
+  background-repeat: no-repeat !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+
+  /* Stable brand color. Themes must NOT recolor the letters. */
+  color: #8ef4ff !important;
+  -webkit-text-fill-color: #8ef4ff !important;
+
+  text-shadow:
+    0 0 2px rgba(255,255,255,.95),
+    0 0 10px rgba(61,232,255,.90),
+    0 0 26px rgba(33,184,255,.60),
+    0 0 52px rgba(104,80,255,.35) !important;
+
+  filter: none !important;
+  transform: translateZ(0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: geometricPrecision !important;
+
+  animation: nafunnySafeLogoPulse 4.8s ease-in-out infinite !important;
+}
+
+/* Kill old pseudo-layers that created the bright rectangle. */
+.nafunny-logo-fixed::before,
+.nafunny-logo-fixed::after,
+.nafunny-logo::before,
+.nafunny-logo::after,
+.hero-logo::before,
+.hero-logo::after,
+.hero-title-logo::before,
+.hero-title-logo::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  animation: none !important;
+}
+
+/* Theme reset: themes may change glow around the site, but not logo letters. */
+body[data-theme="blue"] .nafunny-logo-fixed,
+body[data-theme="purple"] .nafunny-logo-fixed,
+body[data-theme="storm"] .nafunny-logo-fixed,
+.theme-blue .nafunny-logo-fixed,
+.theme-purple .nafunny-logo-fixed,
+.theme-storm .nafunny-logo-fixed,
+[data-theme="blue"] .nafunny-logo-fixed,
+[data-theme="purple"] .nafunny-logo-fixed,
+[data-theme="storm"] .nafunny-logo-fixed,
+body[data-theme="blue"] .nafunny-logo,
+body[data-theme="purple"] .nafunny-logo,
+body[data-theme="storm"] .nafunny-logo {
+  background: none !important;
+  background-image: none !important;
+  color: #8ef4ff !important;
+  -webkit-text-fill-color: #8ef4ff !important;
+}
+
+/* Only pulse glow; never animate color/background. */
+@keyframes nafunnySafeLogoPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 2px rgba(255,255,255,.90),
+      0 0 10px rgba(61,232,255,.78),
+      0 0 26px rgba(33,184,255,.48),
+      0 0 52px rgba(104,80,255,.26) !important;
+  }
+  50% {
+    text-shadow:
+      0 0 3px rgba(255,255,255,1),
+      0 0 14px rgba(61,232,255,1),
+      0 0 34px rgba(33,184,255,.72),
+      0 0 68px rgba(104,80,255,.42) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nafunny-logo-fixed,
+  .nafunny-logo,
+  .hero-logo,
+  .hero-title-logo {
+    padding-right: 0.20em !important;
+    padding-bottom: 0.18em !important;
+    letter-spacing: -0.052em !important;
+    animation-duration: 5.6s !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nafunny-logo-fixed,
+  .nafunny-logo,
+  .hero-logo,
+  .hero-title-logo {
+    animation: none !important;
+  }
+}
