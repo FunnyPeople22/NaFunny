@@ -1,17 +1,57 @@
 {
   "version": "1.4",
-  "updatedAt": "starter",
+  "updatedAt": "2026-07-02T16:19:42.648Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
     "NaFunny",
     "TonNewbie"
   ],
-  "posts": [],
-  "errors": [
+  "posts": [
     {
-      "channel": "system",
-      "message": "Run GitHub Actions → Update Telegram Feed to load real posts."
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "Привет дорогие мои!\n\n🎮Нашёл имба расширение для пополнения Steam, без всяких там костылей и комиссий:\n\nЗаходим https://steambalance.cc/booster (https://steambalance.cc/booster) и устанавливаем расширение\n1-2й скрин: так будет выглядеть доп кнопка в вашем Steam\n3-5й скрин: процедура пополнения баланса\n\n‼️Открытый код на github, проверено на virustotal.com (http://virustotal.com/), всё безопасно.\n\nСкажем пока сервисам пополнения с комиссией!\nНе забудьте прожать лайк и поделиться со своим бро ;)",
+      "image": "https://cdn4.telesco.pe/file/kxzOgjlXSPnNlZxxoVOHQrGIIN5BT_IbNFbDs6kBgJ5rGIDijrfeS-DHJJ_bSZ0W3D2nc7LjsOFX4Sf7TzE3KmnzAriXgKs6E5wuNUdYJ3Z8sbkV8XRNGlG3Z9u9IBTltKKZdk04PkOyQ1TFTTVH7IjuVS2g97c2RzDdOkS6G6BwCQ1hZX6R4tzl057fMf3NB8-WUiGKcv58UvhGNhtXtTG6WBtlNYk3OYhJEs2zVfiHXI3LYgSQpx1ec_dMn0sWM1jIaUTCEe4DAdQIV_uBIRE2bABD9u1nSOlCwNm2SXw_I2r2G5l9HpkjowDGoMWsohgOwlmrzBPO6N7RebP_xA.jpg",
+      "date": "2026-07-02T09:06:49+00:00",
+      "views": "19",
+      "url": "https://t.me/NaFunny/1163"
+    },
+    {
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "🏆Список всех команд на TI\n\n13-23 Августа",
+      "image": "https://cdn4.telesco.pe/file/UfOFgdCQhmAm07C6fqi6PSFF3iO-j1ZuxipxR3iPprhcBY5shHSp6J6sDJcnmZXFn5vXylp0kJKmzlcMOUHvlBo0IKpsXY5QNpNZGJIJuDxYYDH9ruFHLUBG86_DutsW0tGqQYUdsN3kassirYRsTB7CWSgQfe4cV2-NlJsqIMBXmlC8p3PRj1zAFfmrsYMFTOSRYSHLtp8nbwrj_3D3QMmnL-v0tk-MwHGajT0YBkU_v2y2y_4dssNcJpf45tcRcP9ZZCeDwSwZCVOAKwqT7VeQvhPh6l6V9XUJepbaoSasAWrdpDPsy5BdtUnPW3SXtmBZOpNcZfl5JNzhTx2ynQ.jpg",
+      "date": "2026-06-28T19:56:21+00:00",
+      "views": "41",
+      "url": "https://t.me/NaFunny/1162"
+    },
+    {
+      "channel": "TonNewbie",
+      "channelTitle": "TonNewbie",
+      "channelIcon": "💎",
+      "channelDescription": "TON / GRAM, crypto news and market notes",
+      "text": "💎GRAM залистили (https://app.hyperliquid.xyz/trade/GRAM) на HyperLiquid. Фьючи с плечом до 5х.\n\nМы же тут не маленькие и предупреждать о рисках торговли связанных с фьючерсами не нужно?\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "image": "https://telegram.org/img/emoji/40/F09F928E.png",
+      "date": "2026-07-02T12:05:55+00:00",
+      "views": "776",
+      "url": "https://t.me/TonNewbie/3276"
+    },
+    {
+      "channel": "TonNewbie",
+      "channelTitle": "TonNewbie",
+      "channelIcon": "💎",
+      "channelDescription": "TON / GRAM, crypto news and market notes",
+      "text": "✈️Dear Павел, мы застряли на $1.67 срочно нужен додеп на памп!\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "image": "https://telegram.org/img/emoji/40/F09F928E.png",
+      "date": "2026-07-02T11:00:25+00:00",
+      "views": "1.02K",
+      "url": "https://t.me/TonNewbie/3275"
     }
-  ]
+  ],
+  "errors": []
 }
