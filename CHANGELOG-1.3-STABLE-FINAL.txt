@@ -1,0 +1,28 @@
+NaFunny HUB 1.3 Stable Final — Changelog
+
+Удалено из релиза:
+- assets/css/telegram-feed.css
+- assets/js/telegram-feed.js
+- logo-fix.css
+- logo-fix.js
+- nafunny-logo-fix.css
+- nafunny-logo-lightning.css
+- nafunny-logo-lightning.js
+- nafunny-safe-logo-fix.css
+- README-1.2.5.txt
+- README-TELEGRAM-FEED-STABLE.txt
+- README.txt
+- TELEGRAM_FEED_INSTALL.md
+- TELEGRAM_FEED_DUAL_INSTALL.md
+
+Почему удалено:
+- эти файлы были временными патчами или старыми версиями;
+- index.html их не использует;
+- они путали GitHub Desktop и усложняли дальнейшие обновления.
+
+Обновлено:
+- telegram-feed.js — рендерит 2 поста @NaFunny и 2 поста @TonNewbie;
+- telegram-feed.css — финальный стиль карточек Feed;
+- scripts/update-telegram-feed.mjs — обновляет оба канала;
+- update-telegram-feed.yml — GitHub Actions для двух каналов;
+- README.md — чистая инструкция.
