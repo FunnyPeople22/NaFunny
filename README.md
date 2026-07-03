@@ -1,28 +1,43 @@
-# NaFunny HUB 1.3 Stable Final
+# NaFunny HUB
 
-Готовая чистая версия репозитория.
+Version: **1.4.1 Maintenance**
 
 ## Что внутри
 
-- Stable Logo FX без старых конфликтных logo-fix файлов.
-- Dual Telegram Feed: 2 поста из @NaFunny + 2 поста из @TonNewbie.
-- GitHub Actions обновляет `feed/telegram-feed.json` каждые 30 минут и вручную через Run workflow.
-- Чистая структура без старых временных CSS/JS и install-файлов.
+- GitHub Pages статичный сайт.
+- GitHub Actions обновляет `feed/telegram-feed.json` каждые 30 минут.
+- Telegram Feed показывает:
+  - 2 последних поста из `@NaFunny`
+  - 2 последних поста из `@TonNewbie`
 
-## После загрузки на GitHub
+## Важная структура
 
-1. Commit / Push.
-2. Открой GitHub → Actions → Update Telegram Feed.
-3. Нажми Run workflow.
-4. После зелёной галочки обнови сайт через Ctrl+F5.
+```text
+.github/workflows/update-telegram-feed.yml
+scripts/update-telegram-feed.mjs
+feed/telegram-feed.json
 
-## Основные файлы
+index.html
+style.css
+script.js
+telegram-feed.css
+telegram-feed.js
+```
 
-- `index.html`
-- `style.css`
-- `script.js`
-- `telegram-feed.css`
-- `telegram-feed.js`
-- `.github/workflows/update-telegram-feed.yml`
-- `scripts/update-telegram-feed.mjs`
-- `feed/telegram-feed.json`
+## Maintenance 1.4.1
+
+- Удалён лишний корневой `telegram-feed.json`.
+- Парсер сортирует посты по Telegram message id, чтобы брать самые свежие посты.
+- PNG-эмодзи Telegram (`telegram.org/img/emoji/...`) больше не используются как изображения постов.
+- Если в посте есть реальная картинка — она подтягивается.
+- Добавлена строка последнего обновления Feed.
+- Workflow переведён на Node.js 24.
+
+## Проверка
+
+1. GitHub → Actions → Update Telegram Feed → Run workflow.
+2. После зелёной галочки открыть `feed/telegram-feed.json`.
+3. Проверить поля:
+   - `updatedAt`
+   - `posts`
+   - `errors`

@@ -1,5 +1,5 @@
 /*
-  NaFunny HUB 1.4 Ultimate Feed UI
+  NaFunny HUB 1.4.1 Maintenance Feed UI
 */
 
 (function () {
@@ -27,8 +27,9 @@
       const data = await response.json();
       const posts = normalizePosts(data.posts || []);
       const grouped = groupPosts(posts);
+      const updatedAt = renderUpdatedAt(data.updatedAt);
 
-      root.innerHTML = CHANNEL_ORDER.map(channel => renderChannelBlock(channel, grouped[channel] || [])).join("");
+      root.innerHTML = updatedAt + CHANNEL_ORDER.map(channel => renderChannelBlock(channel, grouped[channel] || [])).join("");
 
       if (!posts.length) {
         root.innerHTML = renderEmpty(data.errors);
@@ -54,7 +55,7 @@
         text: String(post.text || "").trim(),
         date: post.date || "",
         url: post.url || "#",
-        image: post.image || "",
+        image: isEmojiImage(post.image || "") ? "" : (post.image || ""),
         views: post.views || "",
         error: Boolean(post.error)
       }))
@@ -76,6 +77,26 @@
     }
 
     return grouped;
+  }
+
+
+  function renderUpdatedAt(value) {
+    if (!value) return "";
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+
+    const formatted = date.toLocaleString("ru-RU", {
+      day: "2-digit",
+      month: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    return `<div class="telegram-feed-updated">🟢 Feed updated: ${escapeHtml(formatted)}</div>`;
+  }
+
+  function isEmojiImage(url) {
+    return /telegram\.org\/img\/emoji\//i.test(String(url || ""));
   }
 
   function renderChannelBlock(channel, posts) {
