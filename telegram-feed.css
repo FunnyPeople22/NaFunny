@@ -246,3 +246,65 @@
     text-align: center;
   }
 }
+
+/* NaFunny HUB 1.4.3 Feed Avatars */
+.telegram-channel-avatar {
+  display: block;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 18px;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(116, 232, 255, 0.34);
+  box-shadow:
+    0 0 18px rgba(57, 230, 255, 0.22),
+    inset 0 0 18px rgba(255, 255, 255, 0.06);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.telegram-channel-block:hover .telegram-channel-avatar {
+  transform: translateY(-1px) scale(1.035);
+  border-color: rgba(125, 242, 255, 0.58);
+  box-shadow:
+    0 0 24px rgba(57, 230, 255, 0.34),
+    inset 0 0 18px rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="purple"] .telegram-channel-avatar {
+  border-color: rgba(224, 134, 255, 0.38);
+  box-shadow:
+    0 0 18px rgba(221, 83, 255, 0.24),
+    inset 0 0 18px rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="purple"] .telegram-channel-block:hover .telegram-channel-avatar {
+  border-color: rgba(239, 176, 255, 0.62);
+  box-shadow:
+    0 0 24px rgba(221, 83, 255, 0.38),
+    inset 0 0 18px rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="storm"] .telegram-channel-avatar {
+  border-color: rgba(221, 235, 255, 0.36);
+  box-shadow:
+    0 0 18px rgba(210, 230, 255, 0.20),
+    inset 0 0 18px rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="storm"] .telegram-channel-block:hover .telegram-channel-avatar {
+  border-color: rgba(245, 250, 255, 0.62);
+  box-shadow:
+    0 0 24px rgba(210, 230, 255, 0.34),
+    inset 0 0 18px rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 520px) {
+  .telegram-channel-avatar,
+  .telegram-channel-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+    border-radius: 16px;
+  }
+}

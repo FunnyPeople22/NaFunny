@@ -13,3 +13,13 @@ Core files:
 - `.github/workflows/update-telegram-feed.yml`
 
 Telegram Feed updates through GitHub Actions every 15 minutes and can be manually triggered from Actions → Update Telegram Feed → Run workflow.
+
+## NaFunny HUB 1.4.3 — Feed Avatars
+
+Small visual update for Telegram Feed:
+
+- added real channel avatars for @NaFunny and @TonNewbie;
+- replaced emoji icons in feed headers with branded images;
+- added hover glow and theme-aware avatar borders;
+- kept fallback emoji icons if avatar files fail to load.
+

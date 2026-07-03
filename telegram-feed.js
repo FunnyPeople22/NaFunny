@@ -1,11 +1,25 @@
 /*
-  NaFunny HUB 1.4.1 Maintenance Feed UI
+  NaFunny HUB 1.4.3 Feed Avatars UI
 */
 
 (function () {
   const FEED_URL = "feed/telegram-feed.json";
   const CHANNEL_ORDER = ["NaFunny", "TonNewbie"];
   const MAX_PER_CHANNEL = 2;
+  const CHANNEL_META = {
+    NaFunny: {
+      avatar: "avatars/nafunny.png",
+      title: "NaFunny",
+      subtitle: "Streams & community updates",
+      fallbackIcon: "🎮"
+    },
+    TonNewbie: {
+      avatar: "avatars/tonnewbie.png",
+      title: "TonNewbie",
+      subtitle: "TON / GRAM & crypto news",
+      fallbackIcon: "💎"
+    }
+  };
 
   document.addEventListener("DOMContentLoaded", loadTelegramFeed);
 
@@ -100,9 +114,12 @@
   }
 
   function renderChannelBlock(channel, posts) {
-    const meta = channel === "TonNewbie"
-      ? { icon: "💎", title: "TonNewbie", subtitle: "TON / GRAM & crypto news" }
-      : { icon: "🎮", title: "NaFunny", subtitle: "Streams & community updates" };
+    const meta = CHANNEL_META[channel] || {
+      avatar: "",
+      title: channel,
+      subtitle: "Telegram updates",
+      fallbackIcon: "✦"
+    };
 
     const cards = posts.length
       ? posts.map(renderPostCard).join("")
@@ -110,10 +127,14 @@
            <div class="telegram-post-text">Посты @${meta.title} пока не загрузились. Запусти GitHub Actions → Update Telegram Feed.</div>
          </article>`;
 
+    const avatar = meta.avatar
+      ? `<img class="telegram-channel-avatar" src="${escapeAttr(meta.avatar)}" alt="@${escapeAttr(meta.title)}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'telegram-channel-icon',textContent:'${escapeAttr(meta.fallbackIcon)}'}))">`
+      : `<span class="telegram-channel-icon">${escapeHtml(meta.fallbackIcon)}</span>`;
+
     return `
       <div class="telegram-channel-block telegram-channel-${escapeAttr(channel.toLowerCase())}">
         <div class="telegram-channel-head">
-          <span class="telegram-channel-icon">${meta.icon}</span>
+          ${avatar}
           <div>
             <strong>@${meta.title}</strong>
             <small>${meta.subtitle}</small>
