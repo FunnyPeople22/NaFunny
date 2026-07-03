@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.4.2-telegram-engine-rewrite",
   "updatedAt": "2026-07-03T09:29:57.495Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,

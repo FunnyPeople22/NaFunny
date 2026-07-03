@@ -1,8 +1,10 @@
 /*
-  NaFunny HUB 1.4.1 Maintenance Feed
-  - Fetches latest public posts from t.me/s/<channel> without tokens.
-  - Sorts by Telegram post id, not by page order.
+  NaFunny HUB 1.4.2 Telegram Engine Rewrite
+  - Fetches public Telegram channel pages from t.me/s/<channel> without tokens.
+  - Collects posts by Telegram message id and removes duplicated/near-duplicated cards.
+  - Sorts by Telegram message id first, then by date.
   - Ignores Telegram emoji PNGs as post images.
+  - Keeps real post images from telesco.pe / Telegram CDN when available.
   Output: feed/telegram-feed.json
 */
 
@@ -30,7 +32,7 @@ const CHANNEL_META = {
 };
 
 function decodeHtml(value = "") {
-  return value
+  return String(value)
     .replace(/&nbsp;/g, " ")
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
@@ -38,20 +40,20 @@ function decodeHtml(value = "") {
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
-    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCharCode(parseInt(code, 16)));
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)));
 }
 
 function stripTags(html = "") {
   return decodeHtml(
-    html
+    String(html)
       .replace(/<br\s*\/?>/gi, "\n")
       .replace(/<\/div>\s*<div/gi, "\n<div")
       .replace(/<\/p>/gi, "\n")
       .replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => {
-        const clean = stripTags(text);
-        const cleanHref = decodeHtml(href);
-        return clean && cleanHref && clean !== cleanHref ? `${clean} (${cleanHref})` : (clean || cleanHref);
+        const cleanText = stripTags(text);
+        const cleanHref = absoluteUrl(href);
+        return cleanText && cleanHref && cleanText !== cleanHref ? `${cleanText} (${cleanHref})` : (cleanText || cleanHref);
       })
       .replace(/<[^>]+>/g, "")
       .replace(/[ \t]+\n/g, "\n")
@@ -64,35 +66,45 @@ function stripTags(html = "") {
 function absoluteUrl(url = "") {
   if (!url) return "";
   const cleaned = decodeHtml(url).replace(/\\/g, "").replace(/^['"]|['"]$/g, "").trim();
+  if (!cleaned) return "";
   if (cleaned.startsWith("//")) return "https:" + cleaned;
   if (cleaned.startsWith("/")) return "https://t.me" + cleaned;
   return cleaned;
 }
 
 function isEmojiImage(url = "") {
-  return /telegram\.org\/img\/emoji\//i.test(url) || /\/emoji\//i.test(url);
+  return /telegram\.org\/img\/emoji\//i.test(String(url)) || /\/emoji\//i.test(String(url));
 }
 
 function isRealPostImage(url = "") {
   if (!url || isEmojiImage(url)) return false;
-  return /\.(jpg|jpeg|png|webp)(\?|$)/i.test(url) || /telesco\.pe\/file\//i.test(url) || /cdn\d*\.cdn-telegram\.org\//i.test(url);
+  return (
+    /telesco\.pe\/file\//i.test(url) ||
+    /cdn\d*\.cdn-telegram\.org\//i.test(url) ||
+    /\.telegram-cdn\.org\//i.test(url) ||
+    /\.(jpg|jpeg|png|webp)(\?|$)/i.test(url)
+  );
+}
+
+function normalizeTextForDedupe(text = "") {
+  return String(text)
+    .toLowerCase()
+    .replace(/https?:\/\/\S+/g, "")
+    .replace(/\([^)]*https?:\/\/[^)]*\)/g, "")
+    .replace(/[@#][\wа-яё_]+/gi, "")
+    .replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, "")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .slice(0, 140);
 }
 
 function splitMessageBlocks(html) {
   const blocks = [];
-  const marker = '<div class="tgme_widget_message ';
-  let index = 0;
-
-  while (true) {
-    const start = html.indexOf(marker, index);
-    if (start === -1) break;
-
-    const next = html.indexOf(marker, start + marker.length);
-    const end = next === -1 ? html.length : next;
-    blocks.push(html.slice(start, end));
-    index = end;
+  const regex = /<div class="tgme_widget_message\s[^>]*data-post="[^"]+"[\s\S]*?(?=<div class="tgme_widget_message\s[^>]*data-post="|<\/body>|$)/g;
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    blocks.push(match[0]);
   }
-
   return blocks;
 }
 
@@ -111,6 +123,7 @@ function extractUrls(block) {
     /background-image:\s*url\(&quot;([^&]+)&quot;\)/gi,
     /background-image:\s*url\(([^)]+)\)/gi,
     /<a[^>]+class="[^"]*tgme_widget_message_photo_wrap[^"]*"[^>]+href="([^"]+)"/gi,
+    /<a[^>]+href="([^"]+)"[^>]*class="[^"]*tgme_widget_message_photo_wrap[^"]*"/gi,
     /<img[^>]+src="([^"]+)"/gi
   ];
 
@@ -122,12 +135,11 @@ function extractUrls(block) {
     }
   }
 
-  return urls;
+  return [...new Set(urls)];
 }
 
 function findImage(block) {
-  const urls = extractUrls(block);
-  return urls.find(isRealPostImage) || "";
+  return extractUrls(block).find(isRealPostImage) || "";
 }
 
 function findViews(block) {
@@ -146,36 +158,73 @@ function findPostId(block) {
 }
 
 function postNumber(postId = "") {
-  const match = postId.match(/\/(\d+)$/);
+  const match = String(postId).match(/\/(\d+)$/);
   return match ? Number(match[1]) : 0;
 }
 
-function normalizePosts(posts, channel) {
-  const seen = new Set();
+function createPost(block, channel) {
+  const postId = findPostId(block);
+  const meta = CHANNEL_META[channel] || { title: channel, icon: "📢", description: "" };
 
-  return posts
-    .filter(post => post && (post.text || post.image))
-    .sort((a, b) => {
-      const byId = (b.postNumber || 0) - (a.postNumber || 0);
-      if (byId) return byId;
-      return new Date(b.date || 0) - new Date(a.date || 0);
-    })
-    .filter(post => {
-      const key = post.url || `${channel}:${post.text.slice(0, 80)}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    })
-    .slice(0, LIMIT_PER_CHANNEL);
+  return {
+    id: postId || `${channel}/${Date.now()}`,
+    channel,
+    channelTitle: meta.title,
+    channelIcon: meta.icon,
+    channelDescription: meta.description,
+    text: findMessageText(block),
+    image: findImage(block),
+    date: findDate(block),
+    views: findViews(block),
+    url: postId ? `https://t.me/${postId}` : `https://t.me/${channel}`,
+    postNumber: postNumber(postId),
+    dedupeKey: ""
+  };
+}
+
+function normalizePosts(posts, channel) {
+  const byId = new Map();
+
+  for (const post of posts) {
+    if (!post || (!post.text && !post.image)) continue;
+    const idKey = post.id || post.url || `${channel}:${post.postNumber}`;
+    const existing = byId.get(idKey);
+    if (!existing || String(post.text || "").length > String(existing.text || "").length) {
+      byId.set(idKey, post);
+    }
+  }
+
+  const sorted = [...byId.values()].sort((a, b) => {
+    const byMessageId = (b.postNumber || 0) - (a.postNumber || 0);
+    if (byMessageId) return byMessageId;
+    return new Date(b.date || 0) - new Date(a.date || 0);
+  });
+
+  const unique = [];
+  const seenText = new Set();
+
+  for (const post of sorted) {
+    const dedupeKey = normalizeTextForDedupe(post.text || "");
+    if (dedupeKey && seenText.has(dedupeKey)) {
+      console.log(`@${channel}: skipped near-duplicate post ${post.id}`);
+      continue;
+    }
+    if (dedupeKey) seenText.add(dedupeKey);
+    unique.push(post);
+    if (unique.length >= LIMIT_PER_CHANNEL) break;
+  }
+
+  return unique.map(({ postNumber, dedupeKey, ...post }) => post);
 }
 
 async function fetchChannel(channel) {
-  const url = `https://t.me/s/${channel}`;
+  const url = `https://t.me/s/${channel}?before=999999999`;
   const response = await fetch(url, {
     headers: {
-      "user-agent": "Mozilla/5.0 (compatible; NaFunnyHUB/1.4.1; +https://funnypeople22.github.io/NaFunny/)",
+      "user-agent": "Mozilla/5.0 (compatible; NaFunnyHUB/1.4.2; +https://funnypeople22.github.io/NaFunny/)",
       "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      "cache-control": "no-cache"
+      "cache-control": "no-cache",
+      "pragma": "no-cache"
     }
   });
 
@@ -185,34 +234,17 @@ async function fetchChannel(channel) {
 
   const html = await response.text();
   const blocks = splitMessageBlocks(html);
+  const posts = blocks.map(block => createPost(block, channel));
+  const normalized = normalizePosts(posts, channel);
 
-  const posts = blocks.map(block => {
-    const postId = findPostId(block);
-    const text = findMessageText(block);
-    const image = findImage(block);
-    const date = findDate(block);
-    const views = findViews(block);
-    const meta = CHANNEL_META[channel] || { title: channel, icon: "📢", description: "" };
+  console.log(`@${channel}: scanned ${blocks.length} message blocks`);
+  console.log(`@${channel}: selected ${normalized.map(post => post.id).join(", ") || "none"}`);
 
-    return {
-      channel,
-      channelTitle: meta.title,
-      channelIcon: meta.icon,
-      channelDescription: meta.description,
-      text,
-      image,
-      date,
-      views,
-      url: postId ? `https://t.me/${postId}` : `https://t.me/${channel}`,
-      postNumber: postNumber(postId)
-    };
-  });
-
-  return normalizePosts(posts, channel).map(({ postNumber, ...post }) => post);
+  return normalized;
 }
 
 const output = {
-  version: "1.4.1-maintenance",
+  version: "1.4.2-telegram-engine-rewrite",
   updatedAt: new Date().toISOString(),
   source: "t.me/s public channel pages",
   limitPerChannel: LIMIT_PER_CHANNEL,
@@ -225,7 +257,7 @@ for (const channel of CHANNELS) {
   try {
     const posts = await fetchChannel(channel);
     output.posts.push(...posts);
-    console.log(`@${channel}: found ${posts.length} posts`);
+    console.log(`@${channel}: saved ${posts.length} posts`);
 
     if (!posts.length) {
       output.errors.push({
@@ -244,8 +276,8 @@ output.posts.sort((a, b) => {
   const bi = CHANNELS.indexOf(b.channel);
   if (ai !== bi) return ai - bi;
 
-  const aNum = Number((a.url || "").match(/\/(\d+)$/)?.[1] || 0);
-  const bNum = Number((b.url || "").match(/\/(\d+)$/)?.[1] || 0);
+  const aNum = Number((a.id || a.url || "").match(/\/(\d+)$/)?.[1] || 0);
+  const bNum = Number((b.id || b.url || "").match(/\/(\d+)$/)?.[1] || 0);
   if (aNum !== bNum) return bNum - aNum;
 
   return new Date(b.date || 0) - new Date(a.date || 0);
