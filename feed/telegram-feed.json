@@ -1,6 +1,6 @@
 {
   "version": "1.4.2-telegram-engine-rewrite",
-  "updatedAt": "2026-07-03T14:17:58.011Z",
+  "updatedAt": "2026-07-03T09:29:57.495Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,52 +9,48 @@
   ],
   "posts": [
     {
-      "id": "NaFunny/1163",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "Привет дорогие мои!\n\n🎮Нашёл имба расширение для пополнения Steam, без всяких там костылей и комиссий:\n\nЗаходим https://steambalance.cc/booster и устанавливаем расширение\n1-2й скрин: так будет выглядеть доп кнопка в вашем Steam\n3-5й скрин: процедура пополнения баланса\n\n‼️Открытый код на github, проверено на virustotal.com (http://virustotal.com/), всё безопасно.\n\nСкажем пока сервисам пополнения с комиссией!\nНе забудьте прожать лайк и поделиться со своим бро ;)\n\n@NaFunny (https://t.me/NaFunny) l Website (https://funnypeople22.github.io/NaFunny/)",
+      "text": "Привет дорогие мои!\n\n🎮Нашёл имба расширение для пополнения Steam, без всяких там костылей и комиссий:\n\nЗаходим https://steambalance.cc/booster (https://steambalance.cc/booster) и устанавливаем расширение\n1-2й скрин: так будет выглядеть доп кнопка в вашем Steam\n3-5й скрин: процедура пополнения баланса\n\n‼️Открытый код на github, проверено на virustotal.com (http://virustotal.com/), всё безопасно.\n\nСкажем пока сервисам пополнения с комиссией!\nНе забудьте прожать лайк и поделиться со своим бро ;)\n\n@NaFunny (https://t.me/NaFunny) l Website (https://funnypeople22.github.io/NaFunny/)",
       "image": "https://cdn4.telesco.pe/file/GMKiuD3dTFVO3H8LMdoMR0XMgu5FI2EFhSJwlw1U1qpzwCYLOQRphsLrV6h2DnKZOhQFUbJQ0YVQlP-VYL2-gueDlm8Nj41OaFP47JpYJHMsR2nakq5rVqV9D5Tc5cV-TQufDrRymhT2Z-yajbLTPdV8mKs--jBoMLgGE3BI8KkTr9D5y_SQwo89UDLItFCPzI2n8Rr0Gq8xwc3viVojmt8hemEBeJ3whEhJKV45sL_ME6UdXsbN6vrNF2sPg0m7Vy-djH09032PqaXZnRztw4OD9QTTF3V6jjQ8oFco3XNAKbt8_fMAEOVFAkcd5KhYe4aLXhs-MZbB0sOH0n6bsg.jpg",
       "date": "2026-07-02T09:06:49+00:00",
-      "views": "26",
+      "views": "25",
       "url": "https://t.me/NaFunny/1163"
     },
     {
-      "id": "NaFunny/1162",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "🏆Список всех команд на TI\n\n13-23 Августа",
-      "image": "https://cdn4.telesco.pe/file/hrFtNu-7O9x-nOCAKkCNXXSwWjaCEAW6nE6VgjXWyReV2naFtizR4yDjOWuYK-bqB817E8IGV8-fMAlgwwFDyDIpqc_T18ijG5JCF-7Yv3G-g57vxmmDiWHu25jQqa4QCV8pzzhaeQWKZWDfptpxcfkEnQIdSya2_2R_mAErhiyreEa9ux3Kggsd1kLP14cqN48lB7uoq3M3uSroV6vVWaYnnjHgIV7V4c5SphzEya95kO2fy01Z8C04Rs7BxS3zZMKBwB7zAPv_VHkoRhXJm0vaxKwxAFmqzuUMmEaF54_P43otViBRJbokh2f-sz1jbIuu3X9q_oK2ZZXIF40vnQ.jpg",
+      "image": "https://cdn4.telesco.pe/file/DpF9EjpThNtYmUGnnmlc3AdyZvempQUft5XuEIO1EtS6Jmc5qSpwTYGvJAwa2WkHam33LXxPQiVsb_vM5s7EGG5jKOqJ4L7MiA_-6_eOvC3b5NdiDU7cLMQlYVFR_WMg-JxZnTOtcVN-VSmB4VU6t1PRo3w9G-qc1rGAkQNOjIX1-OinMA8wOz4uzwBT7Jf-u3kmLR5yPOTMUx9u4B_TmRtsEa7sSLoIgFHzPgbydxu4DeSseLj5KUBzAudXaDl3zCu1X-CO0FfpJEmtZ95mOOva2rhO1MWO9YHATx8qp3TrklmXwYM72MC7S-Xd8pgu8guQhOiA8i5X8sLi10-Ywg.jpg",
       "date": "2026-06-28T19:56:21+00:00",
-      "views": "45",
+      "views": "44",
       "url": "https://t.me/NaFunny/1162"
     },
     {
-      "id": "TonNewbie/3280",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "🟠Binance начинает стимуляцию MTONGA и запускает GRAM Spot Trading Tournament   🤯Призовой фонд турнира: 🔵500 BNB (~$280.000) и доп награды для первых участников. 🤑Общий фонд разделен на две части: 🔵Main Reward Pool - основная часть наград распределяется по…\n\n🟠К слову, это уже второй (https://t.me/TonNewbie/3084) крупный спотовый турнир от Binance связанный с TON/GRAM в этом году.\n\n🤤Первый проходил с 15 по 29 апреля с призовым фондом $400,000 USDC. Несмотря на такой масштаб, за время проведения турнира TON не вырос, а наоборот, упал примерно на 3%.\n\n💎Поэтому сам по себе торговый турнир - это не гарантия роста цены. Если правильно выразиться, это инструмент для увеличения ликвидности и привлечения доп внимания к GRAM'y.\n\n😋Cейчас по-факту миграция TON->GRAM на всех тир-1 биржах завершилась.\nМы имеем новый чарт (чистейшую историю торгов).\nЛогично, что рынку необходимо заново набирать объемы, ликвидность и интерес.\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/VduXGk3PIp_CyiCT8wvYol82CC_NZUUjd8Y9LeBLP93RQGoWkgsMNH0qbiWXBNhhs6yTh3cY0TCEZu9yigASa0BCUGLLBmiNfXBwqNayrMTxYISowVc2ZR8wgYkjZneq9MOxx85aubs9aHwhwwkNWaxGBRNMjlUBqSDutxcBgg_ur-WhDfxjU1CVMRcfSsIscx8vY3CFM_2bJXtAlZ_L6CC0HxxC3NOudZN4WORHafb64f28vI_fes8HTRLo7VQWsKUmkryjJsqCH_DdnizIBfdDWJ39hqDIP8HZtFkc3Dbw97B-Q86E7vcWmllRVGe9RXfuVelrNQcb4iegDt2yzw.jpg",
-      "date": "2026-07-03T12:55:56+00:00",
-      "views": "461",
-      "url": "https://t.me/TonNewbie/3280"
+      "text": "Всем доброго дня!\n💎Вчера завершилась финальная миграция TON->GRAM💎\n\nЕсли честно, какого-то вау-эффекта я так и не увидел. Заработать, конечно, удалось, но исключительно за счёт хай-риск инструментов.\nНа обычном споте для лоу банков эта миграция в целом прошла мимо заработка.\n\n📊Подведём итоги:\n🔵Листинг на Binance в районе $1,568\n🔵ATH после открытия $1,713.\n🔵На момент публикации цена держится около $1,68. Додепа (https://t.me/TonNewbie/3275) не случилось.\n\nЧто удивило больше всего - тотальная тишина в медиа.\n✈️Ни со стороны PD, ни со стороны экосистемы TON не было абсолютно никаких заявлений по поводу листинга на Binance и упоминаний про миссию MTONGA.\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "image": "https://telegram.org/img/emoji/40/F09F928E.png",
+      "date": "2026-07-03T08:24:29+00:00",
+      "views": "399",
+      "url": "https://t.me/TonNewbie/3277"
     },
     {
-      "id": "TonNewbie/3278",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "😺Крипто-встреча для жителей СПб:\nЕсли ты не знаешь чем занять себя 10 Июля (Пятница), то как говорится: Welcome в ИТМО\n\n🔴В программе:\n🔵Фильм «Не доверяй никому: Охота на криптокороля» - как рухнула биржа-гигант;\n🔵Живой диалог с биржей и блокчейн-клубами ИТМО и ГУАП;\n🔵Призы и, конечно, пицца.\nМесто проведения: СПб, ИТМО, Кронверкский пр., д49\n\n😎Регистрация по ссылке (https://itmo.events/events/121078)\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/T7yUsz_RCqKydQqp9dr3cO5Msu30CZZiuuYp6wZd5GQsGC_jxn96LOCMncCpqikPtcE3Da7_hwCqceKX2OVuhHE6IXPrDrMMEHqM5UO9koHr_EzqbOILL-3MprcySEIEhPWpbzIcyGOOVQmwlXE_F99MPqkXHKJkLKcfXmtcNbzQpS3MsH-t_gNupGEsnonhAWTEz54BVCWMNDE2QlNAvM6SR9XAouzF30pz-Y3H-WWkffQWfdkwmNrcviadeh5HPrFv1L4zEUUxTX5WIscUsT99jybPCZo642U_falmNG0UipJ8HiKHXwXv10vG5rtaO66kuxXKo2vdgB_c4z6KFg.jpg",
-      "date": "2026-07-03T12:26:28+00:00",
-      "views": "603",
-      "url": "https://t.me/TonNewbie/3278"
+      "text": "💎GRAM залистили (https://app.hyperliquid.xyz/trade/GRAM) на HyperLiquid. Фьючи с плечом до 5х.\n\nМы же тут не маленькие и предупреждать о рисках торговли связанных с фьючерсами не нужно?\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "image": "https://telegram.org/img/emoji/40/F09F928E.png",
+      "date": "2026-07-02T12:05:55+00:00",
+      "views": "1.1K",
+      "url": "https://t.me/TonNewbie/3276"
     }
   ],
   "errors": []
