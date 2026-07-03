@@ -1,6 +1,6 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-07-03T05:31:38.227Z",
+  "updatedAt": "2026-07-03T09:18:27.644Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -14,9 +14,9 @@
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "Привет дорогие мои!\n\n🎮Нашёл имба расширение для пополнения Steam, без всяких там костылей и комиссий:\n\nЗаходим https://steambalance.cc/booster (https://steambalance.cc/booster) и устанавливаем расширение\n1-2й скрин: так будет выглядеть доп кнопка в вашем Steam\n3-5й скрин: процедура пополнения баланса\n\n‼️Открытый код на github, проверено на virustotal.com (http://virustotal.com/), всё безопасно.\n\nСкажем пока сервисам пополнения с комиссией!\nНе забудьте прожать лайк и поделиться со своим бро ;)\n\n@NaFunny (https://t.me/NaFunny) l Website (https://funnypeople22.github.io/NaFunny/)",
-      "image": "https://cdn4.telesco.pe/file/kxzOgjlXSPnNlZxxoVOHQrGIIN5BT_IbNFbDs6kBgJ5rGIDijrfeS-DHJJ_bSZ0W3D2nc7LjsOFX4Sf7TzE3KmnzAriXgKs6E5wuNUdYJ3Z8sbkV8XRNGlG3Z9u9IBTltKKZdk04PkOyQ1TFTTVH7IjuVS2g97c2RzDdOkS6G6BwCQ1hZX6R4tzl057fMf3NB8-WUiGKcv58UvhGNhtXtTG6WBtlNYk3OYhJEs2zVfiHXI3LYgSQpx1ec_dMn0sWM1jIaUTCEe4DAdQIV_uBIRE2bABD9u1nSOlCwNm2SXw_I2r2G5l9HpkjowDGoMWsohgOwlmrzBPO6N7RebP_xA.jpg",
+      "image": "https://cdn4.telesco.pe/file/GMKiuD3dTFVO3H8LMdoMR0XMgu5FI2EFhSJwlw1U1qpzwCYLOQRphsLrV6h2DnKZOhQFUbJQ0YVQlP-VYL2-gueDlm8Nj41OaFP47JpYJHMsR2nakq5rVqV9D5Tc5cV-TQufDrRymhT2Z-yajbLTPdV8mKs--jBoMLgGE3BI8KkTr9D5y_SQwo89UDLItFCPzI2n8Rr0Gq8xwc3viVojmt8hemEBeJ3whEhJKV45sL_ME6UdXsbN6vrNF2sPg0m7Vy-djH09032PqaXZnRztw4OD9QTTF3V6jjQ8oFco3XNAKbt8_fMAEOVFAkcd5KhYe4aLXhs-MZbB0sOH0n6bsg.jpg",
       "date": "2026-07-02T09:06:49+00:00",
-      "views": "24",
+      "views": "25",
       "url": "https://t.me/NaFunny/1163"
     },
     {
@@ -25,10 +25,21 @@
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "🏆Список всех команд на TI\n\n13-23 Августа",
-      "image": "https://cdn4.telesco.pe/file/lBsCYFmZRUyrua5CFLeCHNNsKtqqy48uT1Adz3v4Zcts3nG4ScngIWrO1Y4cSzscOSel7BALNdXG7O_cAwjTOkDYuLc95Nrk6GTYBPB1UFaBq9vc6fblmz7X-2qLrJN8ecj8B_suRoV1lABSZaLZlM5x9TzcX9aQVFty3dXbv_Tm1X8s-x_1tcEzWjFpzjyeMBNuGao0_Fm3T2xOnQHIIt6fKObyVsu03Oteecauh5VRR_Um2dwOBwXawui0Iak8854BjekilbTS8N2GlT-dTIjOdQsg1s5GqThzEJABogS0mRevoDBP_VJM0EUxTDe32ij31_52ukesSe8FilzDlA.jpg",
+      "image": "https://cdn4.telesco.pe/file/DpF9EjpThNtYmUGnnmlc3AdyZvempQUft5XuEIO1EtS6Jmc5qSpwTYGvJAwa2WkHam33LXxPQiVsb_vM5s7EGG5jKOqJ4L7MiA_-6_eOvC3b5NdiDU7cLMQlYVFR_WMg-JxZnTOtcVN-VSmB4VU6t1PRo3w9G-qc1rGAkQNOjIX1-OinMA8wOz4uzwBT7Jf-u3kmLR5yPOTMUx9u4B_TmRtsEa7sSLoIgFHzPgbydxu4DeSseLj5KUBzAudXaDl3zCu1X-CO0FfpJEmtZ95mOOva2rhO1MWO9YHATx8qp3TrklmXwYM72MC7S-Xd8pgu8guQhOiA8i5X8sLi10-Ywg.jpg",
       "date": "2026-06-28T19:56:21+00:00",
-      "views": "43",
+      "views": "44",
       "url": "https://t.me/NaFunny/1162"
+    },
+    {
+      "channel": "TonNewbie",
+      "channelTitle": "TonNewbie",
+      "channelIcon": "💎",
+      "channelDescription": "TON / GRAM, crypto news and market notes",
+      "text": "Всем доброго дня!\n💎Вчера завершилась финальная миграция TON->GRAM💎\n\nЕсли честно, какого-то вау-эффекта я так и не увидел. Заработать, конечно, удалось, но исключительно за счёт хай-риск инструментов.\nНа обычном споте для лоу банков эта миграция в целом прошла мимо заработка.\n\n📊Подведём итоги:\n🔵Листинг на Binance в районе $1,568\n🔵ATH после открытия $1,713.\n🔵На момент публикации цена держится около $1,68. Додепа (https://t.me/TonNewbie/3275) не случилось.\n\nЧто удивило больше всего - тотальная тишина в медиа.\n✈️Ни со стороны PD, ни со стороны экосистемы TON не было абсолютно никаких заявлений по поводу листинга на Binance и упоминаний про миссию MTONGA.\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "image": "https://telegram.org/img/emoji/40/F09F928E.png",
+      "date": "2026-07-03T08:24:29+00:00",
+      "views": "378",
+      "url": "https://t.me/TonNewbie/3277"
     },
     {
       "channel": "TonNewbie",
@@ -38,19 +49,8 @@
       "text": "💎GRAM залистили (https://app.hyperliquid.xyz/trade/GRAM) на HyperLiquid. Фьючи с плечом до 5х.\n\nМы же тут не маленькие и предупреждать о рисках торговли связанных с фьючерсами не нужно?\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://telegram.org/img/emoji/40/F09F928E.png",
       "date": "2026-07-02T12:05:55+00:00",
-      "views": "977",
+      "views": "1.1K",
       "url": "https://t.me/TonNewbie/3276"
-    },
-    {
-      "channel": "TonNewbie",
-      "channelTitle": "TonNewbie",
-      "channelIcon": "💎",
-      "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "✈️Dear Павел, мы застряли на $1.67 срочно нужен додеп на памп!\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://telegram.org/img/emoji/40/F09F928E.png",
-      "date": "2026-07-02T11:00:25+00:00",
-      "views": "1.2K",
-      "url": "https://t.me/TonNewbie/3275"
     }
   ],
   "errors": []
