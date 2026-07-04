@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: telegram-feed
+  cancel-in-progress: false
+
 jobs:
   update-feed:
     runs-on: ubuntu-latest
@@ -19,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "24"
+          node-version: "22"
 
       - name: Update Telegram feed
         env:
@@ -31,5 +35,5 @@ jobs:
       - name: Commit feed update
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update Telegram feed"
+          commit_message: "chore: update telegram feed"
           file_pattern: "feed/telegram-feed.json"
