@@ -1113,3 +1113,220 @@ body[data-theme="storm"] .logo-spark{
   .socials-panel-head{gap:12px!important;}
   .socials-panel-head h2{font-size:34px!important;letter-spacing:.24em!important;}
 }
+
+/* NaFunny HUB 2.0.2 — Landing Hero + Socials Layout Rework */
+@media (min-width: 1101px){
+  .site{
+    width:min(1380px,100%)!important;
+  }
+  .hero-social-stage{
+    width:100%!important;
+    margin:64px auto 0!important;
+    padding:0!important;
+    display:grid!important;
+    grid-template-columns:minmax(680px,1.18fr) minmax(430px,.82fr)!important;
+    gap:26px!important;
+    align-items:stretch!important;
+  }
+  .hero-social-stage .hero{
+    margin:0!important;
+    width:100%!important;
+    min-height:460px!important;
+    height:auto!important;
+    display:grid!important;
+    grid-template-columns:minmax(300px,.92fr) minmax(330px,1.08fr)!important;
+    gap:34px!important;
+    align-items:center!important;
+    padding:38px 42px!important;
+    overflow:visible!important;
+  }
+  .hero-social-stage .logo-zone{
+    width:100%!important;
+    min-width:0!important;
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+  }
+  .hero-social-stage .brand-logo{
+    width:min(350px,100%)!important;
+    max-width:100%!important;
+    filter:drop-shadow(0 0 26px rgba(41,233,255,.8)) drop-shadow(0 0 72px rgba(35,141,255,.48))!important;
+    animation:logoBreath 6.5s ease-in-out infinite!important;
+  }
+  .hero-social-stage .hero-copy{
+    min-width:0!important;
+    max-width:100%!important;
+    text-align:left!important;
+    padding:0!important;
+    overflow:visible!important;
+  }
+  .hero-social-stage .live-pill{
+    margin:0 0 14px!important;
+    padding:8px 14px!important;
+    font-size:12px!important;
+    letter-spacing:.055em!important;
+  }
+  .hero-social-stage .hero h1.electric-title,
+  .hero-social-stage .hero-copy h1.electric-title{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin:0 0 14px!important;
+    font-size:clamp(54px,4.2vw,76px)!important;
+    line-height:.94!important;
+    letter-spacing:-.045em!important;
+    white-space:nowrap!important;
+    overflow:visible!important;
+    padding-right:.28em!important;
+  }
+  .hero-social-stage .hero-role{
+    max-width:100%!important;
+    margin:0 0 24px!important;
+    font-size:clamp(18px,1.25vw,22px)!important;
+    line-height:1.28!important;
+    font-weight:900!important;
+  }
+  .hero-social-stage .cta-row{
+    display:flex!important;
+    flex-direction:row!important;
+    flex-wrap:nowrap!important;
+    gap:14px!important;
+    justify-content:flex-start!important;
+    margin-top:0!important;
+  }
+  .hero-social-stage .btn{
+    min-width:170px!important;
+    width:auto!important;
+    min-height:54px!important;
+    padding:15px 18px!important;
+    border-radius:16px!important;
+    font-size:13px!important;
+    white-space:nowrap!important;
+  }
+  .socials-panel{
+    margin:0!important;
+    width:100%!important;
+    min-height:460px!important;
+    height:auto!important;
+    padding:28px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+    overflow:hidden!important;
+  }
+  .socials-panel .socials-panel-head{
+    display:grid!important;
+    grid-template-columns:1fr auto 1fr!important;
+    gap:16px!important;
+    align-items:center!important;
+    margin:0 0 20px!important;
+  }
+  .socials-panel .socials-panel-head span{
+    width:auto!important;
+    height:1px!important;
+    border-radius:0!important;
+    background:linear-gradient(90deg,transparent,var(--line),transparent)!important;
+    box-shadow:none!important;
+  }
+  .socials-panel .socials-panel-head h2{
+    margin:0!important;
+    text-align:center!important;
+    text-transform:uppercase!important;
+    letter-spacing:.32em!important;
+    color:#36abff!important;
+    font-size:clamp(30px,2.2vw,40px)!important;
+    text-shadow:0 0 20px rgba(41,233,255,.44)!important;
+  }
+  .socials-panel .social-grid{
+    flex:1!important;
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-template-rows:repeat(4,1fr)!important;
+    gap:12px!important;
+  }
+  .socials-panel .social{
+    min-height:0!important;
+    height:100%!important;
+    padding:13px 12px!important;
+    border-radius:18px!important;
+    gap:7px!important;
+  }
+  .socials-panel .brand-icon{
+    width:34px!important;
+    height:34px!important;
+  }
+  .socials-panel .social strong{font-size:16px!important;line-height:1.1!important;}
+  .socials-panel .social small{font-size:11px!important;line-height:1.15!important;}
+  .socials-panel .social em{font-size:22px!important;line-height:1!important;}
+}
+
+/* keep first screen clean on medium screens */
+@media (min-width:901px) and (max-width:1100px){
+  .hero-social-stage{
+    width:min(980px,100%)!important;
+    margin:58px auto 0!important;
+    grid-template-columns:1fr!important;
+    gap:22px!important;
+  }
+  .hero-social-stage .hero{
+    min-height:420px!important;
+    display:grid!important;
+    grid-template-columns:minmax(280px,.9fr) minmax(340px,1.1fr)!important;
+    padding:36px!important;
+  }
+  .hero-social-stage .brand-logo{width:min(330px,36vw)!important;}
+  .hero-social-stage .hero h1.electric-title{font-size:clamp(56px,7vw,78px)!important;white-space:nowrap!important;}
+  .socials-panel .social-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;}
+  .socials-panel .social{min-height:130px!important;}
+}
+
+/* TonNewbie crypto card — premium avatar style */
+.social.brand-crypto{
+  border-color:rgba(41,233,255,.88)!important;
+  background:radial-gradient(circle at 50% 18%,rgba(41,233,255,.18),transparent 38%),rgba(2,8,23,.72)!important;
+}
+.social.brand-crypto .brand-avatar{
+  width:42px!important;
+  height:42px!important;
+  object-fit:cover!important;
+  border-radius:50%!important;
+  padding:3px!important;
+  background:linear-gradient(145deg,rgba(41,233,255,.36),rgba(91,62,255,.24))!important;
+  box-shadow:0 0 16px rgba(41,233,255,.7),0 0 36px rgba(41,233,255,.28)!important;
+  filter:none!important;
+}
+.social.brand-crypto:hover .brand-avatar{
+  transform:scale(1.08)!important;
+  box-shadow:0 0 22px rgba(41,233,255,.88),0 0 48px rgba(41,233,255,.38)!important;
+}
+.social.brand-crypto strong{color:#45e8ff!important;text-shadow:0 0 14px rgba(41,233,255,.7)!important;}
+.social.brand-crypto small{color:#cfefff!important;}
+
+/* stronger real online pulse */
+.hero-social-stage .live-pill span{
+  animation:nafunnyOnlineDot 1.35s ease-in-out infinite!important;
+}
+.hero-social-stage .live-pill span::before,
+.hero-social-stage .live-pill span::after{
+  display:block!important;
+}
+
+@media (max-width:900px){
+  .hero-social-stage{margin-top:76px!important;display:flex!important;flex-direction:column!important;gap:18px!important;}
+  .hero-social-stage .hero{min-height:auto!important;overflow:hidden!important;}
+  .socials-panel .socials-panel-head{
+    display:grid!important;
+    grid-template-columns:1fr auto 1fr!important;
+    gap:12px!important;
+    align-items:center!important;
+  }
+  .socials-panel .socials-panel-head span{
+    width:auto!important;height:1px!important;border-radius:0!important;
+    background:linear-gradient(90deg,transparent,var(--line),transparent)!important;box-shadow:none!important;
+  }
+  .socials-panel .socials-panel-head h2{
+    margin:0!important;text-transform:uppercase!important;letter-spacing:.22em!important;color:#36abff!important;
+    text-shadow:0 0 18px rgba(41,233,255,.42)!important;
+  }
+  .social.brand-crypto .brand-avatar{width:42px!important;height:42px!important;}
+}
