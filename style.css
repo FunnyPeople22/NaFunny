@@ -784,3 +784,160 @@ body[data-theme="storm"] .logo-spark{
 .compact-wallets{padding:26px 28px}.compact-wallets .crypto-title{text-align:center;letter-spacing:.42em;margin-bottom:10px}.compact-wallets h2{display:flex;align-items:center;justify-content:center;gap:12px;font-size:clamp(28px,2.7vw,42px);letter-spacing:.24em}.compact-wallets .wallet-list{gap:12px;margin-top:18px}.compact-wallets .wallet{grid-template-columns:42px 148px minmax(0,1fr) 148px;gap:12px;padding:14px 16px;border-radius:16px}.compact-wallets .wallet:hover{transform:translateY(-2px)}.compact-wallets .wallet strong{display:flex;align-items:center;gap:8px;font-size:15px}.compact-wallets .wallet code{font-size:13px}.compact-wallets .wallet-actions{display:grid;grid-template-columns:1fr 1fr}.compact-wallets .wallet button{min-height:40px;padding:10px 14px}.crypto-badge,.asset-icon{flex:0 0 auto}.crypto-badge svg,.asset-icon svg{display:block;width:100%;height:100%}.crypto-badge svg path,.crypto-badge svg circle,.asset-icon svg path,.asset-icon svg circle{fill:currentColor}.crypto-badge.trx{background:#100817;color:#ff3d56}.crypto-badge.ton{background:#06243a;color:#35b7ff}.crypto-badge.btc{background:#2a1900;color:#f7931a}.crypto-badge.eth{background:#101a3d;color:#8fa5ff}.asset-icon.usdt,.title-usdt{display:inline-grid;place-items:center;border-radius:50%;background:#062b24;color:#36d4a0;box-shadow:0 0 14px rgba(38,161,123,.35)}.asset-icon.usdt{width:22px;height:22px}.title-usdt{width:36px;height:36px}.compact-wallets .section-icon{display:none}
 @media (max-width:900px){.compact-wallets{padding:24px 18px}.compact-wallets .wallet{grid-template-columns:36px 1fr;grid-template-areas:"coin title" "addr addr" "actions actions";gap:10px 12px}.compact-wallets h2{letter-spacing:.16em}.compact-wallets .wallet-actions{width:100%}}
 @media (max-width:520px){.compact-wallets .crypto-title{letter-spacing:.3em}.compact-wallets h2{font-size:28px;letter-spacing:.1em}.title-usdt{width:30px;height:30px}.compact-wallets .wallet strong{font-size:14px}.compact-wallets .wallet button{min-height:46px}}
+
+/* NaFunny HUB 1.5.1 — Crypto Support mobile/desktop hotfix */
+.crypto-v2{padding:26px 28px!important;overflow:hidden}
+.crypto-v2 .crypto-title{text-align:center;margin:0 0 14px!important;letter-spacing:.42em!important}
+.crypto-v2 h2{display:flex!important;align-items:center!important;justify-content:center!important;gap:14px!important;margin:0!important;font-size:clamp(30px,3vw,44px)!important;letter-spacing:.18em!important;line-height:1.08!important;text-align:center!important}
+.crypto-v2 .title-usdt-img{width:42px;height:42px;display:block;filter:drop-shadow(0 0 16px rgba(38,161,123,.55))}
+.crypto-v2 .wallet-list{margin-top:24px!important;display:grid!important;gap:14px!important}
+.crypto-v2 .wallet{grid-template-columns:46px minmax(120px,150px) minmax(0,1fr) 150px!important;grid-template-areas:"coin title addr actions"!important;align-items:center!important;gap:14px!important;padding:14px 16px!important;min-height:72px!important;border-radius:18px!important;overflow:hidden!important}
+.crypto-v2 .crypto-badge{grid-area:coin!important;width:42px!important;height:42px!important;border-radius:50%!important;display:grid!important;place-items:center!important;background:rgba(3,10,26,.72)!important;box-shadow:0 0 18px rgba(41,233,255,.22)!important;color:inherit!important}
+.crypto-v2 .crypto-badge img{width:100%!important;height:100%!important;display:block!important;object-fit:contain!important}
+.crypto-v2 .wallet strong{grid-area:title!important;display:block!important;font-size:16px!important;white-space:nowrap!important;line-height:1.1!important}
+.crypto-v2 .wallet strong .asset-icon,.crypto-v2 .asset-icon.usdt,.crypto-v2 .section-icon{display:none!important}
+.crypto-v2 .wallet code{grid-area:addr!important;font-size:14px!important;line-height:1.25!important;min-width:0!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.crypto-v2 .wallet-actions{grid-area:actions!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important;width:100%!important}
+.crypto-v2 .wallet button{min-height:42px!important;padding:9px 12px!important;border-radius:12px!important}
+@media (min-width:901px){.support-section{grid-template-columns:minmax(0,1fr) minmax(0,1.18fr)!important;align-items:start!important}.crypto-v2{min-height:auto!important}.crypto-v2 .wallet-list{gap:12px!important}.crypto-v2 .wallet{min-height:64px!important;padding:12px 14px!important}.crypto-v2 .crypto-badge{width:38px!important;height:38px!important}.crypto-v2 .wallet button{min-height:38px!important}.crypto-v2 .title-usdt-img{width:38px;height:38px}}
+@media (max-width:900px){.crypto-v2{padding:24px 18px!important}.crypto-v2 h2{font-size:clamp(28px,8vw,38px)!important;letter-spacing:.12em!important}.crypto-v2 .wallet{grid-template-columns:42px minmax(0,1fr)!important;grid-template-areas:"coin title" "addr addr" "actions actions"!important;gap:12px 14px!important;padding:18px!important;min-height:0!important}.crypto-v2 .wallet code{font-size:15px!important}.crypto-v2 .wallet-actions{gap:12px!important}.crypto-v2 .wallet button{min-height:50px!important}}
+@media (max-width:520px){.crypto-v2 .crypto-title{font-size:12px!important;letter-spacing:.28em!important}.crypto-v2 h2{font-size:30px!important;letter-spacing:.08em!important;gap:10px!important}.crypto-v2 .title-usdt-img{width:30px;height:30px}.crypto-v2 .wallet-list{gap:14px!important;margin-top:20px!important}.crypto-v2 .wallet{padding:16px!important;border-radius:18px!important}.crypto-v2 .crypto-badge{width:38px!important;height:38px!important}.crypto-v2 .wallet strong{font-size:17px!important}.crypto-v2 .wallet code{font-size:14px!important}.crypto-v2 .wallet button{min-height:48px!important}}
+
+/* NaFunny HUB 1.5.2 — Crypto Support mobile/desktop hotfix */
+.crypto-v3{
+  padding:26px 28px!important;
+  overflow:hidden!important;
+}
+.crypto-v3 .crypto-title{
+  text-align:center!important;
+  margin:0 0 10px!important;
+  letter-spacing:.38em!important;
+}
+.crypto-v3 .wallet-heading{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:12px!important;
+  margin:0!important;
+  font-size:clamp(30px,3vw,42px)!important;
+  line-height:1.05!important;
+  letter-spacing:.02em!important;
+  text-transform:none!important;
+  white-space:nowrap!important;
+  color:#36abff!important;
+  text-align:center!important;
+}
+.crypto-v3 .wallet-heading-icon{
+  width:38px!important;
+  height:38px!important;
+  flex:0 0 38px!important;
+  display:block!important;
+  border-radius:50%!important;
+  filter:drop-shadow(0 0 14px rgba(57,189,135,.48))!important;
+}
+.crypto-v3 .wallet-list{
+  display:grid!important;
+  gap:12px!important;
+  margin-top:18px!important;
+}
+.crypto-v3 .wallet,
+.crypto-v3 .crypto-wallet{
+  grid-template-columns:42px minmax(118px,142px) minmax(0,1fr) 142px!important;
+  grid-template-areas:"coin title addr actions"!important;
+  align-items:center!important;
+  gap:12px!important;
+  min-height:62px!important;
+  padding:12px 14px!important;
+  border-radius:17px!important;
+  background:rgba(1,7,20,.72)!important;
+  overflow:hidden!important;
+}
+.crypto-v3 .crypto-badge{
+  grid-area:coin!important;
+  width:40px!important;
+  height:40px!important;
+  min-width:40px!important;
+  border-radius:50%!important;
+  display:grid!important;
+  place-items:center!important;
+  background:rgba(3,10,26,.72)!important;
+  box-shadow:0 0 18px rgba(41,233,255,.2)!important;
+  color:inherit!important;
+}
+.crypto-v3 .crypto-badge img{
+  width:100%!important;
+  height:100%!important;
+  display:block!important;
+  object-fit:contain!important;
+}
+.crypto-v3 .wallet strong{
+  grid-area:title!important;
+  display:block!important;
+  font-size:15px!important;
+  line-height:1.1!important;
+  white-space:nowrap!important;
+}
+.crypto-v3 .wallet strong::before,
+.crypto-v3 .wallet strong::after,
+.crypto-v3 .asset-icon,
+.crypto-v3 .title-usdt,
+.crypto-v3 .section-icon{
+  display:none!important;
+  content:none!important;
+}
+.crypto-v3 .wallet code{
+  grid-area:addr!important;
+  display:block!important;
+  min-width:0!important;
+  max-width:100%!important;
+  font-size:13px!important;
+  line-height:1.25!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+.crypto-v3 .wallet-actions{
+  grid-area:actions!important;
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:8px!important;
+  width:100%!important;
+}
+.crypto-v3 .wallet button{
+  min-height:38px!important;
+  padding:8px 10px!important;
+  border-radius:12px!important;
+}
+@media (min-width:901px){
+  .support-section{grid-template-columns:minmax(0,1fr) minmax(0,1.08fr)!important;gap:22px!important;align-items:start!important}
+  .crypto-v3{padding:24px 26px!important}
+  .crypto-v3 .wallet-heading{font-size:clamp(30px,2.8vw,40px)!important}
+  .crypto-v3 .wallet-list{gap:11px!important;margin-top:16px!important}
+  .crypto-v3 .wallet{min-height:58px!important;padding:11px 14px!important}
+  .crypto-v3 .crypto-badge{width:36px!important;height:36px!important;min-width:36px!important}
+  .crypto-v3 .wallet-heading-icon{width:36px!important;height:36px!important;flex-basis:36px!important}
+}
+@media (max-width:900px){
+  .crypto-v3{padding:24px 18px!important}
+  .crypto-v3 .crypto-title{font-size:12px!important;letter-spacing:.28em!important}
+  .crypto-v3 .wallet-heading{font-size:clamp(28px,7vw,34px)!important;letter-spacing:.01em!important;gap:10px!important}
+  .crypto-v3 .wallet-heading-icon{width:30px!important;height:30px!important;flex-basis:30px!important}
+  .crypto-v3 .wallet{
+    grid-template-columns:38px minmax(0,1fr)!important;
+    grid-template-areas:"coin title" "addr addr" "actions actions"!important;
+    gap:10px 12px!important;
+    padding:15px!important;
+    min-height:0!important;
+  }
+  .crypto-v3 .crypto-badge{width:36px!important;height:36px!important;min-width:36px!important}
+  .crypto-v3 .wallet strong{font-size:16px!important}
+  .crypto-v3 .wallet code{font-size:14px!important}
+  .crypto-v3 .wallet-actions{gap:10px!important}
+  .crypto-v3 .wallet button{min-height:46px!important}
+}
+@media (max-width:520px){
+  .crypto-v3 .wallet-heading{font-size:30px!important}
+  .crypto-v3 .wallet-list{gap:12px!important;margin-top:16px!important}
+  .crypto-v3 .wallet{padding:14px!important;border-radius:17px!important}
+  .crypto-v3 .wallet button{min-height:44px!important}
+}
