@@ -225,7 +225,7 @@
   }
 }
 
-/* NaFunny HUB 1.4.1 Maintenance */
+/* NaFunny HUB 1.5 Stable */
 .telegram-feed-updated {
   grid-column: 1 / -1;
   justify-self: center;
@@ -247,7 +247,7 @@
   }
 }
 
-/* NaFunny HUB 1.4.3 Feed Avatars */
+/* NaFunny HUB 1.5 Stable Feed Avatars */
 .telegram-channel-avatar {
   display: block;
   width: 52px;

@@ -1,0 +1,8 @@
+NaFunny HUB 1.5 Stable
+
+- Workflow: Node.js 22 LTS instead of 24.
+- Workflow: added concurrency protection for scheduled runs.
+- Telegram engine: does not rewrite feed JSON if only updatedAt would change.
+- Telegram engine: keeps previous posts if a scheduled fetch returns empty/broken data.
+- Crypto Support: compact redesign with centered title and real inline SVG icons for USDT, TRON, TON, BTC and ETH.
+- Version labels unified to 1.5 Stable.

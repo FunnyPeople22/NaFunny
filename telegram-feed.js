@@ -1,5 +1,5 @@
 /*
-  NaFunny HUB 1.4.3 Feed Avatars UI
+  NaFunny HUB 1.5 Stable Feed Avatars UI
 */
 
 (function () {

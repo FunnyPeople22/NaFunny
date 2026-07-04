@@ -1,6 +1,6 @@
-# NaFunny HUB 1.4.2 Telegram Engine Rewrite
+# NaFunny HUB 1.5 Stable
 
-Stable NaFunny HUB build with automatic Telegram Feed for @NaFunny and @TonNewbie.
+Stable NaFunny HUB build with automatic Telegram Feed for @NaFunny and @TonNewbie, branded feed avatars, and redesigned crypto support block.
 
 Core files:
 - `index.html`
@@ -14,12 +14,11 @@ Core files:
 
 Telegram Feed updates through GitHub Actions every 15 minutes and can be manually triggered from Actions → Update Telegram Feed → Run workflow.
 
-## NaFunny HUB 1.4.3 — Feed Avatars
+## 1.5 Stable changes
 
-Small visual update for Telegram Feed:
-
-- added real channel avatars for @NaFunny and @TonNewbie;
-- replaced emoji icons in feed headers with branded images;
-- added hover glow and theme-aware avatar borders;
-- kept fallback emoji icons if avatar files fail to load.
-
+- GitHub Actions moved to Node.js 22 LTS.
+- Added workflow concurrency protection.
+- Telegram feed script no longer rewrites JSON when posts have not really changed.
+- Added safety fallback: if Telegram fetch returns empty data, the site keeps previous working posts instead of publishing a broken/empty feed.
+- Updated crypto support block: centered title, compact layout, and inline USDT / TRON / TON / BTC / ETH SVG icons.
+- Unified visible site version to 1.5 Stable.
