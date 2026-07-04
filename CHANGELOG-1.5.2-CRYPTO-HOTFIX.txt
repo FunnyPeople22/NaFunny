@@ -1,8 +1,0 @@
-NaFunny HUB 1.5.2 — Crypto Support Hotfix
-
-- Reworked Crypto Support block to USDT Wallets heading.
-- Added stable SVG icons for USDT, TRON, TON, BTC and ETH.
-- Removed old green asset dots and legacy emoji/icon leftovers.
-- Reduced heading size and card spacing on mobile.
-- Reduced Crypto block height on desktop.
-- Added cache-busting query params for CSS/JS files.
