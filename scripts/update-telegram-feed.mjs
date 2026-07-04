@@ -1,5 +1,5 @@
 /*
-  NaFunny HUB 1.4.2 Telegram Engine Rewrite
+  NaFunny HUB 1.5 Stable Telegram Engine
   - Fetches public Telegram channel pages from t.me/s/<channel> without tokens.
   - Collects posts by Telegram message id and removes duplicated/near-duplicated cards.
   - Sorts by Telegram message id first, then by date.
@@ -17,6 +17,58 @@ const CHANNELS = (process.env.TELEGRAM_CHANNELS || "NaFunny,TonNewbie")
 
 const LIMIT_PER_CHANNEL = Number(process.env.TELEGRAM_LIMIT_PER_CHANNEL || 2);
 const OUT_FILE = process.env.TELEGRAM_FEED_OUT || "feed/telegram-feed.json";
+const EXPECTED_MIN_POSTS = CHANNELS.length;
+
+
+async function readExistingFeed() {
+  try {
+    const raw = await fs.readFile(OUT_FILE, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function comparableFeed(feed) {
+  const { updatedAt, ...rest } = feed || {};
+  return JSON.stringify(rest);
+}
+
+function mergeWithExistingPosts(nextFeed, existingFeed) {
+  if (!existingFeed?.posts?.length) return nextFeed;
+
+  const nextChannelsWithPosts = new Set(nextFeed.posts.map(post => post.channel));
+  const mergedPosts = [...nextFeed.posts];
+
+  for (const channel of CHANNELS) {
+    if (nextChannelsWithPosts.has(channel)) continue;
+    const fallbackPosts = existingFeed.posts
+      .filter(post => post.channel === channel)
+      .slice(0, LIMIT_PER_CHANNEL);
+
+    if (fallbackPosts.length) {
+      mergedPosts.push(...fallbackPosts);
+      nextFeed.errors.push({
+        channel,
+        message: `Kept previous @${channel} posts because the current fetch returned no usable posts.`
+      });
+    }
+  }
+
+  nextFeed.posts = mergedPosts.sort((a, b) => {
+    const ai = CHANNELS.indexOf(a.channel);
+    const bi = CHANNELS.indexOf(b.channel);
+    if (ai !== bi) return ai - bi;
+
+    const aNum = Number((a.id || a.url || "").match(/\/(\d+)$/)?.[1] || 0);
+    const bNum = Number((b.id || b.url || "").match(/\/(\d+)$/)?.[1] || 0);
+    if (aNum !== bNum) return bNum - aNum;
+
+    return new Date(b.date || 0) - new Date(a.date || 0);
+  });
+
+  return nextFeed;
+}
 
 const CHANNEL_META = {
   NaFunny: {
@@ -221,7 +273,7 @@ async function fetchChannel(channel) {
   const url = `https://t.me/s/${channel}?before=999999999`;
   const response = await fetch(url, {
     headers: {
-      "user-agent": "Mozilla/5.0 (compatible; NaFunnyHUB/1.4.2; +https://funnypeople22.github.io/NaFunny/)",
+      "user-agent": "Mozilla/5.0 (compatible; NaFunnyHUB/1.5; +https://funnypeople22.github.io/NaFunny/)",
       "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       "cache-control": "no-cache",
       "pragma": "no-cache"
@@ -244,7 +296,7 @@ async function fetchChannel(channel) {
 }
 
 const output = {
-  version: "1.4.2-telegram-engine-rewrite",
+  version: "1.5-stable",
   updatedAt: new Date().toISOString(),
   source: "t.me/s public channel pages",
   limitPerChannel: LIMIT_PER_CHANNEL,
@@ -283,8 +335,22 @@ output.posts.sort((a, b) => {
   return new Date(b.date || 0) - new Date(a.date || 0);
 });
 
+const existingFeed = await readExistingFeed();
+mergeWithExistingPosts(output, existingFeed);
+
+if (output.posts.length < EXPECTED_MIN_POSTS && existingFeed?.posts?.length) {
+  console.log(`Safety stop: current fetch produced only ${output.posts.length} posts. Keeping existing ${OUT_FILE}.`);
+  if (output.errors.length) console.log("Warnings:", JSON.stringify(output.errors, null, 2));
+  process.exit(0);
+}
+
+if (existingFeed && comparableFeed(output) === comparableFeed(existingFeed)) {
+  console.log(`No real feed changes detected. ${OUT_FILE} was not rewritten.`);
+  process.exit(0);
+}
+
 await fs.mkdir(OUT_FILE.split("/").slice(0, -1).join("/") || ".", { recursive: true });
-await fs.writeFile(OUT_FILE, JSON.stringify(output, null, 2), "utf8");
+await fs.writeFile(OUT_FILE, JSON.stringify(output, null, 2) + "\n", "utf8");
 
 console.log(`Saved ${output.posts.length} posts to ${OUT_FILE}`);
 if (output.errors.length) {
