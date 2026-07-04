@@ -941,3 +941,89 @@ body[data-theme="storm"] .logo-spark{
   .crypto-v3 .wallet{padding:14px!important;border-radius:17px!important}
   .crypto-v3 .wallet button{min-height:44px!important}
 }
+
+/* NaFunny HUB 2.0 — hero + socials first screen redesign */
+.hero-social-stage{
+  margin-top:56px;
+  display:grid;
+  grid-template-columns:minmax(0,1.06fr) minmax(360px,.94fr);
+  gap:24px;
+  align-items:stretch;
+}
+.hero-social-stage .hero{
+  margin-top:0!important;
+  min-height:0!important;
+  height:100%;
+  grid-template-columns:minmax(250px,.9fr) minmax(320px,1.1fr)!important;
+  gap:clamp(22px,3vw,42px)!important;
+  padding:clamp(32px,4vw,50px)!important;
+}
+.hero-social-stage .brand-logo{width:min(340px,28vw)!important}
+.hero-social-stage .hero h1.electric-title{font-size:clamp(58px,5.2vw,84px)!important;margin:.18em 0 .08em!important}
+.hero-social-stage .hero-role{
+  margin:0 0 22px!important;
+  max-width:640px!important;
+  font-size:clamp(18px,1.45vw,24px)!important;
+  line-height:1.28!important;
+  font-weight:900!important;
+  color:rgba(232,246,255,.92)!important;
+  text-shadow:0 0 18px rgba(41,233,255,.28)!important;
+}
+.hero-social-stage .live-pill span{
+  position:relative;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#42ff9b!important;
+  box-shadow:0 0 14px rgba(66,255,155,.9),0 0 30px rgba(66,255,155,.32)!important;
+  animation:onlinePulse 1.8s ease-in-out infinite!important;
+}
+.hero-social-stage .live-pill span::after{
+  content:"";
+  position:absolute;
+  inset:-7px;
+  border-radius:50%;
+  border:1px solid rgba(66,255,155,.55);
+  animation:onlineRing 1.8s ease-out infinite;
+}
+@keyframes onlinePulse{0%,100%{transform:scale(.9)}45%{transform:scale(1.18)}}
+@keyframes onlineRing{0%{transform:scale(.45);opacity:.85}100%{transform:scale(1.55);opacity:0}}
+.socials-panel{
+  margin:0!important;
+  padding:clamp(22px,3vw,34px)!important;
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.socials-panel-head{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.socials-panel-head span{width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px var(--cyan)}
+.socials-panel-head h2{margin:0;font-size:clamp(28px,2.4vw,40px);letter-spacing:.18em;text-transform:uppercase}
+.socials-panel .social-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
+.socials-panel .social{min-height:112px!important;padding:16px!important;border-radius:20px!important}
+.socials-panel .brand-icon{width:38px!important;height:38px!important}
+.socials-panel .social strong{font-size:18px!important}
+.socials-panel .social small{font-size:13px!important}
+.socials-panel .social em{font-size:28px!important}
+@media (max-width:1180px){
+  .hero-social-stage{grid-template-columns:1fr;gap:18px}
+  .hero-social-stage .hero{grid-template-columns:minmax(260px,.82fr) minmax(360px,1.18fr)!important}
+  .hero-social-stage .brand-logo{width:min(330px,42vw)!important}
+  .socials-panel .social-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+@media (max-width:760px){
+  .hero-social-stage{margin-top:78px;display:flex;flex-direction:column}
+  .hero-social-stage .hero{display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;padding:30px 18px!important}
+  .hero-social-stage .brand-logo{width:min(310px,82vw)!important}
+  .hero-social-stage .hero h1.electric-title{font-size:clamp(48px,15vw,64px)!important}
+  .hero-social-stage .hero-role{font-size:18px!important;margin-bottom:18px!important}
+  .hero-social-stage .cta-row{justify-content:center!important}
+  .socials-panel{padding:22px 16px!important}
+  .socials-panel-head{justify-content:center}
+  .socials-panel .social-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+  .socials-panel .social{min-height:118px!important;padding:14px!important}
+}
+@media (max-width:420px){
+  .socials-panel .social-grid{grid-template-columns:1fr!important}
+  .socials-panel .social{min-height:92px!important}
+}
