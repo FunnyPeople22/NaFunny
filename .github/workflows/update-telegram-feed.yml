@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "*/15 * * * *"
+    - cron: "7,22,37,52 * * * *"
 
 permissions:
   contents: write
@@ -19,21 +20,39 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "22"
 
+      - name: Print run context
+        run: |
+          echo "event=${{ github.event_name }}"
+          echo "ref=${{ github.ref }}"
+          echo "sha=${{ github.sha }}"
+          date -u
+
       - name: Update Telegram feed
         env:
           TELEGRAM_CHANNELS: "NaFunny,TonNewbie"
           TELEGRAM_LIMIT_PER_CHANNEL: "2"
           TELEGRAM_FEED_OUT: "feed/telegram-feed.json"
+          TELEGRAM_FETCH_ATTEMPTS: "3"
+          TELEGRAM_FETCH_RETRY_DELAY_MS: "1500"
         run: node scripts/update-telegram-feed.mjs
 
       - name: Commit feed update
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update telegram feed"
-          file_pattern: "feed/telegram-feed.json"
+        run: |
+          if git diff --quiet -- feed/telegram-feed.json; then
+            echo "No feed changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed/telegram-feed.json
+          git commit -m "chore: update telegram feed"
+          git push

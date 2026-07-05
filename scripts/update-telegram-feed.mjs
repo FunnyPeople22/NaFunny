@@ -1,10 +1,10 @@
 /*
-  NaFunny HUB 1.5 Stable Telegram Engine
+  NaFunny HUB Telegram Feed Engine 2.0
   - Fetches public Telegram channel pages from t.me/s/<channel> without tokens.
-  - Collects posts by Telegram message id and removes duplicated/near-duplicated cards.
-  - Sorts by Telegram message id first, then by date.
-  - Ignores Telegram emoji PNGs as post images.
-  - Keeps real post images from telesco.pe / Telegram CDN when available.
+  - Uses cache-busting URLs, no-store fetch options, and retries.
+  - Selects newest posts by Telegram message id, not HTML order.
+  - Keeps previous channel posts if Telegram returns empty or older cached pages.
+  - Ignores Telegram emoji PNGs and keeps real post images.
   Output: feed/telegram-feed.json
 */
 
@@ -18,7 +18,12 @@ const CHANNELS = (process.env.TELEGRAM_CHANNELS || "NaFunny,TonNewbie")
 const LIMIT_PER_CHANNEL = Number(process.env.TELEGRAM_LIMIT_PER_CHANNEL || 2);
 const OUT_FILE = process.env.TELEGRAM_FEED_OUT || "feed/telegram-feed.json";
 const EXPECTED_MIN_POSTS = CHANNELS.length;
+const FETCH_ATTEMPTS = Number(process.env.TELEGRAM_FETCH_ATTEMPTS || 3);
+const FETCH_RETRY_DELAY_MS = Number(process.env.TELEGRAM_FETCH_RETRY_DELAY_MS || 1500);
 
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 async function readExistingFeed() {
   try {
@@ -32,6 +37,15 @@ async function readExistingFeed() {
 function comparableFeed(feed) {
   const { updatedAt, ...rest } = feed || {};
   return JSON.stringify(rest);
+}
+
+function maxPostNumberForChannel(feed, channel) {
+  return Math.max(
+    0,
+    ...(feed?.posts || [])
+      .filter(post => post.channel === channel)
+      .map(post => post.postNumber || postNumber(post.id || post.url || "") || 0)
+  );
 }
 
 function mergeWithExistingPosts(nextFeed, existingFeed) {
@@ -55,18 +69,7 @@ function mergeWithExistingPosts(nextFeed, existingFeed) {
     }
   }
 
-  nextFeed.posts = mergedPosts.sort((a, b) => {
-    const ai = CHANNELS.indexOf(a.channel);
-    const bi = CHANNELS.indexOf(b.channel);
-    if (ai !== bi) return ai - bi;
-
-    const aNum = Number((a.id || a.url || "").match(/\/(\d+)$/)?.[1] || 0);
-    const bNum = Number((b.id || b.url || "").match(/\/(\d+)$/)?.[1] || 0);
-    if (aNum !== bNum) return bNum - aNum;
-
-    return new Date(b.date || 0) - new Date(a.date || 0);
-  });
-
+  nextFeed.posts = sortOutputPosts(mergedPosts);
   return nextFeed;
 }
 
@@ -117,7 +120,7 @@ function stripTags(html = "") {
 
 function absoluteUrl(url = "") {
   if (!url) return "";
-  const cleaned = decodeHtml(url).replace(/\\/g, "").replace(/^['"]|['"]$/g, "").trim();
+  const cleaned = decodeHtml(url).replace(/\\/g, "").replace(/^[']|[']$/g, "").replace(/^[\"]|[\"]$/g, "").trim();
   if (!cleaned) return "";
   if (cleaned.startsWith("//")) return "https:" + cleaned;
   if (cleaned.startsWith("/")) return "https://t.me" + cleaned;
@@ -241,7 +244,7 @@ function normalizePosts(posts, channel) {
     if (!post || (!post.text && !post.image)) continue;
     const idKey = post.id || post.url || `${channel}:${post.postNumber}`;
     const existing = byId.get(idKey);
-    if (!existing || String(post.text || "").length > String(existing.text || "").length) {
+    if (!existing || String(post.text || "").length > String(existing.text || "").length || (!existing.image && post.image)) {
       byId.set(idKey, post);
     }
   }
@@ -266,37 +269,107 @@ function normalizePosts(posts, channel) {
     if (unique.length >= LIMIT_PER_CHANNEL) break;
   }
 
-  return unique.map(({ postNumber, dedupeKey, ...post }) => post);
+  return unique.map(({ postNumber: _postNumber, dedupeKey: _dedupeKey, ...post }) => post);
 }
 
-async function fetchChannel(channel) {
-  const url = `https://t.me/s/${channel}?before=999999999`;
+function buildFetchUrls(channel, attempt) {
+  const stamp = `${Date.now()}-${process.pid}-${attempt}`;
+  return [
+    `https://t.me/s/${channel}?_=${stamp}`,
+    `https://t.me/s/${channel}?before=999999999&_=${stamp}`,
+    `https://t.me/s/${channel}`
+  ];
+}
+
+async function fetchHtml(url) {
   const response = await fetch(url, {
+    cache: "no-store",
+    redirect: "follow",
     headers: {
-      "user-agent": "Mozilla/5.0 (compatible; NaFunnyHUB/1.5; +https://funnypeople22.github.io/NaFunny/)",
+      "user-agent": `Mozilla/5.0 (compatible; NaFunnyHUB/2.0; +https://funnypeople22.github.io/NaFunny/) ${Date.now()}`,
       "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      "cache-control": "no-cache",
-      "pragma": "no-cache"
+      "accept-language": "en-US,en;q=0.9,ru;q=0.8",
+      "cache-control": "no-cache, no-store, must-revalidate, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0"
     }
   });
 
   if (!response.ok) {
-    throw new Error(`@${channel}: HTTP ${response.status}`);
+    throw new Error(`HTTP ${response.status} for ${url}`);
   }
 
-  const html = await response.text();
-  const blocks = splitMessageBlocks(html);
-  const posts = blocks.map(block => createPost(block, channel));
-  const normalized = normalizePosts(posts, channel);
-
-  console.log(`@${channel}: scanned ${blocks.length} message blocks`);
-  console.log(`@${channel}: selected ${normalized.map(post => post.id).join(", ") || "none"}`);
-
-  return normalized;
+  return response.text();
 }
 
+async function fetchChannel(channel, existingFeed) {
+  const existingMax = maxPostNumberForChannel(existingFeed, channel);
+  let best = { posts: [], maxFound: 0, scanned: 0, url: "" };
+  const fetchErrors = [];
+
+  for (let attempt = 1; attempt <= FETCH_ATTEMPTS; attempt += 1) {
+    for (const url of buildFetchUrls(channel, attempt)) {
+      try {
+        const html = await fetchHtml(url);
+        const blocks = splitMessageBlocks(html);
+        const posts = blocks.map(block => createPost(block, channel));
+        const maxFound = Math.max(0, ...posts.map(post => post.postNumber || 0));
+        const normalized = normalizePosts(posts, channel);
+        const ids = posts
+          .map(post => post.id)
+          .filter(Boolean)
+          .sort((a, b) => postNumber(b) - postNumber(a));
+
+        console.log(`@${channel}: attempt ${attempt}, scanned ${blocks.length} blocks, max id ${maxFound || "none"}, url ${url}`);
+        console.log(`@${channel}: found ids ${ids.slice(0, 8).join(", ") || "none"}`);
+        console.log(`@${channel}: candidate selected ${normalized.map(post => post.id).join(", ") || "none"}`);
+
+        if (maxFound > best.maxFound || normalized.length > best.posts.length) {
+          best = { posts: normalized, maxFound, scanned: blocks.length, url };
+        }
+
+        if (normalized.length >= LIMIT_PER_CHANNEL && maxFound >= existingMax) {
+          return normalized;
+        }
+      } catch (error) {
+        fetchErrors.push(error.message);
+        console.log(`@${channel}: attempt ${attempt} failed: ${error.message}`);
+      }
+    }
+
+    if (attempt < FETCH_ATTEMPTS) await sleep(FETCH_RETRY_DELAY_MS * attempt);
+  }
+
+  if (best.posts.length && best.maxFound >= existingMax) {
+    console.log(`@${channel}: using best attempt from ${best.url}`);
+    return best.posts;
+  }
+
+  if (best.posts.length && best.maxFound < existingMax) {
+    throw new Error(`@${channel}: Telegram returned an older cached page. Existing max id ${existingMax}, fetched max id ${best.maxFound}. Keeping existing posts.`);
+  }
+
+  throw new Error(fetchErrors.length ? fetchErrors.join(" | ") : `@${channel}: no usable public posts found`);
+}
+
+function sortOutputPosts(posts) {
+  return posts.sort((a, b) => {
+    const ai = CHANNELS.indexOf(a.channel);
+    const bi = CHANNELS.indexOf(b.channel);
+    if (ai !== bi) return ai - bi;
+
+    const aNum = Number((a.id || a.url || "").match(/\/(\d+)$/)?.[1] || 0);
+    const bNum = Number((b.id || b.url || "").match(/\/(\d+)$/)?.[1] || 0);
+    if (aNum !== bNum) return bNum - aNum;
+
+    return new Date(b.date || 0) - new Date(a.date || 0);
+  });
+}
+
+const existingFeed = await readExistingFeed();
+
 const output = {
-  version: "1.5-stable",
+  version: "2.0-feed-engine",
   updatedAt: new Date().toISOString(),
   source: "t.me/s public channel pages",
   limitPerChannel: LIMIT_PER_CHANNEL,
@@ -307,7 +380,7 @@ const output = {
 
 for (const channel of CHANNELS) {
   try {
-    const posts = await fetchChannel(channel);
+    const posts = await fetchChannel(channel, existingFeed);
     output.posts.push(...posts);
     console.log(`@${channel}: saved ${posts.length} posts`);
 
@@ -323,19 +396,7 @@ for (const channel of CHANNELS) {
   }
 }
 
-output.posts.sort((a, b) => {
-  const ai = CHANNELS.indexOf(a.channel);
-  const bi = CHANNELS.indexOf(b.channel);
-  if (ai !== bi) return ai - bi;
-
-  const aNum = Number((a.id || a.url || "").match(/\/(\d+)$/)?.[1] || 0);
-  const bNum = Number((b.id || b.url || "").match(/\/(\d+)$/)?.[1] || 0);
-  if (aNum !== bNum) return bNum - aNum;
-
-  return new Date(b.date || 0) - new Date(a.date || 0);
-});
-
-const existingFeed = await readExistingFeed();
+output.posts = sortOutputPosts(output.posts);
 mergeWithExistingPosts(output, existingFeed);
 
 if (output.posts.length < EXPECTED_MIN_POSTS && existingFeed?.posts?.length) {
@@ -346,6 +407,7 @@ if (output.posts.length < EXPECTED_MIN_POSTS && existingFeed?.posts?.length) {
 
 if (existingFeed && comparableFeed(output) === comparableFeed(existingFeed)) {
   console.log(`No real feed changes detected. ${OUT_FILE} was not rewritten.`);
+  if (output.errors.length) console.log("Warnings:", JSON.stringify(output.errors, null, 2));
   process.exit(0);
 }
 
