@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-08T09:02:24.333Z",
+  "updatedAt": "2026-07-08T09:11:11.026Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -33,6 +33,18 @@
       "url": "https://t.me/NaFunny/1217"
     },
     {
+      "id": "TonNewbie/3289",
+      "channel": "TonNewbie",
+      "channelTitle": "TonNewbie",
+      "channelIcon": "💎",
+      "channelDescription": "TON / GRAM, crypto news and market notes",
+      "text": "💎Что там по GRAM'у?\n\nЗавтра, 9 июля, состоится очередной разлок из TON Believers Fund (https://tonviewer.com/EQDtFpEwcFAEcRe5mLVh2N6C0x-_hJEM7W61_JLnSF74p4q2) - 37 млн GRAM (~$57,48 млн).\n\nКазалось бы, рынок только начал приходить в себя... Мы даже успели сходить выше $1,80, но сейчас снова торгуемся в районе $1,56\n\nСкучать нам никто и не обещал.\n\n💎TON, спасибо за эту школу жизни. Не знаю, к чему ты меня готовишь... Но я готов.\n\nP.S. Уже 10 июля завершается Binance GRAM Spot Trading Tournament (https://t.me/TonNewbie/3279).\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "image": "https://cdn4.telesco.pe/file/ALHh69fkW8lQijji3RFIoiPS4jSvIfc4PTTEzja2u30q5sUXuNVSi-QmglEWk35TcPpHSu5YIVCCffV65rUelTa1gdbyTuB7lwTtTU7FgBKrGHcWALfWP0zW-zy8gJzV8Zkij-9kgCbIW-j8j5tCCN19D6q7IFJbmQbBL9coCj9QBxqb-wsBYWG_YYrniahpEgzl3yP11hsZY0YUIFRwcevSAlpzgEQem4GBEPNYVL0KY90p72VsXA2pjK0LzEQaM8lDRt5hWrK2xWSguOFq_fhxO_iUz0o92f-yzyptTN31QFtJ0AvDN2QeUYmzeliksikhQUlK9gVT0vBvFMAdag.jpg",
+      "date": "2026-07-08T09:10:53+00:00",
+      "views": "1",
+      "url": "https://t.me/TonNewbie/3289"
+    },
+    {
       "id": "TonNewbie/3288",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
@@ -41,20 +53,8 @@
       "text": "🩸Рынку снова плохо.\n\n🇺🇸Прошлой ночью США нанесли серию ударов по военным объектам Ирана в ответ на атаки на коммерческие суда в Ормузском проливе.\n\n🫵Дональд Трамп заявил, что Иран - «грязные игроки и подонки», а также сообщил, что Меморандум о взаимопонимании между США и Ираном фактически утратил силу.\n\n📉Рынки вновь закладывают риск дальнейшей эскалации конфликта на Ближнем Востоке =(\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/offvGmdX9OYm3OewOJCiPYTXjJhv-MwDmuHn90T8UpUNlkWjbpPor-zYEk8Omw0moszXwbj4iErLPFEjFlIO2Oljz8f7CAfdgInCxjrG1Om9_9x0q_YqaBOA0xFFtLPy5kI5Om6BnMBFazMD-uEF8DfR3g2625LkZyftmTgwR231giQ7_HZhyvgnRN_HQPcIM_Mq5vJgmCgh_fRXFdCoUr5tdDzf_oFWYjap56wcg6uUDqfFk2NDlfiMXT-GfO3WbweNhy3ACtJQ2VRjPDP68CX8rtiYHIs1k_GbR1WXZajbh4YobBmfs9xmVed8vqjxHJEPY40q2u7uZ2m2O1pc6w",
       "date": "2026-07-08T08:58:59+00:00",
-      "views": "134",
+      "views": "253",
       "url": "https://t.me/TonNewbie/3288"
-    },
-    {
-      "id": "TonNewbie/3287",
-      "channel": "TonNewbie",
-      "channelTitle": "TonNewbie",
-      "channelIcon": "💎",
-      "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "В Wallet Loyalty о которой рассказывал https://t.me/TonNewbie/3253 завезли новый бонус: Предзаказ GTA VI за 100к поинтов.\n\nДо завершения сезона осталось 4 дня, у меня ~55к баллов.\n\nПоднажать или ну его? Учитывая что крайней моей GTA была San Andreas 😁\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/sYcNScMEyB8vXRDBfZcOvdll3-XgyeTvnAfn1VeomcJoIubqcJXX3GwAaeuYY9YPyo0eJDzMC_Gub7VqRWqctqwleh1oeKmUJLRZQyh5U973W-LQS0ZMoeK-orktxniEBLLSXw2JRuIcXk94MPESUrbzEmTCj6Ir_PZz7lMbll3No86MF0ZDqHLcyjC1pFZMs-m_0HynV4IsUiXCKYmuG5t-thBH5Ek_bHePAtFzrWfTSN281eNlbqWNJPdEOhWB5w2XaccjjU0mSUKdHFPXqprUO-coyAf0Yj7-giT1bAT9NrzqUHT2PyJNQf9yB5mBpuYy0zjYp3YFqQaftXB69w.jpg",
-      "date": "2026-07-07T17:30:46+00:00",
-      "views": "840",
-      "url": "https://t.me/TonNewbie/3287"
     }
   ],
   "errors": []
