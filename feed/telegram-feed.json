@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-13T10:40:24.347Z",
+  "updatedAt": "2026-07-13T12:32:07.509Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -15,9 +15,9 @@
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "🗓Расписание матчей на завтра (14 июля Вторник), формат Bo3:\n\n14:00\n🐴Liquid vs 🪽Xtreme Gaming\n🎮Rune Eaters vs 🧸Virtus.Pro\n\n17:30\n🔵LGD.Gaming vs 🐀MOUZ\n🇨🇳Vici Gaming vs 🐈PlayTime",
-      "image": "https://cdn4.telesco.pe/file/aPCvC1tyvV9C6nXMznh5uqcXqvl_LCx-i-G0MaJ84i8qArhT2DQayjjUYkYOoJGgAAilEMlM8BD0PMIYRXfYrYS3TDWv9V1pvyLlq-HF-o93iDyax4s37hSFQ_YN-zsidMtrML-LLvfzS-GFXH05PNhhQP9e9DVpHXrcS7tsdgI5-J4V4cvbT9GJZ29l3TSRzPfT8Yo_0h7gNgGEgciD0BCgjAalgSzWJEivFeK7AEM_fvJBKPo2Z4XjrS7GfkjRxYVV6PZDm6wbS_ZiVc9BnUS7-BmEuDSo9myRstU20yj30mDSjCX_eTqMgJmk2LAz5Iq5nHtTco8755XCqVZm2A.jpg",
+      "image": "https://cdn4.telesco.pe/file/pQGA4nQD-xm0WEAxsefPEJV9jgSss7pbtOG32KF5BL14pLT09Ft8JvINd6iXmXpVrg-_cgKKo4oUPJW4ybcuixLrzfhZ7HtMG0Yx8XhP8HA6qdfk-FVsAuvJytcNZDQC8sq4hdS19Uk2BoRqykGM0ppObkBJA0-RDIyiPCwqdwS9-cvyOwZU7cVajJV_xSkEnM3kxuhsRB4JV3087nx8wIKIvrzM2cu4QUuk6jjbRyq2n-fPEU_biI-wruXg1Okk6VvfN_erMBafoIIPUw5zhuZGdWXLUuJf7ajd3cTFlxRoX0NQfEO93h385A99IIBntzZ54Z5oP7Wd2WJfCIuDhg.jpg",
       "date": "2026-07-13T08:02:16+00:00",
-      "views": "10",
+      "views": "11",
       "url": "https://t.me/NaFunny/1281"
     },
     {
@@ -27,34 +27,34 @@
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "🏆Текущая сетка EWC\n\nКоманды снизу это уже хлопцы кто вышел в play-off.\n\nА вот мастадонты сверху будут биться за право прохода в плей офф. Проиграл=покинул турнир, нет права на ошибку.",
-      "image": "https://cdn4.telesco.pe/file/cwapvXfmk_L2iuG9LRsmImiK5MNRdeGjFBWBWCGaNSVgciidAQO75dYZr5zZCAB6OMU0hE8GozabSzEyIj3sg1czFH_loqhsIeKRLdgqgkMecbNXZgKllPzQOwsze0gElmamqbSYmFtW9W1n9pbT61Bz5Y14X5cAy7-E5nm8Q1ZAf2GnhlCCPpCnY0_lTl6FOiypAwXUAl8uht0VqeA0k1EfmF4YO2Utq08KnR3Oufb58M4wqRAY53C-cCManJt8NZBneEKq-9Z_HRLdMUnIvwuD5WUTL9QqvfNwH5nZT1PHwFKW9afnfMapZq9DoUXwdGBZsBiYNeWAdynD8vC87w.jpg",
+      "image": "https://cdn4.telesco.pe/file/ipOP-3wRxt3mEGgfCwqEWA7WIrK00OvbXLbV-GDI2tok4TrPhFp8xYDScsUwUUhPTt7Lt2JzYbb2dt5xDT1vTo6JLXuKWUaoWEq90pdLSduXAOLrSfxRytQDDnHRnCn4KdLZ8rjU0xWl9XVu5tHmglubNKuWdv1KR_YU7n0qCsmYi0w53Dl5SiCnjFWJWknTX5SbMXEu9sPtNKumYxfmB49abkWVYXgyp9MFG0RDlLv8MEIH1sMYjB9GMm6XYPaAWlahOdLRRqtMEWG2hUWKLiiKJlYRsUSBAtk51C8uhdODTdLLyc7OjRbf97-Dn4ciB7Ductxc7cHJtlA9xUAt_w.jpg",
       "date": "2026-07-13T08:00:45+00:00",
-      "views": "10",
+      "views": "11",
       "url": "https://t.me/NaFunny/1280"
     },
     {
-      "id": "TonNewbie/3299",
+      "id": "TonNewbie/3302",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "Ощущаются жёсткие проблемы с работой основной сети TON.\n\nТранзы идут по 25-40 минут 🤯\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "text": "Ощущаются жёсткие проблемы с работой основной сети TON.  Транзы идут по 25-40 минут 🤯  Замедление работы шардов основной сети  В настоящее время наблюдается замедление производства блоков и обработки сообщений в шардах рабочих цепочек.  Команда разработчиков…\n\nНет не надо слов, не надо паники.\n\nНа сегодня было запланировано (https://t.me/tonstatus/220) обновление сети. Оно уже в процессе.\n\n@TonNewbie (https://t.me/TonNewbie)\n2👍3🕊3❤1",
       "image": "https://cdn4.telesco.pe/file/f7JPoBYYCndUqy6elfWaLcyKItD85QbTKsRODQ0Mu1niLQgGxHIiQTtc5sv_iXIy4j-IGlFQVSojZ4xdCVS0i1-W_Au47gTWfno-KVGlRLuP9yo5RA-emsZ2p_TpNZpo-HIczoTFEF-k4YeWPRlY2A4S91BU0GIgyfa9oeEgykwW3mtImG6r4PXXvqDqp-bD5w4c5n2sT4NqUAv3qlb9Y3lQwymKCe6ds6WmC9FP9442zYf8U0pxMDMnmK3IuMlzYmi77LReYhActLXJ987AyOutUcBCAP-OmZXGSjOy3kz4szDw9wn_wrQPG-T5aYkZNP29yqtzLsAcgGEHHwTXWw.jpg",
-      "date": "2026-07-13T10:39:56+00:00",
-      "views": "1",
-      "url": "https://t.me/TonNewbie/3299"
+      "date": "2026-07-13T10:50:20+00:00",
+      "views": "603",
+      "url": "https://t.me/TonNewbie/3302"
     },
     {
-      "id": "TonNewbie/3298",
+      "id": "TonNewbie/3300",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "🎁🎁\n\nЗапаздывают с релизом\n¯\\_(ツ)_/¯\n\nНо осталось совсем чуточку\n\n@TonNewbie (https://t.me/TonNewbie)\n❤2✍1👍1🔥1😁1🫡1",
-      "image": "https://cdn4.telesco.pe/file/f6jMgS4GfnptEsWEjzh86J8trWPClIhoBpH1mvQrC0FNmWp9_klWgBW_Ho12uQzF-gJInZvu_ugAvJ4lGcCggl5Q65hAxVuedsN7bkOYICwcUf0KbUE77-3qNi2T4tiYT3Nwms41iNchFR79hch8JZC1IPF-3VlZ2gQD6VjbQuYLyiFwhUNvsZMRAfLo1kEyzC2KjQI02GqrdukcoguLAeovjmqDsBDVE_K2yjpyekg8kiuL6WP514ChlkJRu79fmaIO6urYamrP15nd4ovbhjFZ3rxK4zChMGuxUf8vN4XV8IVn6s_k2HZW1PS75fSDYzgRpZOiC1pQ1IyH9-sBMg.jpg",
-      "date": "2026-07-13T09:57:00+00:00",
-      "views": "377",
-      "url": "https://t.me/TonNewbie/3298"
+      "text": "Мтонга мать её.\n🤣8",
+      "image": "https://cdn4.telesco.pe/file/f7JPoBYYCndUqy6elfWaLcyKItD85QbTKsRODQ0Mu1niLQgGxHIiQTtc5sv_iXIy4j-IGlFQVSojZ4xdCVS0i1-W_Au47gTWfno-KVGlRLuP9yo5RA-emsZ2p_TpNZpo-HIczoTFEF-k4YeWPRlY2A4S91BU0GIgyfa9oeEgykwW3mtImG6r4PXXvqDqp-bD5w4c5n2sT4NqUAv3qlb9Y3lQwymKCe6ds6WmC9FP9442zYf8U0pxMDMnmK3IuMlzYmi77LReYhActLXJ987AyOutUcBCAP-OmZXGSjOy3kz4szDw9wn_wrQPG-T5aYkZNP29yqtzLsAcgGEHHwTXWw.jpg",
+      "date": "2026-07-13T10:40:46+00:00",
+      "views": "725",
+      "url": "https://t.me/TonNewbie/3300"
     }
   ],
   "errors": []
