@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-13T19:42:00.163Z",
+  "updatedAt": "2026-07-13T20:32:53.211Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -57,5 +57,22 @@
       "url": "https://t.me/TonNewbie/3300"
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "channel": "NaFunny",
+      "message": "fetch failed | fetch failed | fetch failed | fetch failed | fetch failed | fetch failed | fetch failed | fetch failed | fetch failed"
+    },
+    {
+      "channel": "TonNewbie",
+      "message": "fetch failed | fetch failed | fetch failed | fetch failed | fetch failed | fetch failed | fetch failed | fetch failed | fetch failed"
+    },
+    {
+      "channel": "NaFunny",
+      "message": "Kept previous @NaFunny posts because the current fetch returned no usable posts."
+    },
+    {
+      "channel": "TonNewbie",
+      "message": "Kept previous @TonNewbie posts because the current fetch returned no usable posts."
+    }
+  ]
 }
