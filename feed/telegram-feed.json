@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-13T03:52:21.641Z",
+  "updatedAt": "2026-07-13T06:44:36.415Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -33,6 +33,18 @@
       "url": "https://t.me/NaFunny/1278"
     },
     {
+      "id": "TonNewbie/3296",
+      "channel": "TonNewbie",
+      "channelTitle": "TonNewbie",
+      "channelIcon": "💎",
+      "channelDescription": "TON / GRAM, crypto news and market notes",
+      "text": "😎DOGS запустили карточную PvP игру - StrayClash (https://t.me/strayclash_bot?startapp=ref_bd8375c4d5a848049458bbeba982b50d)\n\n🫨Ваши DOGS NFT & DOGS Stickers превращаются в игровые карты. У каждой есть свой уникальный эффект в бою.\n\nИнвайты по ссылке ограничены.\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "image": "https://cdn4.telesco.pe/file/PYUbThk4IaTcIO9ZPSDoL1dDe2Fb_-2nkfJh-0D8D8xKd-oWnqDQHAkYoqba6mBHPPyrfVNta0H8Pdpkm3oq32NEXZ4Ha_pSDuJCdgem4vbfteJbi-nTbCzdCoVDywc1tRGoRRcc6yPWBxcAhuEvtlRoN6q6-CJuEqXZffc0qJtwPDLIKusCgYjjtwLmGDG4g9dH49yWYp9a7i8pUtyy2AEXkVXjYAHLY07w4CZjH1ge_soXr_CJ-Pp6KRT1ViWjsYsuwRiUlWOALq0cS8a42Cu6uDoeANzxjznx-FGAaiXY0Yyu4-PaNWRnKxgqdaoVjVHfiCFL0137DJhKm34qPQ.jpg",
+      "date": "2026-07-13T06:10:08+00:00",
+      "views": "349",
+      "url": "https://t.me/TonNewbie/3296"
+    },
+    {
       "id": "TonNewbie/3295",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
@@ -41,20 +53,8 @@
       "text": "mrkt прекращает поддержку стикеров.\nУ вас есть 7 дней для вывода.\n\n@TonNewbie (https://t.me/TonNewbie)\n🤣27🕊4👏2😢2",
       "image": "https://cdn4.telesco.pe/file/tbWAZIdtaInnle1vKu51tELAE_UNiNaaLkDY0phkIvMKFjXge3aNVKMTKFFFQktq6nTMT_YaQ0_M9mOx4BrZIE9lr_bRFgX1mABMXR9Ul2CHPicHs1ij0ttbFRHq1u1DakPHFIxzawDrX-U_MrCxXqd7sNFFG1msThXp8JxfddBxxINfRtT2lXj6c0dFYzfE2zophyRAuZU21epV8UiSEiO5ny_DnFT2xfa6OfNp1PuRc3DC2F04Y1q6vrk-e0B5YDXxqrOWXjRIUK4uPmaQMGzCSIU_nh8HizllMjIIjD0vV8jxqXomFtj5c1uMaoOo1cGUw2L562xbNcTPsHEUHQ.jpg",
       "date": "2026-07-12T11:18:43+00:00",
-      "views": "1.04K",
+      "views": "1.19K",
       "url": "https://t.me/TonNewbie/3295"
-    },
-    {
-      "id": "TonNewbie/3294",
-      "channel": "TonNewbie",
-      "channelTitle": "TonNewbie",
-      "channelIcon": "💎",
-      "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "",
-      "image": "https://cdn4.telesco.pe/file/G4dc9o0_z8-MAYb8nfTwulN6kE6UihXKw9_vXxNy42NZ9oxM_og8OUCE1VzMrcVPmdG3SiClEDfUrYNJUBXfasomagrMZ3R7R0utfpvEmWkY1OmY2B3ezjCWq94-jnMQznSGR9YrMhvOHxQgSVq_D4k55O2fiHA-X_kBytxiWe49vj5N4S9AEfOGgwafeRRKoZwTjlgUmkQA5d-WBj9EbjCdwzyHlD-yPhTu94ZjOctwvn0mZTBECLpTS1p6HosJn0zM8wmT0W0FpAfXDtTwzM4pi0rEb7xg1yHUiF9Yo-IwF4pjVKaX-spKJdd-AfIC3Hhj0CL7JJi9gojAalV_mQ.jpg",
-      "date": "2026-07-12T11:18:23+00:00",
-      "views": "1.04K",
-      "url": "https://t.me/TonNewbie/3294"
     }
   ],
   "errors": []
