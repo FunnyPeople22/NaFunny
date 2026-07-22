@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-22T06:18:08.407Z",
+  "updatedAt": "2026-07-22T07:18:40.289Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -39,9 +39,9 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "Сегодня впервые в жизни со мной случилось это - мне исполнилось 34 года.\n\nСтранное чувство. Казалось бы, 34 - это возраст каких-то взрослых людей. А сегодня этим человеком стал я.\n\nВ 25 лет я впервые ушёл в море. Казалось, только вчера стоял на трапе перед первым контрактом, а потом будто моргнул - и мне уже 30, привет. Куда исчезли эти пять лет, я до сих пор не совсем понимаю. Наверное, длительные контракты по 5-7,5 месяцев, а один и вообще почти 11 месяцев умеют незаметно стирать ощущение времени. 😁\n\nВ общем, несколько лет в море, запуск @TonNewbie (https://t.me/TonNewbie), лайфчендж с @Notcoin (https://t.me/Notcoin), тысячи постов, крипто-конференции, знакомства с невероятными людьми, взлёты, ошибки, победы и моменты, которые навсегда изменили меня.\n\nЭтот год вообще оказался одним из самых непростых. Но, наверное, именно он научил меня ценить людей, с которыми почти незнакомы, но помогли в самые трудные минуты жизни и конечно-же, ценить самые обычные вещи: возможность идти вперёд, строить планы, просыпаться утром и заниматься тем, что действительно нравится.\n\n😺В этот день хочу сказать огромное спасибо каждому, кто читает канал, поддерживает, спорит, критикует и просто остаётся частью этого пути.\n\nНе знаю, что принесут мне следующие года, но одно знаю точно - своё будущее мы строим сами. И как бы тяжело ни было в какой-то момент жизни, главное - не сдаваться.\n\n❤️Впереди ещё целая жизнь и много интересного ;)\n\nПодарки на будущий макбук можно смело слать сюда UQA98HwmZNzPDneDRS8setckj0SeG4k3ADMVArDGPz1sUTUp\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/nLZoCyx2kyEt3Pq2nYNgPX4WO-kkQ71OtfH2pD1Ib80Z5pAq_6V5KQdiiULFAUMezJ4GGWK0CYT9ElMtAeXKsfHrzkRkyGjXuURNS-Z6tJlZe2MfpMcMx7pVMu3j6KiWtWii2MdbSGrlnBEFn1ibPFvx2TdzJw9vjRaCczFR1LYiR2nmXc3ejE_po9nZ71Bgvk9zEwoKQqC9p0tXNGSP9svfzPr2qhpiezvCM6kOFIeJ3SjKfY8FiN_wYMzVBY2IHKz2QRkMa8vP1tSF7GUPRORA9m8U8NpphoozFPY1KfsxBGtTriPgewGpE0cl8iA9Qfwka6TXD9Nkd5RdmRiC7Q.jpg",
+      "image": "https://cdn4.telesco.pe/file/gvxWqPFppz0PHeJudTSrYBY2PBdZcooXQVrGy9DbGq4xnUto5T3icDBTKHZU6N6LoGgXcLUlFA4uw6VoNNyqztMT_YWVRKaZve34y6HWKMGSVJkw9oF7iqlUKAGnaA2EK1rIgp1wXH1ZOW1tsKqBpwqJv8efiCUmfGuG9tufhpZwTy2U6H7I4OTY86FF52otBSuE7Zlb35LyzOUR0w3QkUOiapA4WyJ70933qaqVUSVdcHkIVcivSEKvDRtzyfszyMaE9QisUh1GyMw-KEbRxOm8fozMcBtgX7X1ARvt1zlafCmItbKnalhRUXLtK-5TF8jhBp1Obk91D032oxPTSA.jpg",
       "date": "2026-07-22T05:28:16+00:00",
-      "views": "375",
+      "views": "544",
       "url": "https://t.me/TonNewbie/3336"
     },
     {
@@ -53,7 +53,7 @@
       "text": "💎Gram Wallet. Кажется, пазлов становится всё больше.\n\nПосле анонса Павла Дурова о скором запуске non-custodial кошелька для всех пользователей милллииааарда Telegram, подписчик упомянул, что команда MTW релизнула свой Gram Wallet для iOS и Android и скорей всего пост Дурова это лишь \"реклама\".\nДанный Gram Wallet по-прежнему self-custody кошелёк. То есть сид-фраза никуда не исчезла, приватные ключи принадлежат пользователю.\n\nНО появилась новая функция:\n👛Подтверждение транзакций через Telegram (2FA).\nТо есть теперь схема выглядит так:\n🔵Вы подписываете транзакцию своим приватным ключом.\n🔵Затем дополнительно подтверждаете её через Telegram.\nОриентируясь на этот пост (https://t.me/TonNewbie/3334), в котором представлена инфо от 6 Января 2026, Lagus написал смарт, который умеет проверять криптографическую подпись Telegram.\nТо есть пользователь подтверждает действия внутри TMA, а кошелёк принимает именно эту подпись.\nПроще говоря:\nОбычный self-custody:\n🔵Сид-фраза->приватный ключ->подпись транзакции.\n👛Gram Wallet от MTW:\nСид-фраза->подпись транзакции->дополнительное подтверждение через Telegram.\n💎Экспериментальный Telegram Wallet (MTONGA Wallet):\nTelegram-подпись->смарт-контракт->транзакция.\nРазница огромная.\nКошелёк от MTW не заменяет сид-фразу, он лишь добавляет Telegram как второй фактор защиты.\n\nCкладывается ощущение, что Telegram постепенно строит новую модель взаимодействия пользователя с self-custody.\nНе исключено, что классическая сид-фраза никуда не исчезнет, а Telegram станет привычным способом подтверждения операций, сохранив возможность восстановления через сид.\n\nБудто новое начало к использованию крипты прямо внутри ТГ.\n\nВ общем и целом: это не реклама MTW от Дурова.\nНаконец-то подкинули интриги, заинтересовали прям=)\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/nLZoCyx2kyEt3Pq2nYNgPX4WO-kkQ71OtfH2pD1Ib80Z5pAq_6V5KQdiiULFAUMezJ4GGWK0CYT9ElMtAeXKsfHrzkRkyGjXuURNS-Z6tJlZe2MfpMcMx7pVMu3j6KiWtWii2MdbSGrlnBEFn1ibPFvx2TdzJw9vjRaCczFR1LYiR2nmXc3ejE_po9nZ71Bgvk9zEwoKQqC9p0tXNGSP9svfzPr2qhpiezvCM6kOFIeJ3SjKfY8FiN_wYMzVBY2IHKz2QRkMa8vP1tSF7GUPRORA9m8U8NpphoozFPY1KfsxBGtTriPgewGpE0cl8iA9Qfwka6TXD9Nkd5RdmRiC7Q.jpg",
       "date": "2026-07-21T16:04:56+00:00",
-      "views": "1.1K",
+      "views": "1.15K",
       "url": "https://t.me/TonNewbie/3335"
     }
   ],
