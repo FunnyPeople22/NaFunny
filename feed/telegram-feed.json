@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-22T00:11:07.840Z",
+  "updatedAt": "2026-07-22T01:04:17.718Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -41,7 +41,7 @@
       "text": "💎Gram Wallet. Кажется, пазлов становится всё больше.\n\nПосле анонса Павла Дурова о скором запуске non-custodial кошелька для всех пользователей милллииааарда Telegram, подписчик упомянул, что команда MTW релизнула свой Gram Wallet для iOS и Android и скорей всего пост Дурова это лишь \"реклама\".\nДанный Gram Wallet по-прежнему self-custody кошелёк. То есть сид-фраза никуда не исчезла, приватные ключи принадлежат пользователю.\n\nНО появилась новая функция:\n👛Подтверждение транзакций через Telegram (2FA).\nТо есть теперь схема выглядит так:\n🔵Вы подписываете транзакцию своим приватным ключом.\n🔵Затем дополнительно подтверждаете её через Telegram.\nОриентируясь на этот пост (https://t.me/TonNewbie/3334), в котором представлена инфо от 6 Января 2026, Lagus написал смарт, который умеет проверять криптографическую подпись Telegram.\nТо есть пользователь подтверждает действия внутри TMA, а кошелёк принимает именно эту подпись.\nПроще говоря:\nОбычный self-custody:\n🔵Сид-фраза->приватный ключ->подпись транзакции.\n👛Gram Wallet от MTW:\nСид-фраза->подпись транзакции->дополнительное подтверждение через Telegram.\n💎Экспериментальный Telegram Wallet (MTONGA Wallet):\nTelegram-подпись->смарт-контракт->транзакция.\nРазница огромная.\nКошелёк от MTW не заменяет сид-фразу, он лишь добавляет Telegram как второй фактор защиты.\n\nCкладывается ощущение, что Telegram постепенно строит новую модель взаимодействия пользователя с self-custody.\nНе исключено, что классическая сид-фраза никуда не исчезнет, а Telegram станет привычным способом подтверждения операций, сохранив возможность восстановления через сид.\n\nБудто новое начало к использованию крипты прямо внутри ТГ.\n\nВ общем и целом: это не реклама MTW от Дурова.\nНаконец-то подкинули интриги, заинтересовали прям=)\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/M1NbIxjxY-a72iM0W-4PTnz3Bzlbn-pl9ZdshMMWjvVv369J4eEoJoPAzoLaIjW1NY4KL_jWq3t2yzHqh8SE5NBbp_Ty3qzy8b_6ATdCdKR-Jn3Lsr3k00h8JLCzOmrwFw43tWvUwiIp0Vmq8NeqJINpz3ftDuXarbi1hM41ymSja9_da69eoWI3AfxqFRjHnsLeMM6XmUWHVecxR043XYa1uOgRsJG5kUIQ3gFsUYrH5ki-npXDlhEwmq01pKpPlW80HcRLi7fD44AF1H3V_2r8VLTQDmhmfC876oaWtbW9OlRXxXfoar-RJH7eyruYZl_p2KsI2fdTDdIRG19Z0w.jpg",
       "date": "2026-07-21T16:04:56+00:00",
-      "views": "875",
+      "views": "884",
       "url": "https://t.me/TonNewbie/3335"
     },
     {
@@ -50,10 +50,10 @@
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "Благодаря подсказке моего коллеги по-цеху (https://t.me/boltgod), нашёл от такой интересный материал от Lagus'a:\nЯ написал смарт контракт для кошелька, который работает на Телеграм подписях вместо подписей от мнемоники юзера, таким образом создавая новую секьюрити модель:\n\n⁃ Кошелек без мнемоники, для подтверждения транзанкции нужно зайти в Телеграм и подписать через Тма\n⁃ Сохранен весь функционал V5 - gasless (https://tonkeeper.com/en/article/how-tonkeeper-brings-gasless), плагины, 255 сообщений за транзу\n⁃ Без ущерба для безопасности: работает replay protection с секно, эксипрейшн с valid_until\n⁃ Контракт шардирован по tg_user_id и tma_id, тг подписи валидны только для контракта этого юзера\nСсылка на фулл пост (https://t.me/lagus_research/6)\n\nЗабываем про старый TON Space и готовимся к релизу нового non-custodial\n\n@TonNewbie (https://t.me/TonNewbie)\n🔥6❤2👍2🕊1🤝1",
+      "text": "Благодаря подсказке моего коллеги по-цеху (https://t.me/boltgod), нашёл от такой интересный материал от Lagus'a:\nЯ написал смарт контракт для кошелька, который работает на Телеграм подписях вместо подписей от мнемоники юзера, таким образом создавая новую секьюрити модель:\n\n⁃ Кошелек без мнемоники, для подтверждения транзанкции нужно зайти в Телеграм и подписать через Тма\n⁃ Сохранен весь функционал V5 - gasless (https://tonkeeper.com/en/article/how-tonkeeper-brings-gasless), плагины, 255 сообщений за транзу\n⁃ Без ущерба для безопасности: работает replay protection с секно, эксипрейшн с valid_until\n⁃ Контракт шардирован по tg_user_id и tma_id, тг подписи валидны только для контракта этого юзера\nСсылка на фулл пост (https://t.me/lagus_research/6)\n\nЗабываем про старый TON Space и готовимся к релизу нового non-custodial\n\n@TonNewbie (https://t.me/TonNewbie)\n🔥7❤2👍2🕊1🤝1",
       "image": "https://cdn4.telesco.pe/file/M1NbIxjxY-a72iM0W-4PTnz3Bzlbn-pl9ZdshMMWjvVv369J4eEoJoPAzoLaIjW1NY4KL_jWq3t2yzHqh8SE5NBbp_Ty3qzy8b_6ATdCdKR-Jn3Lsr3k00h8JLCzOmrwFw43tWvUwiIp0Vmq8NeqJINpz3ftDuXarbi1hM41ymSja9_da69eoWI3AfxqFRjHnsLeMM6XmUWHVecxR043XYa1uOgRsJG5kUIQ3gFsUYrH5ki-npXDlhEwmq01pKpPlW80HcRLi7fD44AF1H3V_2r8VLTQDmhmfC876oaWtbW9OlRXxXfoar-RJH7eyruYZl_p2KsI2fdTDdIRG19Z0w.jpg",
       "date": "2026-07-21T15:38:15+00:00",
-      "views": "934",
+      "views": "940",
       "url": "https://t.me/TonNewbie/3334"
     }
   ],
