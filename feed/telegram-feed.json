@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-25T21:31:24.266Z",
+  "updatedAt": "2026-07-26T04:40:14.513Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -51,7 +51,7 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "💎Gram Wallet. Кажется, пазлов становится всё больше.\n\nПосле анонса Павла Дурова о скором запуске non-custodial кошелька для всех пользователей милллииааарда Telegram, подписчик упомянул, что команда MTW релизнула свой Gram Wallet для iOS и Android и скорей всего пост Дурова это лишь \"реклама\".\nДанный Gram Wallet по-прежнему self-custody кошелёк. То есть сид-фраза никуда не исчезла, приватные ключи принадлежат пользователю.\n\nНО появилась новая функция:\n👛Подтверждение транзакций через Telegram (2FA).\nТо есть теперь схема выглядит так:\n🔵Вы подписываете транзакцию своим приватным ключом.\n🔵Затем дополнительно подтверждаете её через Telegram.\nОриентируясь на этот пост (https://t.me/TonNewbie/3334), в котором представлена инфо от 6 Января 2026, Lagus написал смарт, который умеет проверять криптографическую подпись Telegram.\nТо есть пользователь подтверждает действия внутри TMA, а кошелёк принимает именно эту подпись.\nПроще говоря:\nОбычный self-custody:\n🔵Сид-фраза->приватный ключ->подпись транзакции.\n👛Gram Wallet от MTW:\nСид-фраза->подпись транзакции->дополнительное подтверждение через Telegram.\n💎Экспериментальный Telegram Wallet (MTONGA Wallet):\nTelegram-подпись->смарт-контракт->транзакция.\nРазница огромная.\nКошелёк от MTW не заменяет сид-фразу, он лишь добавляет Telegram как второй фактор защиты.\n\nCкладывается ощущение, что Telegram постепенно строит новую модель взаимодействия пользователя с self-custody.\nНе исключено, что классическая сид-фраза никуда не исчезнет, а Telegram станет привычным способом подтверждения операций, сохранив возможность восстановления через сид.\n\nБудто новое начало к использованию крипты прямо внутри ТГ.\n\nВ общем и целом: это не реклама MTW от Дурова.\nНаконец-то подкинули интриги, заинтересовали прям=)\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/b6yiSYzK6l02alO-uIPGFwuMtRLo3ywf1wrLqYWzJ_iJmomLtGqcuYNWeYDJw3O5TomZ-FLfr0w4xBpome-_zNg79jRZVsxOiIqoQa_bgjIXaGDqTK-QwYfjPXZJfCIngUGQyMZfnY6u6UKWqHdvm-Qt9BgudYmVGHUhuE-1pfIKS4Tty5B9uhcZRUh4ZZLibqybhYSca0SpYruFr7b-mbde5xYvOaywf61dk0OUTdIMqycLODDRvSor3tseXTJVru7HQ28yuMB91ia8-vB-4tDgxh8m6HnSHJoWtaGLNGad-Hx1S1-aPwfnx0d87mV4iry5XTTYqyXXc7JMOP5BjQ.jpg",
+      "image": "https://cdn4.telesco.pe/file/WlZ6YnGPpmfCuhyTxFSkhHz_otuKbYuaSYZrcg1SXzL4gUjmC3TXJZSWuDdGkqc7qeaiNlwAqxoDaSmAmH1-eAKini5ozhvIfqpwVrq7zN9xMg7DMVbQjlTH_vHHTxU09ZQ2KROPjfIO8leFgPLcr-NsI4v9gpSKT24qxIURoQ8n4ClfJQxR0iPRNNsuQg4nGOJwNYnXgbJb8EUnTV_lx9HDt5T5et4_-S9Aeudh4PxeUFplSkqCLTI-TcsUOyxkTJllXXD1b3ry9xfh760_rHMrvZ-bpJ-dVJ3mMwmMmsBywElU-O3thVZT8occ2GaMDiGtxamkzpHXaoWufPK72Q.jpg",
       "date": "2026-07-21T16:04:56+00:00",
       "views": "1.49K",
       "url": "https://t.me/TonNewbie/3335"
