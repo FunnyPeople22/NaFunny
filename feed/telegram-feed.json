@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-29T07:25:22.980Z",
+  "updatedAt": "2026-07-29T10:02:46.352Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,52 +9,52 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/1397",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/MFA-WFgN66Uax23X2EdyumgDAYIiy9s60RGpoZU8vrgQEW7GBSPL0kpJ2mOVgKHwUfZ2J7J0WM1dW7_2TS0292Y98eJyyFBLLdd3sNrKwWc_H3PNC4CDlSjismq_YTEyHZt-lBx1Jh0r3QO-JrHPuG482crZXTUNw7l-1r8EFrX0Qzo5xRSmhb9YoSlzeBrhCVJh8tbklTmGURddatGNXV1VkqVshLBrVRIRxDaYJ9_SyxeFnW0oTy6yoOzEVjmbIVgKGsOyroLxwg7IgjELSPlGX8BX2Odt7u65NPh9qgE62ONhM6XxeIzOFxmek7vOVk-4YDVcKTjteQhcKJG0LA.jpg",
+      "date": "2026-07-29T09:40:25+00:00",
+      "views": "10",
+      "url": "https://t.me/NaFunny/1397"
+    },
+    {
       "id": "NaFunny/1396",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "🦞Хэээй йо!  😎Возвращаемся к нашей деятельности уже 30 Июля на турнир 1w Essence от букмекерки 1W.  🏆Турнир пройдет в онлайне, 30 июля по 5 августа. Призовой фонд $200,000  Чуть позже дропну расписание матчей первого дня\n\nВ последние дни периодически «играюсь» на матчах турнира EPL Masters.\nСюда предикты не рискую публиковать, т.к турик одно сплошное 322, но не смотря на «сценарий», своё забрать пока удаётся 😠",
-      "image": "https://cdn4.telesco.pe/file/eBzxFbaJAYz0j4u16EAn5Y2B7fTdeuo8ZiNkzQdLIrpD6GgNoBtn6gxH3mkSV58B3ZYJSKZoY_5zwcLrYpcXpJiZjJfC4T_8O8HfyAxIL9WKoFC-c22TcmkL2xvf5eNjoM-3WxMY9UcEy0d8t10k8Y7tdQPVNQ8hmxT8fQomcM6hSdMr396OGl4cH_zuUAG8zM3BiPXiehXJYt4HvIZ2AjH_y3ncdKTyPGp3l9qH3Aj7PKwS9LB5BcjWZ0lx9i6xbvvSub2hDyMRHcpNXXX_rqvYMdbK58kGlkFZ25XgNaEBpc3IwCZu4DN3ZqKzRXNp8hQ3GXUy1ymWVH8o-_pSag.jpg",
+      "image": "https://cdn4.telesco.pe/file/MFA-WFgN66Uax23X2EdyumgDAYIiy9s60RGpoZU8vrgQEW7GBSPL0kpJ2mOVgKHwUfZ2J7J0WM1dW7_2TS0292Y98eJyyFBLLdd3sNrKwWc_H3PNC4CDlSjismq_YTEyHZt-lBx1Jh0r3QO-JrHPuG482crZXTUNw7l-1r8EFrX0Qzo5xRSmhb9YoSlzeBrhCVJh8tbklTmGURddatGNXV1VkqVshLBrVRIRxDaYJ9_SyxeFnW0oTy6yoOzEVjmbIVgKGsOyroLxwg7IgjELSPlGX8BX2Odt7u65NPh9qgE62ONhM6XxeIzOFxmek7vOVk-4YDVcKTjteQhcKJG0LA.jpg",
       "date": "2026-07-28T11:45:51+00:00",
-      "views": "13",
+      "views": "16",
       "url": "https://t.me/NaFunny/1396"
     },
     {
-      "id": "NaFunny/1394",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "🤡PARIVISION побеждают 💩BetBoom 3:1 и становятся чемпионами EWC 2026 🔥",
-      "image": "https://cdn4.telesco.pe/file/eBzxFbaJAYz0j4u16EAn5Y2B7fTdeuo8ZiNkzQdLIrpD6GgNoBtn6gxH3mkSV58B3ZYJSKZoY_5zwcLrYpcXpJiZjJfC4T_8O8HfyAxIL9WKoFC-c22TcmkL2xvf5eNjoM-3WxMY9UcEy0d8t10k8Y7tdQPVNQ8hmxT8fQomcM6hSdMr396OGl4cH_zuUAG8zM3BiPXiehXJYt4HvIZ2AjH_y3ncdKTyPGp3l9qH3Aj7PKwS9LB5BcjWZ0lx9i6xbvvSub2hDyMRHcpNXXX_rqvYMdbK58kGlkFZ25XgNaEBpc3IwCZu4DN3ZqKzRXNp8hQ3GXUy1ymWVH8o-_pSag.jpg",
-      "date": "2026-07-19T18:43:26+00:00",
-      "views": "35",
-      "url": "https://t.me/NaFunny/1394"
-    },
-    {
-      "id": "TonNewbie/3342",
+      "id": "TonNewbie/3347",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "🔴Павла Дурова объявили в международный розыск\n\nФСБ России сообщила, что наш Telegram слон Павел Дуров объявлен в международный розыск. По данным ведомства, ему предъявлено обвинение по статье о содействии террористической деятельности.\n\nПо версии следствия, администрация Telegram не удаляла каналы, чаты и боты, которые, как утверждается, использовались для подготовки терактов, диверсий и других тяжких преступлений.\n\nТут важно понимать, что это позиция следствия. На данный момент вина Дуриковича судом не установлена, а само уголовное дело находится в стадии расследования.\nТакже в СМИ появилась информация, что в случае признания вины ему может грозить вплоть до пожизненного лишения свободы, однако окончательная квалификация обвинения и возможное наказание будут зависеть от дальнейшего хода дела.\n\nStill waiting for MTONGA...\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/UwZcgou_cYPLl2qB20lcMlGwQXvVC9MiRWsI5ngIamwvFkP_7vyYguc5Kn_a1G__HA8PMdbhhHv_oTkShZzsBB-Nd_1ZnOOSnO0EB1c3vlPtKcJFMNzZstHGceZf_AWanOUlbkA-DvdTkpiJE5Prb40VUHztwo8pf1lC_M2WE6d36VdWGMlZPzlHYvfZ0mhbWwX0PxyXUjsbqGFZ_npyTnM_kyN9KxXpAOddOsFlajMgGMoLa4wB5KvYcP6bVoyaZZHcLC9kX1_UTNmhMsk7pTeScw3L1hq2hHHauScIafiGpxr-SnIynXSp7xfLxgaMdLbAA5xDuB8eNtRdAjmHvw.jpg",
-      "date": "2026-07-29T06:35:55+00:00",
-      "views": "546",
-      "url": "https://t.me/TonNewbie/3342"
+      "text": "ФСБ уточняет:\nДуров пока официально не объявлен в международный розыск. Решение в процессе принятия.\n\n@TonNewbie (https://t.me/TonNewbie)\n🤣9👍3🔥2🍌1",
+      "image": "https://cdn4.telesco.pe/file/OqX0Zo_JII8yIb5feOewD3LLCKNGO47ExZ52Xdh54u85NafUYnfmCXI6QGPvOujBhdtHOeeniM5zXHt8y4nC_43nXxBJBy9nBf1ihhUhv3fHLuRBgJKVVX_TQtvXrsoIYQDjOCBLw6K59RSeLgm7AvtVbu9RAufOKM-_3Ovkds9MpQoCvIAbMW-8eox-jM7yLVjGZhdk0JX1RllaRUevVzlZQoYT8F7fC9UgXmrfTTsLwCwWx1-TEWbZPPX929bm-ZnZsNehBiz2biGioNNqkC-_Ex56hYKd0hcy5fH2db2vSbHrL8LPMlJcZ8TyOQ3NYsgfh9NjMPmGE8d9ElpgMQ",
+      "date": "2026-07-29T09:11:54+00:00",
+      "views": "545",
+      "url": "https://t.me/TonNewbie/3347"
     },
     {
-      "id": "TonNewbie/3341",
+      "id": "TonNewbie/3346",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "",
+      "text": "У меня есть ощущение, что причина всей этой истории гораздо глубже, чем неудалённые боты и каналы.\n\n✈️Telegram уже несколько лет находится в сложных отношениях с Российскими властями. За это время были ограничения, штрафы, постоянные требования по удалению контента и передаче данных.\n\n🤔Думаю что, нынешнее дело - это кульминация затянувшегося конфликта, в котором вопрос о ботах и каналах стал лишь формальным юридическим основанием для предъявления обвинений.\nРФ просто «надоело», что Дуров «показывает клыки» и не хочет «преклонить колено».\n\nПримечательно, что важную роль в «экстрадиции» играют след факторы:\n🔵политические интересы;\n🔵вопросы национальной безопасности разных государств;\n🔵влияние на доверие к Telegram как глобальной платформе.\n\n❗️Учитывая текущее положение дел в отношении к РФ от других стран, вряд ли кто-либо выдаст Павла.\n\n😺В общем и целом:\nНе исключено и то, что Дуров 100% понимал, к чему всё идёт. Персоны его уровня обычно имеют хорошую юридическую команду и получают сигналы задолго до того, как подобные решения становятся публичными.\n\n🤤Забавно и то, что совсем вот на днях Песков заявил, что переговоры о разблокировке Telegram в РФ ведутся, не смотря на то, что ТГ не совсем охотно идет на контакт.\n\nP.S:\n🎁Совсем не хотелось бы, чтоб хештег #freedurov (?q=%23freedurov) возродился…\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/UwZcgou_cYPLl2qB20lcMlGwQXvVC9MiRWsI5ngIamwvFkP_7vyYguc5Kn_a1G__HA8PMdbhhHv_oTkShZzsBB-Nd_1ZnOOSnO0EB1c3vlPtKcJFMNzZstHGceZf_AWanOUlbkA-DvdTkpiJE5Prb40VUHztwo8pf1lC_M2WE6d36VdWGMlZPzlHYvfZ0mhbWwX0PxyXUjsbqGFZ_npyTnM_kyN9KxXpAOddOsFlajMgGMoLa4wB5KvYcP6bVoyaZZHcLC9kX1_UTNmhMsk7pTeScw3L1hq2hHHauScIafiGpxr-SnIynXSp7xfLxgaMdLbAA5xDuB8eNtRdAjmHvw.jpg",
-      "date": "2026-07-29T06:34:40+00:00",
-      "views": "531",
-      "url": "https://t.me/TonNewbie/3341"
+      "date": "2026-07-29T08:28:59+00:00",
+      "views": "769",
+      "url": "https://t.me/TonNewbie/3346"
     }
   ],
   "errors": []
