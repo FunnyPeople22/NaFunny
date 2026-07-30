@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-30T09:20:19.756Z",
+  "updatedAt": "2026-07-30T09:38:43.762Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1399",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "🏆Первый день турнира и начало первой карты!  〰️Первая карта:  🌌Nigma: 📚🔴📚🔵🟢  🤡1Win: 🔴🟢📚🐓🔴  Предикт Nigma  У обеих команд хорошие пики. Очень интересно будет посмотреть в какой форме находится 1вин. Но у них в этой карте я вижу слабое звено земелю на бзме.…\n\nПока вижу, что Сумээил в хорошей форме на СФчике себя показывает",
+      "image": "https://cdn4.telesco.pe/file/XsFiZz01OWNEgf9u_LXvjf3nJwRJ-EfUxMZsO5Eho7M4cXllpfHopuso3K4RVEABojAXtbsPqInZTgJrEfB3Q3mo1apXfxFfKyF_Hxx7ypY1UF5mRK-3F57aa0_mwgMPFz_qGvLCefMMOL8AJZvhUbSBdsxoIoklq_zIvRbZuRdG-ydNm_LWK6Jw9yRxo0tM1peTTMu-GqQPmPWhVbss2qx893MM8LRgrsbFRCkEHaNt6mb-4cqMa0yAMMNM_x9zQ_kOK0DMZqRKWSnyeodGm8OuookYBDiR-obZz6Ks5qVAw7HBQCocNwxLtXGfFL8TinbIhziJgcJ6G6XevL4iYQ.jpg",
+      "date": "2026-07-30T09:38:33+00:00",
+      "views": "1",
+      "url": "https://t.me/NaFunny/1399"
+    },
     {
       "id": "NaFunny/1397",
       "channel": "NaFunny",
@@ -19,18 +31,6 @@
       "date": "2026-07-29T09:40:25+00:00",
       "views": "18",
       "url": "https://t.me/NaFunny/1397"
-    },
-    {
-      "id": "NaFunny/1396",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "🦞Хэээй йо!  😎Возвращаемся к нашей деятельности уже 30 Июля на турнир 1w Essence от букмекерки 1W.  🏆Турнир пройдет в онлайне, 30 июля по 5 августа. Призовой фонд $200,000  Чуть позже дропну расписание матчей первого дня\n\nВ последние дни периодически «играюсь» на матчах турнира EPL Masters.\nСюда предикты не рискую публиковать, т.к турик одно сплошное 322, но не смотря на «сценарий», своё забрать пока удаётся 😠",
-      "image": "https://cdn4.telesco.pe/file/XsFiZz01OWNEgf9u_LXvjf3nJwRJ-EfUxMZsO5Eho7M4cXllpfHopuso3K4RVEABojAXtbsPqInZTgJrEfB3Q3mo1apXfxFfKyF_Hxx7ypY1UF5mRK-3F57aa0_mwgMPFz_qGvLCefMMOL8AJZvhUbSBdsxoIoklq_zIvRbZuRdG-ydNm_LWK6Jw9yRxo0tM1peTTMu-GqQPmPWhVbss2qx893MM8LRgrsbFRCkEHaNt6mb-4cqMa0yAMMNM_x9zQ_kOK0DMZqRKWSnyeodGm8OuookYBDiR-obZz6Ks5qVAw7HBQCocNwxLtXGfFL8TinbIhziJgcJ6G6XevL4iYQ.jpg",
-      "date": "2026-07-28T11:45:51+00:00",
-      "views": "19",
-      "url": "https://t.me/NaFunny/1396"
     },
     {
       "id": "TonNewbie/3347",
