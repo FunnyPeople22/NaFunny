@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-07-31T07:38:42.272Z",
+  "updatedAt": "2026-07-31T09:30:09.488Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/1421",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "🏆В Доте вышел Battle Pass!\n\nФэнтези лигу собираем?\nПрогнозы делаем?",
+      "image": "https://cdn4.telesco.pe/file/edE9kRzZbkCzlYqjeqfsiAcNar75cSZupfkXqG8-Om_SWoezYtzQRF5wFZQKZmgxXyfKyddWL8LeoX0s4Vk5nd4hPM15HyMbsfaNskYKZxee3Uf1-lmy1zpaIo24WnExH9wnhQwcU0tjY-wcbep1FDgHgNEveVwZYhBCHnvLNiLisJAy6d1oN42eqRpo2N-JjhC2c41Y8x9aRUHw24uCX8fobEg95Jx6fcTKzfHbmNP4TbMdzcogqqAsXDzMXS73FvlrYn4LLPIyGYLhQTUALDxz0sIuqP9D-ea2H_9zDCjNv_OPcibsRUEsCy3JsgTkg1HlcJimj0BqtPU7IeuJ2g.jpg",
+      "date": "2026-07-31T07:41:42+00:00",
+      "views": "11",
+      "url": "https://t.me/NaFunny/1421"
+    },
+    {
       "id": "NaFunny/1420",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "〰️Вторая карта:\n\n🐴Liquid:\n📚🔴📚🔵🔴\n\n🐀MOUZ:\n🔵🔴🔴🔴🔵\n\nПредикт Liquid ❌",
-      "image": "https://cdn4.telesco.pe/file/vhx44F6V9GXsuW48YxmXrd_pxuSoTXC27NRHoQc9tTCbvbyG6aT9rG6kBOE_3q0_GuPvD3ZNg4OsftnPi6CodDnZ4UpoKnZIs-KHrWjw3O8d9sC232NVoXmIlALoxfX7WDBs8V5jgdh5vShsoj3JfmAAqmHbqRZjRzQ3YsT3u_9ZawvG3YOJiCqXKEad0OKeF6kBKSRB5syLN2-OG-hXZEtClK9ryuhoKc3v06jl3L2cPlnwD2G9juY23_szbtQjW5wrRoDx7KdBXiara1riauAR_IEUpbahwoBrtEombH8CCwd5EVNvI3hHqK44p1D_PD8jOh1RVDvNsoKOH4YfRA.jpg",
+      "image": "https://cdn4.telesco.pe/file/edE9kRzZbkCzlYqjeqfsiAcNar75cSZupfkXqG8-Om_SWoezYtzQRF5wFZQKZmgxXyfKyddWL8LeoX0s4Vk5nd4hPM15HyMbsfaNskYKZxee3Uf1-lmy1zpaIo24WnExH9wnhQwcU0tjY-wcbep1FDgHgNEveVwZYhBCHnvLNiLisJAy6d1oN42eqRpo2N-JjhC2c41Y8x9aRUHw24uCX8fobEg95Jx6fcTKzfHbmNP4TbMdzcogqqAsXDzMXS73FvlrYn4LLPIyGYLhQTUALDxz0sIuqP9D-ea2H_9zDCjNv_OPcibsRUEsCy3JsgTkg1HlcJimj0BqtPU7IeuJ2g.jpg",
       "date": "2026-07-30T20:18:41+00:00",
-      "views": "13",
+      "views": "15",
       "url": "https://t.me/NaFunny/1420"
-    },
-    {
-      "id": "NaFunny/1419",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n🐴Liquid:\n📚📚📚🔵🟢\n\n🐀MOUZ:\n🔴🔴🔴📚🟢\n\nПредикт Liquid ✅",
-      "image": "https://cdn4.telesco.pe/file/vhx44F6V9GXsuW48YxmXrd_pxuSoTXC27NRHoQc9tTCbvbyG6aT9rG6kBOE_3q0_GuPvD3ZNg4OsftnPi6CodDnZ4UpoKnZIs-KHrWjw3O8d9sC232NVoXmIlALoxfX7WDBs8V5jgdh5vShsoj3JfmAAqmHbqRZjRzQ3YsT3u_9ZawvG3YOJiCqXKEad0OKeF6kBKSRB5syLN2-OG-hXZEtClK9ryuhoKc3v06jl3L2cPlnwD2G9juY23_szbtQjW5wrRoDx7KdBXiara1riauAR_IEUpbahwoBrtEombH8CCwd5EVNvI3hHqK44p1D_PD8jOh1RVDvNsoKOH4YfRA.jpg",
-      "date": "2026-07-30T19:12:38+00:00",
-      "views": "13",
-      "url": "https://t.me/NaFunny/1419"
     },
     {
       "id": "TonNewbie/3349",
@@ -38,10 +38,10 @@
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "Павел Дуров* внесён в перечень террористов и экстремистов Росфинмониторинга. Соответствующая запись появилась в официальном реестре ведомства. Данный статус влечёт за собой ряд финансовых ограничений: банки и иные кредитные организации обязаны замораживать…\n\nwe are now TON - Terrorist Open Network *\n\n5th step of MTONGA\n\n@TonNewbie (https://t.me/TonNewbie)\n🤣32❤16🔥7",
+      "text": "Павел Дуров* внесён в перечень террористов и экстремистов Росфинмониторинга. Соответствующая запись появилась в официальном реестре ведомства. Данный статус влечёт за собой ряд финансовых ограничений: банки и иные кредитные организации обязаны замораживать…\n\nwe are now TON - Terrorist Open Network *\n\n5th step of MTONGA\n\n@TonNewbie (https://t.me/TonNewbie)\n🤣33❤16🔥7",
       "image": "https://cdn4.telesco.pe/file/O14yOTc0OisCN7eDGlquGOcT-Zz3kgYbA71GyNvFsL6otksdcCSRCvvanoZAbGlhL9Ub_ugOrOW6nmxVFAD9fWu6bOGL5SvAsYcxbvn2H13v3AC5oe-aZjz8zhz8b5sd119PCncBjU-bz25VgBKv058S36QJIY7BlazQszr4i35WlXAQZV2oS4bBhPQ0GnH-kpDlsRyZq5hKPPhjvtdXutkgsYvlctMPnNzJ5zSo8ylXtfVLyQPtSemvF30FCk2ceyuvhp5UdPLWugQaQL4gApIsfNQjsLb1eWWrjlxaJndR6hPnVJZPMD7fd0ug3WedPrXluHQOFyALeZNxVw7FwA.jpg",
       "date": "2026-07-30T16:56:56+00:00",
-      "views": "1.56K",
+      "views": "1.6K",
       "url": "https://t.me/TonNewbie/3349"
     },
     {
@@ -51,9 +51,9 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "ФСБ уточняет:\nДуров пока официально не объявлен в международный розыск. Решение в процессе принятия.\n\n@TonNewbie (https://t.me/TonNewbie)\n🤣24👍3🔥2🍌2❤1",
-      "image": "https://cdn4.telesco.pe/file/mkjjdCNqPiLv0r_6YvYbjlgqc3r87_fh5L5kxmmCLrnNcTj0iyde1sqIWeNbZXmzAOkPA_-EwiCVLi3igNaXK4UM0S52g7DdTdTho289q2AV9V8a6hqMtuZYkDwOnZ0oeRUSKBvaOF0-isMZxxzlVxW7tQCPcp-8hDUG7WdKnIW7DmaRwRwxd2mB-_QrQ3UKEWvW92CqEAELAtIwuxYDdV37Y-pu0acEtLTPoig6heDszJ7pdX4ySr2F2j7VNzvn-Zbe2V2ZYnBhznRasvLtIzZgOOyvplsF0SFWTK6zOX2izIiyfiqYmwu2GJws2T5GtRFOR2r3KJ8UFBQkR55Xzg",
+      "image": "https://cdn4.telesco.pe/file/NWZ1I9E2sgMi-Njrg6pXjZJ2FUHeqMQjh59tKjnV33v9lQYxMEazYcuiXpYoIQedvzbTAzG5pubCpoAgYfVchiw4T78IcPmB-d5BB4oF2aYwbMQ90SgRGr0EYKE9LQahhZPt0pggkA7BE2TqdRE__tANdF1Tqix0WBp5TPrv0U9Lx6eUjMFD6ZZ3W5aB4KaM24rLnAAKkUqBcN7qq2_PErwXpcYyslXlkiNCdJ1CuYWSnaoc48tTp2QDaGkH2EDAPWOy4XAYfXjaw7qXzHM0SisD-TwPXfoVk1ESQuMYUluE_8X0cJwm9KRTAIAuv8t-OBH-7p7BKbiC3kfNxFxD0w",
       "date": "2026-07-29T09:11:54+00:00",
-      "views": "1.77K",
+      "views": "1.78K",
       "url": "https://t.me/TonNewbie/3347"
     }
   ],
