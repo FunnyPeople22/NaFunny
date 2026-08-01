@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-01T12:08:26.526Z",
+  "updatedAt": "2026-08-01T12:52:55.431Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/1426",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/Di0wciyFQCsKzdd_b7EOUA_K1PCKxWYIyfF_Bpttc5lspgKlBnK9_Re3IDI18IG0LleKxqwrsNi5Ad7MZRPBF6_6DFSNwPt5aj6Wy33-JaIKmWQjbaqWgwAG_ntGDsdpbKuRLr7vl7sq-okmgTUq0f6butYSPLnQcPdvsfhDtAtPTzigahoiWjkvmc8bPawXKZt1bPYMfDv2avK_UR_RUQqu1IpsGGtd8nzFpc29lDPJ3h4tqDc2hAm9PKNQDX5GETpKQHNhF9iGB_rq06GS6Gb3vofiyinWo54OTwEraleWvpH1oYBtuXgEib1ZVkss0KdnANggmiEFmHVQWe2CAw.jpg",
+      "date": "2026-08-01T12:48:17+00:00",
+      "views": "3",
+      "url": "https://t.me/NaFunny/1426"
+    },
+    {
       "id": "NaFunny/1425",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n🫂Yakotou Brothers:\n🟢🔴🔴🔵🔵\n\n🦞Enjoy Boys:\n🔴🔴📚🔵📚\n\nПредикт Yakotou",
+      "text": "〰️Первая карта:\n\n🫂Yakotou Brothers:\n🟢🔴🔴🔵🔵\n\n🦞Enjoy Boys:\n🔴🔴📚🔵📚\n\nПредикт Yakotou ✅",
       "image": "https://cdn4.telesco.pe/file/Di0wciyFQCsKzdd_b7EOUA_K1PCKxWYIyfF_Bpttc5lspgKlBnK9_Re3IDI18IG0LleKxqwrsNi5Ad7MZRPBF6_6DFSNwPt5aj6Wy33-JaIKmWQjbaqWgwAG_ntGDsdpbKuRLr7vl7sq-okmgTUq0f6butYSPLnQcPdvsfhDtAtPTzigahoiWjkvmc8bPawXKZt1bPYMfDv2avK_UR_RUQqu1IpsGGtd8nzFpc29lDPJ3h4tqDc2hAm9PKNQDX5GETpKQHNhF9iGB_rq06GS6Gb3vofiyinWo54OTwEraleWvpH1oYBtuXgEib1ZVkss0KdnANggmiEFmHVQWe2CAw.jpg",
       "date": "2026-08-01T12:00:48+00:00",
-      "views": "3",
+      "views": "9",
       "url": "https://t.me/NaFunny/1425"
-    },
-    {
-      "id": "NaFunny/1424",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🐈PlayTime:\n🟢🔴🔴🔴📚\n\n🎮RuneEaters:\n🟢📚📚🔵📚\n\nПредикт RE",
-      "image": "https://cdn4.telesco.pe/file/Di0wciyFQCsKzdd_b7EOUA_K1PCKxWYIyfF_Bpttc5lspgKlBnK9_Re3IDI18IG0LleKxqwrsNi5Ad7MZRPBF6_6DFSNwPt5aj6Wy33-JaIKmWQjbaqWgwAG_ntGDsdpbKuRLr7vl7sq-okmgTUq0f6butYSPLnQcPdvsfhDtAtPTzigahoiWjkvmc8bPawXKZt1bPYMfDv2avK_UR_RUQqu1IpsGGtd8nzFpc29lDPJ3h4tqDc2hAm9PKNQDX5GETpKQHNhF9iGB_rq06GS6Gb3vofiyinWo54OTwEraleWvpH1oYBtuXgEib1ZVkss0KdnANggmiEFmHVQWe2CAw.jpg",
-      "date": "2026-08-01T11:59:01+00:00",
-      "views": "6",
-      "url": "https://t.me/NaFunny/1424"
     },
     {
       "id": "TonNewbie/3349",
