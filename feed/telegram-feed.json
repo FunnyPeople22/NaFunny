@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-07T06:39:53.077Z",
+  "updatedAt": "2026-08-07T07:56:28.383Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -33,6 +33,18 @@
       "url": "https://t.me/NaFunny/1458"
     },
     {
+      "id": "TonNewbie/3360",
+      "channel": "TonNewbie",
+      "channelTitle": "TonNewbie",
+      "channelIcon": "💎",
+      "channelDescription": "TON / GRAM, crypto news and market notes",
+      "text": "🟠 $GRAM стал доступен к спотовой торговле (https://www.binance.us/spot-trade/gram_usdt) на криптобирже Binance.US (http://Binance.US/) (staking soon)\n\n🫡Тот самый выход на запад\n\n@TonNewbie (https://t.me/TonNewbie)",
+      "image": "https://cdn4.telesco.pe/file/bLtMZer0VNTUCF_FKzlmn8WDM8aLs11spk3nIcyIof8CahuY20ERx1PKx24ZlrD-AS0zGwK_fD4JaE1J6PuUZ7nvmDe8JIacWb7q0QI7Cp4GmaEne6TWGCCyp1L8uAUOmhOFhEbTf0Pg7nTAazFm3Iw49iXFxOTKwtJQTMEv5z-J6uDJCMn7xVS1n_16tMxWC8YegYEVnx2BO7K2_Q6p4CFDIA_PeUyZYYYyjyI89o5o1mKid9nxMAxEpZ5L2Qsn-ZKL7SR1uXwpYroNS0Jm94th9asu6z_KpKS1EvwjJPB89iFy7PxQKVr7zVE95L744r37P2XmARh4yCERTdkafA.jpg",
+      "date": "2026-08-07T06:47:37+00:00",
+      "views": "468",
+      "url": "https://t.me/TonNewbie/3360"
+    },
+    {
       "id": "TonNewbie/3359",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
@@ -41,20 +53,8 @@
       "text": "Ну что, запускаем розыгрыш 4-6 наборов мерча DOGS.  Условия: Создать креатив связанный с DOGS. Это может быть видео/фото/гифка, да что угодно (в пределах разумного). Обязательно должно присутствовать текущее лого моего канала @TonNewbie (можно без текста).…\n\nДоброе утро =)\n\n😺Сегодня вечером подведу итоги по розыгрышу (https://t.me/TonNewbie/3354).\nУ вас ещё есть время успеть поучаствовать ;)\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/bLtMZer0VNTUCF_FKzlmn8WDM8aLs11spk3nIcyIof8CahuY20ERx1PKx24ZlrD-AS0zGwK_fD4JaE1J6PuUZ7nvmDe8JIacWb7q0QI7Cp4GmaEne6TWGCCyp1L8uAUOmhOFhEbTf0Pg7nTAazFm3Iw49iXFxOTKwtJQTMEv5z-J6uDJCMn7xVS1n_16tMxWC8YegYEVnx2BO7K2_Q6p4CFDIA_PeUyZYYYyjyI89o5o1mKid9nxMAxEpZ5L2Qsn-ZKL7SR1uXwpYroNS0Jm94th9asu6z_KpKS1EvwjJPB89iFy7PxQKVr7zVE95L744r37P2XmARh4yCERTdkafA.jpg",
       "date": "2026-08-07T06:05:03+00:00",
-      "views": "246",
+      "views": "578",
       "url": "https://t.me/TonNewbie/3359"
-    },
-    {
-      "id": "TonNewbie/3358",
-      "channel": "TonNewbie",
-      "channelTitle": "TonNewbie",
-      "channelIcon": "💎",
-      "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "Очередной подарок с вышедшим улучшением уходит в минус:\n🎁\nТекущий флор ~12$\nЦена продажи ~40$\nУбыток ~70%\n\n@monk (https://t.me/monk) когда 5й шаг MTONGA в виде интеграции подарков на ⛵️OpenSea?\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/bLtMZer0VNTUCF_FKzlmn8WDM8aLs11spk3nIcyIof8CahuY20ERx1PKx24ZlrD-AS0zGwK_fD4JaE1J6PuUZ7nvmDe8JIacWb7q0QI7Cp4GmaEne6TWGCCyp1L8uAUOmhOFhEbTf0Pg7nTAazFm3Iw49iXFxOTKwtJQTMEv5z-J6uDJCMn7xVS1n_16tMxWC8YegYEVnx2BO7K2_Q6p4CFDIA_PeUyZYYYyjyI89o5o1mKid9nxMAxEpZ5L2Qsn-ZKL7SR1uXwpYroNS0Jm94th9asu6z_KpKS1EvwjJPB89iFy7PxQKVr7zVE95L744r37P2XmARh4yCERTdkafA.jpg",
-      "date": "2026-08-06T10:50:21+00:00",
-      "views": "951",
-      "url": "https://t.me/TonNewbie/3358"
     }
   ],
   "errors": []
