@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-15T11:16:49.227Z",
+  "updatedAt": "2026-08-15T11:28:59.769Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/1569",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Вторая карта:\n\n🔵LGD.Gaming:\n🔴📚📚🔴🔴\n\n🇨🇳ViciGaming:\n📚📚🐸📚🟢\n\nПредикт VG. high-risk\n\nhttps://www.twitch.tv/dota2ti_ru_4",
+      "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
+      "date": "2026-08-15T11:22:15+00:00",
+      "views": "5",
+      "url": "https://t.me/NaFunny/1569"
+    },
+    {
       "id": "NaFunny/1568",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🎮GamerLegion:\n🔵📚🟢📚🔴\n\n🐃OG:\n🔴🟢🔴📚🟢\n\nПредикт OG. risk\n\nhttps://www.twitch.tv/dota2ti_ru_3",
+      "text": "〰️Вторая карта:\n\n🎮GamerLegion:\n🔵📚🟢📚🔴\n\n🐃OG:\n🔴🟢🔴📚🟢\n\nПредикт OG. risk GL 26:48\n\nhttps://www.twitch.tv/dota2ti_ru_3",
       "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
       "date": "2026-08-15T11:01:22+00:00",
-      "views": "9",
+      "views": "11",
       "url": "https://t.me/NaFunny/1568"
-    },
-    {
-      "id": "NaFunny/1567",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n🐦‍🔥Falcons:\n🔵🔴🔵📚🟢\n\n🎪BoomBoys:\n🟢📚🔵🟢📚\n\nПредикт BB. risk\n\nhttps://www.twitch.tv/dota2ti_ru_2",
-      "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
-      "date": "2026-08-15T10:57:22+00:00",
-      "views": "10",
-      "url": "https://t.me/NaFunny/1567"
     },
     {
       "id": "TonNewbie/3374",
