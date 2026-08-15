@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-15T06:37:13.803Z",
+  "updatedAt": "2026-08-15T06:53:03.798Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/1557",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "🏆Матч дня, матч года, матч века!\n\n〰️Первая карта:\n\n🐲Spirit:\n📚🟢🔴🔴🤡\n\n👁Vision:\n🔵🔴🔴📚📚\n\nПредикт Spirit\n\nhttps://www.twitch.tv/dota2ti_ru",
+      "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
+      "date": "2026-08-15T06:38:38+00:00",
+      "views": "8",
+      "url": "https://t.me/NaFunny/1557"
+    },
+    {
       "id": "NaFunny/1556",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n🎪BoomBoys:\n🔴🟢🔴🐓📚\n\n🅰️Aurora:\n🔴📚🔴🔴🟢\n\nПредикт Aurora. risk",
+      "text": "〰️Первая карта:\n\n🎪BoomBoys:\n🔴🟢🔴🐓📚\n\n🅰️Aurora:\n🔴📚🔴🔴🟢\n\nПредикт Aurora. risk\n\nhttps://www.twitch.tv/dota2ti_ru_3",
       "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
       "date": "2026-08-15T06:24:28+00:00",
-      "views": "7",
-      "url": "https://t.me/NaFunny/1556"
-    },
-    {
-      "id": "NaFunny/1555",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n🐴Liquid:\n🔵🔵🔴📚🟢\n\n🪽IronWings:\n🔵🔴🔴🤡📚\n\nПредикт Liquid. risk\n\nПоднимем щиты за Польского принца на Шторме в связке с Котлом 💪\n\nhttps://www.twitch.tv/dota2ti_ru_2",
-      "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
-      "date": "2026-08-15T06:16:55+00:00",
       "views": "10",
-      "url": "https://t.me/NaFunny/1555"
+      "url": "https://t.me/NaFunny/1556"
     },
     {
       "id": "TonNewbie/3374",
