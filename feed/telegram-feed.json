@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-15T07:37:19.867Z",
+  "updatedAt": "2026-08-15T07:44:04.182Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1559",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Вторая карта:\n\n🐴Liquid:\n🔵🔴🔴📚🔴\n\n🪽IronWings:\n📚🔴🤡🟢🟢\n\nПредикт Liquid\n\nhttps://www.twitch.tv/dota2ti_ru_2",
+      "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
+      "date": "2026-08-15T07:42:21+00:00",
+      "views": "6",
+      "url": "https://t.me/NaFunny/1559"
+    },
     {
       "id": "NaFunny/1558",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Вторая карта:\n\n🌌Nigma:\n📚📚📚📚🔵\n\n🇨🇳ViciGaming:\n🔴🔵📚🔴🟢\n\nПредикт VG.risk\n\nДавайЛама у Нигмы очень сильный на ДСе, но тут мне не нравится пик VS в мид, а в Сумэила на кор Фурионе я не верю.\n\nhttps://www.twitch.tv/dota2ti_ru_4",
       "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
       "date": "2026-08-15T07:08:34+00:00",
-      "views": "9",
+      "views": "10",
       "url": "https://t.me/NaFunny/1558"
-    },
-    {
-      "id": "NaFunny/1557",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "🏆Матч дня, матч года, матч века!\n\n〰️Первая карта:\n\n🐲Spirit:\n📚🟢🔴🔴🤡\n\n👁Vision:\n🔵🔴🔴📚📚\n\nПредикт Spirit ❌\n\nupd:\n2.85 взял. risk\nupd2:\n7.10 малую взял\n\nhttps://www.twitch.tv/dota2ti_ru",
-      "image": "https://cdn4.telesco.pe/file/Rj2PIjF_sj4xpBSeIG7NMcpq3X-WiKeR66XCH4-Hcws8L7rBiifq1KE-U2Z9EX2lN6XoqYpBOY47xK9IEh5uCTIMTg56bVGBTuuwMF0w0a8JF80Ow-pjjvmj9tGH_QL6hvFKi0JOyVXE5HUkbhnEuXyGprSlZHJQdxU2jWHLHD_cS3l3hFkPIHYtxr-BLx9178gZlNXpilnOC3TirowSOpHe7Ra5zMJrbZyrPEH1JF1GTgBevj_wqeoQKYSLZTyykabFyOzn-L-w7BHfqvIhzwqa44waOigft8s2Q8e0jLhsMk2YZWpKEAJ7a9gmDq-yjtblUPiDrqNJQIr1r3jYxQ.jpg",
-      "date": "2026-08-15T06:38:38+00:00",
-      "views": "11",
-      "url": "https://t.me/NaFunny/1557"
     },
     {
       "id": "TonNewbie/3374",
