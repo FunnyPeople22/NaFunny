@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-15T15:12:34.640Z",
+  "updatedAt": "2026-08-15T15:30:13.799Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1585",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Третья карта:  🪿Yandex: 🔴📚📚🔵🔴  🪽IronWings: 📚📚🔴🔵🔵  Предикт IW. high-risk ✅  upd: Взял 3.2. Если игра уходит в лейт, Вингсы вынесут вперед ногами яндексойдов.  https://www.twitch.tv/dota2ti_ru_3\n\nОчень сильная крутая дота от 🪽IronWings:",
+      "image": "https://cdn4.telesco.pe/file/hqxSeU-MPscAzYMkicTYQYBxbKwi7CsrIStubskUBMWRdt4lMZpkr7_lkMQ2wFq54s1Im0__Pq82jS2mXpZ2oZiSgA_mA4NTVqEqxdQhyMKn7fHGimi-fs4gNiIS4gb3_dwKwwEqDyRZC4N51rAudWFej61h2nQoQgcr6S0_2XsCf54gGV1VLOctAdinutkpz_BaL58rENq5p9BcYuBqhqn6rWx6vNZHcBeaHP8XHDlWSmBjeu4FEY7h_Cmk5oaUDF8nFtbbBhPTEyRZ69W4zsyZGRJDwqx7CQNsy9Y-Zzmd5gtZx5F2Yg13W76mcMvz46UAh3Z8MhiMoP9EmJoAsA.jpg",
+      "date": "2026-08-15T15:21:43+00:00",
+      "views": "7",
+      "url": "https://t.me/NaFunny/1585"
+    },
     {
       "id": "NaFunny/1584",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "Ну Ликвид! Ну просто божественные!",
       "image": "https://cdn4.telesco.pe/file/hqxSeU-MPscAzYMkicTYQYBxbKwi7CsrIStubskUBMWRdt4lMZpkr7_lkMQ2wFq54s1Im0__Pq82jS2mXpZ2oZiSgA_mA4NTVqEqxdQhyMKn7fHGimi-fs4gNiIS4gb3_dwKwwEqDyRZC4N51rAudWFej61h2nQoQgcr6S0_2XsCf54gGV1VLOctAdinutkpz_BaL58rENq5p9BcYuBqhqn6rWx6vNZHcBeaHP8XHDlWSmBjeu4FEY7h_Cmk5oaUDF8nFtbbBhPTEyRZ69W4zsyZGRJDwqx7CQNsy9Y-Zzmd5gtZx5F2Yg13W76mcMvz46UAh3Z8MhiMoP9EmJoAsA.jpg",
       "date": "2026-08-15T15:02:00+00:00",
-      "views": "9",
+      "views": "12",
       "url": "https://t.me/NaFunny/1584"
-    },
-    {
-      "id": "NaFunny/1583",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🐲Spirit:\n📚🟢📚📚🔴\n\n🌌Nigma:\n🔵📚🐸📚🟢\n\nВыглядит как 2:0 от Nigma. Воздержусь пока от предикта и ставки. Понаблюдаю мин 15 за картой.\n\nupd:\n1.85 забрал на Спирит\n\nhttps://www.twitch.tv/dota2ti_ru_4",
-      "image": "https://cdn4.telesco.pe/file/hqxSeU-MPscAzYMkicTYQYBxbKwi7CsrIStubskUBMWRdt4lMZpkr7_lkMQ2wFq54s1Im0__Pq82jS2mXpZ2oZiSgA_mA4NTVqEqxdQhyMKn7fHGimi-fs4gNiIS4gb3_dwKwwEqDyRZC4N51rAudWFej61h2nQoQgcr6S0_2XsCf54gGV1VLOctAdinutkpz_BaL58rENq5p9BcYuBqhqn6rWx6vNZHcBeaHP8XHDlWSmBjeu4FEY7h_Cmk5oaUDF8nFtbbBhPTEyRZ69W4zsyZGRJDwqx7CQNsy9Y-Zzmd5gtZx5F2Yg13W76mcMvz46UAh3Z8MhiMoP9EmJoAsA.jpg",
-      "date": "2026-08-15T14:51:44+00:00",
-      "views": "11",
-      "url": "https://t.me/NaFunny/1583"
     },
     {
       "id": "TonNewbie/3374",
