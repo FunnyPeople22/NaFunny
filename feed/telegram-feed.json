@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-16T11:29:22.671Z",
+  "updatedAt": "2026-08-16T11:51:01.095Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/1615",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "Yandex побеждают LGD 2:1 и проходят в плей-офф\n\nОтец покидает турнир ;(",
+      "image": "https://cdn4.telesco.pe/file/hqxSeU-MPscAzYMkicTYQYBxbKwi7CsrIStubskUBMWRdt4lMZpkr7_lkMQ2wFq54s1Im0__Pq82jS2mXpZ2oZiSgA_mA4NTVqEqxdQhyMKn7fHGimi-fs4gNiIS4gb3_dwKwwEqDyRZC4N51rAudWFej61h2nQoQgcr6S0_2XsCf54gGV1VLOctAdinutkpz_BaL58rENq5p9BcYuBqhqn6rWx6vNZHcBeaHP8XHDlWSmBjeu4FEY7h_Cmk5oaUDF8nFtbbBhPTEyRZ69W4zsyZGRJDwqx7CQNsy9Y-Zzmd5gtZx5F2Yg13W76mcMvz46UAh3Z8MhiMoP9EmJoAsA.jpg",
+      "date": "2026-08-16T11:50:32+00:00",
+      "views": "5",
+      "url": "https://t.me/NaFunny/1615"
+    },
+    {
       "id": "NaFunny/1614",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Третья карта:\n\n🔵LGD.Gaming:\n🔴🔴🔵📚📚\n\n🪿Yandex:\n🔵📚🟢📚📚\n\nФанатский отцовский предикт на LGD\n\nНо я очень недоволен пиком ВР в 3ку",
+      "text": "〰️Третья карта:\n\n🔵LGD.Gaming:\n🔴🔴🔵📚📚\n\n🪿Yandex:\n🔵📚🟢📚📚\n\nФанатский отцовский предикт на LGD ❌\n\nНо я очень недоволен пиком ВР в 3ку",
       "image": "https://cdn4.telesco.pe/file/hqxSeU-MPscAzYMkicTYQYBxbKwi7CsrIStubskUBMWRdt4lMZpkr7_lkMQ2wFq54s1Im0__Pq82jS2mXpZ2oZiSgA_mA4NTVqEqxdQhyMKn7fHGimi-fs4gNiIS4gb3_dwKwwEqDyRZC4N51rAudWFej61h2nQoQgcr6S0_2XsCf54gGV1VLOctAdinutkpz_BaL58rENq5p9BcYuBqhqn6rWx6vNZHcBeaHP8XHDlWSmBjeu4FEY7h_Cmk5oaUDF8nFtbbBhPTEyRZ69W4zsyZGRJDwqx7CQNsy9Y-Zzmd5gtZx5F2Yg13W76mcMvz46UAh3Z8MhiMoP9EmJoAsA.jpg",
       "date": "2026-08-16T10:38:16+00:00",
-      "views": "16",
+      "views": "17",
       "url": "https://t.me/NaFunny/1614"
-    },
-    {
-      "id": "NaFunny/1613",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🔵LGD.Gaming:\n🔵📚📚📚🔴\n\n🪿Yandex:\n📚🔴🔴🟢🔴\n\nПредикт LGD ❌",
-      "image": "https://cdn4.telesco.pe/file/hqxSeU-MPscAzYMkicTYQYBxbKwi7CsrIStubskUBMWRdt4lMZpkr7_lkMQ2wFq54s1Im0__Pq82jS2mXpZ2oZiSgA_mA4NTVqEqxdQhyMKn7fHGimi-fs4gNiIS4gb3_dwKwwEqDyRZC4N51rAudWFej61h2nQoQgcr6S0_2XsCf54gGV1VLOctAdinutkpz_BaL58rENq5p9BcYuBqhqn6rWx6vNZHcBeaHP8XHDlWSmBjeu4FEY7h_Cmk5oaUDF8nFtbbBhPTEyRZ69W4zsyZGRJDwqx7CQNsy9Y-Zzmd5gtZx5F2Yg13W76mcMvz46UAh3Z8MhiMoP9EmJoAsA.jpg",
-      "date": "2026-08-16T09:28:51+00:00",
-      "views": "21",
-      "url": "https://t.me/NaFunny/1613"
     },
     {
       "id": "TonNewbie/3374",
