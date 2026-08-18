@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-18T20:33:46.152Z",
+  "updatedAt": "2026-08-18T20:37:37.966Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -41,7 +41,7 @@
       "text": "✈️Telegram подал заявку на получение доменной зоны .gram.\n\nЕсли заявка будет одобрена ICANN, пользователи Telegram смогут получать собственные домены второго уровня.\nНапример, @durov (https://t.me/durov) сможет получить durov.gram, а @monk (https://t.me/monk) - monk.gram.\nПричём пользователи смогут создавать интерактивные веб-сайты, размещённые на инфраструктуре Telegram, буквально отправив одно сообщение.\n«Влажные» мечты о богатстве на TON DNS (https://t.me/TonNewbie/3087) на доменах .ton начинают выглядеть уже не так радужно.\n\nНе думаю, что это означает смерть TON DNS. Но сам факт того, что Telegram идёт в сторону\nдоменной зоны .gram, довольно показателен. Примерно как представить график токена, который после этой новости начал идти вниз, так и надежды на TON DNS укатались пока вниз.\nА так, жаль то самое сплотившееся коммьюнити.\n\nНо если смотреть шире - вектор ТГ в целом задан очень хороший.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/NnS-W4AgSMm0AXP-MF_T3LREz5jhpm0muoe_4cDsFLjUscyZBtBfSfCeopMmZ85yQ8qIUPhUtk5WySo_puE2rG30ssJ-JNGSP4HuPyG9a2SVcUk7D-e_KVLa96iXjZyesbJGfJ1cqOmXh5UR3qRLOrsXJFLFZDMefXBUuXPIqSFN_HEgeZ2fK2bKyt7gg5Do2jN84g1LeTrCtB_DKUUR2UwQfI_fGS69qsk1VvRgQZlAsrH2Si7tMCaN4nQhHQfdnccx4-ycVLrc_MVfrDrMORBmMquS0kVuJfjhYkFAISQxCXHxzymckuBZxnaYErrcUTW942DuoZ3jcZzgL6TiJg.jpg",
       "date": "2026-08-18T18:36:10+00:00",
-      "views": "572",
+      "views": "576",
       "url": "https://t.me/TonNewbie/3378"
     },
     {
@@ -53,7 +53,7 @@
       "text": "Telegram признал ошибку?\n\nНаверняка многие из вас слышали о скандале связанном с Телеграм подарками с редкими номерами и присвоением их себе сотрудниками ТГ.\n\nПоявилась инфа, что подарки с уникальными номерами (222, 3333 и тд) будут переданы пользователям, кто пытался получить их честным путём.\n\nОфициального заявления не было, но об этом заявил один из приближённых к PD и подарковой нише в целом.\n\n@TonNewbie (https://t.me/TonNewbie)\n🍾10😁3🐳3🤔1",
       "image": "https://cdn4.telesco.pe/file/m4AFzl5n1wxzNyKIu8SzFmndYYAXb31KeG39m-GINVyz1S9uT7o6R0a7a3ZeM2Ap37_ibiRyRpJIsQmDAeZDm131WfzejgFj5xI1ya9aMncbUDNgfsydxVOSH1odHhGI08POtCy5L4eePrKfq8CvUoNXiWsnjjTold7KCo9W_c8nags1DC8jMlhUBQRCnZcn18ocVelU-KymhOmEAc6LckCV_czROlE2DFccs8etzb7ZdKbZqrLmEXR5m7HKo7MOeaNwHuyNhb71e55FScJIkOlzM7sDtNc72O_yXHzSnZGNCrmSypJ1Gy6iN93qxdOZMGv7folNadQIhkP_JVAEdA.jpg",
       "date": "2026-08-18T09:36:43+00:00",
-      "views": "1.18K",
+      "views": "1.19K",
       "url": "https://t.me/TonNewbie/3377"
     }
   ],
