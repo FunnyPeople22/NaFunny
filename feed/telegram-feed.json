@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-21T09:03:53.794Z",
+  "updatedAt": "2026-08-21T09:18:10.276Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1662",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Третья карта:\n\n🐴Liquid:\n🟢🟢🔵🔴🟢\n\n🐦‍🔥Falcons:\n🔵📚🔴🟢📚\n\nБез предикта. На первый взгляд будто победа за Фальконами. Но я буду болеть за победу Ликвид. Ставки пропущу, пики хай-риск\n\nhttps://www.twitch.tv/dota2ti_ru\n\nhttps://www.twitch.tv/solo",
+      "image": "https://cdn4.telesco.pe/file/a2RzHP2Dckr-a2tKJtyMdaVRMIFwirMD9aLJl1zmBTlBM_liJU6Av6XLizquPUR3ypsKHtd5TwzjQqvENhqFNVnhEIAxlUFkqEGtexdb1xO1XR7yvY2YOVgcCmIGWDXb988BYymydLGZyvFN4B83F6z_2EKUPcfbze0SrPn6hwH7qIoMJ3aMmMQxl0cVSz4VcwIyfzwKnkpUP3Zp_KvbMn8_RhyKaPcxFZZv3QcEjMVgbDwUQ7leugojT54JN5vHQLXko_Odzg6DybP2bsXHSMOCboa3e0SlwTba4VkghoXfa367Ix_GoclnB2B7izgSQlKBABdjFO2lHtADopi7Kg.jpg",
+      "date": "2026-08-21T09:09:41+00:00",
+      "views": "5",
+      "url": "https://t.me/NaFunny/1662"
+    },
     {
       "id": "NaFunny/1661",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "🐴Улыбаются Ликвиды, а вместе с ними и я=))",
       "image": "https://cdn4.telesco.pe/file/a2RzHP2Dckr-a2tKJtyMdaVRMIFwirMD9aLJl1zmBTlBM_liJU6Av6XLizquPUR3ypsKHtd5TwzjQqvENhqFNVnhEIAxlUFkqEGtexdb1xO1XR7yvY2YOVgcCmIGWDXb988BYymydLGZyvFN4B83F6z_2EKUPcfbze0SrPn6hwH7qIoMJ3aMmMQxl0cVSz4VcwIyfzwKnkpUP3Zp_KvbMn8_RhyKaPcxFZZv3QcEjMVgbDwUQ7leugojT54JN5vHQLXko_Odzg6DybP2bsXHSMOCboa3e0SlwTba4VkghoXfa367Ix_GoclnB2B7izgSQlKBABdjFO2lHtADopi7Kg.jpg",
       "date": "2026-08-21T08:38:50+00:00",
-      "views": "14",
+      "views": "15",
       "url": "https://t.me/NaFunny/1661"
-    },
-    {
-      "id": "NaFunny/1660",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:  🐴Liquid: 🔴🟢🔴🔴📚  🐦‍🔥Falcons: 🔵🔴🔵📚🔴  Предикт Liquid ✅  Имею уже 3 луза в ряд на Ликвид. Но здесь, в очередной раз мне виднеется победа Ликвид. Брать буду на малую. Ликвид максимально изменились в стиле своей игры после поражения от Яндекс. Команду…\n\nНу вот теперь я узнаю Ликвид, но не до конца",
-      "image": "https://cdn4.telesco.pe/file/a2RzHP2Dckr-a2tKJtyMdaVRMIFwirMD9aLJl1zmBTlBM_liJU6Av6XLizquPUR3ypsKHtd5TwzjQqvENhqFNVnhEIAxlUFkqEGtexdb1xO1XR7yvY2YOVgcCmIGWDXb988BYymydLGZyvFN4B83F6z_2EKUPcfbze0SrPn6hwH7qIoMJ3aMmMQxl0cVSz4VcwIyfzwKnkpUP3Zp_KvbMn8_RhyKaPcxFZZv3QcEjMVgbDwUQ7leugojT54JN5vHQLXko_Odzg6DybP2bsXHSMOCboa3e0SlwTba4VkghoXfa367Ix_GoclnB2B7izgSQlKBABdjFO2lHtADopi7Kg.jpg",
-      "date": "2026-08-21T08:28:43+00:00",
-      "views": "14",
-      "url": "https://t.me/NaFunny/1660"
     },
     {
       "id": "TonNewbie/3381",
@@ -41,7 +41,7 @@
       "text": "🤑Bitcoin пробитие $77000\n\nЛокал памп или начало бычки к концу лета?\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/mqACC5YBwoqZmbbemCZQNtn4MrS2MpUdNFpzlFY8bgAjwk74ohkNSptmvZo7wxyzR5WE3EEOe_Fvr4yKrO9rCkPj85d0tN595G2gcLi8bASzrUrEFpZuZwa75O-ch3ZZEFJrkRsN2vQEHQ_4RznJTIqMIziJ5pOEez5MFq1fnhs4JNBfy21AaNcAcJ_ZLH1Gt-WhT4yMQhPRkpVwnXk7P1voOwNVVMe0pCOpizP8sJ1Oi_uYHq92l1JBlh7hwdPjLTknfyB2f84aexUeLIVE7LZwFeQf9375FIePrkE4Kk7zUr5GlG97nx_xXdzgmB3ZEB644Zz6vlYBgi5HgqYVsQ.jpg",
       "date": "2026-08-21T08:27:18+00:00",
-      "views": "364",
+      "views": "406",
       "url": "https://t.me/TonNewbie/3381"
     },
     {
@@ -53,7 +53,7 @@
       "text": "🟠Binance запустила платформу Agent OS для торговли с помощью ИИ-агентов.\n\n¯\\_(ツ)_/¯\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/mqACC5YBwoqZmbbemCZQNtn4MrS2MpUdNFpzlFY8bgAjwk74ohkNSptmvZo7wxyzR5WE3EEOe_Fvr4yKrO9rCkPj85d0tN595G2gcLi8bASzrUrEFpZuZwa75O-ch3ZZEFJrkRsN2vQEHQ_4RznJTIqMIziJ5pOEez5MFq1fnhs4JNBfy21AaNcAcJ_ZLH1Gt-WhT4yMQhPRkpVwnXk7P1voOwNVVMe0pCOpizP8sJ1Oi_uYHq92l1JBlh7hwdPjLTknfyB2f84aexUeLIVE7LZwFeQf9375FIePrkE4Kk7zUr5GlG97nx_xXdzgmB3ZEB644Zz6vlYBgi5HgqYVsQ.jpg",
       "date": "2026-08-20T11:51:44+00:00",
-      "views": "993",
+      "views": "1.01K",
       "url": "https://t.me/TonNewbie/3380"
     }
   ],
