@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-22T05:35:48.351Z",
+  "updatedAt": "2026-08-22T05:49:39.061Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1689",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Первая карта:  🌌Nigma: 📚📚🔴📚🔴  🎪BoomBoys: 🔴🟢🔴📚📚  Предикт BB  https://www.twitch.tv/dota2ti_ru\n\nВот смотрю карту, игра в нуле, представляю себе сценарий возможных файтов и начинаю потихоньку жим-жим от понимания, как же много зависит от Акса. Ошибётся=луз",
+      "image": "https://cdn4.telesco.pe/file/a95F0uE4O4HIVrgwgxZo7yi0Lul5S_9Hve27YBEnJKDCp1yxg5DUyUAH1XH21zun1V0xXemjRzsxIeuihJtMhEb_xm97fdzUizaWKC3Nt1cs0PgEIEoFtny4quzOi88QE13Q1KD3MBb82rIeNvTk67pPfCPTTSW0up7j23F4ydPBY83_YAHuuEEZPseY6IWiLXsDSJOvcG6TqqjUG3Vktkh9bwlrNYxi9Uap4wCe1kOF-CPcCPhUOlFD1aNss7Oj5Z8xTyJaYosrMfvAeN4u5f5qY5pdnc4IFLKgE3OTTbyYXcQ360rzobQd17Z-1jkSYohVGxEQJKU4QP-OkrsW4A.jpg",
+      "date": "2026-08-22T05:40:38+00:00",
+      "views": "2",
+      "url": "https://t.me/NaFunny/1689"
+    },
     {
       "id": "NaFunny/1688",
       "channel": "NaFunny",
@@ -21,18 +33,6 @@
       "url": "https://t.me/NaFunny/1688"
     },
     {
-      "id": "NaFunny/1687",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "",
-      "image": "https://cdn4.telesco.pe/file/a95F0uE4O4HIVrgwgxZo7yi0Lul5S_9Hve27YBEnJKDCp1yxg5DUyUAH1XH21zun1V0xXemjRzsxIeuihJtMhEb_xm97fdzUizaWKC3Nt1cs0PgEIEoFtny4quzOi88QE13Q1KD3MBb82rIeNvTk67pPfCPTTSW0up7j23F4ydPBY83_YAHuuEEZPseY6IWiLXsDSJOvcG6TqqjUG3Vktkh9bwlrNYxi9Uap4wCe1kOF-CPcCPhUOlFD1aNss7Oj5Z8xTyJaYosrMfvAeN4u5f5qY5pdnc4IFLKgE3OTTbyYXcQ360rzobQd17Z-1jkSYohVGxEQJKU4QP-OkrsW4A.jpg",
-      "date": "2026-08-22T04:56:03+00:00",
-      "views": "8",
-      "url": "https://t.me/NaFunny/1687"
-    },
-    {
       "id": "TonNewbie/3382",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
@@ -41,7 +41,7 @@
       "text": "🦁BTC $78000-$79500\n🐆ETH $2400\n🧂SOL $91-$93\n💎GRAM $1.44-$1.49\n\nКак будто что-то в этом списке не так 🤔\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/FpK88yJXQg0h6QEreW8cnyGtPH2oMFamhiDtvImRwoXgRqD9ihMz1aDoNTKo_yVplzdydnCllidiEFvfqVKqVPWbaSDF1hcLTse_FUBjnWPgjFqJZ9qs5qHZBEojQodTJWqBgG6RChBIjfFcc8pquqRx7WX2w1t7AE9mt0Vss3gVVKoyDrTPTqiWeiMQGGZa0tM5If8oZlvhItk_SAxTQD8Ey2lT1ZkoccyfNwWFQCgwuUpHQ0BunFEkmX8XxT7gzUzEt9VmnRGbmtdxufySS4QjMMiURa1s66g35vfQf0WiQnDFJxk57_drPgRaUAGK7VY2KjOKwRsOHykaMnhFTw.jpg",
       "date": "2026-08-21T10:00:42+00:00",
-      "views": "868",
+      "views": "869",
       "url": "https://t.me/TonNewbie/3382"
     },
     {
