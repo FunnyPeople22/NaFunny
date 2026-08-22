@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-22T07:06:42.400Z",
+  "updatedAt": "2026-08-22T07:38:45.568Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1693",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Третья карта:\n\n🌌Nigma:\n🟢🔵🤡📚📚\n\n🎪BoomBoys:\n🟢🟢🔴🔵📚\n\nПредикт BB\n\nhttps://www.twitch.tv/dota2ti_ru",
+      "image": "https://cdn4.telesco.pe/file/a95F0uE4O4HIVrgwgxZo7yi0Lul5S_9Hve27YBEnJKDCp1yxg5DUyUAH1XH21zun1V0xXemjRzsxIeuihJtMhEb_xm97fdzUizaWKC3Nt1cs0PgEIEoFtny4quzOi88QE13Q1KD3MBb82rIeNvTk67pPfCPTTSW0up7j23F4ydPBY83_YAHuuEEZPseY6IWiLXsDSJOvcG6TqqjUG3Vktkh9bwlrNYxi9Uap4wCe1kOF-CPcCPhUOlFD1aNss7Oj5Z8xTyJaYosrMfvAeN4u5f5qY5pdnc4IFLKgE3OTTbyYXcQ360rzobQd17Z-1jkSYohVGxEQJKU4QP-OkrsW4A.jpg",
+      "date": "2026-08-22T07:34:38+00:00",
+      "views": "4",
+      "url": "https://t.me/NaFunny/1693"
+    },
     {
       "id": "NaFunny/1692",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "",
       "image": "https://cdn4.telesco.pe/file/V2RHr-mECQm28mSd8xZ82grA2n-dz0DVCw9Vu4FQgmwvUQ1EgEdZl7SHoB-Exww74L9uOLzm6Q7q5Sgoqn2danlN4gRhfnxaijmUDQ7zoUNjlU-c_uDRJjwYNrclDkynLPcDF0ZVNqjDul22ePg2JjtLlHogt1AB2HXLEl669VihBgn3T6qCj7XlXneGtCuaGBxIydlSwNS-BOyeHQKkVtvtnL4sDVcoStIs9TFZ7oDK9OhIkvkUwhMqBwFrnH3rBkKbjmuIEaMbsJxI3EjDXq1s0kCkqCby6SPjZ_rCOUnGUgeH8FUUcwLKU1JbVd4aL3-xI_G4QlHOiQMV_PgFuA",
       "date": "2026-08-22T06:51:56+00:00",
-      "views": "6",
+      "views": "13",
       "url": "https://t.me/NaFunny/1692"
-    },
-    {
-      "id": "NaFunny/1691",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "Почти на месте :)",
-      "image": "https://cdn4.telesco.pe/file/kw9PIG-2C2H-fa-fDr07b-SY6VZioR2V6lkNPOH5mx0ObSOWXVzrwyYlinogAcuzzbpPrV1oUaGBUiH1JOAnlw6Z-RxgLBJajHgao_i_NGp9d6N87ccg15jZUhC8S6QYH4MEzei17jlMI2yO4tHOu57IWDMn68k7xe_WXxRR34naHtDH76AoriNsz3nXuQHCsnY0ckyeq8DeldJ0_rPn7BXe40JvhgHD8grtxMN2wphUer2oUSF-U980IOvpW-yrkXnbSNjJ0CGAcdzcLyWzjbsN5UjKw7xl5ccMoCDxTtNSZzHYdu85ZsxdO2p9ATr6-EPw1Js0CAfFB6XnQ8F1PQ.jpg",
-      "date": "2026-08-22T06:45:13+00:00",
-      "views": "8",
-      "url": "https://t.me/NaFunny/1691"
     },
     {
       "id": "TonNewbie/3382",
@@ -41,7 +41,7 @@
       "text": "🦁BTC $78000-$79500\n🐆ETH $2400\n🧂SOL $91-$93\n💎GRAM $1.44-$1.49\n\nКак будто что-то в этом списке не так 🤔\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/FpK88yJXQg0h6QEreW8cnyGtPH2oMFamhiDtvImRwoXgRqD9ihMz1aDoNTKo_yVplzdydnCllidiEFvfqVKqVPWbaSDF1hcLTse_FUBjnWPgjFqJZ9qs5qHZBEojQodTJWqBgG6RChBIjfFcc8pquqRx7WX2w1t7AE9mt0Vss3gVVKoyDrTPTqiWeiMQGGZa0tM5If8oZlvhItk_SAxTQD8Ey2lT1ZkoccyfNwWFQCgwuUpHQ0BunFEkmX8XxT7gzUzEt9VmnRGbmtdxufySS4QjMMiURa1s66g35vfQf0WiQnDFJxk57_drPgRaUAGK7VY2KjOKwRsOHykaMnhFTw.jpg",
       "date": "2026-08-21T10:00:42+00:00",
-      "views": "881",
+      "views": "891",
       "url": "https://t.me/TonNewbie/3382"
     },
     {
@@ -53,7 +53,7 @@
       "text": "🤑Bitcoin пробитие $77000\n\nЛокал памп или начало бычки к концу лета?\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/tDWCUOq3XyxqUA9XQRRmDXY3g_iv8_ddyD9VcPqdjDmZaFh2CaZHj_GbYwqQ_uzbRQQeKtYz-j01bUmXJxCtCStkNUTwrf0zInk3A-m-HFA3KRWNcB69wAerxBG7o0m6tkT87uSBPMYhxz-uvJ7MVfHHwC0ptNfJExNE9m_-EO9NUhIdSXxxq3ledrwC1tf6kyxWhTjXeYV5RMeiO4PZNFX-Tqkxm9Onzqls1pPcHd49UEfWsII4zpDGnhqnfDCGken0aPCEgqkCxeG7pRnvKpGoy2tPsmpfoFV_KtsKaIR2NPmWN5yUUMtviTCwn8xYhUjICxSgus1nG4jJUzfODg.jpg",
       "date": "2026-08-21T08:27:18+00:00",
-      "views": "1.06K",
+      "views": "1.07K",
       "url": "https://t.me/TonNewbie/3381"
     }
   ],
