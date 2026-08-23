@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-23T12:18:20.704Z",
+  "updatedAt": "2026-08-23T13:05:23.196Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/1714",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Пятая карта:\n\n🐲Spirit:\n🔴📚📚📚📚\n\n👁Vision:\n📚🔵🟢🟢🔴\n\nПредикт Vision :(",
+      "image": "https://cdn4.telesco.pe/file/Ifd4_HumpxryoXqR_hx3golMniCelEhwvNveacVETFr61XWb3EsYEURrbs7jlRTC8IPkHa_J0XUxiT7f2fj7UfG1Rbq0YJCB9VO192g1n36IAu3DfkFCTzBRnZ48vx0ivGNwkcU6eVBv4icmgQJOvkb-BSyeyiPv_rR4vEXeEKSRDdCb1HezNqMw1g1v93otLqLAIUZdMjM8AqXMzaJLT_9Mg8eViTfuNoQX2xXarxNhobLrBEOJpkggLK___lIzgX0esPVZDu0XQNpgwOOYC0X8zPv_Eok6yRGXYO8pmXWj-go33zk1e9R1ZeH5-0xdEQ27bv5smtdyxoifpdvohg.jpg",
+      "date": "2026-08-23T12:29:53+00:00",
+      "views": "15",
+      "url": "https://t.me/NaFunny/1714"
+    },
+    {
       "id": "NaFunny/1712",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "",
-      "image": "https://cdn4.telesco.pe/file/F-KVebWSgbRaFSlsEDsPERGbDejSq3aSZJkPuzNrXojjXPNlYUF3ZjEODHRqOFXTW1MbIwCa3ahkdj52-xO8IOsrxPnvSHnRG08mZLwIeVnwg7EppxDjKO-qR9sS8Sjip__RyRL3-6BaOQlwWIAP4xaeNA_7_iadhNOcxz5wc1yNlEnUOCf2d63ToqBTUYM_wi8phoUbdrgydVZMsuuDnRgKzf8RbEKhMyOjAkXrw4pyt0kyYk5lv2CEjzvbsN7nLhAfX-pfGq42ku_lnxLKSeQYIYK23q-4b4qjbZq8Sr3JY37e17qerq-AlGzmJL7Wfz-QY9suv63AqpgaLGwYLA.jpg",
+      "image": "https://cdn4.telesco.pe/file/Ifd4_HumpxryoXqR_hx3golMniCelEhwvNveacVETFr61XWb3EsYEURrbs7jlRTC8IPkHa_J0XUxiT7f2fj7UfG1Rbq0YJCB9VO192g1n36IAu3DfkFCTzBRnZ48vx0ivGNwkcU6eVBv4icmgQJOvkb-BSyeyiPv_rR4vEXeEKSRDdCb1HezNqMw1g1v93otLqLAIUZdMjM8AqXMzaJLT_9Mg8eViTfuNoQX2xXarxNhobLrBEOJpkggLK___lIzgX0esPVZDu0XQNpgwOOYC0X8zPv_Eok6yRGXYO8pmXWj-go33zk1e9R1ZeH5-0xdEQ27bv5smtdyxoifpdvohg.jpg",
       "date": "2026-08-23T11:55:50+00:00",
-      "views": "15",
+      "views": "19",
       "url": "https://t.me/NaFunny/1712"
-    },
-    {
-      "id": "NaFunny/1711",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "Ну хорошо, посидим ещё 😬\n👍1🤣1🍾1",
-      "image": "https://cdn4.telesco.pe/file/F-KVebWSgbRaFSlsEDsPERGbDejSq3aSZJkPuzNrXojjXPNlYUF3ZjEODHRqOFXTW1MbIwCa3ahkdj52-xO8IOsrxPnvSHnRG08mZLwIeVnwg7EppxDjKO-qR9sS8Sjip__RyRL3-6BaOQlwWIAP4xaeNA_7_iadhNOcxz5wc1yNlEnUOCf2d63ToqBTUYM_wi8phoUbdrgydVZMsuuDnRgKzf8RbEKhMyOjAkXrw4pyt0kyYk5lv2CEjzvbsN7nLhAfX-pfGq42ku_lnxLKSeQYIYK23q-4b4qjbZq8Sr3JY37e17qerq-AlGzmJL7Wfz-QY9suv63AqpgaLGwYLA.jpg",
-      "date": "2026-08-23T11:54:41+00:00",
-      "views": "15",
-      "url": "https://t.me/NaFunny/1711"
     },
     {
       "id": "TonNewbie/3382",
