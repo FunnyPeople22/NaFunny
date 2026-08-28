@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-28T01:12:08.509Z",
+  "updatedAt": "2026-08-28T11:13:47.558Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -33,28 +33,28 @@
       "url": "https://t.me/NaFunny/1714"
     },
     {
-      "id": "TonNewbie/3386",
+      "id": "TonNewbie/3388",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.\n\nЗапустили голосование (https://t.me/tonstatus/241) для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком (https://t.me/TonNewbie/3335) Gram Wallet в Telegram.\n\n✈️Нативный ТГ кошелёк будет поддерживать:https://t.me/durov/533🔵Gram, Jettons, NFT и TON Connect;\n🔵Баланс и история транзакций;\n🔵Совершение нескольких переводов одновременно;\n🔵Транзакции без комиссий о которых говорил PD. (https://t.me/durov/533)\nВ коде также предусмотрена специальная функциональность для NFT. Кошелек сможет получать список NFT пользователя и информацию о них. При совершении транзакций также рассчитывается фактическая сумма расходов, включая комиссию сети.\nИсточник (https://t.me/telelakel/1131)\nКроме того, кошелёк можно будет привязать к вашему Telegram-аккаунту. Ваш ID-пользователя ТГ будет храниться непосредственно в смарте, а его привязка апрувиться отдельным механизмом верификации.\n\nЕсли верить словам PD, то официальный релиз должен состояться до конца августа.\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/kcCzlzt3o261Vr49GSJdSQ1tMtepu00MLGmqWbtsNcktaV5f21bPlL9ZQ3Kcv46rqy3QtdLyw7F6y6Yj8MKqq7Dh3iJWjuuxXff_DQVETC3v-iO5sq_V6b5pG6ny8nkEE65LHBw1N5jLd66P3rTDz5rDL7dEkxl8lWHFwMALRVydFc1yicD6ZFHEDlz32Wp9z7ACPFq1AEz-i_29NyXRuu0fsAbff859pVmNJzHr6tHWUmmseJLq20a1YqK6_cHce7m5fqqSNyEgxOPbgFzhAqbuU4AyZRmzyKzXLb0_vYs6E0EFSDQBJ3kAScoF42q6saTUv_KN8pIx06oPmNQNMg.jpg",
-      "date": "2026-08-27T17:39:57+00:00",
-      "views": "700",
-      "url": "https://t.me/TonNewbie/3386"
+      "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.  Запустили голосование для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком…\n\nГолосование завершилось (https://vote.lagus.cooking/).\nКонтракт добавят.\n\nНу что, ждём мтонга матанга висянга?\n\n@TonNewbie (https://t.me/TonNewbie)\n🕊7👍1🤣1",
+      "image": "https://cdn4.telesco.pe/file/tgUYZZ_nGeRVE0oUYrhVJ6gpcOGSkjh4qwOQ9A3i_q6gQORC7D-TmkyEXVwv9a2dUh7w2pKvSWrkVJyFT41N2eiml8xZGWZtof-ySlHCwCoV84HeAnX36WFW6EWC28Ez4Bn8Y98n_B5idMLlEaaHw8e74B68R7pThdUFvZ6gO2Ht2a6roX16k8bIbPODJnXOCgFPmOerPVm9H8N1JAEYdANo4GIclqWl6VVI8_gvSMkzbnj479vMJ6cTbYpE2a_H_jinfrggD2HgMwcuf92LvPocKauchW1PS-mi8tCZzLJ75OOZY6i2FzMSoEFwmifhkPv9uw_Ks2Ya2_c-UTp5Vg.jpg",
+      "date": "2026-08-28T10:14:03+00:00",
+      "views": "393",
+      "url": "https://t.me/TonNewbie/3388"
     },
     {
-      "id": "TonNewbie/3384",
+      "id": "TonNewbie/3387",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "Долларс ~86р\nЕвро 100р\n\n@TonNewbie (https://t.me/TonNewbie)",
-      "image": "https://cdn4.telesco.pe/file/B9XFnfQyYxBjMLOaeHXFCxI6PYslrTQB-rCpZlxVw3ts7iOZuYiIEQMqkX7-tD9vzTNIQLWlUGLymaBlRr6j51YCEkZd8PV3o8JsBgk8JZ6T_5n5Dy8_ACWCb2V6VBTopNuzavaeG3Fj3OgKUHgtIoyL88jTiiJtZ9RR5asjoGJN6B6iFdLqdXHGfBEwSL9CYWqbcbjQxyu4AyeRAmkC1DumxC9a5J3yvqvHx5xNwwAoJtUDiUHhu36HZkp6fA2z6w4WgDX4VGdGCSlwAWp8XyUQ7uZ_Qx0Q8fCPuecM2R2a_waLylfL9UaVESwQWVowU9XbIeq8_o6YhwTpF8xbHQ.jpg",
-      "date": "2026-08-27T10:36:00+00:00",
-      "views": "1.09K",
-      "url": "https://t.me/TonNewbie/3384"
+      "text": "Один из крупнейших инвесторов в TON - Animoca Brands перевела (https://tonviewer.com/transaction/db8b1c7b3ae1fcd0a761a05fed2c1ce61b85967c520fcfc0d82166b873655d16) на Binance 450,790 $GRAM (~637,030 долларсов).\n\nГотовятся поддержать релиз Gram Wallet?\n\n@TonNewbie (https://t.me/TonNewbie)\n🤣14🤯5⚡2❤2🕊1",
+      "image": "https://cdn4.telesco.pe/file/coxtOqNqaSQ2gDpOi6EBUOugQMmJuvLPffcQjmnCeLZMN7fC3wv6znwXEynfU8kr0-VjOlZrCH6N3H43pm4CDtRu8_GZYqJNSHh1sQS_tv3ncg3cLG50tBRXOMnq5dpclHT4Jq2t3N-WCQeuNYsLPM5yf5xjECJrpko2njcJVdqA7IcGXd3Q6CDGarn9fEvOBijiKpfqTMYd_BJ8_o8jYVGMGwNCJIiiPEFcpFOGZKnwEY8cv70U1Ebw7BemIw7tiMl17SOFO_d7dHhRZz8t24NkqCto5J7CYbD-ZzRkBpQyjfNfFemvfNMx_ufslXNjepK4gA3R4EcbVoEQlDg9vQ.jpg",
+      "date": "2026-08-28T08:34:13+00:00",
+      "views": "833",
+      "url": "https://t.me/TonNewbie/3387"
     }
   ],
   "errors": []
