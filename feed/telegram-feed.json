@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-08-27T23:56:46.691Z",
+  "updatedAt": "2026-08-28T01:12:08.509Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -41,7 +41,7 @@
       "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.\n\nЗапустили голосование (https://t.me/tonstatus/241) для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком (https://t.me/TonNewbie/3335) Gram Wallet в Telegram.\n\n✈️Нативный ТГ кошелёк будет поддерживать:https://t.me/durov/533🔵Gram, Jettons, NFT и TON Connect;\n🔵Баланс и история транзакций;\n🔵Совершение нескольких переводов одновременно;\n🔵Транзакции без комиссий о которых говорил PD. (https://t.me/durov/533)\nВ коде также предусмотрена специальная функциональность для NFT. Кошелек сможет получать список NFT пользователя и информацию о них. При совершении транзакций также рассчитывается фактическая сумма расходов, включая комиссию сети.\nИсточник (https://t.me/telelakel/1131)\nКроме того, кошелёк можно будет привязать к вашему Telegram-аккаунту. Ваш ID-пользователя ТГ будет храниться непосредственно в смарте, а его привязка апрувиться отдельным механизмом верификации.\n\nЕсли верить словам PD, то официальный релиз должен состояться до конца августа.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/kcCzlzt3o261Vr49GSJdSQ1tMtepu00MLGmqWbtsNcktaV5f21bPlL9ZQ3Kcv46rqy3QtdLyw7F6y6Yj8MKqq7Dh3iJWjuuxXff_DQVETC3v-iO5sq_V6b5pG6ny8nkEE65LHBw1N5jLd66P3rTDz5rDL7dEkxl8lWHFwMALRVydFc1yicD6ZFHEDlz32Wp9z7ACPFq1AEz-i_29NyXRuu0fsAbff859pVmNJzHr6tHWUmmseJLq20a1YqK6_cHce7m5fqqSNyEgxOPbgFzhAqbuU4AyZRmzyKzXLb0_vYs6E0EFSDQBJ3kAScoF42q6saTUv_KN8pIx06oPmNQNMg.jpg",
       "date": "2026-08-27T17:39:57+00:00",
-      "views": "681",
+      "views": "700",
       "url": "https://t.me/TonNewbie/3386"
     },
     {
