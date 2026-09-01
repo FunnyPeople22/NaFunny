@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-01T00:07:03.811Z",
+  "updatedAt": "2026-09-01T01:53:56.016Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -57,14 +57,5 @@
       "url": "https://t.me/TonNewbie/3387"
     }
   ],
-  "errors": [
-    {
-      "channel": "NaFunny",
-      "message": "@NaFunny: no usable public posts found"
-    },
-    {
-      "channel": "NaFunny",
-      "message": "Kept previous @NaFunny posts because the current fetch returned no usable posts."
-    }
-  ]
+  "errors": []
 }
