@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-10T05:14:23.065Z",
+  "updatedAt": "2026-09-10T09:44:26.019Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
-      "id": "NaFunny/1737",
+      "id": "NaFunny/1739",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🦞Team Synapse:\n🟢📚🔴🔵📚\n\n🎮GamerLegion:\n🔴🔵📚🔴🔴\n\nПредикт GL ✅\n\nУ Synapse оказывается замена на миду, какой nn вторую карту на Инвокере. На первой его уничтожил RCY на 🔵. Да и не только его, а в целом всю команду Synapse.\n\nВзял 6.6 под выкуп на Synapse. Тимадо якорь на Тини, но в целом пик у GL сигнатурный, один Fayde на 🔴 чего только стоит)\nupd:\nВыкупил Synapse",
-      "image": "https://cdn4.telesco.pe/file/GRG_F3Gyfq33M4IVKsVFHfOuh0Yu6AdOz9hwxaSkEcepdUngxND17NOdM3RZHYjAvbfo-_c7JfoX6CZAbj4mzSH_2VH4PZehM5s4MA-4pPMOk-40dIigud8MDKCrkbZTD2v4zyFSZDTBm-MOF72gRxuP2e2dZPgcqG8zAHQhGpR2B_VmBRtOJ2bRW2-1xQyvOpsqMdcTT5RCibroEeQLfrnFG1qZrAVrXnLjFKSKyBMylerxGBvJRdSyF2veTT8TBcXfW7mM8nJjncboTUFMnHh4mhwT9VnP-BOg0_bEgchrMt14zCHO_EgBp7ZS2CChcPPd5uyEavGCC9KJEUPxdg.jpg",
-      "date": "2026-09-09T15:42:25+00:00",
-      "views": "17",
-      "url": "https://t.me/NaFunny/1737"
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/I8mr1AZYS0-CLK85cJZEbNyPKLZ70vFkh_pYv5ffp22oEmjw46U3dsoBYV2GaiQJ6ZKeu9S_t6mlQewCrXGzXk_IvrL5T9RYOqMPbBi5kUULjT7OkzN-kSI2RykutECM4dTlFicGH-R_7xuTLKsbsGZI2Aw8_wXEYFS9ONM2Ol8qT4fnpQ0PbpK2qwTQUaQ0AgYABaCNMevpiSpA6PND8QWcdMQ2iSh1DgQs2ZhGNXMWvhwoeqERqt84sForMzFOFx_dG-qeFpNQb5CHLUmNHaqXAoj0ckKtZFE6R5wwKlguqetHzLMYRMuWyvggmfMQxZnJwZkSNim2S4eS56XOJw",
+      "date": "2026-09-10T09:11:47+00:00",
+      "views": "8",
+      "url": "https://t.me/NaFunny/1739"
     },
     {
-      "id": "NaFunny/1736",
+      "id": "NaFunny/1738",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Третья карта:\n\n🐀MOUZ:\n🟢🔵📚📚🔵\n\n🤢Huligani:\n🔵🟢🐸🔵🔵\n\nПредикт Huligani. high-risk❌",
+      "text": "📹stream online twitch.tv/NaFunny2 (http://twitch.tv/NaFunny2)\n🦞Ranked MM",
       "image": "https://cdn4.telesco.pe/file/GRG_F3Gyfq33M4IVKsVFHfOuh0Yu6AdOz9hwxaSkEcepdUngxND17NOdM3RZHYjAvbfo-_c7JfoX6CZAbj4mzSH_2VH4PZehM5s4MA-4pPMOk-40dIigud8MDKCrkbZTD2v4zyFSZDTBm-MOF72gRxuP2e2dZPgcqG8zAHQhGpR2B_VmBRtOJ2bRW2-1xQyvOpsqMdcTT5RCibroEeQLfrnFG1qZrAVrXnLjFKSKyBMylerxGBvJRdSyF2veTT8TBcXfW7mM8nJjncboTUFMnHh4mhwT9VnP-BOg0_bEgchrMt14zCHO_EgBp7ZS2CChcPPd5uyEavGCC9KJEUPxdg.jpg",
-      "date": "2026-09-09T14:09:21+00:00",
-      "views": "17",
-      "url": "https://t.me/NaFunny/1736"
+      "date": "2026-09-10T08:18:54+00:00",
+      "views": "11",
+      "url": "https://t.me/NaFunny/1738"
     },
     {
       "id": "TonNewbie/3388",
@@ -39,9 +39,9 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.  Запустили голосование для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком…\n\nГолосование завершилось (https://vote.lagus.cooking/).\nКонтракт добавят.\n\nНу что, ждём мтонга матанга висянга?\n\n@TonNewbie (https://t.me/TonNewbie)\n🕊17🤣10👍3❤2🔥1",
-      "image": "https://cdn4.telesco.pe/file/sSCUx4EnuNraOWeyOIjAJXKL9fW_Mm3bl1WzFDABogUYnA-csedDtvLBvcHPdoYSSOH8PhsaMHa-z4JiZWtzhOFasjhSx0o9ci3blU39lfQkX1hu-aFIRLuPPGajJtLAva50EuclD525Os7o8cMA1wWtdxrSfEICtqPgrkokimQ3w67KYf0JQrFMAUSOBkCZ6dumDqQDTcgeQiB2YCjRyA_g2TZoKQNZeVCUWmEjlPc2My3cXxZ852sgEekWodTrhYXg1JafX1w69H11rul-v6ofSWEDboEwKxiggZtWqL-3H3LHV-KHdpp9ZOMhztUUF1lzIYDnxaBuLx0_aoSWoA.jpg",
+      "image": "https://cdn4.telesco.pe/file/Ps2tP-BfGSxNg9XGBpGciLGav61NcXZlL4tHIPLhtDNNuvxRUxSBcz8Hrgq576LCPiqjjLlDNseulkKnPrtKbOmq8aUhvMZbtw65h6KFyirxPfUdbWR6zRtkCgp71d3Dyp4Ve9lSsliOfijBDs-tWs1Rj_2Dj-VmgTjTukihcqGGmQgR3PWVds0Yy2N-CHMuJm2bIrbimHKV_H_mcZa0_QQt0gnxlBoXZcVGC8QrrShb7TSI6kq9h903E8jrBFxpBygFxrdYXR1R6r95dSN7p9d63gYu5sBL-TbGdcGPKw8ZLO3ChfHXTFhUw5HYUdfmE3hhdh12JmoPTaNTnW9Hng.jpg",
       "date": "2026-08-28T10:14:03+00:00",
-      "views": "1.36K",
+      "views": "1.37K",
       "url": "https://t.me/TonNewbie/3388"
     },
     {
@@ -51,9 +51,9 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "Один из крупнейших инвесторов в TON - Animoca Brands перевела (https://tonviewer.com/transaction/db8b1c7b3ae1fcd0a761a05fed2c1ce61b85967c520fcfc0d82166b873655d16) на Binance 450,790 $GRAM (~637,030 долларсов).\n\nГотовятся поддержать релиз Gram Wallet?\n\n@TonNewbie (https://t.me/TonNewbie)\n🤣18🤯6❤3⚡2🕊1",
-      "image": "https://cdn4.telesco.pe/file/W_eDP7NzEHMnXeQSWhuTFnM2oiygvGxFORshQ_zrTiM88oWe1Le8Q-0_FB2qMicMsW2a6VhmCwCtj2X8Kd5BjMTPrFJK3W50dWscPrySzKnBjqz5s8IGz04pE76jY7QFyHFXNyQoaM8xrtHz1vuekD371B9nU5Vx5me3wZqomOSB7u1k9mXs_QQ1t9xnqkXy6DNSD8iHD2FuokZmiHOoYE5tlGB0l7ugMCW_yUn7-pAkr3NXNs4EqsLEmFAC3NJOENFNoc7_F_5BZJZTYCOfFBbJCa7UxeQ1wc7YuC7FQAQKLHIHM-qgXgVAQnLTx1QDR6-ui33OYaloJ7XyYx0lZQ.jpg",
+      "image": "https://cdn4.telesco.pe/file/BxVaZWVxjC5AfmDUX4u4esZpe1o5SlYWXzJ8otdGd7DxY8HvkvZ2DHoQ0cBOq3RV9pcMr9vAoBGiTyb47j9qaOCQeKMyfrGzE_tY7TV-cY7ehnH7apMsMvM43pVOa6EHd2rrj7Z4n8Knmr0jWSLWplxmDCk6-i7YLjYBcQFCxCqfdqPG9d-Gxc4Hn0T0twmI8PwKZ66SvSuZz8ColLeNIY2pl8MjSmSYVbjOUK44mCEut1uaDb1o1cpbKRP5x8qw-0DVZY3xK6JTNaoX6nBdHLM5xKukAzU-fTkhTWn4iCeWm-UmImIxbdrxAAoj3GbiiCtuoDixgQkAiseVQ5L-TQ.jpg",
       "date": "2026-08-28T08:34:13+00:00",
-      "views": "1.65K",
+      "views": "1.66K",
       "url": "https://t.me/TonNewbie/3387"
     }
   ],
