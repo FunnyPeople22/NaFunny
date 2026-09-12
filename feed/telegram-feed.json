@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-12T04:57:46.118Z",
+  "updatedAt": "2026-09-12T06:29:05.210Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1746",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Вторая карта:\n\n🦞Direborn:\n📚🔵📚🔵🐓\n\n🦞YACHE123:\n🔵📚🔴🔴🟢\n\nПредикт YACHE123. risk\n2.1 live",
+      "image": "https://cdn4.telesco.pe/file/kNqKrciafLC1r_8Z9GYfY_DJuyJu7bxADW5pH8QwJJscM58EUR444Mc3ax7nQD-J9A1JRzSrXDgdYXkgthX60YISE7yxlOlDYzifULA-09KY9TQj4ecUqTkUffsFp_D1Z3X9o26YEb5m2n2m_z3c21Yg8IWot3rlG2bduKBTpVQtxbNEIAxSHLDMAS9X3arRp-pcpmUt5Qj4OGZo5uio8k8FgjSDQVEkZ1SMu5g-UFluPoPNe2sJuCVcsAXETS5H3MJEf9AA_SpLiUyCvKoM4LYjiQvGLShhV4387xC2aHvZCFmGetRGkbMsYBuhTEB8rqVm1c8pG2yo2bLBHLmGSQ.jpg",
+      "date": "2026-09-12T06:22:01+00:00",
+      "views": "1",
+      "url": "https://t.me/NaFunny/1746"
+    },
     {
       "id": "NaFunny/1745",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Вторая карта:\n\n😒Team Nemesis:\n🟢📚📚🔴🔴\n\n🦞InterActive Philippines:\n🟢📚📚📚📚\n\nПредикт Philippines. risk ❌\n3.30 pre-match\n\nЖёсткий скилл дифф от Nemesis",
       "image": "https://cdn4.telesco.pe/file/kNqKrciafLC1r_8Z9GYfY_DJuyJu7bxADW5pH8QwJJscM58EUR444Mc3ax7nQD-J9A1JRzSrXDgdYXkgthX60YISE7yxlOlDYzifULA-09KY9TQj4ecUqTkUffsFp_D1Z3X9o26YEb5m2n2m_z3c21Yg8IWot3rlG2bduKBTpVQtxbNEIAxSHLDMAS9X3arRp-pcpmUt5Qj4OGZo5uio8k8FgjSDQVEkZ1SMu5g-UFluPoPNe2sJuCVcsAXETS5H3MJEf9AA_SpLiUyCvKoM4LYjiQvGLShhV4387xC2aHvZCFmGetRGkbMsYBuhTEB8rqVm1c8pG2yo2bLBHLmGSQ.jpg",
       "date": "2026-09-12T03:30:00+00:00",
-      "views": "10",
+      "views": "13",
       "url": "https://t.me/NaFunny/1745"
-    },
-    {
-      "id": "NaFunny/1744",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n😒Team Nemesis:\n📚🔵🟢📚🟢\n\n🦞InterActive Philippines:\n🔴📚🔴📚📚\n\nПредикт Nemesis ✅\n\nТут тотал аутдрафт от Немезис. Филиппинцы просто отдали почти всех сигнатурных героев",
-      "image": "https://cdn4.telesco.pe/file/kNqKrciafLC1r_8Z9GYfY_DJuyJu7bxADW5pH8QwJJscM58EUR444Mc3ax7nQD-J9A1JRzSrXDgdYXkgthX60YISE7yxlOlDYzifULA-09KY9TQj4ecUqTkUffsFp_D1Z3X9o26YEb5m2n2m_z3c21Yg8IWot3rlG2bduKBTpVQtxbNEIAxSHLDMAS9X3arRp-pcpmUt5Qj4OGZo5uio8k8FgjSDQVEkZ1SMu5g-UFluPoPNe2sJuCVcsAXETS5H3MJEf9AA_SpLiUyCvKoM4LYjiQvGLShhV4387xC2aHvZCFmGetRGkbMsYBuhTEB8rqVm1c8pG2yo2bLBHLmGSQ.jpg",
-      "date": "2026-09-12T02:16:11+00:00",
-      "views": "10",
-      "url": "https://t.me/NaFunny/1744"
     },
     {
       "id": "TonNewbie/3388",
@@ -51,9 +51,9 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "Один из крупнейших инвесторов в TON - Animoca Brands перевела (https://tonviewer.com/transaction/db8b1c7b3ae1fcd0a761a05fed2c1ce61b85967c520fcfc0d82166b873655d16) на Binance 450,790 $GRAM (~637,030 долларсов).\n\nГотовятся поддержать релиз Gram Wallet?\n\n@TonNewbie (https://t.me/TonNewbie)\n🤣18🤯6❤3⚡2🕊1",
-      "image": "https://cdn4.telesco.pe/file/irxC7l6b3OYmbRqh3gcoBxWXSkMetLXQJGZXn9j8ezNua3Ll1uQCwdhr1wNcveAp5GJgpsuORv2-naNEWz-282IPR2nDf3NvdU7Mp5uhRJWJh-30uaDOaV8TQZPyfxB3ol1twBn27IVSNs2xbxnZsxlKFh9UeKuD0yl5kwV0_7mabgY9iQ5d_vvCK-j1UnyMXxR6YGvXz-5Bmug5z5pLKuYBi8gnwqwLvCs4gnp30gBjihec92aJCTQoTXc_0q4FRBuE2wx1PorIYD1DTBaH4WTlvWTZIwMQwTRQDUDKe1TpbuqLrCBjTVUMuJ1wAbEZU0BdyQh4vN05mdK_cyK3Ew.jpg",
+      "image": "https://cdn4.telesco.pe/file/o3cCw8R4zikiL68T9ufmqUJdQxCokNR9OrD-oYJsBRfoFvcJ5v-P1BfdYTrH5aFA8Lrgh3vRMa1v21B6UpOz4ekSX0l8UShtkg0QJz12O9Jk_s7MfWpGFwiQhp5k-7fySW4Vnwt2hO9P77USy7FYudmi4BZBb4kPxbBwiBAbFNjC07Es0a0rNJoTqG3CDWRRS9wsNIhKaEBxPBHZWBliCESJUNbna9Da3gvoZJKMYZdVdWKGmFhcClXyA-vb0duEQXocqXbTurJOPwksbKhvenBolkDEnc9_WA5nFGg_OBGz1UxIfm5F8wHSfyEbN4AHvvcWp7e2nNfZIc84o4bfWA.jpg",
       "date": "2026-08-28T08:34:13+00:00",
-      "views": "1.71K",
+      "views": "1.72K",
       "url": "https://t.me/TonNewbie/3387"
     }
   ],
