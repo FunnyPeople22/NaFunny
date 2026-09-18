@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-18T13:57:53.708Z",
+  "updatedAt": "2026-09-18T17:16:34.957Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/1750",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "ATF-Ammar_The_Fucker бывший хард (3 поз) 🐦‍🔥Falcons присоединился к 🪿TeamYandex\n\nКстати, бывший керри 🐦‍🔥Falcons-skiter будет выступать за 🅰️Aurora на уже завтра предстоящем PGL Wallachia.\n\nСама команда 🐦‍🔥Falcons распустила свой состав по 🦞Dota2",
+      "image": "https://cdn4.telesco.pe/file/bHuou8crrGWjL_nQ1_pLunMFCYw_mjloP_ZyTriPnePuu86Gged7QkFTN7xE5nWKwJnR8MamrYe-ZcIK3syI-Focpw1mXYdgAqnmp2C_KH9N_RvUA0GoabkaPjsrYxEPif7nnMDTIwbTnhSegCcRZ2Zcp7vjq3nkwym4o1k8LozVdF7z2AiC09X-hkss4tNJiGTWXiyVCyXrk4B2rqjDz-x0SKrts27iIvO9-AnMJ7DHsSuMm2jZTTjFTDgPd_p8htaSa4xJrpooFkXyix_1sEQGsYMAVFP4f_ou9JHNbnaq4bCYp6oY_OSJqgASye2hpl3Hxc863sGmXTCnMtPJVQ.jpg",
+      "date": "2026-09-18T14:00:08+00:00",
+      "views": "16",
+      "url": "https://t.me/NaFunny/1750"
+    },
+    {
       "id": "NaFunny/1749",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "📹stream online twitch.tv/NaFunny2 (http://twitch.tv/NaFunny2)\n🦞Ranked MM",
-      "image": "https://cdn4.telesco.pe/file/SGduDycly5g_TjoCpMm9uF3kVaN1u2D-rJGS0sYvXa66FgOBOgBshEIuu6zIaQw0DfdEhPq4oet7YBfGSBnebbU5WlAlk0_iJkpd0oKghXroEnXqr61eFxDvqss0DftEAhT6tZKP0J0J23rUyhmi0awnEvDai0ZSISSeBVf7kIgPd11TrDbEYwrt7e4P7-uXVDT2eMW1Y7DpkMVW9Y03QhTXJza_3RrfuEEmc_UftCqHWrcQuTydA03IDsKn08lsFmGKaAb9nSh_fF_naEmJAw8EUS6dAAZR-8lTlOMSDcqoLf3T1pA75eT9BotJo8TSu7WypnK5UkYeYuQAfOzBsQ.jpg",
+      "image": "https://cdn4.telesco.pe/file/pV0JgwvUr4ReqOG67yi4JyehodD9ZyCJMs24aKe8oIY8aU1rI4uhSEBSCF8vniojv16SZEB7bNPHjq1l3PG-P5P0RB4ZRSE0foCHGJd0lyhhNukkDmnkg9ktT5ZensFw3idsSHvk6vyAZeOuTVKOJ2reZdKWaM1xJZE2PTTjgwlioO5VRh4wjR1_D0-XSlsZdOt2LdzkTzeYIBhfHrhYlch0XzrlQ20eciZUoCfKR9Amd43uG_1cmn3v4VbFbYkGDPl9j6Rza30ujqZ0j9jC9nUr4-a-_6UVqE0HLFKfwRtyLh4MGcdgETRQboQZis9ibts0bOObkAzerm9G2qPGHw.jpg",
       "date": "2026-09-18T00:34:50+00:00",
-      "views": "16",
+      "views": "19",
       "url": "https://t.me/NaFunny/1749"
-    },
-    {
-      "id": "NaFunny/1748",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "",
-      "image": "https://cdn4.telesco.pe/file/SGduDycly5g_TjoCpMm9uF3kVaN1u2D-rJGS0sYvXa66FgOBOgBshEIuu6zIaQw0DfdEhPq4oet7YBfGSBnebbU5WlAlk0_iJkpd0oKghXroEnXqr61eFxDvqss0DftEAhT6tZKP0J0J23rUyhmi0awnEvDai0ZSISSeBVf7kIgPd11TrDbEYwrt7e4P7-uXVDT2eMW1Y7DpkMVW9Y03QhTXJza_3RrfuEEmc_UftCqHWrcQuTydA03IDsKn08lsFmGKaAb9nSh_fF_naEmJAw8EUS6dAAZR-8lTlOMSDcqoLf3T1pA75eT9BotJo8TSu7WypnK5UkYeYuQAfOzBsQ.jpg",
-      "date": "2026-09-17T22:45:29+00:00",
-      "views": "17",
-      "url": "https://t.me/NaFunny/1748"
     },
     {
       "id": "TonNewbie/3389",
@@ -41,7 +41,7 @@
       "text": "",
       "image": "https://cdn4.telesco.pe/file/UttBP_hj3iu2u5o7JP-qQKGftrctF1S5u-e2Q_xdjn0r-uHCyXqdyx8PWr1n_2-KzMEqoK_calcVtrt_xeApOWiSXMux0V-C5viA2sGz7uahubCycjAtdFEYeZ67z1IUrWZZmUXsTpLyxwb-KwKyuL1WatG8eR4eFWzpYWNKnweRu5-teUG3CGeu7no12kpEfLhBbtOBb8bl6Z1UaKNwfIpeKBweZjyIN5keA5pMJ8DO3dY9jgQnLcFkMmgaMWt67kPMhegye9CxJmDVueyDTfwTwW5wqMfBrCyi8vf4r1U9QF_HI6MUQ0Ed_XGYvs9Zl1H8XJHJ3k_qX70LQcUtKQ.jpg",
       "date": "2026-09-17T22:39:48+00:00",
-      "views": "895",
+      "views": "923",
       "url": "https://t.me/TonNewbie/3389"
     },
     {
@@ -53,7 +53,7 @@
       "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.  Запустили голосование для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком…\n\nГолосование завершилось (https://vote.lagus.cooking/).\nКонтракт добавят.\n\nНу что, ждём мтонга матанга висянга?\n\n@TonNewbie (https://t.me/TonNewbie)\n🕊17🤣10👍3❤2🔥1",
       "image": "https://cdn4.telesco.pe/file/P_2jBIDNIzDhTQnXTc3EepiOhpNxugqUO0EaJCAULB-QgHs5PYRxXj2ct3i5ps3C3WjCxsYJkTnYGi8cahsBnDOzsvUpApF6XkD3K5_ze6DSG5NQshZ2UNE7PQXlIEz0CqEdFxKdwGZhLnYh-fVwrXOqMe8hvua2dDr5eHhCmns5hSAXcQGfD0swSPg6T51PX2Ymj-nVkvRMA48HoFmTSw2wQXOQk4vWk-303jdxmg1G78EYrBgdesgqqXUJowYB8NzrPKLp1gP-lJ821XOw51kdvJTn2njsFPK1TUiizt7wuK9GpZxL0z3_SBBLVkoIx0j_0H0kygMV74TPe6ze-A.jpg",
       "date": "2026-08-28T10:14:03+00:00",
-      "views": "2.12K",
+      "views": "2.14K",
       "url": "https://t.me/TonNewbie/3388"
     }
   ],
