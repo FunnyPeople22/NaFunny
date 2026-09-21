@@ -193,14 +193,13 @@
           </div>
           <a href="https://www.twitch.tv/nafunny2" target="_blank" rel="noopener noreferrer">Open Twitch ↗</a>
         </article>
-        <article class="content-card hub-card-lite">
-          <div class="content-icon youtube-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.6 15.7V8.3L16 12l-6.4 3.7Z"/></svg></div>
-          <div>
-            <div class="content-kicker">LATEST YOUTUBE</div>
-            <h3>Videos & Highlights</h3>
-            <p>Здесь будет блок с последним роликом, а пока — быстрый переход на канал.</p>
+        <article class="content-card youtube-latest-card hub-card-lite" id="youtubeLatestCard">
+          <div class="youtube-latest-head">
+            <div class="content-icon youtube-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.6 15.7V8.3L16 12l-6.4 3.7Z"/></svg></div>
+            <div><div class="content-kicker">LATEST YOUTUBE</div><h3 id="youtubeLatestTitle">Loading latest video…</h3><p id="youtubeLatestMeta">@nafunny22</p></div>
           </div>
-          <a href="https://youtube.com/@nafunny22?si=a0QX2qrGCs_TIsA6" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+          <a class="youtube-thumb-link" id="youtubeLatestThumbLink" href="https://www.youtube.com/@nafunny22" target="_blank" rel="noopener noreferrer" aria-label="Watch latest NaFunny video on YouTube"><img id="youtubeLatestThumb" alt="Latest NaFunny YouTube video thumbnail" loading="lazy" /><span class="youtube-play" aria-hidden="true">▶</span></a>
+          <a id="youtubeLatestLink" href="https://www.youtube.com/@nafunny22" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
         </article>
       </div>
     </section>
@@ -288,5 +287,6 @@
 
   <script src="script.js?v=2.0.3"></script>
   <script src="telegram-feed.js?v=2.0.3"></script>
+  <script src="youtube-feed.js?v=2.0.0"></script>
 </body>
 </html>
