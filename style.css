@@ -1887,3 +1887,33 @@ body[data-theme="storm"] .logo-spark{
 #youtubeLatestLink{align-self:flex-start}
 @media (max-width:1050px){.youtube-latest-card{min-height:230px!important}.youtube-latest-layout{grid-template-columns:minmax(190px,42%) minmax(0,1fr);gap:18px}.youtube-latest-head h3{font-size:22px!important}}
 @media (max-width:760px){.youtube-latest-card{padding:20px!important}.youtube-latest-layout{grid-template-columns:1fr;gap:18px}.youtube-latest-copy{gap:16px}.youtube-latest-head h3{font-size:24px!important}.youtube-thumb-link{max-width:none}.youtube-latest-head .content-icon{width:48px;height:48px}}
+
+/* NaFunny HUB 2.2 — desktop horizontal Latest YouTube (final layout fix) */
+@media (min-width:761px){
+  .hub-content .content-grid{align-items:stretch}
+  .hub-content .content-card{min-height:270px;height:270px}
+  .youtube-latest-card{padding:24px!important;display:flex!important;min-width:0}
+  .youtube-latest-layout{display:grid!important;grid-template-columns:minmax(210px,44%) minmax(0,1fr)!important;gap:22px!important;align-items:center!important;width:100%;height:100%;min-width:0}
+  .youtube-thumb-link{display:none;width:100%;aspect-ratio:16/9;min-width:0;border-radius:16px;margin:0}
+  .youtube-thumb-link.ready{display:block!important}
+  .youtube-latest-copy{min-width:0;height:auto;align-self:center;justify-content:center;gap:16px}
+  .youtube-latest-head{display:block!important;min-width:0}
+  .youtube-latest-head .content-icon{width:44px;height:44px;border-radius:14px;margin-bottom:12px}
+  .youtube-latest-head .content-icon svg{width:23px;height:23px}
+  .youtube-latest-head>div:last-child{min-width:0;width:100%}
+  .youtube-latest-head .content-kicker{font-size:11px;margin-bottom:6px}
+  .youtube-latest-head h3{display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden!important;max-width:100%;font-size:21px!important;line-height:1.18!important;overflow-wrap:anywhere;word-break:break-word}
+  .youtube-latest-head p{font-size:14px!important;margin-top:7px!important;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #youtubeLatestLink{font-size:14px;align-self:flex-start}
+  .youtube-play{width:44px;height:32px;font-size:15px}
+}
+@media (min-width:761px) and (max-width:1050px){
+  .youtube-latest-layout{grid-template-columns:minmax(180px,40%) minmax(0,1fr)!important;gap:16px!important}
+  .youtube-latest-head h3{font-size:19px!important}
+}
+@media (max-width:760px){
+  .youtube-latest-card{min-height:auto!important}
+  .youtube-latest-layout{display:grid!important;grid-template-columns:1fr!important}
+  .youtube-latest-head{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important}
+  .youtube-latest-head h3{overflow-wrap:anywhere;word-break:break-word}
+}
