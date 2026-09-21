@@ -1,0 +1,36 @@
+name: Update YouTube Feed
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "3,18,33,48 * * * *"
+permissions:
+  contents: write
+concurrency:
+  group: youtube-feed
+  cancel-in-progress: false
+jobs:
+  update-youtube:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Update latest YouTube video
+        env:
+          YOUTUBE_HANDLE: "nafunny22"
+          YOUTUBE_FEED_OUT: "feed/youtube-latest.json"
+        run: node scripts/update-youtube-feed.mjs
+      - name: Commit YouTube feed update
+        run: |
+          if git diff --quiet -- feed/youtube-latest.json; then echo "No YouTube changes to commit."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed/youtube-latest.json
+          git commit -m "chore: update youtube feed"
+          git pull --rebase
+          git push
