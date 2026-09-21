@@ -1,5 +1,15 @@
 {
-  "updatedAt": null,
-  "channel": { "handle": "@nafunny22", "url": "https://www.youtube.com/@nafunny22" },
-  "video": null
+  "updatedAt": "2026-09-21T13:35:58.221Z",
+  "channel": {
+    "handle": "@nafunny22",
+    "id": "UCNRQ9vi4ywr6Gl3qvGU_J0w",
+    "url": "https://www.youtube.com/@nafunny22"
+  },
+  "video": {
+    "id": "I0Nv8bsu51A",
+    "title": "Сапорта мечты видели? Встречайте))#Dota2#Lion#Support#Bassnpanda#TakeMeHome",
+    "published": "2026-09-18T12:00:10+00:00",
+    "url": "https://www.youtube.com/watch?v=I0Nv8bsu51A",
+    "thumbnail": "https://i.ytimg.com/vi/I0Nv8bsu51A/hqdefault.jpg"
+  }
 }
