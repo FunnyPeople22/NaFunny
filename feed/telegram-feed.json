@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-20T23:30:27.124Z",
+  "updatedAt": "2026-09-21T05:06:18.381Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1768",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/eUbkVHnbka1qZOklUL30PgO0Hl7EN3RIaGgSW9vOJiOgPR2GVNllhDaXgrgZUVyAAzC3LRV9I5etoh-sjpGzOqkkKPvhB9nNIat2Ra040i2sg7f7NNZSw2gCJNqG0IBboXgIUPYQtJM-kJ4LfHQWTfcc1V05ODdH1aKEcoGPTTrVFRh6XmpwvpdDhnYtO06XVOXUJiFC_7Sd3IHc57VNmSsZ5eNjxdrO0fxDZfO0HCt8Ma1WNif2-c6c7mSjThP14THO7hz9_4ePndWQIpubLEGIKLodhMmuqxy8Rx0g8baTZvt8-tka_fmFuLgp5Xh3srgZN-O0MgXZMCOAX1VK2g.jpg",
+      "date": "2026-09-21T03:58:13+00:00",
+      "views": "7",
+      "url": "https://t.me/NaFunny/1768"
+    },
     {
       "id": "NaFunny/1767",
       "channel": "NaFunny",
@@ -21,27 +33,15 @@
       "url": "https://t.me/NaFunny/1767"
     },
     {
-      "id": "NaFunny/1765",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n🅰️Aurora:\n🔵🟢📚🟢🔴\n\n🦞Pipsqueak+4:\n🔴🐓📚📚📚\n\nПредикт Pipsqueak✅",
-      "image": "https://cdn4.telesco.pe/file/eUbkVHnbka1qZOklUL30PgO0Hl7EN3RIaGgSW9vOJiOgPR2GVNllhDaXgrgZUVyAAzC3LRV9I5etoh-sjpGzOqkkKPvhB9nNIat2Ra040i2sg7f7NNZSw2gCJNqG0IBboXgIUPYQtJM-kJ4LfHQWTfcc1V05ODdH1aKEcoGPTTrVFRh6XmpwvpdDhnYtO06XVOXUJiFC_7Sd3IHc57VNmSsZ5eNjxdrO0fxDZfO0HCt8Ma1WNif2-c6c7mSjThP14THO7hz9_4ePndWQIpubLEGIKLodhMmuqxy8Rx0g8baTZvt8-tka_fmFuLgp5Xh3srgZN-O0MgXZMCOAX1VK2g.jpg",
-      "date": "2026-09-19T16:03:23+00:00",
-      "views": "19",
-      "url": "https://t.me/NaFunny/1765"
-    },
-    {
       "id": "TonNewbie/3389",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "",
-      "image": "https://cdn4.telesco.pe/file/GQrAH4e9akB2RlqDPHXkIkBe5gs6H9nrt5CsD-08HipdCteXfD-6YbQIwnimRqoXFlk0SVTZHjY-77Sn9kzq-AlsyqAFoe2pw98QBU2m8Q_CHvKSlKG7hdceCeT32qXp3Txz25BlvbnrT9WbMtl2cj6b2A8RyLj64c0nqo0Q7BVbnmi3todKxuhgzbf0RVBfu0naUHjYDoSiKHts3uXn9viPgEh4WYLDORDWbhEgRIKRKWu0hifGeutI5fdCncDyzzF0DjUcBMwT10sg4yxorhyiSpzJV0I47vvKNKU2E45PxQ1IZLP3t-Lvx-3eeU1ntxRLbXyflDJfYbFfHdhprA.jpg",
+      "image": "https://cdn4.telesco.pe/file/iOFwyc9Zm3N96MuOk2wgdmgVsAmtY3BVchsztu4vRM8sOPOsGaNaX6WiTm7LDm_r8calNTjs2nYVw-WsFoZYX05VJCH8HGVkMsFjNT7T9UY_HMNb-IwjerU_G4REavxX6pQUoEceYo7_4FyQUkTH_RZlh7gXS08kfPMhKcRKTVTQBcfHcbJ6y4j-ITqRS3050uG-8hSRHEY1Vl2ENIdPDOw4kjskj7hGMdPlzqKjSzr3njbQii8Ogh19tJw4RiBW5JTyxnNtIKoI_H-R1B1mgzrw_WSdwjKGXJ18zeLfmUt5EXyTtenXDzLrbGvhJ-Vlu-ubexsvdyd2qKA1z0ZVyQ.jpg",
       "date": "2026-09-17T22:39:48+00:00",
-      "views": "1.09K",
+      "views": "1.1K",
       "url": "https://t.me/TonNewbie/3389"
     },
     {
@@ -51,7 +51,7 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.  Запустили голосование для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком…\n\nГолосование завершилось (https://vote.lagus.cooking/).\nКонтракт добавят.\n\nНу что, ждём мтонга матанга висянга?\n\n@TonNewbie (https://t.me/TonNewbie)\n🕊17🤣10👍3❤2🔥1",
-      "image": "https://cdn4.telesco.pe/file/IfG6-A4aImGdmTnHER-HYZ62c65zHbwudTKIm1Qtx47uGXvk8a_6OhWO09kg_uoCr9OYPTPcXjNzgiTqDi4IIQCoz17fMnQmlhUyJ2rRKjtzH_YhenrmmVJLMmX1TokVH046KSTV0yppxrOEU08-c2eP4mG4tyQLpn2vgha0aFPaNWlcWIdUb8kXald9LCMwwX5qISesBreeMiyxZNDwkNjhM7cxDd5sr9mETqjbrJB-1ll-MYT2GasYEwBky1xQZcb-SOAASeBBMVxpCsBpy6YAGdUaNhlrLc2mV00FNuBR-iK54x_SYtntibxu0M1eKRU0y1INHh73-Pc8bmP9Cw.jpg",
+      "image": "https://cdn4.telesco.pe/file/pnIhlxvo9Jbe_oTgVDBQL7Mg91-IG4GjIFZ14D70_kAA3g3FKDpSE_koVat_GsYrjU9g1Bv3M9OshJEJ3_TXaFmC0tlWn3toQUS0LdmH7nkQ8S2SDDoP9lzaTXkxhL6mLuVPffVSmqhVLTBlTz8Qfh310wbxsBg3aWpECv6g23A-Xezt8ppE9hKYcGI4138dmPXUDscwY5y-XSPOCcQxs2SzQswk02K3gKO3UTIAVmTXYgmjetjVrAiC9ZS4RAorZNA4UcUeCOrzAeUOik_3RGwtLTPNkybySendSsQMaJhAdU84f1WhW2BkeZ53yKVf-XOanSw6fMle8pAxam_j4A.jpg",
       "date": "2026-08-28T10:14:03+00:00",
       "views": "2.24K",
       "url": "https://t.me/TonNewbie/3388"
