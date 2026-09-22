@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-22T01:55:36.584Z",
+  "updatedAt": "2026-09-22T06:09:03.731Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1789",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/Au7yAzwfWz4QJVZBQWWx0hjnXdUGvKoIVZE0MlaUwuTvMlEyEBAWh8NDiJG4RB8F4g51ljXJ-lXBZaoospkonDM2Fja-x0oEHx4cDg-CoJg__1rlNejqIboDJ9rKlWmB9Fxz3qy1k50xD24Pl01kVSrjBC5zjCi8mot12Z42-FAHSAKMj89HEUmB1oWHQS-EnbbLp2LjdhE67_bnDfBcREXQtOhmUb8Nahdkm80oiDe1RErCbYqWyqTaK3DmKRxNzhmLFgE1Y_BvKLVY6f1aI3XRUaR-GAK3F8j9u0pCQ8x0Bs0p8vRmdvnxxsMMeva4c9MWION70K2AdtNAHD5mLg.jpg",
+      "date": "2026-09-22T04:28:01+00:00",
+      "views": "6",
+      "url": "https://t.me/NaFunny/1789"
+    },
     {
       "id": "NaFunny/1788",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Вторая карта:\n\n🪿Yandex:\n🔵🟢🔴📚📚\n\n🇺🇦NaVi:\n🔴🔴🔴📚📚\n\nПредикт Yandex ✅\n\nЯндекс в плей-офе",
       "image": "https://cdn4.telesco.pe/file/Au7yAzwfWz4QJVZBQWWx0hjnXdUGvKoIVZE0MlaUwuTvMlEyEBAWh8NDiJG4RB8F4g51ljXJ-lXBZaoospkonDM2Fja-x0oEHx4cDg-CoJg__1rlNejqIboDJ9rKlWmB9Fxz3qy1k50xD24Pl01kVSrjBC5zjCi8mot12Z42-FAHSAKMj89HEUmB1oWHQS-EnbbLp2LjdhE67_bnDfBcREXQtOhmUb8Nahdkm80oiDe1RErCbYqWyqTaK3DmKRxNzhmLFgE1Y_BvKLVY6f1aI3XRUaR-GAK3F8j9u0pCQ8x0Bs0p8vRmdvnxxsMMeva4c9MWION70K2AdtNAHD5mLg.jpg",
       "date": "2026-09-21T17:25:59+00:00",
-      "views": "9",
+      "views": "13",
       "url": "https://t.me/NaFunny/1788"
-    },
-    {
-      "id": "NaFunny/1787",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🦞PibblesCorp:\n🟢🔵📚🐸📚\n\n🐲Hokori: ✅\n🟢🔴📚📚📚\n\nКак будто тут Hokori могут смело закрыть 2:0, но я бы рекомендовал скипнуть этот матч",
-      "image": "https://cdn4.telesco.pe/file/Au7yAzwfWz4QJVZBQWWx0hjnXdUGvKoIVZE0MlaUwuTvMlEyEBAWh8NDiJG4RB8F4g51ljXJ-lXBZaoospkonDM2Fja-x0oEHx4cDg-CoJg__1rlNejqIboDJ9rKlWmB9Fxz3qy1k50xD24Pl01kVSrjBC5zjCi8mot12Z42-FAHSAKMj89HEUmB1oWHQS-EnbbLp2LjdhE67_bnDfBcREXQtOhmUb8Nahdkm80oiDe1RErCbYqWyqTaK3DmKRxNzhmLFgE1Y_BvKLVY6f1aI3XRUaR-GAK3F8j9u0pCQ8x0Bs0p8vRmdvnxxsMMeva4c9MWION70K2AdtNAHD5mLg.jpg",
-      "date": "2026-09-21T17:22:36+00:00",
-      "views": "9",
-      "url": "https://t.me/NaFunny/1787"
     },
     {
       "id": "TonNewbie/3389",
@@ -39,9 +39,9 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "",
-      "image": "https://cdn4.telesco.pe/file/iOFwyc9Zm3N96MuOk2wgdmgVsAmtY3BVchsztu4vRM8sOPOsGaNaX6WiTm7LDm_r8calNTjs2nYVw-WsFoZYX05VJCH8HGVkMsFjNT7T9UY_HMNb-IwjerU_G4REavxX6pQUoEceYo7_4FyQUkTH_RZlh7gXS08kfPMhKcRKTVTQBcfHcbJ6y4j-ITqRS3050uG-8hSRHEY1Vl2ENIdPDOw4kjskj7hGMdPlzqKjSzr3njbQii8Ogh19tJw4RiBW5JTyxnNtIKoI_H-R1B1mgzrw_WSdwjKGXJ18zeLfmUt5EXyTtenXDzLrbGvhJ-Vlu-ubexsvdyd2qKA1z0ZVyQ.jpg",
+      "image": "https://cdn4.telesco.pe/file/DIQ6DvPwzvlJuivt2dkci_S37ln-BQ1zQIEhHbYZ61E0eCymHo9WQfQKMIgomy2OQG4BB-a_6kZJipGatJ0SGXr9NskWQaAwk-TevyADcLTEzRSKyj2itvThocZB-UGAllX7pe0OPNUIAy7mJjaACs6xF5sYE87T9TfhoHy7CtxaGh3ijZP1tXEYxXCBYPySraFYF5cp5HUZpG5MvA7jwC7UALQ8ucCD7vh1AZmK7lTlPsznhpimy95Me6FlRMUYRrkLAgKxmeAhw1x5pmQzrgGP_SCZRwEpH1JvmsRflDEJ4pot-tfoxj7FSCi6hdhL6eIptg36YtFAT4fLi9aKlQ.jpg",
       "date": "2026-09-17T22:39:48+00:00",
-      "views": "1.17K",
+      "views": "1.18K",
       "url": "https://t.me/TonNewbie/3389"
     },
     {
@@ -51,7 +51,7 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.  Запустили голосование для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком…\n\nГолосование завершилось (https://vote.lagus.cooking/).\nКонтракт добавят.\n\nНу что, ждём мтонга матанга висянга?\n\n@TonNewbie (https://t.me/TonNewbie)\n🕊17🤣10👍3❤2🔥1",
-      "image": "https://cdn4.telesco.pe/file/pnIhlxvo9Jbe_oTgVDBQL7Mg91-IG4GjIFZ14D70_kAA3g3FKDpSE_koVat_GsYrjU9g1Bv3M9OshJEJ3_TXaFmC0tlWn3toQUS0LdmH7nkQ8S2SDDoP9lzaTXkxhL6mLuVPffVSmqhVLTBlTz8Qfh310wbxsBg3aWpECv6g23A-Xezt8ppE9hKYcGI4138dmPXUDscwY5y-XSPOCcQxs2SzQswk02K3gKO3UTIAVmTXYgmjetjVrAiC9ZS4RAorZNA4UcUeCOrzAeUOik_3RGwtLTPNkybySendSsQMaJhAdU84f1WhW2BkeZ53yKVf-XOanSw6fMle8pAxam_j4A.jpg",
+      "image": "https://cdn4.telesco.pe/file/RH4tuRse4l06pRhYVdiQuHUvY7Tr6FxayZjXt_6OWG1o_PrXsRzOZ__64JbYnDK6pdj-E5s_XKqceRMz1cm7xTIKjlLmBByb2Uvaaq_Ejs2a-9wKzaUfETG7ZpNPXPCI0WbKidSozTTHAQs6rJlVKXiu7iMxb_VCGnFc8vPl12cYHQk9_1z0J1xuOoHkNLi5Ppn94vK0up3UyGOQnmG5sZl31J1JWSAXSzU8QDcCI_yv5pgP1HcvKKePUAe5Ivs-NoxjjJFy1_E2Ofofr31ypp9IJX4Q4IVlh8iDAfdGqGFlN3elhJOiK4CdFwXQ15K9J_exySgXZxu_D1ZAW_GK3w.jpg",
       "date": "2026-08-28T10:14:03+00:00",
       "views": "2.28K",
       "url": "https://t.me/TonNewbie/3388"
