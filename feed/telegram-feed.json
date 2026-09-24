@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-24T06:14:15.132Z",
+  "updatedAt": "2026-09-24T07:42:56.336Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1818",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Первая карта:\n\n🪽XtremeGaming:\n📚🔴🔵🟢📚\n\n😒TeamNemesis:\n🔴🟢🟢🔴🔴\n\nБез предикта. Понаблюдаю что к чему на этой карте. Аме мне не особо нравится на ЛД. zeal на Думе тоже как будто не особо импактит, но важно помнить, как Экстримы вчера закрыли соперников 2:0 абсолютно без шансов",
+      "image": "https://cdn4.telesco.pe/file/IzTPf26eYBls_mYIw_pOAYI755KL5yq24k3Ln_1UVkNMM_Vtqmgli0j__-Z4qCeWyCW4yx-LT_1YvXs-9-Mmu6eEVX8hOvV-Y7z23LhDTe7qFTTutsUC6fzEU2sF7FezO0NjHxJOKSWefQo9rm0eHLpcW_iRVIKzoyZ7_sI7jeAM1R9aKCxLRp5BxDysl9qg22qUuDX_CtIrNv1k5SeaxBrlSAPqTyD80li4bN0Pt8u3SV-CUPsF3MQcAUuNwW1d4X8JIkQUPm6rae0AKsStg9y57G-hu_0u9YsLHxfLGDwhejpV_ghO1DDlvaAvXrCoAyzd9FGUxVafyBSH4Tsfmg.jpg",
+      "date": "2026-09-24T07:16:10+00:00",
+      "views": "4",
+      "url": "https://t.me/NaFunny/1818"
+    },
     {
       "id": "NaFunny/1817",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "",
       "image": "https://cdn4.telesco.pe/file/IzTPf26eYBls_mYIw_pOAYI755KL5yq24k3Ln_1UVkNMM_Vtqmgli0j__-Z4qCeWyCW4yx-LT_1YvXs-9-Mmu6eEVX8hOvV-Y7z23LhDTe7qFTTutsUC6fzEU2sF7FezO0NjHxJOKSWefQo9rm0eHLpcW_iRVIKzoyZ7_sI7jeAM1R9aKCxLRp5BxDysl9qg22qUuDX_CtIrNv1k5SeaxBrlSAPqTyD80li4bN0Pt8u3SV-CUPsF3MQcAUuNwW1d4X8JIkQUPm6rae0AKsStg9y57G-hu_0u9YsLHxfLGDwhejpV_ghO1DDlvaAvXrCoAyzd9FGUxVafyBSH4Tsfmg.jpg",
       "date": "2026-09-23T23:40:38+00:00",
-      "views": "11",
+      "views": "12",
       "url": "https://t.me/NaFunny/1817"
-    },
-    {
-      "id": "NaFunny/1816",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🔵LGD.Gaming:\n📚📚📚🔵📚\n\n🐀MOUZ:\n🔵🔴🔴🤡🟢\n\nПредикт MOUZ. risk ❌\n\nНу тут уже слишком хорошо выглядит пик у Маузов. Да и VS вообще не в мете.\nХорошая 3 поз Зомби+Котл, которая должна норм постоять против ВР.\n\nПонаблюдаем, взял пре-матчем 2.6\n\nupd:\nLGD в прямом смысле слова уничтожил Маузов и по итогу побеждают 2:0\n\nМауз покидают турнир",
-      "image": "https://cdn4.telesco.pe/file/IzTPf26eYBls_mYIw_pOAYI755KL5yq24k3Ln_1UVkNMM_Vtqmgli0j__-Z4qCeWyCW4yx-LT_1YvXs-9-Mmu6eEVX8hOvV-Y7z23LhDTe7qFTTutsUC6fzEU2sF7FezO0NjHxJOKSWefQo9rm0eHLpcW_iRVIKzoyZ7_sI7jeAM1R9aKCxLRp5BxDysl9qg22qUuDX_CtIrNv1k5SeaxBrlSAPqTyD80li4bN0Pt8u3SV-CUPsF3MQcAUuNwW1d4X8JIkQUPm6rae0AKsStg9y57G-hu_0u9YsLHxfLGDwhejpV_ghO1DDlvaAvXrCoAyzd9FGUxVafyBSH4Tsfmg.jpg",
-      "date": "2026-09-23T14:51:52+00:00",
-      "views": "15",
-      "url": "https://t.me/NaFunny/1816"
     },
     {
       "id": "TonNewbie/3389",
@@ -50,7 +50,7 @@
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.  Запустили голосование для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком…\n\nГолосование завершилось (https://vote.lagus.cooking/).\nКонтракт добавят.\n\nНу что, ждём мтонга матанга висянга?\n\n@TonNewbie (https://t.me/TonNewbie)\n🕊17🤣10👍3❤2🔥1",
+      "text": "TON Core уведомляет о возможной нагрузке на сеть в связи с предстоящим анонсом Gram Wallet.  Запустили голосование для валидаторов за изменение конфигурации сети, а именно добавление кода контракта tg-wallet-v1 необходимого для использования с нативным кошельком…\n\nГолосование завершилось (https://vote.lagus.cooking/).\nКонтракт добавят.\n\nНу что, ждём мтонга матанга висянга?\n\n@TonNewbie (https://t.me/TonNewbie)\n🕊17🤣11👍3❤2🔥1",
       "image": "https://cdn4.telesco.pe/file/W8OyDBFi_2N4s0P7IiVpLUrnHTTHNi-_akFdgi-P2xaHA11oQMOyDeN4E6Ofn3xkYs3p7sMhvOdLhFs-40Nwc1pmqky_VQZ_5T1ASrTZ43g4sTzAUxg9OYchgpDuxaqTNiDJcB3DJkZe42Z-YUmcqOZ4-AcWNosYBNrnIpjZEPSPkmoBNYbdpS9PRmsNL8YMQOR-6Qp0uaR51PtAZQd3swb8KXkTpQ3eRgG8MDX3J-4uEgAFtbdcDiu1q7mA_NzyC2pc3M0JvKTvu12uth6Ce0hWBTMhVPkjxkpFnDPSaI-Iu-O6EIYzb4jvZtIAHfeGZdPa2PIHL1PmfchvLhGcyA.jpg",
       "date": "2026-08-28T10:14:03+00:00",
       "views": "2.34K",
