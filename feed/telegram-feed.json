@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-26T12:04:41.081Z",
+  "updatedAt": "2026-09-26T12:23:31.509Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1867",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Первая карта:\n\n🔵LGD.Gaming:\n🟢🟢📚📚📚\n\n🪿Yandex:\n🔵📚🐓🟢📚\n\nБез предикта.\nВ пиках жесточайшие сигнатурки у обеих команд. Посмотрю лайв и наслаждусь (надеюсь) красивой дотой",
+      "image": "https://cdn4.telesco.pe/file/gE0sfxnQFb6mQ9PCNg42eKhnNrIiK-K72q-l_mQ1C0lfTE7LYKhxw1rjWlGWjh1RcyWWSawbKqzqEsV-TTjE6Sip1W6gL2mvAQNy_xZP_UBkPeDNs1lk-8I4Vh4TXor18367YG7t5m22dv80Krk4V3QmeprT25Ms_NUs7ijbfPi0fNWn5YLjXh2wYc1URdZ4yqMZKcLma7uQgf1eKafDNCS5Bd-uO7YzvHSYf9RszyXUkPojkegw1MF3jB-hLk_jF7esgH9LYeXsNU-Z8gFZR1sZEvjfltSXq01y4-6y5CjxqIOUXNVglzdLGSSN29Xf6R_cYajxJ082MonwyBV_5g.jpg",
+      "date": "2026-09-26T12:21:00+00:00",
+      "views": "4",
+      "url": "https://t.me/NaFunny/1867"
+    },
     {
       "id": "NaFunny/1866",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Вторая карта:\n\n🅰️Aurora:\n📚📚🔴🟢🔴\n\n🇺🇦NaVi:\n📚🔴📚📚🟢\n\nПредикт Aurora. high-risk\n\nУ нави супер сигнатурный пик, но слабое звено тут pma на Думе.\n\nShad у Авроры слабый кор, но на ВР умеет исполнять",
       "image": "https://cdn4.telesco.pe/file/gE0sfxnQFb6mQ9PCNg42eKhnNrIiK-K72q-l_mQ1C0lfTE7LYKhxw1rjWlGWjh1RcyWWSawbKqzqEsV-TTjE6Sip1W6gL2mvAQNy_xZP_UBkPeDNs1lk-8I4Vh4TXor18367YG7t5m22dv80Krk4V3QmeprT25Ms_NUs7ijbfPi0fNWn5YLjXh2wYc1URdZ4yqMZKcLma7uQgf1eKafDNCS5Bd-uO7YzvHSYf9RszyXUkPojkegw1MF3jB-hLk_jF7esgH9LYeXsNU-Z8gFZR1sZEvjfltSXq01y4-6y5CjxqIOUXNVglzdLGSSN29Xf6R_cYajxJ082MonwyBV_5g.jpg",
       "date": "2026-09-26T11:00:10+00:00",
-      "views": "13",
-      "url": "https://t.me/NaFunny/1866"
-    },
-    {
-      "id": "NaFunny/1865",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:  🅰️Aurora: 📚🟢🟢🟢📚  🇺🇦NaVi: 🔴🔴📚📚📚  Предикт AuroraNaVi 36:41 ✅\n\nВзял 5.7 в лайве\nupd:\nВыкупил",
-      "image": "https://cdn4.telesco.pe/file/gE0sfxnQFb6mQ9PCNg42eKhnNrIiK-K72q-l_mQ1C0lfTE7LYKhxw1rjWlGWjh1RcyWWSawbKqzqEsV-TTjE6Sip1W6gL2mvAQNy_xZP_UBkPeDNs1lk-8I4Vh4TXor18367YG7t5m22dv80Krk4V3QmeprT25Ms_NUs7ijbfPi0fNWn5YLjXh2wYc1URdZ4yqMZKcLma7uQgf1eKafDNCS5Bd-uO7YzvHSYf9RszyXUkPojkegw1MF3jB-hLk_jF7esgH9LYeXsNU-Z8gFZR1sZEvjfltSXq01y4-6y5CjxqIOUXNVglzdLGSSN29Xf6R_cYajxJ082MonwyBV_5g.jpg",
-      "date": "2026-09-26T10:08:55+00:00",
       "views": "15",
-      "url": "https://t.me/NaFunny/1865"
+      "url": "https://t.me/NaFunny/1866"
     },
     {
       "id": "TonNewbie/3389",
