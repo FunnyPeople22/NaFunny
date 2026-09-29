@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-29T03:20:29.377Z",
+  "updatedAt": "2026-09-29T06:09:58.874Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1868",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/TDzVbnxTiFfAybT0h-zE8owF62M6bSWPsMJY2s0nmbCyqR6oHY__y_lOuQFyJB048b06uWP3bwx8LnY_HSeAUbqkoaThrR2OlpAIHKSgBqOuGbhVkqVcsJXx9lVSv9lW2YUq-E_V3fbtQYxZdKbugUwzXXyiMqtzQIk7rUt9eF_KZj3D2eJ0OVWp3W3BER2ZruAydcSer27HzLamXXYiYNSrs0z9zouoLMxmZvEMKzD6RE7Q-z3o-5xl8e_1LTiMGM5SS2xAifShFm7LA8hCydsWGeeJJPWFVyIfG1wzdGV5_hWfO_pajLijw_woP1wiSZ0lKFNsPDeWYy6rksBIGA.jpg",
+      "date": "2026-09-29T04:03:37+00:00",
+      "views": "12",
+      "url": "https://t.me/NaFunny/1868"
+    },
     {
       "id": "NaFunny/1867",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Первая карта:\n\n🔵LGD.Gaming:\n🟢🟢📚📚📚\n\n🪿Yandex:\n🔵📚🐓🟢📚\n\nБез предикта.\nВ пиках жесточайшие сигнатурки у обеих команд. Посмотрю лайв и наслаждусь (надеюсь) красивой дотой\n\nupd:\nНаитие на Яндекс ✅",
       "image": "https://cdn4.telesco.pe/file/TDzVbnxTiFfAybT0h-zE8owF62M6bSWPsMJY2s0nmbCyqR6oHY__y_lOuQFyJB048b06uWP3bwx8LnY_HSeAUbqkoaThrR2OlpAIHKSgBqOuGbhVkqVcsJXx9lVSv9lW2YUq-E_V3fbtQYxZdKbugUwzXXyiMqtzQIk7rUt9eF_KZj3D2eJ0OVWp3W3BER2ZruAydcSer27HzLamXXYiYNSrs0z9zouoLMxmZvEMKzD6RE7Q-z3o-5xl8e_1LTiMGM5SS2xAifShFm7LA8hCydsWGeeJJPWFVyIfG1wzdGV5_hWfO_pajLijw_woP1wiSZ0lKFNsPDeWYy6rksBIGA.jpg",
       "date": "2026-09-26T12:21:00+00:00",
-      "views": "19",
+      "views": "21",
       "url": "https://t.me/NaFunny/1867"
-    },
-    {
-      "id": "NaFunny/1866",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🅰️Aurora:\n📚📚🔴🟢🔴\n\n🇺🇦NaVi:\n📚🔴📚📚🟢\n\nПредикт Aurora. high-risk ❌\n\nУ нави супер сигнатурный пик, но слабое звено тут pma на Думе.\n\nShad у Авроры слабый кор, но на ВР умеет исполнять",
-      "image": "https://cdn4.telesco.pe/file/TDzVbnxTiFfAybT0h-zE8owF62M6bSWPsMJY2s0nmbCyqR6oHY__y_lOuQFyJB048b06uWP3bwx8LnY_HSeAUbqkoaThrR2OlpAIHKSgBqOuGbhVkqVcsJXx9lVSv9lW2YUq-E_V3fbtQYxZdKbugUwzXXyiMqtzQIk7rUt9eF_KZj3D2eJ0OVWp3W3BER2ZruAydcSer27HzLamXXYiYNSrs0z9zouoLMxmZvEMKzD6RE7Q-z3o-5xl8e_1LTiMGM5SS2xAifShFm7LA8hCydsWGeeJJPWFVyIfG1wzdGV5_hWfO_pajLijw_woP1wiSZ0lKFNsPDeWYy6rksBIGA.jpg",
-      "date": "2026-09-26T11:00:10+00:00",
-      "views": "22",
-      "url": "https://t.me/NaFunny/1866"
     },
     {
       "id": "TonNewbie/3390",
@@ -38,10 +38,10 @@
       "channelTitle": "TonNewbie",
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
-      "text": "А куда делся крипто-кошелёк @wallet (https://t.me/wallet) из меню? O_O\n\nСначала Tonkeeper стал просто Keeper, теперь Кошелёк убрали из интерфейса.\n\nPD & Rogozov всё?\n\n@TonNewbie (https://t.me/TonNewbie)\n🔥11😁4👍2🕊1",
+      "text": "А куда делся крипто-кошелёк @wallet (https://t.me/wallet) из меню? O_O\n\nСначала Tonkeeper стал просто Keeper, теперь Кошелёк убрали из интерфейса.\n\nPD & Rogozov всё?\n\n@TonNewbie (https://t.me/TonNewbie)\n🔥11😁4👍2🕊1😍1",
       "image": "https://cdn4.telesco.pe/file/cqiXykxHanf4MNgzPogOorNI61JItj7y2bKePRJ4P5kY1CCRA3_wn7Cl_DQfhCoDEtRUttyw2rEj6dSYsnOuHjcwYlePz7NptrOPyPVXgm-K8p0M6gntQSGhia0C-Luh6oo2L9VdDnnQeCpDthN6jn_dOG9ufHRcfNsUpWR6_8LF4PUi7PNGoo9bfoJKQ4Yt162wDZOFTeQAsGPgE3xrcKmjK0lzEgqagncUAQ63oGHMAU15TY-SDC5Na-rKZfTLUBbjJgBMyKc-JnkuZeLNrt9fin0PDwQJAa_bGvavqUYXFMoaesszUo6iomY9Mwk8Srr2Bwn8h2AbJFr1AFClEA.jpg",
       "date": "2026-09-28T16:43:36+00:00",
-      "views": "936",
+      "views": "1.01K",
       "url": "https://t.me/TonNewbie/3390"
     },
     {
@@ -53,7 +53,7 @@
       "text": "",
       "image": "https://cdn4.telesco.pe/file/qpCaxCTm0zANG0frANR56_9C_WvpzvIQu8PC1tYVvLc-1mUPs32S1majGgzPUmLB0MVK1JOo8nLpvf9XTBsEuLY0Tt1In2U0dCKhRAyGAswlSYEUo0cak0Szi49bbQ5GbkGglzwk6DWNvbxJJkuOEcoxG0bfpSJEzv66yDD0LqLqWai30BQ8RJTr2GygEWnCtaB0spSIa3BD2ePyB32-GucSudnL6NbccMPdz0GTjzpyPXPwJM2vrGrhJURuqRZo8S56xQN6yXPhxQHkcyXNv76QlkPAZHx5ma4xd3lr1XSfV3z-5lJv1LmYVcRJJObAkY0NjkoMGSvlswNAhA1_dw.jpg",
       "date": "2026-09-17T22:39:48+00:00",
-      "views": "2.05K",
+      "views": "2.1K",
       "url": "https://t.me/TonNewbie/3389"
     }
   ],
