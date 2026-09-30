@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-09-29T23:59:51.904Z",
+  "updatedAt": "2026-09-30T04:31:23.724Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1891",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/ervJzwyAJj5C7HzKqvy830Q__r1kbSu8ouSAUDE4tiZvE9rGKPRocsI98RvtpoEMcE3bGRreNRV6zFSQknFPal4ba3fuAAvkrSry4wWxqqzZVZviL3JNJtTAdzNhvgZ4Cne6x1fPCNhoCx2UPe5WFBTrK6GQdHiTNULEYN2JNEdxPejgD48tFoz4JRRdL-y-DgX9HIfms9tFuLT1lyLqfBKDH8baIgLJYKTR_KXw2zJdkYql9W16-2kdhV7HjsBUL5_TLi4pIPUTAqzeD8YwKvD38rhkgybDaPkPpGaZDeRP8SmDoKQEYnvVanMGm7MxPjl8D9Hej4a4P7u3XThHYw.jpg",
+      "date": "2026-09-30T03:14:55+00:00",
+      "views": "9",
+      "url": "https://t.me/NaFunny/1891"
+    },
     {
       "id": "NaFunny/1890",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Третья карта:\n\n🐴Liquid: ✅\n🔴🔵📚🔴🔵\n\n🫂YakultBrothers:\n🔵🟢🟢🔵🔴\n\nНаблюдаю лайв 15-17м\n\nПо ощущениям Якульт заберут. Где это вообще было видано, что Ликвид могут отлететь от Якульт))\n\nupd:\nНа Якульт 6+, чисто по фану на малую взял. Ну это не матч, а Тотал абсурд какой то)\n\nupd2:\nLiquid закрывают Yakult 2:1",
       "image": "https://cdn4.telesco.pe/file/ervJzwyAJj5C7HzKqvy830Q__r1kbSu8ouSAUDE4tiZvE9rGKPRocsI98RvtpoEMcE3bGRreNRV6zFSQknFPal4ba3fuAAvkrSry4wWxqqzZVZviL3JNJtTAdzNhvgZ4Cne6x1fPCNhoCx2UPe5WFBTrK6GQdHiTNULEYN2JNEdxPejgD48tFoz4JRRdL-y-DgX9HIfms9tFuLT1lyLqfBKDH8baIgLJYKTR_KXw2zJdkYql9W16-2kdhV7HjsBUL5_TLi4pIPUTAqzeD8YwKvD38rhkgybDaPkPpGaZDeRP8SmDoKQEYnvVanMGm7MxPjl8D9Hej4a4P7u3XThHYw.jpg",
       "date": "2026-09-29T19:24:51+00:00",
-      "views": "14",
+      "views": "18",
       "url": "https://t.me/NaFunny/1890"
-    },
-    {
-      "id": "NaFunny/1889",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\n🐴Liquid:\n📚🐓📚🔴🔴\n\n🫂YakultBrothers:\n🟢🟢📚🤡🔴\n\nНаблюдаю лайв мин 15-17.\nИз интересного там MidOne на 🔴стоит мид в 🟢\nМики на сигнатурном 🐓\n\nУ Якульт всё очень сильно будет зависеть от лейнинг стадии 📚и🟢\n\nupd:\n2.6 взял Якульт ✅",
-      "image": "https://cdn4.telesco.pe/file/ervJzwyAJj5C7HzKqvy830Q__r1kbSu8ouSAUDE4tiZvE9rGKPRocsI98RvtpoEMcE3bGRreNRV6zFSQknFPal4ba3fuAAvkrSry4wWxqqzZVZviL3JNJtTAdzNhvgZ4Cne6x1fPCNhoCx2UPe5WFBTrK6GQdHiTNULEYN2JNEdxPejgD48tFoz4JRRdL-y-DgX9HIfms9tFuLT1lyLqfBKDH8baIgLJYKTR_KXw2zJdkYql9W16-2kdhV7HjsBUL5_TLi4pIPUTAqzeD8YwKvD38rhkgybDaPkPpGaZDeRP8SmDoKQEYnvVanMGm7MxPjl8D9Hej4a4P7u3XThHYw.jpg",
-      "date": "2026-09-29T18:26:03+00:00",
-      "views": "17",
-      "url": "https://t.me/NaFunny/1889"
     },
     {
       "id": "TonNewbie/3390",
@@ -51,7 +51,7 @@
       "channelIcon": "💎",
       "channelDescription": "TON / GRAM, crypto news and market notes",
       "text": "",
-      "image": "https://cdn4.telesco.pe/file/qpCaxCTm0zANG0frANR56_9C_WvpzvIQu8PC1tYVvLc-1mUPs32S1majGgzPUmLB0MVK1JOo8nLpvf9XTBsEuLY0Tt1In2U0dCKhRAyGAswlSYEUo0cak0Szi49bbQ5GbkGglzwk6DWNvbxJJkuOEcoxG0bfpSJEzv66yDD0LqLqWai30BQ8RJTr2GygEWnCtaB0spSIa3BD2ePyB32-GucSudnL6NbccMPdz0GTjzpyPXPwJM2vrGrhJURuqRZo8S56xQN6yXPhxQHkcyXNv76QlkPAZHx5ma4xd3lr1XSfV3z-5lJv1LmYVcRJJObAkY0NjkoMGSvlswNAhA1_dw.jpg",
+      "image": "https://cdn4.telesco.pe/file/oC9AMSzu1CitqWh5Nr6k6wOF2bdafTXcy0EQuzMBVgcd0xbunSru5-vkDH8k2Z9rSip1jIh4S0C0X-90OaWzaZkQgPdlIuIrqhYKeBwQyuVsNwFAn1vC8sBx-LRN2pCwhyV6BgPqBXK4PL8xSGoF-PacVyPVFGjsL-C0TpgX7Ykvo1W2b3YYUhIQLWFc9ovTQwlFo7tVuMCz5Z_YX5_F-iUmX27sLNet5S4pE_gXcIe_CvpW2YM4Q98S5ZUXTUspVwE4JHJZPogQAl5BpVN3rzfm9p45TY-Kmy0umw6MjEt8IuAmESpu73XO_TCeg7nf0WR2cqjEPm0Gbyjly5Q7JA.jpg",
       "date": "2026-09-17T22:39:48+00:00",
       "views": "2.23K",
       "url": "https://t.me/TonNewbie/3389"
