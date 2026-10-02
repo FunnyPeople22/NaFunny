@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-10-02T19:15:00.440Z",
+  "updatedAt": "2026-10-02T21:03:04.918Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1941",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Третья карта\n\nПредикт BB ❌",
+      "image": "https://cdn4.telesco.pe/file/RoJRR5WzHwcbNYJ0-mB8fmA9coy4EWUn_S58apvHFLCs0Xj2almFGlj9Rv7afJkiVAwNDpBxauIRM98_LSOe4oYbs7U1u-i0tzcwFfnqgD2XAPa99bR9imbtiz7uTbPq-JkYhgP_baMHnMJqrR6JPICCWi0oD4NnR6KKCqEYJxCK0aWtHdG-749OBf3VSK6DovwIF35VOrsCv7VV7v1Ry5bIebMF3gjTH1hNEgAsFWaClnjw01z0Mlm5vHqUe_DJnOP7JSY7TB9WCtyBn7ZMliNhW9Es2eAw1gkjraCQunWQsRYyP1L1q1qj6jRlhxxFcMRX2SGZXr6I-eXcGJbTqw.jpg",
+      "date": "2026-10-02T19:34:29+00:00",
+      "views": "10",
+      "url": "https://t.me/NaFunny/1941"
+    },
     {
       "id": "NaFunny/1940",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Вторая карта   Предикт OG  upd: OG 4.2+ ✅\n\nOG 💪\n\n05:11 утра 😱",
       "image": "https://cdn4.telesco.pe/file/QSu3z4tcgBCDG0WuaF0-fzsuQN9HuM-LWNkKBS2BbNQJq5sejKCwY6xgcjj7HzAal2WAIoXbmU1EALTZRK_czJBtrDckobfig89_9Z9SbtSGiAd-tcvjdTnMTNCyAFQzCj3-KnU9lQW3jm4DXqdvsYhlbJceiZkS1U8Pl_xEy9LBKqXxq6lVhlYW_25-BbTEyefgbWOXS6_nJUiMDF37vvULb5eGAcK8HIctVoDa2LdNZCgG6HoXUDf-PthFPJj51N-N04mfZTEDXQAlZBKuRn0rRpBOmfJw-xQFHiOLasrU7bXjwV-BVTNdLH1eQwCVlNSLxrwXx5hJcNCWsGBepw.jpg",
       "date": "2026-10-02T19:11:30+00:00",
-      "views": "5",
-      "url": "https://t.me/NaFunny/1940"
-    },
-    {
-      "id": "NaFunny/1939",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта\n\nПредикт OG\n\nupd:\nOG 4.2+ ✅",
-      "image": "https://cdn4.telesco.pe/file/XG9K4marc8lp8sieYrdwT9fFnoEq-jaz-WPQ_bk9e9GdQGzLY21gVPZKhdMUpfo3Y7bnl8Hv0joj7Z92sucmf0VmEeFFtwLo5STbBg6EA1myq6BMV9yPNqV17VoVWqBKS8Bd5e08NvmMw1rhCCdHQP0Ey6uX-McA4Ip6qdLOS82xWG5nPJcKyQFqI6uM2SPIEoNETfRATbbZCuesG4fCDcTuYOCwjODOv-MWdhB1VYl2HNyuyDR8WZqEu6YiL7l9mbpJyosJxvqJPK_YDqGGFjYpAlJahMOP8vZOt4a95VBZEfITDSUTJQ5zoHM0d7Urosm1sOcocivvk8Yuy3YlZQ.jpg",
-      "date": "2026-10-02T18:13:28+00:00",
       "views": "12",
-      "url": "https://t.me/NaFunny/1939"
+      "url": "https://t.me/NaFunny/1940"
     },
     {
       "id": "TonNewbie/3390",
