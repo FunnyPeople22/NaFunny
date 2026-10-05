@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-10-05T01:50:40.101Z",
+  "updatedAt": "2026-10-05T07:44:05.144Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1947",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "📹stream online twitch.tv/NaFunny2 (http://twitch.tv/NaFunny2)\n🦞В мире животных - Low Priority. Поможем другу Титану отыграть два лп",
+      "image": "https://cdn4.telesco.pe/file/sRwMk-hXIu4e9znFb-wEQz-zyJXQop1JAPU3sY1yZgqFcFzYIyelroYZgm7FvdRafnQP65Zze-egFhOh1ifF1zGXVuHVHDtdwM7AEDHhjYieI4G62WHt7LAheT4BF9v3NWVqDP8-SKQraFqpPUxufxQQhsG35dHaUZHkq5ZZ2ED41UUmNmbyoemKM1yYoK7Fbv79Dr-P1pD4iHDplUbesjHAkFMk5eP6YNZyaZ9MS6EXffhlkj6eaJan5qRQhXg2r7-AP9Zbonj-zEU-L9TDTjN1Pv2BTfx_-qgiwauDmcbLGE79lsnHyKLTX0vOkyvuGHpNCz0L29TcUBor9G7Bdw.jpg",
+      "date": "2026-10-05T04:12:21+00:00",
+      "views": "10",
+      "url": "https://t.me/NaFunny/1947"
+    },
     {
       "id": "NaFunny/1946",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Третья карта\n\nПредикт GL ❌",
       "image": "https://cdn4.telesco.pe/file/jjIr5lr12anB8mgn753s0gtP8whGyfgvvN_K4lv2BhmW6L-W4l3VWvU5gO7W-Jilxmb5POyp7ol6xQ98IHi8wrTzvxm6CeV7E_HrcrU-vTM4tn-gxb51p9cGVJ6DQYtrYLkbblQJofmvPvNxmPd2EXIj6g5loPAhc0OKt56rKq5X9a3hVhn5hfwBq4ZJkEyiN8v9zHhkdJDuVMmwaiScvB_OBe8BkYjWWUfUTO6x064kncNwqlO279AURanA-YZC0JSlfhXzi3usivv2Oi42_QyAWtTbVW75Z6ZhwkLw_CDCK_t_NFkjlG_sUVIimIjpw8OUgJ-OlzbHsvP7AhEigg.jpg",
       "date": "2026-10-03T15:57:50+00:00",
-      "views": "18",
+      "views": "20",
       "url": "https://t.me/NaFunny/1946"
-    },
-    {
-      "id": "NaFunny/1945",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта\n\nПредикт LGD ✅",
-      "image": "https://cdn4.telesco.pe/file/HCKmNOWv43oJlQS19aEThnA3IJ3VP2452Y6E73lvQ5Io9AIE7kmiWcRjKoANa9P38rf6Qtl5A1s5DG7z8xFnEEyCcgyqSKu4SZWqMS-h6FIVA74YT8xT7Tt2X-9WrQPM96je3qKAADo5K_4dpkvjdQeF2CiGYuSp_1CbhD0rsZzqT6QwDARZsLmxWfI_H2OVaUIav1qZSuGBJ2CPrygsPmlYk1epaNNQBOU14sXfLm_gXDdccBOe8hDS9mWZjDQd9c-_DnX_lufA9qD45H_2vCKjuc6L5cvlcgqDr-_bGi4kMvmBGoyKa7Pevj4y-yhVN1gnGGtfxQlnop7BNJ4z3A.jpg",
-      "date": "2026-10-03T14:47:25+00:00",
-      "views": "19",
-      "url": "https://t.me/NaFunny/1945"
     },
     {
       "id": "TonNewbie/3390",
@@ -41,7 +41,7 @@
       "text": "А куда делся крипто-кошелёк @wallet (https://t.me/wallet) из меню? O_O\n\nСначала Tonkeeper стал просто Keeper, теперь Кошелёк убрали из интерфейса.\n\nPD & Rogozov всё?\n\n@TonNewbie (https://t.me/TonNewbie)\n🔥13😁4👍2🕊1😍1",
       "image": "https://cdn4.telesco.pe/file/GEoIxNOQHCG2VrYFgb1rBjtbkn8yBX9gDHhP5ngWCOpkasqB8uSgHfVsV3FyKcgIxsIdpfM8lUrX4ZfcYe_T45-F2e5qt4k7LziLhUcW2hzLKzC80h1spvZoh6MYBz66rH5_wm9eCtCrHvXoOJ_YJ7u8Rwo7RR4bGOl5agDq3Bmc2mgNZ9QeLpZQ9sNRKJsJwTdDkcLxPj69bFQb6sHbsGtq0RKlZRKVcT8cnusDFaTC9ZsWG3xStEYmaFmXN_3_FvJTHmTES7-NHRtsvLIbx6_qmnm4DwZvV9cLKKkkHI26UQSwAoGTlD1SyuEq2LbGfWsRlzZPcCBqD4Z7nQK70w.jpg",
       "date": "2026-09-28T16:43:36+00:00",
-      "views": "1.53K",
+      "views": "1.54K",
       "url": "https://t.me/TonNewbie/3390"
     },
     {
