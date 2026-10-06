@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-10-06T02:40:15.724Z",
+  "updatedAt": "2026-10-06T02:53:31.562Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/1952",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "📹stream online twitch.tv/NaFunny2 (http://twitch.tv/NaFunny2)\n🦞Паб на Титаническом рейтинге",
+      "image": "https://cdn4.telesco.pe/file/ufQeuHBakQh7bqd5NpbviokncmkbGqKgOy3kZMYbnjfs-2KaNDdXWRhPz32ArcclbLROpqgL3ZahFW476jrwWLNEFA9nt5D9gl-mxLMtQ6gqOEyW3SQDG3nBzgY7OBVLE0IYDoqcNd81pykTWLGS5568U6YaTqeH87aR1M3XVlHbXBpuuKyW8jCjFVHiNfrP1i7LxSJLrcDKkCPx6MkZw_x1FSHGyIfaVEl1YPvxwJhSyRtj2AzK5VN6IbUX5I7OtvLGvJGClcyzxcejeV6pevGkeyziMJjPIYzNhlwNwHGV4PxtAgb7TgDEW28JeibT_z2kfru2hxZp2QwC2mJMmg.jpg",
+      "date": "2026-10-06T02:46:48+00:00",
+      "views": "1",
+      "url": "https://t.me/NaFunny/1952"
+    },
     {
       "id": "NaFunny/1951",
       "channel": "NaFunny",
@@ -21,18 +33,6 @@
       "url": "https://t.me/NaFunny/1951"
     },
     {
-      "id": "NaFunny/1950",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n🚤Yellow Submarine:\n📚🔴🔵🔴🔴\n\n🦞CyberHero:\n📚🔵🔴🔴🔵\n\nПредикт YeS ✅\n2.0 live",
-      "image": "https://cdn4.telesco.pe/file/ufQeuHBakQh7bqd5NpbviokncmkbGqKgOy3kZMYbnjfs-2KaNDdXWRhPz32ArcclbLROpqgL3ZahFW476jrwWLNEFA9nt5D9gl-mxLMtQ6gqOEyW3SQDG3nBzgY7OBVLE0IYDoqcNd81pykTWLGS5568U6YaTqeH87aR1M3XVlHbXBpuuKyW8jCjFVHiNfrP1i7LxSJLrcDKkCPx6MkZw_x1FSHGyIfaVEl1YPvxwJhSyRtj2AzK5VN6IbUX5I7OtvLGvJGClcyzxcejeV6pevGkeyziMJjPIYzNhlwNwHGV4PxtAgb7TgDEW28JeibT_z2kfru2hxZp2QwC2mJMmg.jpg",
-      "date": "2026-10-05T11:19:03+00:00",
-      "views": "18",
-      "url": "https://t.me/NaFunny/1950"
-    },
-    {
       "id": "TonNewbie/3393",
       "channel": "TonNewbie",
       "channelTitle": "TonNewbie",
@@ -41,7 +41,7 @@
       "text": "CZ: $114 млрд, тюрьма, all-in в Bitcoin и немного безумных фактов из жизни\n\nНаткнулся на свежее интервью CZ - и там оказалось достаточно много интересных моментов:\n\n💸Про деньги:\n🔵Forbes оценивает состояние Чанпэн Чжао примерно в $114 млрд, но сам он с этой оценкой категорически не согласен. По его словам, реальная цифра где-то в районе $10-30 млрд. Ну сизый, ну \"лечит\" же=)\nПри этом для полностью комфортной жизни ему, как он считает, хватило бы всего $10 млн. Правда интересно, в неделю или месяц?\n🔵В 2013 году CZ продал свою трёхкомнатную квартиру в Шанхае примерно за $900,000 долларсов и фактически депнул all-in в BTC.\n🔵Сейчас он живёт на вилле в Абу-Даби стоимостью около $5 млн: 9 спален, личный повар, четыре телохранителя и яхта Da Moon.\nПричём CZ невозмутимо замечает, что по соседству продаётся дом за $150 млн.\n\n🟠Binance и крипта:\n🔵Всего через несколько месяцев после запуска Binance стала крупнейшей топ-1 криптобиржей мира, а затем довольно быстро добралась до $1 млрд чистой прибыли.\n🔵Крах FTX тоже ударил по Binance - по словам CZ, компания потеряла около $500 млн долларсов на принадлежавших ей запасах $FTT.\n🔵В сделке с MGX на $2 млрд CZ хотел получить расчёт непосредственно в BTC, но из-за опасений второй стороны по поводу волатильности сделку провели через USDT, а уже полученные стейблы CZ впоследствии переложил в BTC и другие криптовалюты.\n\n⛓️Про тюрьму:\n🔵Когда стало понятно, что реального срока, скорее всего, не избежать, CZ собрал отдельную команду «тюремных консультантов». \"Братки\" объясняли ему внутренние правила, порядки и особенности отношений между заключёнными.\n🔵Уже внутри он организовал своеобразную группу по анализу акций. Заключённые смотрели CNBC и вместе обсуждали происходящее на рынке.\n🔵 И ещё забавное совпадение: CZ отбывал наказание в том же федеральном тюремном комплексе, куда позднее отправили SBF.\n🔵А между его освобождением и взлётом на частном самолёте прошло всего 26 минут.\n\n🇦🇪Почему ОАЭ?\n🔵Когда CZ впервые всерьёз задумался о переезде в Эмираты, местные власти организовали всё с совершенно другой скоростью.\nВстречи с министрами - в течение нескольких часов. Врача для необходимых анализов привезли прямо к нему. Golden Visa одобрили меньше чем за 12 часов (это вам не TON Golden Visa)\n🔵Позже вопрос ОАЭ стал ещё важнее. CZ рассказывал, что рассматривал возможность остаться там, если переговоры с американским Минюстом окончательно зайдут в тупик. Но в итоге он всё же отправился в США, признал вину, а Binance согласилась выплатить $4,3 млрд в рамках урегулирования.\n\n🏠А теперь немного бытового CZ:\n🔵Он неоднократно жаловался в подкастах на протекающую крышу своего дома. Журналист решил проверить - и CZ действительно показал ему повреждённые водой полы и разводы на потолке. Миллиарды миллиардами, а крыша течёт 😁\n🔵В детской игровой комнате стоит дорогущий рояль Steinway. CZ знает, что рояль дорогой. Играть на нём Чжао не умеет.\n🔵Он инвестировал в стартап, занимающийся разработкой искусственных маток 🤨\n🔵Из-за хронической боли CZ периодически работает лёжа в кровати. По его рассказу, во время одного из ракетных ударов Ирана по ОАЭ задрожали окна дома. Он вышел на балкон, посмотрел на следы в небе…\n…вернулся в кровать и продолжил работать.\n\n🐕Ну и куда без животных:\nУ CZ две собаки: бельгийская овчарка малинуа по кличке Broccoli - имя он связывает в том числе с созвучием с blockchain - и среднеазиатская овчарка, которую ему подарил президент Кыргызстана.\nВот такой получился CZ за пределами привычного образа основателя Binance.\nВот такая вот фигня, собачка.\n\nА теперь главный вопрос:\n💸Вам бы хватило $10 млн для «комфортной жизни»?\n\nфулл-интервью на англ (https://en.theblockbeats.news/news/63834)\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/fVuu93jW4O48NNopkh65L-Oi6Q6BCfGMO0SjwkTBcIKWCnqlRmBZthEPIyKOTJQ5Z2fd-eh8MlvtDe-SRf0WCNcFIXqhKd7mPmM2dOyT1I_7s1WNilStSjm1uzBk0SvU5wWH4ZVXasOxE6dguq2OaPWF9893OXeHmGAcOucqDikqcEwISIOXM1mZ5FR9MrRqsmtZwRVJXztyxiM2JMDhYTyei_Di35x6hMbEjBv67lE-HNqgXjtkmF158g7vZ_1X-xNH03fdZP34aB8LrtIv7-iqaECExPTdU8Nvg6XzQiJLvc1aITtU6lDxNxsf5uGRr-4oTSZKGMC3P5TEV7julQ.jpg",
       "date": "2026-10-05T11:09:11+00:00",
-      "views": "726",
+      "views": "729",
       "url": "https://t.me/TonNewbie/3393"
     },
     {
@@ -53,7 +53,7 @@
       "text": "Напоминание:\n\n💎Уже 7 октября из TON Believers Fund (https://tonviewer.com/EQDtFpEwcFAEcRe5mLVh2N6C0x-_hJEM7W61_JLnSF74p4q2) будут разблокированы 37 млн $GRAM (~$56,57 млн).\n\n👀Готовы пристально следить за движением цены?\n\nТекущий курс: ~$1,55\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/YZydwiOHPbA1cZoePz8BKNHFD6aBsCG3Av_tFddjUFdzeBawf3JcpZolVBCEmGFsCz2isyoBM7Z691jRe_c5PEqvstOKolmfBButeBq0pM3XWmWH4FwKYQcLIIOJ5hfzHmJHkU9enYJX0LuKR1RbeI92cStIzrR_j8sW-mRe-gCn8KnguaXnB9-0PvPEEeFSWDzJftaP_tMVVRl0y7EFR8YE1TNPkeL_NTjPtlMUGXcl_2rjFvvCnlATzs8nVA03kaRpUfsF9_QxA_uHWbWaTGPuv7yazCnCG97l2_hvFT0I1-wcpAIodhuvV4rD5iRm1kblDHj82PuHw188D9SfCQ.jpg",
       "date": "2026-10-05T10:50:39+00:00",
-      "views": "880",
+      "views": "882",
       "url": "https://t.me/TonNewbie/3391"
     }
   ],
