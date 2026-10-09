@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-10-09T09:33:18.676Z",
+  "updatedAt": "2026-10-09T14:38:59.792Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
-      "id": "NaFunny/1964",
+      "id": "NaFunny/1970",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "",
+      "text": "Интуиция сегодня второй раз подвела, Аврора морально неготовы играть против Спирит. Трясутся малыши",
       "image": "https://cdn4.telesco.pe/file/kfXZrtMoH-BJQxpe_oXiEYZ4ONht7DY6V7d12hKbB8JkgzNTqE91cxaDjNehkkKrvTO6hM9a_NNaLygQGN2j21AIMKJqrND1KLA8_zECpcAjhfSE0Q8j0PsOEyOqmy5vxUhn-ujXxntUUfz2YDscEbh_e9-vmWM6Qbkv5E9UuWmWQAJn45TI39W9oAIgpVm78Lt3ETJwDGFNROqvm9gpef8hzLePvb1Ba63bzPjooax9AHGGT5hz4KAXxvvxZtSp5fFkq17LY_nVPT457SlY2b8-5_El0n72XejtaOopeLsXVuaueAWRYjbf-LulYak-47kPWkXmtR2GGWziTJ2Arg.jpg",
-      "date": "2026-10-09T07:49:31+00:00",
-      "views": "8",
-      "url": "https://t.me/NaFunny/1964"
+      "date": "2026-10-09T13:29:41+00:00",
+      "views": "11",
+      "url": "https://t.me/NaFunny/1970"
     },
     {
-      "id": "NaFunny/1963",
+      "id": "NaFunny/1969",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "Типичная пятница Баратрума",
-      "image": "https://cdn4.telesco.pe/file/rFkV0Oxoqq8-aQTylGeaL6ffjX8kj1a1yqhKRgNsxiTBuFpkOjnjNpKUyWjkacbV7PeC7lJS6tFxaoWcBIbNdj7l03p7B4zwuL90mx-C-YSE3byHJMf6QNFZLrXHx6BitjFdlJrTFqtjIFF2fZPE5Q5O9oyeSWLLFcF_I2eqIMK9Fil8Uk-AD_li1kN_kHT-3QhFz5bj9gQ6aEumxWXGnHQK_x5kEtoZeoNFoFw9zuZoCi-664Pg0W-eGMqT_EiAd-dr5nzLnVVdoVlpFl5ihWu1zJsEPPu9LNoeBOYd8mvrG_qoxIzSD0IS5wH3E_JqDsY-iD7mgxgnN4dAdCay3g",
-      "date": "2026-10-09T07:47:10+00:00",
-      "views": "9",
-      "url": "https://t.me/NaFunny/1963"
+      "text": "С другой стороны ТБ от Шкипера тоже такое себе дело.\n\nНа малютку заберу хай кэф на Аврору под возможный выкуп",
+      "image": "https://cdn4.telesco.pe/file/kfXZrtMoH-BJQxpe_oXiEYZ4ONht7DY6V7d12hKbB8JkgzNTqE91cxaDjNehkkKrvTO6hM9a_NNaLygQGN2j21AIMKJqrND1KLA8_zECpcAjhfSE0Q8j0PsOEyOqmy5vxUhn-ujXxntUUfz2YDscEbh_e9-vmWM6Qbkv5E9UuWmWQAJn45TI39W9oAIgpVm78Lt3ETJwDGFNROqvm9gpef8hzLePvb1Ba63bzPjooax9AHGGT5hz4KAXxvvxZtSp5fFkq17LY_nVPT457SlY2b8-5_El0n72XejtaOopeLsXVuaueAWRYjbf-LulYak-47kPWkXmtR2GGWziTJ2Arg.jpg",
+      "date": "2026-10-09T12:57:15+00:00",
+      "views": "13",
+      "url": "https://t.me/NaFunny/1969"
     },
     {
       "id": "TonNewbie/3398",
@@ -41,7 +41,7 @@
       "text": "Судя по инфе из множества закрытых групп где я состою, спам на анонки приходит очень многому количеству владельцев.\nПричём речь не об одной-двух попытках. Коды могут приходить десятки раз подряд.\nКто-то пытается получить доступ к аккаунтам?\n\nЕсть одна интересная теория:\nПредположим, злоумышленники получили доступ к какому-нибудь популярному расширению браузера, приложению винды или виджету, способному читать/видеть уведомления от Телеги.\n\nТогда схема может выглядеть следующим образом:\n🔵Массово инициируются запросы кодов авторизации для номеров +888;\n🔵На устройства владельцев приходят уведомления с кодами;\n🔵Если у кого-то установлено скомпрометированное ПО, злоумышленники потенциально могут перехватить код и попытаться авторизоваться.\nНо тут-же напрашивается логичный вопрос: зачем запрашивать коды по несколько десятков раз?\nВозможно, атакующие рассчитывают поймать момент, когда нужное приложение активно и способно прочитать уведомление.\n\nЕсть и важный нюанс:\nкоды анонимных номеров могут доставляться через Fragment, поэтому теория с перехватом Telegram-уведомлений пока объясняет далеко не всё.\n\nЧто делать владельцам +888?\n🔵Обязательно включить облачный пароль (двухэтапную аутентификацию);\n🔵Проверить активные сеансы Telegram;\n🔵Проверить настройки получения кодов через Fragment и при необходимости отключить такую возможность, если она доступна.\n\nНа текущий час подтверждений массового взлома нет. Более того, неизвестно, связаны ли все эти запросы между собой. Но сама ситуация явно заслуживает внимания.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/U_aXA_e-J1TNaEjMDs6M4_HQazOWeOUGpaUpfC6mbnPobtP1SIuEuXYnygNuBrb3WetL_xGlS5xexEBl7At2H2wq2nmYF3qaXlZbQThuvRQ1op3OZ-TPG6TfKYFveTeENSERCbZhhjugTED3qYnfMi0kkblRSfdtxn3ZndWM_y_wz-5F7JDM3hNdK70J-tHs3R4ITUos23oVVQ1YnvzHt7wYvRlYFQ_MZ9G8acYC0C4bKoyEnfPRGSoNqs9QGZM_W0QuKkMk2_M4i-uHUFmaxlVwgrbHTqbwRgWcelU9bgEqnbw9bfPx2_tUUcwv9Wqlc6Mkfh8hmCagNNceKk_hqQ.jpg",
       "date": "2026-10-09T07:17:20+00:00",
-      "views": "584",
+      "views": "786",
       "url": "https://t.me/TonNewbie/3398"
     },
     {
@@ -53,7 +53,7 @@
       "text": "🍆 Всем владельцам анонимных номеров следует отключить возможность принимать коды авторизации и поставить облачный пароль.\n\nПо слухам, проходит какой-то адский брутфорс. Я таких слов-то и не знаю. Попросили передать.\n\n@vibes (https://t.me/vibes)",
       "image": "https://cdn4.telesco.pe/file/FmoxfBQn-BYHkcjvGwdrf4H6VCxUkibueo4tgg5qOzCSF6r8PSgmjnPQDFzFeNDIdVTQ2_Pnth4e0OX4n6Fnr13plqttQcXZHp5FOFqKe5v3tdppnH_RgyN9qmWQFhHRl4UCR7X8zSgEO54yShL-sDOXpvaH1zb7MXUKpeIfR-C2OxfIpVZAoM7pBrkJXeod8Z7UF_37B6-3rcWlnrBF6428u3u1azDiZdn2dH_maVKoeYNcvDMDWUqKietHoU_bD5wJqebG7LaQXz_anBM95FRsdQHGPycSnHjdAlffBjOF6DxKI-sq3ni_Pvhup-klAZdYRQmWzdAogD04Ta-Ebg.jpg",
       "date": "2026-10-09T07:08:05+00:00",
-      "views": "564",
+      "views": "720",
       "url": "https://t.me/TonNewbie/3397"
     }
   ],
