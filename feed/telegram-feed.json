@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-10-23T15:52:42.644Z",
+  "updatedAt": "2026-10-23T19:21:58.459Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/2013",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Вторая карта:\n\nБез предикта.\n\nТут план ББ абсолютли ясен = темп+пуш. Если до 29-30 мин ни одна из сторон у Астры не упадет, то 2:0 для Астры.\n\nСтавки здесь пропущу, чего и вам, читающим, советую\n\nAstra 2:0 ✅",
+      "image": "https://cdn4.telesco.pe/file/mKzQW56uuzPp4sziCVnnTbAClTsw9ppafW6GP8lFpRXgnviacUl3HeiXC6no09gxHTjrIuzG_EfagoizvPti0Q2BDuHksXltxeabU0tFWkSe7cJMXRexyjqhOZKSK0fOlJBY19zh-NSKzaLhfMzpatAbD4qgdD8AOA-sRtSriJlhOFMrVXqARt36x8eNGLYWUavM5NTMzWL9i2cy3Ou7-JTHE1BLtruYgL5zdesrXrwdRW7sTaB78h6cUcOKlSHsiRfvEeovAZY1fal46biBg5t6-W69Uk5V0n7_ZqUUEh0JLH0LQFzdEcFRDowAdcLbYLU9lRT-5p30WC0VNniy9w.jpg",
+      "date": "2026-10-23T15:54:31+00:00",
+      "views": "11",
+      "url": "https://t.me/NaFunny/2013"
+    },
     {
       "id": "NaFunny/2012",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Первая карта:\n\nПредикт Astra ✅\n\nupd:\n1.90+",
       "image": "https://cdn4.telesco.pe/file/W7srwdc9SwturPRZ93Na7ZqJvlTuY_VkUagrtBSLTRymgNhCGgRqkGxnglXYL1dqbx6TIsM8WpuBH9PupmkIg8Uok9gNLFPCVoFllOBD8kCyWmezN2LoM_weDjrO1VkIjj2ZurQ2bOk0-42nTRCuQQu7CAljT1n1Rq4TZQuDceONO7Xhcczh4X28lTbs1tgxl-cF8PfQTxBO3e-isFOwqsfmI-Liqe1jv3eo2bD_8vwEZHSjJ19QYF7FuJaoCeEd4vtkihajcreYkt889WEo_rQsBol_HAZUwZJGA9rgIF7IwrEEmQ-DdfouAUl5ahwVB9hsUMM_hPTencPuoCdFqw.jpg",
       "date": "2026-10-23T14:39:48+00:00",
-      "views": "13",
+      "views": "17",
       "url": "https://t.me/NaFunny/2012"
-    },
-    {
-      "id": "NaFunny/2010",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Вторая карта:\n\nПредикт Liquid ❌\n\nБрать буду от 1.80 и додеп от 2.5\n\nupd:\n2.70+",
-      "image": "https://cdn4.telesco.pe/file/oTuY8YuEYz6BeHAuHjDJfvkWDaRB61lDehqYrC24jnb3sSCuWlirrAcExQG-dofdrE8_7Gr5v-Shfg77QvpZin_Wo734JKt5EPd6KUkUkrYw7CpwDnDoUOxrbHPELQ1RD6aixN0zksbeI8VwTQUR6AS58bPnq4HFMBcDdP44mUXvTEOZTS4Sq2f9e7AVisoiwn772ZJgq07n2PlV9-jKaXlcVRTE9GhVL-vnLDQ0S4cA5iNkDPjPWRrKCPivjb_WfgyREk9V4EE9E8Pz57BINCTQsM4Z0eKNSY5CbzBhHL77YWJmkvvyKIq8taYZiGeWF3joCJ6IBnjau01vQdcpdg.jpg",
-      "date": "2026-10-23T12:43:19+00:00",
-      "views": "22",
-      "url": "https://t.me/NaFunny/2010"
     },
     {
       "id": "TonNewbie/3424",
@@ -41,7 +41,7 @@
       "text": "Урок профитного трейдинга\n\n@TonNewbie (https://t.me/TonNewbie)\n😁19🐳3",
       "image": "https://cdn4.telesco.pe/file/VvqGJiMew39KGQEgZGswmV7CRjYw76zh_1dXpfXbwxhIo4MtNhtW-w810GO5QdmhjITWMjCeMAnX6Uw1Ar-_oqbrrVK0crB9B9EuCnKtlE2XQsNF4cHygGfoCcY3HcRJ-dBRbo4w1aIPakPacJVz-MiV6q4t30Pt9VxV-dKoRy0GOrKyXjl_o_iPG92ONstzwMjOhZQdKUCZgIpeF1P9uEbE0DUHErQavulprZoz_rWIh9zReSD4Xw-nmg_RWFJ2HW1_OEzgSJ-I-g8I2irwLbt-Jan7Y56yu_yBCjKaXfI7VuH_XJN_P5bfIh05m_DPyv0VXT4od2cq3LAKMAR-iw",
       "date": "2026-10-23T04:45:31+00:00",
-      "views": "743",
+      "views": "775",
       "url": "https://t.me/TonNewbie/3424"
     },
     {
@@ -53,7 +53,7 @@
       "text": "Кто-то одной транзакцией перевел 💎2,276,014 GRAM (≈ $3,061,240) на 🟠Binance\nUQDPZ…GIjAm (https://tonscan.org/address/UQDPZ9MTdjrJlSA3DsWc7e98DgKR1DocdpmJ-uTWi2rGIjAm) → Binance 2 (https://tonscan.org/address/UQDKHZ7e70CzqdvZCC83Z4WVR8POC_ZB0J1Y4zo88G-zCSRH) ￼\n\nСтановится ссыкотно за курс $GRAM\n\nЭтот кошелёк получил средства отсюда (https://tonscan.org/address/UQDeqQoL1Ccs5HLrdWVtZFFZk8_FlMeWeNaJHVixDAuKiyLh)\nНа балансе осталось еще 💎1,738,466 (~$2,343,801)\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/L_k2RicimthASuZ4m20FYlTVOt4ZcCePHP5VZsrs9dkRHgJ7oWieclxvQZluNap97LXPSsseqPUkJhmL5dpqYbfCmBWHy5Q81JdgSy4k8Ox-8yE-kGHD23laJP01Zyj_lhKXM9wCr1D3DerPPVQTXEBm4KGOWmV8q5Mg8c1Y6AnDFmC-7Gvft6U4nbA_uTl4VOgmPOLGux4Qp8F3vtTTHJ21-rZAnjHXfXXgUQcHsP3lHuC0caX40TAPznGaPsR4_IPv75UzeDalX9HT1vdZl7C1N6RcS8e7HvjzSdWmcnJ1rXRjeCIHQ4AIqHUkUfQQWT3JRiSxWFVcB67-I-dgXQ.jpg",
       "date": "2026-10-21T14:33:23+00:00",
-      "views": "1.4K",
+      "views": "1.41K",
       "url": "https://t.me/TonNewbie/3423"
     }
   ],
