@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-10-29T09:03:04.125Z",
+  "updatedAt": "2026-10-29T09:47:50.986Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/2089",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "Матч на вылет\n\n〰️Первая карта:\n\n🐴Liquid:\n📚📚🔵🔴🔵\n\n🦞AstraInvicta:\n🟢📚📚📚📚\n\nХороший мощный сбалансированный пик от Ликвид. Видел я уже такой пик у них, особенно филигранную игру (https://t.me/NaFunny/2003) Шиспера в лейте на Марсе.\n\nИдеалыч сел у нас на кор Сларка, а Лорик на мид Панго. Якорь на ДМе сегодня будет пытаться проявить себя на ДСе (на самом деле вселяет надежду).\n\nЧувствую, что кэфы в лайве будут скакать жёстко в обе стороны. Останусь без предикта, но в лайве мб подзаберу кэф от 4.\n\nВ общем и целом:\nНаблюдаю за лайвом, если буду уверен конкретно в победе одной из команд, возьму кэф и апдейтну пост. А так, на самом деле тут лучше скипнуть и остаться наблюдателем 1й карты",
+      "image": "https://cdn4.telesco.pe/file/oZRuA2dhvgNAhlr0ECIgfZWHn8B06IYPxKeWirr4cw0kpkWttFpR30uaoe06zSD7AS-cTus04aFYaDBuMWboVrmTn4ouwR7htFgJzKrOasYir0P5ZQ9VciLWjfT-49mvBkcn71HC-JF_sCQAo-DD4yhTH9f8zIfTnN4H_eEj3Gg3efGsP4HNTtKdjWDxFuBukIqDsNQKT0s3XInTye0-SuLdZW70vl0a7Rcnz3Q3JWG57nS4KWFpKgwUs822DCDUFdlL07TJOHeiEt6fVWielZc9DUipujITqAV5Uzx8NJQAXPlHKXxRnPp18aK9keYWRSuPsWyHLG410L17Sc57qg.jpg",
+      "date": "2026-10-29T09:17:55+00:00",
+      "views": "4",
+      "url": "https://t.me/NaFunny/2089"
+    },
     {
       "id": "NaFunny/2087",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "",
       "image": "https://cdn4.telesco.pe/file/oZRuA2dhvgNAhlr0ECIgfZWHn8B06IYPxKeWirr4cw0kpkWttFpR30uaoe06zSD7AS-cTus04aFYaDBuMWboVrmTn4ouwR7htFgJzKrOasYir0P5ZQ9VciLWjfT-49mvBkcn71HC-JF_sCQAo-DD4yhTH9f8zIfTnN4H_eEj3Gg3efGsP4HNTtKdjWDxFuBukIqDsNQKT0s3XInTye0-SuLdZW70vl0a7Rcnz3Q3JWG57nS4KWFpKgwUs822DCDUFdlL07TJOHeiEt6fVWielZc9DUipujITqAV5Uzx8NJQAXPlHKXxRnPp18aK9keYWRSuPsWyHLG410L17Sc57qg.jpg",
       "date": "2026-10-29T05:14:25+00:00",
-      "views": "10",
+      "views": "12",
       "url": "https://t.me/NaFunny/2087"
-    },
-    {
-      "id": "NaFunny/2086",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\n🐲Spirit:\n🐓🟢📚🐸📚\n\n🐃OG:\n🔴🔴🔵🔵🔴\n\nПредикт OG. risk ❌\n3.55prematch",
-      "image": "https://cdn4.telesco.pe/file/oZRuA2dhvgNAhlr0ECIgfZWHn8B06IYPxKeWirr4cw0kpkWttFpR30uaoe06zSD7AS-cTus04aFYaDBuMWboVrmTn4ouwR7htFgJzKrOasYir0P5ZQ9VciLWjfT-49mvBkcn71HC-JF_sCQAo-DD4yhTH9f8zIfTnN4H_eEj3Gg3efGsP4HNTtKdjWDxFuBukIqDsNQKT0s3XInTye0-SuLdZW70vl0a7Rcnz3Q3JWG57nS4KWFpKgwUs822DCDUFdlL07TJOHeiEt6fVWielZc9DUipujITqAV5Uzx8NJQAXPlHKXxRnPp18aK9keYWRSuPsWyHLG410L17Sc57qg.jpg",
-      "date": "2026-10-28T17:17:32+00:00",
-      "views": "16",
-      "url": "https://t.me/NaFunny/2086"
     },
     {
       "id": "TonNewbie/3432",
