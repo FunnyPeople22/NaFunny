@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-10-30T06:35:51.456Z",
+  "updatedAt": "2026-10-30T07:16:20.513Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -41,7 +41,7 @@
       "text": "Как вообще удалось провернуть взлом на миллиарды?\n\n🤖Хакер воспользовался механизмом EIP-7702, появившимся после обновления Ethereum Pectra. Он позволяет обычному кошельку выполнять код смарт-контракта при наличии соответствующей подписанной авторизации.\n\n😠Злоумышленник подготовил сразу 50 авторизаций с разными nonce. Поскольку горячий кошелёк Binance постоянно проводил транзакции, угадать актуальный nonce было непросто.\nИз 50 подписей Ethereum принял только одну. Но этого оказалось достаточно.\n\n🔫Всего через 3 минуты 24 секунды из кошелька вывели 167 464 ETH, 1,615 млрд USDT и десятки других токенов.\nПричём перед атакой хакер успел несколько раз протестировать схему на собственных кошельках.\n\n🚶А теперь самое любопытное: аналитики TRM Labs предполагают, что за взломом стоит северокорейская группировка TraderTraitor, которую связывают и со взломом Bybit в 2025 году.\n\n🤔Получается, проблема могла быть не в уязвимости самого Ethereum, а в компрометации инфраструктуры подписания транзакций Binance.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/aHpJz8oQvCsNGt55V7h_oDeKbyPkXxQPHzOdf-mGTdmu2QJ87lp-sy17hlUYlSdlEqUO-Fo5K0oe6FYcNL1kMvg-5kENHzhnPfrVKV3Pk5KlJAwZsTY4ohrg7dqM4VEFAv0M4kriUV66u2rf7P6663e-o7R9FEvW_Hf09IK3s_4A3G5u-4u2yhLywWRWuZyhzjKwe8E38aNXcZhuGA7ugJ5zm91Ef1lvBSibzTKQkBNLecZrh68GNqdKnOfhkl4g3q2l7rtuXzFK6LRpWXAniriYcborQZeNm1WUhemqIcEjiLG03KLCyLFChTnqtD2TqrQnSB7RcF9FCwZgtUYaXQ.jpg",
       "date": "2026-10-30T03:45:13+00:00",
-      "views": "633",
+      "views": "702",
       "url": "https://t.me/TonNewbie/3435"
     },
     {
@@ -53,7 +53,7 @@
       "text": "А теперь немало интересное -\n🐆Ethereum\n\nПо данным ончейн-аналитиков, хакер начал активно конвертировать украденные стейблы именно в ETH.\nНа двух связанных кошельках обнаружили около 253 тысяч ETH (~$570 млн).\n\nИнтересно почему эфир?\nВсё просто: USDT и USDC эмитенты могут заморозить, а вот с самим ETH такой фокус не пройдёт.\n🙆Думаю многие уже готовят свои лонги ETH из-за доп спроса.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/aHpJz8oQvCsNGt55V7h_oDeKbyPkXxQPHzOdf-mGTdmu2QJ87lp-sy17hlUYlSdlEqUO-Fo5K0oe6FYcNL1kMvg-5kENHzhnPfrVKV3Pk5KlJAwZsTY4ohrg7dqM4VEFAv0M4kriUV66u2rf7P6663e-o7R9FEvW_Hf09IK3s_4A3G5u-4u2yhLywWRWuZyhzjKwe8E38aNXcZhuGA7ugJ5zm91Ef1lvBSibzTKQkBNLecZrh68GNqdKnOfhkl4g3q2l7rtuXzFK6LRpWXAniriYcborQZeNm1WUhemqIcEjiLG03KLCyLFChTnqtD2TqrQnSB7RcF9FCwZgtUYaXQ.jpg",
       "date": "2026-10-30T03:37:26+00:00",
-      "views": "626",
+      "views": "684",
       "url": "https://t.me/TonNewbie/3434"
     }
   ],
