@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-10-31T01:48:05.033Z",
+  "updatedAt": "2026-10-31T02:29:45.207Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -9,28 +9,28 @@
   ],
   "posts": [
     {
+      "id": "NaFunny/2111",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/lzjhxKMvh7hXj_SeSobCUx55txwbYGigfVWUYmXgDmHDrTNFdrf52Fh6rcmbkMn78AUFML4NJTk3Bz_nfdhbCQk7-iZIsnRIONR5lZyeHKkZaeoFLirh6xHfDpafx7IXDbxkrSLIFq4rrsblsSBRTd9cEcvk1a2-BWmKaAo2E8oiVdpMdaj8oKcaxJTujQG27BMa-8YpVc5LA0tdO4JgJzOiV-DlUitwm2RxqIbfAMmOsFetLRhz9kyIujG4HlX6uC7JVAaCljSaRMTyIlLJAHDJrCJ175WBLrQu75pSPO0nori1TyPNdVZZFKW1kBHgYBWtkIDB4gBUpV8GVkhSuA.jpg",
+      "date": "2026-10-31T02:23:07+00:00",
+      "views": "1",
+      "url": "https://t.me/NaFunny/2111"
+    },
+    {
       "id": "NaFunny/2110",
       "channel": "NaFunny",
       "channelTitle": "NaFunny",
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта:\n\nБез предикта. По пикам обеих команд слишком рисково. У Ликвид замена в лице m1CKe на худшего керри про-сцены Timado, но конкретно в этом матч-Апе у Жидких есть шансы, так как этот якорь на Тимадо на ВР норм умеет играть.\n\nУзнав о замене хотел дождаться пиков и забрать 2:0 Spirit, теперь сомневаюсь.\n\nSpirit ✅",
+      "text": "〰️Первая карта:\n\nБез предикта. По пикам обеих команд слишком рисково. У Ликвид замена в лице m1CKe на худшего керри про-сцены Timado, но конкретно в этом матч-Апе у Жидких есть шансы, так как этот якорь на Тимадо на ВР норм умеет играть.\n\nУзнав о замене хотел дождаться пиков и забрать 2:0 Spirit, теперь сомневаюсь.\n\nSpirit ✅\n\n😂Donate (https://www.donationalerts.com/r/nafunny2) 📹Twitch (https://twitch.tv/nafunny2)",
       "image": "https://cdn4.telesco.pe/file/d6JGnlkgXyYrJUOg2yPXnPkjEnj6ZnQUSEPg_olPrGSZTTqYrt6KmRFLF_Cu-0Qb5Q9ltYbiIVcrrvViinAjrnto_2bRS-KRoHF_zxcnSEYSKFeLfo9yxTD5VOlMtI3DlPaib0fifuPMcZTL-tscGEm18iCRLRr5nvW-UoB0iEacUgmYlVr4QU_05_xXtMChqziC4gCq-wAM3kW2kRrnDREXLkSpis3jzB-HDC6eKkAW_yK7NxWfSsTA-nDm1KGV8bwIFjbEF3749hIPMgp4_gVQMyVKLI8HPTbTnfsRx9Hyp4InwCtmHTgnureV2Cd7uPE5d0xFGnc8HvxczE1y3Q.jpg",
       "date": "2026-10-30T17:39:51+00:00",
-      "views": "12",
+      "views": "15",
       "url": "https://t.me/NaFunny/2110"
-    },
-    {
-      "id": "NaFunny/2109",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "👀Старый заменит bzm в 1Win на предстоящем турнире 1Win Essence",
-      "image": "https://cdn4.telesco.pe/file/Z-AoZAGj6Qdnv6TACJSVDSXV8xQ-ua33oYCAk56P6aINtBwMC2Uchc2hPum6_eucOgpYYL7h2zFVSIAIFZE13i42RYluCiKi31DvPUO9OZ5pQ2WYH1JtEOaEAlS0Gs7OZpU9bzqlFCARHB-LnYbVJP_wkUEGE2lVCUpMddaO4m3QWz-dsbMLUQlNaIbkFg78A4sHELFlANkUubXzKrOerdVcCDBK4Mc049WgOtUS-qkvVkFrpcTibX6C8d3HSNATBggTSzjp2_H_yqdmuNRhQgSC3xPvHkNQjRLPc4m44JKBd61LK3k8Pd3ak6iFHlgvgEB1YoipWvso8NMO-IYgtQ.jpg",
-      "date": "2026-10-30T17:07:32+00:00",
-      "views": "14",
-      "url": "https://t.me/NaFunny/2109"
     },
     {
       "id": "TonNewbie/3435",
@@ -41,7 +41,7 @@
       "text": "Как вообще удалось провернуть взлом на миллиарды?\n\n🤖Хакер воспользовался механизмом EIP-7702, появившимся после обновления Ethereum Pectra. Он позволяет обычному кошельку выполнять код смарт-контракта при наличии соответствующей подписанной авторизации.\n\n😠Злоумышленник подготовил сразу 50 авторизаций с разными nonce. Поскольку горячий кошелёк Binance постоянно проводил транзакции, угадать актуальный nonce было непросто.\nИз 50 подписей Ethereum принял только одну. Но этого оказалось достаточно.\n\n🔫Всего через 3 минуты 24 секунды из кошелька вывели 167 464 ETH, 1,615 млрд USDT и десятки других токенов.\nПричём перед атакой хакер успел несколько раз протестировать схему на собственных кошельках.\n\n🚶А теперь самое любопытное: аналитики TRM Labs предполагают, что за взломом стоит северокорейская группировка TraderTraitor, которую связывают и со взломом Bybit в 2025 году.\n\n🤔Получается, проблема могла быть не в уязвимости самого Ethereum, а в компрометации инфраструктуры подписания транзакций Binance.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/PkRPDoPA-tk5XgR9a8Iq3UTZXIJSnD7yP7pCXvLhmV_iQyyCwtAxGA0z9D-sxQ42Bxs9Zbu-m3-csv6EhJaASi2TOTXHtCbjSuY0UhcAtytxQSoy5WPkb9M05v1uUOsBB7273Bgmo1EkAGxTrUcwQI46ggaIfg9_VdKkA_YM-dg9rGbx2u9TtSkEXRFq7GyH_KhLMFvX1vSDGoD7hCNtp2VhTOXGwPtcF0Z_rHIlWK9cvJsqJxTstbC788S96idRkgzR-Era9DoRS-p3RsQp1x5RnSFdS1xfoG69n7FUCrNW474qMale2CM49ItEaSyPIVvQ3MTK5qElne2koST0qw.jpg",
       "date": "2026-10-30T03:45:13+00:00",
-      "views": "1.08K",
+      "views": "1.09K",
       "url": "https://t.me/TonNewbie/3435"
     },
     {
