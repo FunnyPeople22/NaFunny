@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-11-01T07:24:01.359Z",
+  "updatedAt": "2026-11-01T13:41:32.093Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/2119",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "〰️Первая карта:\n\nКаким бы я не был тру фанатом Spirit и хейтером Yandex, на 1й карте я думаю победу заберут Яндекс. Не уверен я здесь в Ларле на Шейкере и в целом в пике Спирит. В ТМ они закрыть не смогут, а боевых единиц у Яндексойдов слишком много. Чувство, что соло АМ не затащит\n\nЕдинственное, как могут победить Спирит, это внутренняя тряска у Яндекс, типы очень часто стартуют обосранными.\n\nХотя знаете, пока писал, вспомнилась мне игра Yandex vs GL, где RCY на Шейкере хорошо так подшатал яндексойдов.\n\nВ общем и целом:\nПрямой безоговорочный предикт пока не дам. Буду смотреть лайв и там уже по поведению игроков возможно заберу кэф. Пост апдейтну\n\nupd:\nSpirit 2.2+",
+      "image": "https://cdn4.telesco.pe/file/GAlbcmyRj84duwgIDyRK1-9JofRo7FhHQ3OFh49-nF2maiIMwDBwkHTqzYu7VoXrjbTaX3NNpCiUCzKRK_DehPY51bjcihcn1Lyjch-VQQZzGtbUykAEmJP4Rs6-cpcFo48veM-gnPTIQxGkX8f_eGZWbMWh82HuTK_VfZtw7nuSZrMLroytuHsBvOG_y4gzBQZm2Ho9fGylTlrYM-xgD9WvhrRZ3eiX1PMC63dRg08JnBcpL2Ip-TbG2s_j1zlO2b-7bQ8HqwdtnWfBG0Sl1UAAiZZ1bBsgjM2RjV8cq1EoEWJROZaYsxDviXUe9X4MV0M070fxL6xhDneiPxm_5w.jpg",
+      "date": "2026-11-01T13:16:49+00:00",
+      "views": "9",
+      "url": "https://t.me/NaFunny/2119"
+    },
     {
       "id": "NaFunny/2118",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "📹stream online twitch.tv/NaFunny2 (http://twitch.tv/NaFunny2)\n🦞Ranked MM",
       "image": "https://cdn4.telesco.pe/file/cSeSYlk5DUO1Ky8YtxUL3ZsM3s1XtYwOsO4Mdq5thQnwoCiyFsuTBQ47xmRstVgM5LcsNOouFNjkRw3i-npgarz6S4wPFfNmpLIw6GQ7AodVGh107ZKJ67bPyfD8jJJv4fzAzYYL5R3Dl2jQR8dAGtIRF8wvvFqaxNlJOOTq_hEFlQb9jAfimUJhBqCNoUymMMYxh8ALJ-6204uhG-Wq6hSMJYmSHi7T1m3CBhLk6ES0IXC4L3nNH1QxJUdSquQe4EtITGCEaH4mRdRTMOXhF90fzUbqpc3R5GPW3GIyj_r8cbyOZOfCW7iYbhLwCXisa0MNrLeLvoywqwdRU285dw.jpg",
       "date": "2026-11-01T04:44:28+00:00",
-      "views": "8",
+      "views": "19",
       "url": "https://t.me/NaFunny/2118"
-    },
-    {
-      "id": "NaFunny/2116",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "",
-      "image": "https://cdn4.telesco.pe/file/cSeSYlk5DUO1Ky8YtxUL3ZsM3s1XtYwOsO4Mdq5thQnwoCiyFsuTBQ47xmRstVgM5LcsNOouFNjkRw3i-npgarz6S4wPFfNmpLIw6GQ7AodVGh107ZKJ67bPyfD8jJJv4fzAzYYL5R3Dl2jQR8dAGtIRF8wvvFqaxNlJOOTq_hEFlQb9jAfimUJhBqCNoUymMMYxh8ALJ-6204uhG-Wq6hSMJYmSHi7T1m3CBhLk6ES0IXC4L3nNH1QxJUdSquQe4EtITGCEaH4mRdRTMOXhF90fzUbqpc3R5GPW3GIyj_r8cbyOZOfCW7iYbhLwCXisa0MNrLeLvoywqwdRU285dw.jpg",
-      "date": "2026-11-01T04:38:11+00:00",
-      "views": "8",
-      "url": "https://t.me/NaFunny/2116"
     },
     {
       "id": "TonNewbie/3436",
@@ -41,7 +41,7 @@
       "text": "Вышли улучшения на 👹и крафты на них же\n\nВсе модели:\nStickers (https://t.me/addstickers/MythMask_by_2stickerparsebot)\nEmoji (https://t.me/addemoji/MythMask_emoji_by_2stickerparsebot)\n\nВсе крафт модели:\nCraft Stickers (https://t.me/addstickers/MythMaskCrafted_craft_by_2stickerparsebot)\nCraft Emoji (https://t.me/addemoji/MythMaskCrafted_craft_emoji_by_2stickerparsebot)\n\nФлор 38 💎\nх6 от себеса\n👺 Dark Knight — 0.1%\n👺 Night Howler — 0.1%\n👺 Pumpkin Jack — 0.2%\n👺 Monkey Heist — 0.2%\n👺 Kitsune — 0.2%\n👺 Kinkster — 0.2%\n👺 Billy Puppet — 0.2%\n👺 Plague Doctor — 0.2%\n👺 Iron Maiden — 0.2%\n👺 Enderman — 0.2%\n👺 Techno Panda — 0.2%\n👺 Death Blossom — 0.2%\n👺 Predator — 0.2%\n👺 Mystic Hound — 0.2%\n👺 Anubis — 0.2%\n👺 First Dog — 0.2%\n👺 The Donald — 0.2%\n👺 Baldwin — 0.2%\n👺 Hannibal — 0.2%\n👺 Hellspawn — 0.2%\n👺 Wrong Number — 0.2%\n👺 Bella Ciao — 0.5%\n👺 Mecha Soldier — 0.5%\n👺 Death Skull — 0.5%\n👺 Little Ghost — 0.5%\n👺 Alien Visitor — 0.5%\n👺 Silver Face — 0.5%\n👺 Sapphire Kiss — 0.5%\n👺 Duality — 0.5%\n👺 Wolf Skull — 0.5%\n👺 Thunderbolt — 0.5%\n👺 Shift Mode — 0.5%\n👺 Shadow Rome — 0.5%\n👺 Anonymous — 1%\n👺 Dragon Dance — 1%\n👺 Ghostface — 1%\n👺 Arthur Fool — 1%\n👺 ALL CAPS — 1%\n👺 Backbreaker — 1%\n👺 Wasteland — 1%\n👺 Neon Purge — 1%\n👺 Neon Jackal — 1%\n👺 Dark Skull — 1%\n👺 Nerdy — 1%\n👺 Immortal — 1%\n👺 Patchy — 1%\n👺 Liquid Metal — 1%\n👺 Wise Owl — 1%\n👺 Lucky Rabbit — 1%\n👺 Tragic Muse — 1%\n👺 Lunar Rabbit — 1%\n👺 Broken Time — 1%\n👺 Pink Cupid — 1%\n👺 Iron Thorn — 1%\n👺 Grey Matter — 1%\n👺 Neon Rider — 1%\n👺 Medusa — 1%\n👺 Twisted Jester — 1%\n👺 Paint Riot — 1%\n👺 Pink Crush — 1%\n👺 Gear Master — 1%\n👺 Crystaline — 1%\n👺 Zorro — 1%\n👺 Tiki Mana — 1.5%\n👺 Cursed Straw — 1.5%\n👺 La Muerte — 1.5%\n👺 Doomsday — 1.5%\n👺 Wild Stallion — 1.5%\n👺 Cuban Pete — 1.5%\n👺 Deadly Hug — 1.5%\n👺 Uni Dream — 1.5%\n👺 No Face — 1.5%\n👺 Sea Dragon — 1.5%\n👺 Red Eye — 1.5%\n👺 Night Vision — 1.5%\n👺 Giggle Grief — 1.5%\n👺 Royal Jester — 1.5%\n👺 Crimson Lady — 1.5%\n👺 Deep One — 1.5%\n👺 Area 51 — 1.5%\n👺 Hug Me — 1.5%\n👺 Mad Package — 1.5%\n👺 Brick Face — 1.5%\n👺 Third Eye — 1.5%\n👺 Evil Genius — 1.5%\n👺 Clockwork — 1.5%\n👺 Witch King — 1.5%\n👺 Red Devil — 2%\n👺 Weld Master — 2%\n👺 Crimson Face — 2%\n👺 Horny — 2%\n👺 Golden Moth — 2%\n👺 Tribal Warrior — 2%\n👺 Red Oni — 2%\n👺 Wooden Smile — 2%\n👺 Marble David — 2%\n👺 Tragic Face — 2%\n👺 Soft Bloom — 2%\n👺 Cyber Knight — 2%\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/G_7_Or1F5Pv2X1uquGDjWWKDZuQ658sE09lfK-M-Rzq1jIiI6ipitFEXZYMqjm--bph9ZT3Kr7Xi18F7VC8zloYKK1Zbkt_xrDIdePzJupJaVqBA8lXOCY7dtDTQz_IgUPUOry52eEK4JcbiYTpI04g4PQoF78_95VmGnI8X22csTyRfem6U0CdAX28M-E3SLwnLGdQ6bRK3c3JPUpGziGB4shILe6aAEmgSo30oUjBOfjB7bA2PFuQ-UMCKczq33FAhHYO6yvac8BPC0cudzbfanPPnQJ3ErvRJkltJhyVbV6M3BBp90bxgafFiYda9PJdQvgb_n1oUFevehHra-g.jpg",
       "date": "2026-10-31T15:29:30+00:00",
-      "views": "732",
+      "views": "805",
       "url": "https://t.me/TonNewbie/3436"
     },
     {
@@ -53,7 +53,7 @@
       "text": "Как вообще удалось провернуть взлом на миллиарды?\n\n🤖Хакер воспользовался механизмом EIP-7702, появившимся после обновления Ethereum Pectra. Он позволяет обычному кошельку выполнять код смарт-контракта при наличии соответствующей подписанной авторизации.\n\n😠Злоумышленник подготовил сразу 50 авторизаций с разными nonce. Поскольку горячий кошелёк Binance постоянно проводил транзакции, угадать актуальный nonce было непросто.\nИз 50 подписей Ethereum принял только одну. Но этого оказалось достаточно.\n\n🔫Всего через 3 минуты 24 секунды из кошелька вывели 167 464 ETH, 1,615 млрд USDT и десятки других токенов.\nПричём перед атакой хакер успел несколько раз протестировать схему на собственных кошельках.\n\n🚶А теперь самое любопытное: аналитики TRM Labs предполагают, что за взломом стоит северокорейская группировка TraderTraitor, которую связывают и со взломом Bybit в 2025 году.\n\n🤔Получается, проблема могла быть не в уязвимости самого Ethereum, а в компрометации инфраструктуры подписания транзакций Binance.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/G_7_Or1F5Pv2X1uquGDjWWKDZuQ658sE09lfK-M-Rzq1jIiI6ipitFEXZYMqjm--bph9ZT3Kr7Xi18F7VC8zloYKK1Zbkt_xrDIdePzJupJaVqBA8lXOCY7dtDTQz_IgUPUOry52eEK4JcbiYTpI04g4PQoF78_95VmGnI8X22csTyRfem6U0CdAX28M-E3SLwnLGdQ6bRK3c3JPUpGziGB4shILe6aAEmgSo30oUjBOfjB7bA2PFuQ-UMCKczq33FAhHYO6yvac8BPC0cudzbfanPPnQJ3ErvRJkltJhyVbV6M3BBp90bxgafFiYda9PJdQvgb_n1oUFevehHra-g.jpg",
       "date": "2026-10-30T03:45:13+00:00",
-      "views": "1.4K",
+      "views": "1.43K",
       "url": "https://t.me/TonNewbie/3435"
     }
   ],
