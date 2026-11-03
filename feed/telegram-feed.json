@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-11-03T15:34:17.679Z",
+  "updatedAt": "2026-11-03T16:38:11.851Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -53,7 +53,7 @@
       "text": "Как вообще удалось провернуть взлом на миллиарды?\n\n🤖Хакер воспользовался механизмом EIP-7702, появившимся после обновления Ethereum Pectra. Он позволяет обычному кошельку выполнять код смарт-контракта при наличии соответствующей подписанной авторизации.\n\n😠Злоумышленник подготовил сразу 50 авторизаций с разными nonce. Поскольку горячий кошелёк Binance постоянно проводил транзакции, угадать актуальный nonce было непросто.\nИз 50 подписей Ethereum принял только одну. Но этого оказалось достаточно.\n\n🔫Всего через 3 минуты 24 секунды из кошелька вывели 167 464 ETH, 1,615 млрд USDT и десятки других токенов.\nПричём перед атакой хакер успел несколько раз протестировать схему на собственных кошельках.\n\n🚶А теперь самое любопытное: аналитики TRM Labs предполагают, что за взломом стоит северокорейская группировка TraderTraitor, которую связывают и со взломом Bybit в 2025 году.\n\n🤔Получается, проблема могла быть не в уязвимости самого Ethereum, а в компрометации инфраструктуры подписания транзакций Binance.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/bocJG_cyaU8F2akbv7NY5mAyVSvBa_82C97n8NcCCKoYy-uTGXEORJAxAOoPntBqbfLSGfkFcwGTlApZV_kSF8DoWsU8h_K7f2kcVkpHyVq9QDmvF_66Iwis8bQSpmySMfbLqw4CnIqNmj58hEEAZfSkqIT9WjRlIkEiQ3GbHKlyyUMxwJEenpZT1T0vCcY-o71DdaVnFU-pBdEVi2PpwBfb-7MNI7wHa6mwLNqRb0GCKw1zPUou-aSGztiEiZSBKgcKdDMNyshJ1NYuVsl9mtboBYv4Jd2YfRhwsKACzAoisxE1SYqXV0hTtEBFl414xYq0uXXD_nwR4AUCNEDWaA.jpg",
       "date": "2026-10-30T03:45:13+00:00",
-      "views": "1.59K",
+      "views": "1.6K",
       "url": "https://t.me/TonNewbie/3435"
     }
   ],
