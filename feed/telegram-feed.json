@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-11-08T07:57:35.931Z",
+  "updatedAt": "2026-11-08T12:14:15.581Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -15,9 +15,9 @@
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "📹stream online twitch.tv/NaFunny2 (http://twitch.tv/NaFunny2)\n🦞Ranked MM, 🏆Divine 3\n\n😂Donate (https://www.donationalerts.com/r/nafunny2) 📹Twitch (https://twitch.tv/nafunny2)https://r1wqgijy.life/?p=kkm2🤡1Win - 500% на первые четыре депозита+70FS - промокод NaFunny (https://r1wqgijy.life/?p=kkm2)",
-      "image": "https://cdn4.telesco.pe/file/sxyXNc1qSYdgKtj8Uiz59Q7GMzWP2nFxOEiiykyPQZX3I4jo6xBBL8CZ2khm2hEma46SBzePdK0qzB1tfIPl0s4GDL-ZA0tc145UyoHxh0wLFmz49_tJMKpuL8Yyfyd4EyHuD5Rzzil4nmZXYhGcDoH2zJlMhtMW3p2apNC-e7dCRClAFTWIrbcPEcLUYTMF9r2OvqLQKrYtGqSihZNE_rZIU-kttvdb3z8I5ZHbHr6bKNzkF122FifJRjpuwpoO0pQ-23dXj5RQixs-1m0sKb8S6WBQoBcW6mBkLzK8dhNp77u7tZstbULrTulvtZN-ETGxWeyd6fUxlvo7E1waoQ.jpg",
+      "image": "https://cdn4.telesco.pe/file/YQYBkZWiBmsaL8XSjPKFfcdMvDWdgKTKbhUSjHW4HZCRrBljjAKVMFvLvIGwQ4UGFqj4Lw82QOn392wLWH8bJkshbAGa5uhTHYVhomyam_7Wzl2I1B9P87Fev3h8CK2mmGlv0ROVDqMtTzMnYcYBwmDE-qdpG-YOrTuGtfvYTulRcThNf5QyB7y5DVafZTFiVehUKzE4OZJzIaDVTQ08XdzjLYSbzIiZ9ZjEV9tmEGp1QDGPKtR3K0TkqeBAP6z1p6JaYK854am1e6GnLq8lQYiOOEoa2sGjeDqGhPu7TBNJZkaC1qEGYo1vgrqQiLAQCtx0cALJsCWZivLLmh0IvA.jpg",
       "date": "2026-11-08T04:02:10+00:00",
-      "views": "7",
+      "views": "11",
       "url": "https://t.me/NaFunny/2138"
     },
     {
@@ -27,9 +27,9 @@
       "channelIcon": "🎮",
       "channelDescription": "Streams, community and creator updates",
       "text": "",
-      "image": "https://cdn4.telesco.pe/file/sxyXNc1qSYdgKtj8Uiz59Q7GMzWP2nFxOEiiykyPQZX3I4jo6xBBL8CZ2khm2hEma46SBzePdK0qzB1tfIPl0s4GDL-ZA0tc145UyoHxh0wLFmz49_tJMKpuL8Yyfyd4EyHuD5Rzzil4nmZXYhGcDoH2zJlMhtMW3p2apNC-e7dCRClAFTWIrbcPEcLUYTMF9r2OvqLQKrYtGqSihZNE_rZIU-kttvdb3z8I5ZHbHr6bKNzkF122FifJRjpuwpoO0pQ-23dXj5RQixs-1m0sKb8S6WBQoBcW6mBkLzK8dhNp77u7tZstbULrTulvtZN-ETGxWeyd6fUxlvo7E1waoQ.jpg",
+      "image": "https://cdn4.telesco.pe/file/YQYBkZWiBmsaL8XSjPKFfcdMvDWdgKTKbhUSjHW4HZCRrBljjAKVMFvLvIGwQ4UGFqj4Lw82QOn392wLWH8bJkshbAGa5uhTHYVhomyam_7Wzl2I1B9P87Fev3h8CK2mmGlv0ROVDqMtTzMnYcYBwmDE-qdpG-YOrTuGtfvYTulRcThNf5QyB7y5DVafZTFiVehUKzE4OZJzIaDVTQ08XdzjLYSbzIiZ9ZjEV9tmEGp1QDGPKtR3K0TkqeBAP6z1p6JaYK854am1e6GnLq8lQYiOOEoa2sGjeDqGhPu7TBNJZkaC1qEGYo1vgrqQiLAQCtx0cALJsCWZivLLmh0IvA.jpg",
       "date": "2026-11-08T03:59:40+00:00",
-      "views": "8",
+      "views": "12",
       "url": "https://t.me/NaFunny/2137"
     },
     {
@@ -53,7 +53,7 @@
       "text": "Как вообще удалось провернуть взлом на миллиарды?\n\n🤖Хакер воспользовался механизмом EIP-7702, появившимся после обновления Ethereum Pectra. Он позволяет обычному кошельку выполнять код смарт-контракта при наличии соответствующей подписанной авторизации.\n\n😠Злоумышленник подготовил сразу 50 авторизаций с разными nonce. Поскольку горячий кошелёк Binance постоянно проводил транзакции, угадать актуальный nonce было непросто.\nИз 50 подписей Ethereum принял только одну. Но этого оказалось достаточно.\n\n🔫Всего через 3 минуты 24 секунды из кошелька вывели 167 464 ETH, 1,615 млрд USDT и десятки других токенов.\nПричём перед атакой хакер успел несколько раз протестировать схему на собственных кошельках.\n\n🚶А теперь самое любопытное: аналитики TRM Labs предполагают, что за взломом стоит северокорейская группировка TraderTraitor, которую связывают и со взломом Bybit в 2025 году.\n\n🤔Получается, проблема могла быть не в уязвимости самого Ethereum, а в компрометации инфраструктуры подписания транзакций Binance.\n\n@TonNewbie (https://t.me/TonNewbie)",
       "image": "https://cdn4.telesco.pe/file/S3wa-mjPcUF49J7ZxW0z98GKTnwUoPtTmk7NUfHJveOddHe133E43RhbtSuCw18c5oEaBo1MTBpO5zXVR-G43EVI8nqdZFxBCYyPX6LiQ-FqgL8d4l7I32fyIuPDOPHfusqzH0dRtS1buNytcLyMiaFSluQUs5myF29F-h_vD3wBtQI4RymYBWTk13UpeTnuUcEeGo_o9vf7mzlWw-uUWtjiOdal6YpvqxbWeCX_tB6Q34VShFfNZNid21GHVn-4AmXVJQvPn3fLCLkCtEcHgEPaNmdhp0eka6hsk1q1wHMxlCLMFBE1icszlsv0Ycq3SH3xaGeJlYPFrd6Q0D0wow.jpg",
       "date": "2026-10-30T03:45:13+00:00",
-      "views": "1.79K",
+      "views": "1.8K",
       "url": "https://t.me/TonNewbie/3435"
     }
   ],
