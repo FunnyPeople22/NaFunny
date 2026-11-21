@@ -1,6 +1,6 @@
 {
   "version": "2.0-feed-engine",
-  "updatedAt": "2026-11-21T07:25:43.354Z",
+  "updatedAt": "2026-11-21T08:56:21.143Z",
   "source": "t.me/s public channel pages",
   "limitPerChannel": 2,
   "channels": [
@@ -8,6 +8,18 @@
     "TonNewbie"
   ],
   "posts": [
+    {
+      "id": "NaFunny/2186",
+      "channel": "NaFunny",
+      "channelTitle": "NaFunny",
+      "channelIcon": "🎮",
+      "channelDescription": "Streams, community and creator updates",
+      "text": "",
+      "image": "https://cdn4.telesco.pe/file/ORjXWi0VTYNaiwjF90MXlN8IuuB1NF7bsHuAhD-QahlrazxqUEXjITv--Fk1BZPgIZZMb7rCjvN70EvisuCBRt-yIOPfagL4co8WSp02gXNMQaASowZQ8GjfAf9MmkjyKV6FtTDSUb2ZSfNsM5QBDEoFVRp82xvpQV1ZHrj73CGxeHPPt67evvpWsxIRl0En2bjRDGawP7zDQ41upGHcdxvUikNStQZEHqzCOJIaK7HKzfPN4UdQtGaRrk38iyB6S124pOzI0QMsJBG5KZ2kaSl4BOyIwjmi3efR-5kqz_e7Pcku5ykabJB2kNzmiBL1T3O1nDr6NSbIlxKkWeK_sA.jpg",
+      "date": "2026-11-21T07:34:15+00:00",
+      "views": "9",
+      "url": "https://t.me/NaFunny/2186"
+    },
     {
       "id": "NaFunny/2185",
       "channel": "NaFunny",
@@ -17,20 +29,8 @@
       "text": "〰️Вторая карта\n\nПредикт DO KONCA. high-risk ❌\n2.30 live",
       "image": "https://cdn4.telesco.pe/file/Hex0eKdF7Ac_j8cpDrbL-trIUgqjfZA2EHqElPiay1pzthSizg1AAqKCADyXoLThxnlu2diuadTrR7xFsvGgLuiErG2PurIDR2Wuaed-kXLY0qOdihPYaaDR7cXykH83y_mUZEjjsOVw4SuMymYsPxJ98xGOut_wVGpIAAVZborgLFnumXIeHbDuiol9Gax69w8k0CTuTUgFrtnWDI1wFOKVulvAXp9v9aEvyNqxgYbSdtle9TkRfCJCTzGsWRXQv5GRu4QkdqKayCWAEtJga5PGmrQqHo5SFN7xUNeMr1sSUk_ivG34Q6tA_IAsoWRAxMRRH7BMsW9GjIq92lArnA.jpg",
       "date": "2026-11-20T18:24:18+00:00",
-      "views": "14",
+      "views": "16",
       "url": "https://t.me/NaFunny/2185"
-    },
-    {
-      "id": "NaFunny/2184",
-      "channel": "NaFunny",
-      "channelTitle": "NaFunny",
-      "channelIcon": "🎮",
-      "channelDescription": "Streams, community and creator updates",
-      "text": "〰️Первая карта\n\nПредикт PV ✅\n\nЕсли Легионы доживают до 34 минуты без потери сторон, то они заберут эту карту",
-      "image": "https://cdn4.telesco.pe/file/VdOZ_qFt2M3-YaOw5QWIG5gXIxS9CBHVCXkRxEgtamBiV_DaqgnJ7G0K2ZjIVzreBScQzreI2RLmk5pztBTiXe_d2tf3FZEhA6ndBko-gwCMidE3Najmyz1QvxQUqkOGLWz_490oXhw73vvwAGl-8niSBIj6_tUBvJNrigBb14f_MYgpE5_DqYXeBf8Z5CMwROto16i365Z7E-FgUkF5eKRG7cLTnXNV3c7pCu4eQcHb5NnWE2pK7ublkFMglNz04lrvaTesqsn1Skq3gL5WNOUSbGuxdWvhwokeXI3V0bivM27zyIx1DgvTwQcAJ3VwuJaSF7hs0w2A3lY6ujP5HQ.jpg",
-      "date": "2026-11-20T16:20:42+00:00",
-      "views": "20",
-      "url": "https://t.me/NaFunny/2184"
     },
     {
       "id": "TonNewbie/3444",
